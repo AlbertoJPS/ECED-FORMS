@@ -22,6 +22,8 @@ namespace BALProject
         public string Rg { get; set; }
         public string DataEmissaoRg { get; set; }
         public string UfRg { get; set; }
+        public string nacionalidade{ get; set; }
+        public string naturalidade{ get; set; }
 
     }
 }

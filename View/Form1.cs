@@ -8,6 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Google.Cloud.Firestore;
+using BALProject;
+using DALProject;
+using System.Collections;
 
 namespace ECED_FORMS
 {
@@ -23,14 +26,14 @@ namespace ECED_FORMS
         {
             string path = AppDomain.CurrentDomain.BaseDirectory + @"eced-e3031-firebase-adminsdk-fxr0o-786505f761.json";
             Environment.SetEnvironmentVariable("GOOGLE_APPLICATION_CREDENTIALS", path);
-          
+
             database = FirestoreDb.Create("eced-e3031");
-       
+
         }
         private void btnSalvarCadastro_Click(object sender, EventArgs e)
         {
-            AdicionaDados();
-
+            // AdicionaDados();
+            AdicionaDadosPersonalizados();
 
         }
 
@@ -73,11 +76,17 @@ namespace ECED_FORMS
             txtEstado.Text = string.Empty;
             txtRua.Text = string.Empty;
         }
-        void AdicionaDados()
+        
+        void AdicionaDadosPersonalizados()
         {
 
-            CollectionReference coll = database.Collection("Aluno");
+
+
+            DocumentReference doc = database.Collection("Aluno").Document(txtNomeAluno.Text);
+            Dictionary<string, object> DadosPessoais = new Dictionary<string, object>();
+
             Dictionary<string, object> data1 = new Dictionary<string, object>()
+
             {
                 {"NOME",txtNomeAluno.Text},
                 {"Data de Nascimento",dtNacimentoAluno.Text},
@@ -89,10 +98,13 @@ namespace ECED_FORMS
                 {"Estado civil",txtEstado.Text },
 
             };
-            coll.AddAsync(data1);
-            MessageBox.Show("ok");
+            DadosPessoais.Add("Dados Pessoais",data1);
+
+            doc.SetAsync(DadosPessoais);
+            MessageBox.Show("Dados Adicionados com sucesso!");
 
         }
+
 
     }
 }
