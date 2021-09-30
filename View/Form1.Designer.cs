@@ -40,6 +40,9 @@ namespace ECED_FORMS
             this.btnSalvarCadastro = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tbCadastrarAlunos = new System.Windows.Forms.TabPage();
+            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
+            this.txtNacionalidade = new System.Windows.Forms.TextBox();
+            this.label64 = new System.Windows.Forms.Label();
             this.textBox39 = new System.Windows.Forms.TextBox();
             this.label68 = new System.Windows.Forms.Label();
             this.textBox38 = new System.Windows.Forms.TextBox();
@@ -109,6 +112,7 @@ namespace ECED_FORMS
             this.label30 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
             this.label37 = new System.Windows.Forms.Label();
             this.textBox21 = new System.Windows.Forms.TextBox();
             this.label34 = new System.Windows.Forms.Label();
@@ -192,10 +196,7 @@ namespace ECED_FORMS
             this.ColumnBairro = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.txtNacionalidade = new System.Windows.Forms.TextBox();
-            this.label64 = new System.Windows.Forms.Label();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
+            this.tabPage8 = new System.Windows.Forms.TabPage();
             this.tabControl2.SuspendLayout();
             this.tabPage6.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -219,6 +220,7 @@ namespace ECED_FORMS
             this.tabControl2.Controls.Add(this.tabPage5);
             this.tabControl2.Controls.Add(this.tabPage6);
             this.tabControl2.Controls.Add(this.tabPage7);
+            this.tabControl2.Controls.Add(this.tabPage8);
             this.tabControl2.Location = new System.Drawing.Point(12, 5);
             this.tabControl2.Name = "tabControl2";
             this.tabControl2.SelectedIndex = 0;
@@ -377,6 +379,31 @@ namespace ECED_FORMS
             this.tbCadastrarAlunos.TabIndex = 1;
             this.tbCadastrarAlunos.Text = "Dados pessoais            ";
             this.tbCadastrarAlunos.UseVisualStyleBackColor = true;
+            // 
+            // maskedTextBox1
+            // 
+            this.maskedTextBox1.Location = new System.Drawing.Point(56, 318);
+            this.maskedTextBox1.Mask = "000.000.000\\-00";
+            this.maskedTextBox1.Name = "maskedTextBox1";
+            this.maskedTextBox1.Size = new System.Drawing.Size(136, 23);
+            this.maskedTextBox1.TabIndex = 86;
+            // 
+            // txtNacionalidade
+            // 
+            this.txtNacionalidade.Location = new System.Drawing.Point(626, 131);
+            this.txtNacionalidade.Name = "txtNacionalidade";
+            this.txtNacionalidade.Size = new System.Drawing.Size(202, 23);
+            this.txtNacionalidade.TabIndex = 85;
+            // 
+            // label64
+            // 
+            this.label64.AutoSize = true;
+            this.label64.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label64.Location = new System.Drawing.Point(623, 111);
+            this.label64.Name = "label64";
+            this.label64.Size = new System.Drawing.Size(99, 17);
+            this.label64.TabIndex = 84;
+            this.label64.Text = "Nacionalidade:";
             // 
             // textBox39
             // 
@@ -1026,6 +1053,14 @@ namespace ECED_FORMS
             this.tabPage2.TabIndex = 3;
             this.tabPage2.Text = "Identificação escolar          ";
             this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // maskedTextBox2
+            // 
+            this.maskedTextBox2.Location = new System.Drawing.Point(585, 153);
+            this.maskedTextBox2.Mask = "(999) 00000-0000";
+            this.maskedTextBox2.Name = "maskedTextBox2";
+            this.maskedTextBox2.Size = new System.Drawing.Size(136, 22);
+            this.maskedTextBox2.TabIndex = 111;
             // 
             // label37
             // 
@@ -1872,38 +1907,15 @@ namespace ECED_FORMS
             this.label10.TabIndex = 4;
             this.label10.Text = "Localizar";
             // 
-            // txtNacionalidade
+            // tabPage8
             // 
-            this.txtNacionalidade.Location = new System.Drawing.Point(626, 131);
-            this.txtNacionalidade.Name = "txtNacionalidade";
-            this.txtNacionalidade.Size = new System.Drawing.Size(202, 23);
-            this.txtNacionalidade.TabIndex = 85;
-            // 
-            // label64
-            // 
-            this.label64.AutoSize = true;
-            this.label64.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label64.Location = new System.Drawing.Point(623, 111);
-            this.label64.Name = "label64";
-            this.label64.Size = new System.Drawing.Size(99, 17);
-            this.label64.TabIndex = 84;
-            this.label64.Text = "Nacionalidade:";
-            // 
-            // maskedTextBox1
-            // 
-            this.maskedTextBox1.Location = new System.Drawing.Point(56, 318);
-            this.maskedTextBox1.Mask = "000.000.000\\-00";
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(136, 23);
-            this.maskedTextBox1.TabIndex = 86;
-            // 
-            // maskedTextBox2
-            // 
-            this.maskedTextBox2.Location = new System.Drawing.Point(585, 153);
-            this.maskedTextBox2.Mask = "(999) 00000-0000";
-            this.maskedTextBox2.Name = "maskedTextBox2";
-            this.maskedTextBox2.Size = new System.Drawing.Size(136, 22);
-            this.maskedTextBox2.TabIndex = 111;
+            this.tabPage8.Location = new System.Drawing.Point(4, 22);
+            this.tabPage8.Name = "tabPage8";
+            this.tabPage8.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage8.Size = new System.Drawing.Size(1316, 612);
+            this.tabPage8.TabIndex = 3;
+            this.tabPage8.Text = "Boletim                      ";
+            this.tabPage8.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -2115,6 +2127,7 @@ namespace ECED_FORMS
         private System.Windows.Forms.Label label64;
         private System.Windows.Forms.MaskedTextBox maskedTextBox1;
         private System.Windows.Forms.MaskedTextBox maskedTextBox2;
+        private System.Windows.Forms.TabPage tabPage8;
     }
 }
 
