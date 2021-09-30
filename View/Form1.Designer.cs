@@ -63,7 +63,6 @@ namespace ECED_FORMS
             this.textBox13 = new System.Windows.Forms.TextBox();
             this.textBox12 = new System.Windows.Forms.TextBox();
             this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.cmbEstadoCivil = new System.Windows.Forms.ComboBox();
             this.label46 = new System.Windows.Forms.Label();
@@ -115,7 +114,6 @@ namespace ECED_FORMS
             this.label34 = new System.Windows.Forms.Label();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox31 = new System.Windows.Forms.TextBox();
             this.textBox30 = new System.Windows.Forms.TextBox();
             this.textBox23 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -196,6 +194,8 @@ namespace ECED_FORMS
             this.label10 = new System.Windows.Forms.Label();
             this.txtNacionalidade = new System.Windows.Forms.TextBox();
             this.label64 = new System.Windows.Forms.Label();
+            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
             this.tabControl2.SuspendLayout();
             this.tabPage6.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -323,6 +323,7 @@ namespace ECED_FORMS
             // 
             // tbCadastrarAlunos
             // 
+            this.tbCadastrarAlunos.Controls.Add(this.maskedTextBox1);
             this.tbCadastrarAlunos.Controls.Add(this.txtNacionalidade);
             this.tbCadastrarAlunos.Controls.Add(this.label64);
             this.tbCadastrarAlunos.Controls.Add(this.textBox39);
@@ -348,7 +349,6 @@ namespace ECED_FORMS
             this.tbCadastrarAlunos.Controls.Add(this.textBox13);
             this.tbCadastrarAlunos.Controls.Add(this.textBox12);
             this.tbCadastrarAlunos.Controls.Add(this.textBox9);
-            this.tbCadastrarAlunos.Controls.Add(this.textBox8);
             this.tbCadastrarAlunos.Controls.Add(this.textBox7);
             this.tbCadastrarAlunos.Controls.Add(this.cmbEstadoCivil);
             this.tbCadastrarAlunos.Controls.Add(this.label46);
@@ -558,13 +558,6 @@ namespace ECED_FORMS
             this.textBox9.Name = "textBox9";
             this.textBox9.Size = new System.Drawing.Size(125, 23);
             this.textBox9.TabIndex = 52;
-            // 
-            // textBox8
-            // 
-            this.textBox8.Location = new System.Drawing.Point(56, 318);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(114, 23);
-            this.textBox8.TabIndex = 47;
             // 
             // textBox7
             // 
@@ -1009,12 +1002,12 @@ namespace ECED_FORMS
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.maskedTextBox2);
             this.tabPage2.Controls.Add(this.label37);
             this.tabPage2.Controls.Add(this.textBox21);
             this.tabPage2.Controls.Add(this.label34);
             this.tabPage2.Controls.Add(this.comboBox2);
             this.tabPage2.Controls.Add(this.label7);
-            this.tabPage2.Controls.Add(this.textBox31);
             this.tabPage2.Controls.Add(this.textBox30);
             this.tabPage2.Controls.Add(this.textBox23);
             this.tabPage2.Controls.Add(this.textBox1);
@@ -1084,13 +1077,6 @@ namespace ECED_FORMS
             this.label7.Size = new System.Drawing.Size(148, 17);
             this.label7.TabIndex = 106;
             this.label7.Text = "GRAU DE PARENTESCO:";
-            // 
-            // textBox31
-            // 
-            this.textBox31.Location = new System.Drawing.Point(585, 150);
-            this.textBox31.Name = "textBox31";
-            this.textBox31.Size = new System.Drawing.Size(144, 22);
-            this.textBox31.TabIndex = 103;
             // 
             // textBox30
             // 
@@ -1903,6 +1889,22 @@ namespace ECED_FORMS
             this.label64.TabIndex = 84;
             this.label64.Text = "Nacionalidade:";
             // 
+            // maskedTextBox1
+            // 
+            this.maskedTextBox1.Location = new System.Drawing.Point(56, 318);
+            this.maskedTextBox1.Mask = "000.000.000\\-00";
+            this.maskedTextBox1.Name = "maskedTextBox1";
+            this.maskedTextBox1.Size = new System.Drawing.Size(136, 23);
+            this.maskedTextBox1.TabIndex = 86;
+            // 
+            // maskedTextBox2
+            // 
+            this.maskedTextBox2.Location = new System.Drawing.Point(585, 153);
+            this.maskedTextBox2.Mask = "(999) 00000-0000";
+            this.maskedTextBox2.Name = "maskedTextBox2";
+            this.maskedTextBox2.Size = new System.Drawing.Size(136, 22);
+            this.maskedTextBox2.TabIndex = 111;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1980,7 +1982,6 @@ namespace ECED_FORMS
         private System.Windows.Forms.TextBox textBox13;
         private System.Windows.Forms.TextBox textBox12;
         private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.ComboBox cmbEstadoCivil;
         private System.Windows.Forms.Label label46;
@@ -2032,7 +2033,6 @@ namespace ECED_FORMS
         private System.Windows.Forms.Label label34;
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox31;
         private System.Windows.Forms.TextBox textBox30;
         private System.Windows.Forms.TextBox textBox23;
         private System.Windows.Forms.TextBox textBox1;
@@ -2113,6 +2113,8 @@ namespace ECED_FORMS
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox txtNacionalidade;
         private System.Windows.Forms.Label label64;
+        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
+        private System.Windows.Forms.MaskedTextBox maskedTextBox2;
     }
 }
 
