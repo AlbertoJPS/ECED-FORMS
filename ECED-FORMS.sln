@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
-VisualStudioVersion = 16.0.31624.102
+VisualStudioVersion = 16.0.31702.278
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECED-FORMS", "ECED-FORMS.csproj", "{EBB9B0CF-2620-417F-9849-DA188812FE21}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECED-FORMS", "ECED-FORMS.csproj", "{02C7F619-B4C2-4F1D-AACD-DE25007245C3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{EBB9B0CF-2620-417F-9849-DA188812FE21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EBB9B0CF-2620-417F-9849-DA188812FE21}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EBB9B0CF-2620-417F-9849-DA188812FE21}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EBB9B0CF-2620-417F-9849-DA188812FE21}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02C7F619-B4C2-4F1D-AACD-DE25007245C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02C7F619-B4C2-4F1D-AACD-DE25007245C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02C7F619-B4C2-4F1D-AACD-DE25007245C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02C7F619-B4C2-4F1D-AACD-DE25007245C3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {CBEF01A8-519B-4DCB-ACDE-39F85275D90E}
+		SolutionGuid = {BECEDF52-02AB-41DA-B22F-DF13F310B883}
 	EndGlobalSection
 EndGlobal
