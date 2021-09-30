@@ -44,7 +44,6 @@
     <Compile Include="Aluno.cs" />
     <Compile Include="BoletimAluno.cs" />
     <Compile Include="ControllerFunc.cs" />
-    <Compile Include="DocumentoAluno.cs" />
     <Compile Include="EnderecoAluno.cs" />
     <Compile Include="IdentificacaoEscolar.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

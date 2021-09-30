@@ -317,6 +317,9 @@
     <None Include="Connected Services\correio\ECED_FORMS.correio.VerificaSeTodosObjetosCanceladosResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <Content Include="eced-e3031-firebase-adminsdk-fxr0o-786505f761.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

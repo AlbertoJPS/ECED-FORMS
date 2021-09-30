@@ -7,14 +7,31 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Google.Cloud.Firestore;
 
 namespace ECED_FORMS
 {
     public partial class Form1 : Form
     {
+        FirestoreDb database;
+
         public Form1()
         {
             InitializeComponent();
+        }
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            string path = AppDomain.CurrentDomain.BaseDirectory + @"eced-e3031-firebase-adminsdk-fxr0o-786505f761.json";
+            Environment.SetEnvironmentVariable("GOOGLE_APPLICATION_CREDENTIALS", path);
+          
+            database = FirestoreDb.Create("eced-e3031");
+       
+        }
+        private void btnSalvarCadastro_Click(object sender, EventArgs e)
+        {
+            AdicionaDados();
+
+
         }
 
         private void btnBuscarCep_Click(object sender, EventArgs e)
@@ -56,5 +73,26 @@ namespace ECED_FORMS
             txtEstado.Text = string.Empty;
             txtRua.Text = string.Empty;
         }
+        void AdicionaDados()
+        {
+
+            CollectionReference coll = database.Collection("Aluno");
+            Dictionary<string, object> data1 = new Dictionary<string, object>()
+            {
+                {"NOME",txtNomeAluno.Text},
+                {"Data de Nascimento",dtNacimentoAluno.Text},
+                {"Cor / Raça",cmbCor.Text },
+                {"Sexo",cmbSexo.Text },
+                {"Naturalidade",txtNacionalidade.Text },
+                {"Nacionalidade",txtNacionalidade.Text},
+                {"Uf",txtUf.Text },
+                {"Estado civil",txtEstado.Text },
+
+            };
+            coll.AddAsync(data1);
+            MessageBox.Show("ok");
+
+        }
+
     }
 }

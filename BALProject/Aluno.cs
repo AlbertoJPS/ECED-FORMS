@@ -8,7 +8,6 @@ namespace BALProject
 {
     public class Aluno
     {
-
         public int idAluno { get; set; }
         public string NomeAluno { get; set; }
         public string Sexo { get; set; }
