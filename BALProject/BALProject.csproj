@@ -43,7 +43,7 @@
   <ItemGroup>
     <Compile Include="Aluno.cs" />
     <Compile Include="BoletimAluno.cs" />
-    <Compile Include="Class1.cs" />
+    <Compile Include="ControllerFunc.cs" />
     <Compile Include="DocumentoAluno.cs" />
     <Compile Include="EnderecoAluno.cs" />
     <Compile Include="IdentificacaoEscolar.cs" />
