@@ -11,6 +11,7 @@ namespace ECED_FORMS
         /// <summary>
         /// Ponto de entrada principal para o aplicativo.
         /// </summary>
+        /// //
         [STAThread]
         static void Main()
         {
