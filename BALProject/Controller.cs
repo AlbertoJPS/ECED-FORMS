@@ -17,9 +17,9 @@ namespace BALProject
 
             return AlunoDB.Insert(al);
         }
-
-
-
-
+        public static Response DocumentoInsert(DocumentosAluno docAluno, Aluno aluno)
+        {
+            return DocumentosDB.InsertDocumentos(docAluno, aluno);
+        }
     }
 }

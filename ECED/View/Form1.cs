@@ -85,8 +85,23 @@ namespace ECED_FORMS
                 NomeAluno = txtNomeAluno.Text,
                 DataNascimento=dtNacimentoAluno.Text
             };
+            DocumentosAluno docAluno = new DocumentosAluno()
+            {
+                Cpf = txtCpf.Text,
+                Rg = txtRg.Text,
+                DataExpedicaoRg = dtDataExpedicaoRg.Text,
+                OrgaoEmissor = txtOrgaoEmissorRg.Text,
+                UfRg = txtUfRg.Text,
+                NumCertidaoNascimento = txtCertNascimento.Text,
+                DataEmissaoCertNascimento = dtDataEmissaoCertNasc.Text,
+                Folha = txtFolha.Text,
+                Livro = txtLivro.Text,
+                RegistroCivil = txtRegCivil.Text,
+                DataEmissaoRegCivil = dtDataEmissaoRegCivil.Text
+            };
 
             Response res = Controller.AlunoInsert(al);
+            res = Controller.DocumentoInsert(docAluno, al);
 
 
 

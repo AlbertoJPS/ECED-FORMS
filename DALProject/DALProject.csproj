@@ -125,6 +125,8 @@
     <Compile Include="Checker.cs" />
     <Compile Include="ControllerFunc.cs" />
     <Compile Include="DBConection.cs" />
+    <Compile Include="DocumentosAluno.cs" />
+    <Compile Include="DocumentosDB.cs" />
     <Compile Include="EnderecoAluno.cs" />
     <Compile Include="IdentificacaoEscolar.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
