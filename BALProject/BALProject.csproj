@@ -41,11 +41,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Aluno.cs" />
-    <Compile Include="BoletimAluno.cs" />
-    <Compile Include="ControllerFunc.cs" />
-    <Compile Include="EnderecoAluno.cs" />
-    <Compile Include="IdentificacaoEscolar.cs" />
+    <Compile Include="Checker.cs" />
+    <Compile Include="Controller.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

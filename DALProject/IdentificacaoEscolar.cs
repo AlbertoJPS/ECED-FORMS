@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BALProject
+namespace DALProject
 {
-    class IdentificacaoEscolar
+    public class IdentificacaoEscolar
     {
         public string CodigoDoInep { get; set; }
         public string UnidadeEscolar { get; set; }

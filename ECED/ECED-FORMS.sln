@@ -5,9 +5,9 @@ VisualStudioVersion = 16.0.31702.278
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECED-FORMS", "ECED-FORMS.csproj", "{02C7F619-B4C2-4F1D-AACD-DE25007245C3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BALProject", "BALProject\BALProject.csproj", "{FCFCD57F-D7DA-4678-A565-58CCA4449738}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BALProject", "..\BALProject\BALProject.csproj", "{FCFCD57F-D7DA-4678-A565-58CCA4449738}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DALProject", "DALProject\DALProject.csproj", "{A89ADF35-5DF6-470A-A718-180B621203E0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DALProject", "..\DALProject\DALProject.csproj", "{A89ADF35-5DF6-470A-A718-180B621203E0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
