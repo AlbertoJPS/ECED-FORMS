@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DALProject;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,6 +9,16 @@ namespace BALProject
 {
   public  class Controller
     {
+        public static Response AlunoInsert(Aluno al)
+        {
+            // conferencias
+
+            // DAL
+
+            return AlunoDB.Insert(al);
+        }
+
+
 
 
     }

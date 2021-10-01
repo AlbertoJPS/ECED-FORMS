@@ -45,5 +45,11 @@
     <Compile Include="Controller.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DALProject\DALProject.csproj">
+      <Project>{A89ADF35-5DF6-470A-A718-180B621203E0}</Project>
+      <Name>DALProject</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

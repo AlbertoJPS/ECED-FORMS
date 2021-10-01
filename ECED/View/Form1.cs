@@ -10,6 +10,8 @@ using System.Windows.Forms;
 using Google.Cloud.Firestore;
 
 using System.Collections;
+using DALProject;
+using BALProject;
 
 namespace ECED_FORMS
 {
@@ -78,29 +80,36 @@ namespace ECED_FORMS
         
         void AdicionaDadosPersonalizados()
         {
-
-
-
-            DocumentReference doc = database.Collection("Aluno").Document(txtNomeAluno.Text);
-            Dictionary<string, object> DadosPessoais = new Dictionary<string, object>();
-
-            Dictionary<string, object> data1 = new Dictionary<string, object>()
-
+            Aluno al = new Aluno()
             {
-                {"NOME",txtNomeAluno.Text},
-                {"Data de Nascimento",dtNacimentoAluno.Text},
-                {"Cor / Raça",cmbCor.Text },
-                {"Sexo",cmbSexo.Text },
-                {"Naturalidade",txtNacionalidade.Text },
-                {"Nacionalidade",txtNacionalidade.Text},
-                {"Uf",txtUf.Text },
-                {"Estado civil",txtEstado.Text },
-
+                NomeAluno = txtNomeAluno.Text,
+                DataNascimento=dtNacimentoAluno.Text
             };
-            DadosPessoais.Add("Dados Pessoais",data1);
 
-            doc.SetAsync(DadosPessoais);
-            MessageBox.Show("Dados Adicionados com sucesso!");
+            Response res = Controller.AlunoInsert(al);
+
+
+
+            //DocumentReference doc = database.Collection("Aluno").Document(txtNomeAluno.Text);
+            //Dictionary<string, object> DadosPessoais = new Dictionary<string, object>();
+
+            //Dictionary<string, object> data1 = new Dictionary<string, object>()
+
+            //{
+            //    {"NOME",txtNomeAluno.Text},
+            //    {"Data de Nascimento",dtNacimentoAluno.Text},
+            //    {"Cor / Raça",cmbCor.Text },
+            //    {"Sexo",cmbSexo.Text },
+            //    {"Naturalidade",txtNacionalidade.Text },
+            //    {"Nacionalidade",txtNacionalidade.Text},
+            //    {"Uf",txtUf.Text },
+            //    {"Estado civil",txtEstado.Text },
+
+            //};
+            //DadosPessoais.Add("Dados Pessoais",data1);
+
+            //doc.SetAsync(DadosPessoais);
+            //MessageBox.Show("Dados Adicionados com sucesso!");
 
         }
 

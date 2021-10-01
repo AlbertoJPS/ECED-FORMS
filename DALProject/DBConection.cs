@@ -7,17 +7,24 @@ using Google.Cloud.Firestore;
 
 namespace DALProject
 {
-    public class DBConection
+    public static class DBConection
     {
-        public static Response Insert()
+        private static FirestoreDb database;
+
+        /// <summary>
+        /// return an instance of the DataBese Connection
+        /// </summary>
+        /// <returns></returns>
+        public static FirestoreDb Getdatabase()
         {
-            FirestoreDb database;
-
-
             Environment.SetEnvironmentVariable("GOOGLE_APPLICATION_CREDENTIALS", AppDomain.CurrentDomain.BaseDirectory + @"eced-e3031-firebase-adminsdk-fxr0o-786505f761.json");
 
             database = FirestoreDb.Create("eced-e3031");
-
+            return database;
         }
+
     }
+
 }
+
+

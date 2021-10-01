@@ -120,6 +120,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Aluno.cs" />
+    <Compile Include="AlunoDB.cs" />
     <Compile Include="BoletimAluno.cs" />
     <Compile Include="Checker.cs" />
     <Compile Include="ControllerFunc.cs" />

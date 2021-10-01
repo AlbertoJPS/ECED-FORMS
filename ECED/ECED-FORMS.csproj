@@ -352,6 +352,16 @@
   <ItemGroup>
     <WCFMetadataStorage Include="Connected Services\correio\" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BALProject\BALProject.csproj">
+      <Project>{FCFCD57F-D7DA-4678-A565-58CCA4449738}</Project>
+      <Name>BALProject</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DALProject\DALProject.csproj">
+      <Project>{A89ADF35-5DF6-470A-A718-180B621203E0}</Project>
+      <Name>DALProject</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="packages\Grpc.Core.2.36.4\build\net45\Grpc.Core.targets" Condition="Exists('packages\Grpc.Core.2.36.4\build\net45\Grpc.Core.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

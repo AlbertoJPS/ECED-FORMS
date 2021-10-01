@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace DALProject
 {
-    class Response
+    public class Response
     {
-        public bool MyProperty { get; set; }
+        public bool Executed { get; set; }
         public string Message { get; set; }
         public string Erro { get; set; }
 
