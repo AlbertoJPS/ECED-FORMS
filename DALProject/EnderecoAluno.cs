@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BALProject
+namespace DALProject
 {
-    class EnderecoAluno
+   public class EnderecoAluno
     {
         public string Cep { get; set; }
         public string Rua { get; set; }

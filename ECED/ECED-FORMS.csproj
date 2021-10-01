@@ -353,12 +353,12 @@
     <WCFMetadataStorage Include="Connected Services\correio\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="BALProject\BALProject.csproj">
-      <Project>{fcfcd57f-d7da-4678-a565-58cca4449738}</Project>
+    <ProjectReference Include="..\BALProject\BALProject.csproj">
+      <Project>{FCFCD57F-D7DA-4678-A565-58CCA4449738}</Project>
       <Name>BALProject</Name>
     </ProjectReference>
-    <ProjectReference Include="DALProject\DALProject.csproj">
-      <Project>{a89adf35-5df6-470a-a718-180b621203e0}</Project>
+    <ProjectReference Include="..\DALProject\DALProject.csproj">
+      <Project>{A89ADF35-5DF6-470A-A718-180B621203E0}</Project>
       <Name>DALProject</Name>
     </ProjectReference>
   </ItemGroup>

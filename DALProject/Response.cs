@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 
 namespace DALProject
 {
-    public static class Checker
+    public class Response
     {
-
-
+        public bool Executed { get; set; }
+        public string Message { get; set; }
+        public string Erro { get; set; }
 
 
     }
