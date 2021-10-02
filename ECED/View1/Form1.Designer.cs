@@ -63,33 +63,33 @@ namespace ECED_FORMS
             this.btnSalvarCadastro = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tbCadastrarAlunos = new System.Windows.Forms.TabPage();
-            this.txtCpf = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
             this.txtNacionalidade = new System.Windows.Forms.TextBox();
             this.label64 = new System.Windows.Forms.Label();
-            this.txtEmailAluno = new System.Windows.Forms.TextBox();
+            this.textBox39 = new System.Windows.Forms.TextBox();
             this.label68 = new System.Windows.Forms.Label();
-            this.txtUfRg = new System.Windows.Forms.TextBox();
+            this.textBox38 = new System.Windows.Forms.TextBox();
             this.label67 = new System.Windows.Forms.Label();
-            this.dtDataExpedicaoRG = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePicker5 = new System.Windows.Forms.DateTimePicker();
             this.label66 = new System.Windows.Forms.Label();
-            this.txtUfCartorio = new System.Windows.Forms.TextBox();
+            this.textBox37 = new System.Windows.Forms.TextBox();
             this.label65 = new System.Windows.Forms.Label();
-            this.dtRegistroCivilData = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePicker4 = new System.Windows.Forms.DateTimePicker();
             this.label45 = new System.Windows.Forms.Label();
-            this.txtCertidaoNascimento = new System.Windows.Forms.TextBox();
+            this.textBox36 = new System.Windows.Forms.TextBox();
             this.label44 = new System.Windows.Forms.Label();
             this.txtUf = new System.Windows.Forms.TextBox();
             this.label43 = new System.Windows.Forms.Label();
             this.txtNaturalidade = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.dtDataEmissao = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
             this.txtNomeAluno = new System.Windows.Forms.TextBox();
-            this.txtNomeCartorio = new System.Windows.Forms.TextBox();
+            this.textBox15 = new System.Windows.Forms.TextBox();
             this.textBox14 = new System.Windows.Forms.TextBox();
-            this.txtLivro = new System.Windows.Forms.TextBox();
-            this.txtFolha = new System.Windows.Forms.TextBox();
-            this.txtOrgaoEmissor = new System.Windows.Forms.TextBox();
-            this.txtRegistroGeral = new System.Windows.Forms.TextBox();
+            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.textBox7 = new System.Windows.Forms.TextBox();
             this.cmbEstadoCivil = new System.Windows.Forms.ComboBox();
             this.label46 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
@@ -210,7 +210,6 @@ namespace ECED_FORMS
             this.panel6 = new System.Windows.Forms.Panel();
             this.label38 = new System.Windows.Forms.Label();
             this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.panel7 = new System.Windows.Forms.Panel();
             this.label85 = new System.Windows.Forms.Label();
             this.textBox40 = new System.Windows.Forms.TextBox();
             this.label86 = new System.Windows.Forms.Label();
@@ -264,7 +263,7 @@ namespace ECED_FORMS
             this.label78 = new System.Windows.Forms.Label();
             this.label77 = new System.Windows.Forms.Label();
             this.label76 = new System.Windows.Forms.Label();
-            this.txtRg = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
             this.label47 = new System.Windows.Forms.Label();
             this.maskedTextBox5 = new System.Windows.Forms.MaskedTextBox();
             this.maskedTextBox4 = new System.Windows.Forms.MaskedTextBox();
@@ -276,10 +275,11 @@ namespace ECED_FORMS
             this.checkBox7 = new System.Windows.Forms.CheckBox();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.txtNome = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.tabControl2 = new System.Windows.Forms.TabControl();
+            this.panel7 = new System.Windows.Forms.Panel();
             this.tabPage8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.tabPage7.SuspendLayout();
@@ -652,33 +652,33 @@ namespace ECED_FORMS
             // 
             // tbCadastrarAlunos
             // 
-            this.tbCadastrarAlunos.Controls.Add(this.txtCpf);
+            this.tbCadastrarAlunos.Controls.Add(this.maskedTextBox1);
             this.tbCadastrarAlunos.Controls.Add(this.txtNacionalidade);
             this.tbCadastrarAlunos.Controls.Add(this.label64);
-            this.tbCadastrarAlunos.Controls.Add(this.txtEmailAluno);
+            this.tbCadastrarAlunos.Controls.Add(this.textBox39);
             this.tbCadastrarAlunos.Controls.Add(this.label68);
-            this.tbCadastrarAlunos.Controls.Add(this.txtUfRg);
+            this.tbCadastrarAlunos.Controls.Add(this.textBox38);
             this.tbCadastrarAlunos.Controls.Add(this.label67);
-            this.tbCadastrarAlunos.Controls.Add(this.dtDataExpedicaoRG);
+            this.tbCadastrarAlunos.Controls.Add(this.dateTimePicker5);
             this.tbCadastrarAlunos.Controls.Add(this.label66);
-            this.tbCadastrarAlunos.Controls.Add(this.txtUfCartorio);
+            this.tbCadastrarAlunos.Controls.Add(this.textBox37);
             this.tbCadastrarAlunos.Controls.Add(this.label65);
-            this.tbCadastrarAlunos.Controls.Add(this.dtRegistroCivilData);
+            this.tbCadastrarAlunos.Controls.Add(this.dateTimePicker4);
             this.tbCadastrarAlunos.Controls.Add(this.label45);
-            this.tbCadastrarAlunos.Controls.Add(this.txtCertidaoNascimento);
+            this.tbCadastrarAlunos.Controls.Add(this.textBox36);
             this.tbCadastrarAlunos.Controls.Add(this.label44);
             this.tbCadastrarAlunos.Controls.Add(this.txtUf);
             this.tbCadastrarAlunos.Controls.Add(this.label43);
             this.tbCadastrarAlunos.Controls.Add(this.txtNaturalidade);
             this.tbCadastrarAlunos.Controls.Add(this.label11);
-            this.tbCadastrarAlunos.Controls.Add(this.dtDataEmissao);
+            this.tbCadastrarAlunos.Controls.Add(this.dateTimePicker3);
             this.tbCadastrarAlunos.Controls.Add(this.txtNomeAluno);
-            this.tbCadastrarAlunos.Controls.Add(this.txtNomeCartorio);
+            this.tbCadastrarAlunos.Controls.Add(this.textBox15);
             this.tbCadastrarAlunos.Controls.Add(this.textBox14);
-            this.tbCadastrarAlunos.Controls.Add(this.txtLivro);
-            this.tbCadastrarAlunos.Controls.Add(this.txtFolha);
-            this.tbCadastrarAlunos.Controls.Add(this.txtOrgaoEmissor);
-            this.tbCadastrarAlunos.Controls.Add(this.txtRegistroGeral);
+            this.tbCadastrarAlunos.Controls.Add(this.textBox13);
+            this.tbCadastrarAlunos.Controls.Add(this.textBox12);
+            this.tbCadastrarAlunos.Controls.Add(this.textBox9);
+            this.tbCadastrarAlunos.Controls.Add(this.textBox7);
             this.tbCadastrarAlunos.Controls.Add(this.cmbEstadoCivil);
             this.tbCadastrarAlunos.Controls.Add(this.label46);
             this.tbCadastrarAlunos.Controls.Add(this.label27);
@@ -707,13 +707,13 @@ namespace ECED_FORMS
             this.tbCadastrarAlunos.Text = "Dados pessoais            ";
             this.tbCadastrarAlunos.UseVisualStyleBackColor = true;
             // 
-            // txtCpf
+            // maskedTextBox1
             // 
-            this.txtCpf.Location = new System.Drawing.Point(56, 324);
-            this.txtCpf.Mask = "000.000.000\\-00";
-            this.txtCpf.Name = "txtCpf";
-            this.txtCpf.Size = new System.Drawing.Size(136, 23);
-            this.txtCpf.TabIndex = 86;
+            this.maskedTextBox1.Location = new System.Drawing.Point(56, 324);
+            this.maskedTextBox1.Mask = "000.000.000\\-00";
+            this.maskedTextBox1.Name = "maskedTextBox1";
+            this.maskedTextBox1.Size = new System.Drawing.Size(136, 23);
+            this.maskedTextBox1.TabIndex = 86;
             // 
             // txtNacionalidade
             // 
@@ -732,12 +732,12 @@ namespace ECED_FORMS
             this.label64.TabIndex = 84;
             this.label64.Text = "Nacionalidade:";
             // 
-            // txtEmailAluno
+            // textBox39
             // 
-            this.txtEmailAluno.Location = new System.Drawing.Point(146, 367);
-            this.txtEmailAluno.Name = "txtEmailAluno";
-            this.txtEmailAluno.Size = new System.Drawing.Size(320, 23);
-            this.txtEmailAluno.TabIndex = 83;
+            this.textBox39.Location = new System.Drawing.Point(146, 367);
+            this.textBox39.Name = "textBox39";
+            this.textBox39.Size = new System.Drawing.Size(199, 23);
+            this.textBox39.TabIndex = 83;
             // 
             // label68
             // 
@@ -748,12 +748,12 @@ namespace ECED_FORMS
             this.label68.TabIndex = 82;
             this.label68.Text = "EMAIL DO ALUNO:";
             // 
-            // txtUfRg
+            // textBox38
             // 
-            this.txtUfRg.Location = new System.Drawing.Point(1092, 318);
-            this.txtUfRg.Name = "txtUfRg";
-            this.txtUfRg.Size = new System.Drawing.Size(47, 23);
-            this.txtUfRg.TabIndex = 81;
+            this.textBox38.Location = new System.Drawing.Point(1092, 318);
+            this.textBox38.Name = "textBox38";
+            this.textBox38.Size = new System.Drawing.Size(47, 23);
+            this.textBox38.TabIndex = 81;
             // 
             // label67
             // 
@@ -764,13 +764,13 @@ namespace ECED_FORMS
             this.label67.TabIndex = 80;
             this.label67.Text = "UF:";
             // 
-            // dtDataExpedicaoRG
+            // dateTimePicker5
             // 
-            this.dtDataExpedicaoRG.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtDataExpedicaoRG.Location = new System.Drawing.Point(921, 319);
-            this.dtDataExpedicaoRG.Name = "dtDataExpedicaoRG";
-            this.dtDataExpedicaoRG.Size = new System.Drawing.Size(127, 23);
-            this.dtDataExpedicaoRG.TabIndex = 79;
+            this.dateTimePicker5.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTimePicker5.Location = new System.Drawing.Point(921, 319);
+            this.dateTimePicker5.Name = "dateTimePicker5";
+            this.dateTimePicker5.Size = new System.Drawing.Size(127, 23);
+            this.dateTimePicker5.TabIndex = 79;
             // 
             // label66
             // 
@@ -781,12 +781,12 @@ namespace ECED_FORMS
             this.label66.TabIndex = 78;
             this.label66.Text = "DATA  DE EXPEDIÇÃO:";
             // 
-            // txtUfCartorio
+            // textBox37
             // 
-            this.txtUfCartorio.Location = new System.Drawing.Point(729, 291);
-            this.txtUfCartorio.Name = "txtUfCartorio";
-            this.txtUfCartorio.Size = new System.Drawing.Size(47, 23);
-            this.txtUfCartorio.TabIndex = 77;
+            this.textBox37.Location = new System.Drawing.Point(729, 291);
+            this.textBox37.Name = "textBox37";
+            this.textBox37.Size = new System.Drawing.Size(47, 23);
+            this.textBox37.TabIndex = 77;
             // 
             // label65
             // 
@@ -797,13 +797,13 @@ namespace ECED_FORMS
             this.label65.TabIndex = 76;
             this.label65.Text = "UF:";
             // 
-            // dtRegistroCivilData
+            // dateTimePicker4
             // 
-            this.dtRegistroCivilData.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtRegistroCivilData.Location = new System.Drawing.Point(831, 257);
-            this.dtRegistroCivilData.Name = "dtRegistroCivilData";
-            this.dtRegistroCivilData.Size = new System.Drawing.Size(127, 23);
-            this.dtRegistroCivilData.TabIndex = 75;
+            this.dateTimePicker4.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTimePicker4.Location = new System.Drawing.Point(831, 257);
+            this.dateTimePicker4.Name = "dateTimePicker4";
+            this.dateTimePicker4.Size = new System.Drawing.Size(127, 23);
+            this.dateTimePicker4.TabIndex = 75;
             // 
             // label45
             // 
@@ -814,12 +814,12 @@ namespace ECED_FORMS
             this.label45.TabIndex = 74;
             this.label45.Text = "DATA  DE EMISSÃO:";
             // 
-            // txtCertidaoNascimento
+            // textBox36
             // 
-            this.txtCertidaoNascimento.Location = new System.Drawing.Point(244, 259);
-            this.txtCertidaoNascimento.Name = "txtCertidaoNascimento";
-            this.txtCertidaoNascimento.Size = new System.Drawing.Size(172, 23);
-            this.txtCertidaoNascimento.TabIndex = 73;
+            this.textBox36.Location = new System.Drawing.Point(244, 259);
+            this.textBox36.Name = "textBox36";
+            this.textBox36.Size = new System.Drawing.Size(172, 23);
+            this.textBox36.TabIndex = 73;
             // 
             // label44
             // 
@@ -863,13 +863,13 @@ namespace ECED_FORMS
             this.label11.TabIndex = 68;
             this.label11.Text = "Naturalidade:";
             // 
-            // dtDataEmissao
+            // dateTimePicker3
             // 
-            this.dtDataEmissao.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtDataEmissao.Location = new System.Drawing.Point(831, 226);
-            this.dtDataEmissao.Name = "dtDataEmissao";
-            this.dtDataEmissao.Size = new System.Drawing.Size(127, 23);
-            this.dtDataEmissao.TabIndex = 67;
+            this.dateTimePicker3.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTimePicker3.Location = new System.Drawing.Point(831, 226);
+            this.dateTimePicker3.Name = "dateTimePicker3";
+            this.dateTimePicker3.Size = new System.Drawing.Size(127, 23);
+            this.dateTimePicker3.TabIndex = 67;
             // 
             // txtNomeAluno
             // 
@@ -878,12 +878,12 @@ namespace ECED_FORMS
             this.txtNomeAluno.Size = new System.Drawing.Size(397, 23);
             this.txtNomeAluno.TabIndex = 62;
             // 
-            // txtNomeCartorio
+            // textBox15
             // 
-            this.txtNomeCartorio.Location = new System.Drawing.Point(244, 291);
-            this.txtNomeCartorio.Name = "txtNomeCartorio";
-            this.txtNomeCartorio.Size = new System.Drawing.Size(428, 23);
-            this.txtNomeCartorio.TabIndex = 61;
+            this.textBox15.Location = new System.Drawing.Point(244, 291);
+            this.textBox15.Name = "textBox15";
+            this.textBox15.Size = new System.Drawing.Size(428, 23);
+            this.textBox15.TabIndex = 61;
             // 
             // textBox14
             // 
@@ -892,33 +892,33 @@ namespace ECED_FORMS
             this.textBox14.Size = new System.Drawing.Size(421, 23);
             this.textBox14.TabIndex = 60;
             // 
-            // txtLivro
+            // textBox13
             // 
-            this.txtLivro.Location = new System.Drawing.Point(626, 259);
-            this.txtLivro.Name = "txtLivro";
-            this.txtLivro.Size = new System.Drawing.Size(42, 23);
-            this.txtLivro.TabIndex = 57;
+            this.textBox13.Location = new System.Drawing.Point(626, 259);
+            this.textBox13.Name = "textBox13";
+            this.textBox13.Size = new System.Drawing.Size(42, 23);
+            this.textBox13.TabIndex = 57;
             // 
-            // txtFolha
+            // textBox12
             // 
-            this.txtFolha.Location = new System.Drawing.Point(490, 259);
-            this.txtFolha.Name = "txtFolha";
-            this.txtFolha.Size = new System.Drawing.Size(50, 23);
-            this.txtFolha.TabIndex = 55;
+            this.textBox12.Location = new System.Drawing.Point(490, 259);
+            this.textBox12.Name = "textBox12";
+            this.textBox12.Size = new System.Drawing.Size(50, 23);
+            this.textBox12.TabIndex = 55;
             // 
-            // txtOrgaoEmissor
+            // textBox9
             // 
-            this.txtOrgaoEmissor.Location = new System.Drawing.Point(637, 321);
-            this.txtOrgaoEmissor.Name = "txtOrgaoEmissor";
-            this.txtOrgaoEmissor.Size = new System.Drawing.Size(125, 23);
-            this.txtOrgaoEmissor.TabIndex = 52;
+            this.textBox9.Location = new System.Drawing.Point(637, 321);
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(125, 23);
+            this.textBox9.TabIndex = 52;
             // 
-            // txtRegistroGeral
+            // textBox7
             // 
-            this.txtRegistroGeral.Location = new System.Drawing.Point(351, 324);
-            this.txtRegistroGeral.Name = "txtRegistroGeral";
-            this.txtRegistroGeral.Size = new System.Drawing.Size(158, 23);
-            this.txtRegistroGeral.TabIndex = 45;
+            this.textBox7.Location = new System.Drawing.Point(351, 324);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(158, 23);
+            this.textBox7.TabIndex = 45;
             // 
             // cmbEstadoCivil
             // 
@@ -2252,7 +2252,7 @@ namespace ECED_FORMS
             this.tabPage4.Controls.Add(this.label78);
             this.tabPage4.Controls.Add(this.label77);
             this.tabPage4.Controls.Add(this.label76);
-            this.tabPage4.Controls.Add(this.txtRg);
+            this.tabPage4.Controls.Add(this.textBox3);
             this.tabPage4.Controls.Add(this.label47);
             this.tabPage4.Controls.Add(this.maskedTextBox5);
             this.tabPage4.Controls.Add(this.maskedTextBox4);
@@ -2264,7 +2264,7 @@ namespace ECED_FORMS
             this.tabPage4.Controls.Add(this.checkBox7);
             this.tabPage4.Controls.Add(this.checkBox2);
             this.tabPage4.Controls.Add(this.checkBox1);
-            this.tabPage4.Controls.Add(this.txtNome);
+            this.tabPage4.Controls.Add(this.textBox5);
             this.tabPage4.Controls.Add(this.label17);
             this.tabPage4.Controls.Add(this.label13);
             this.tabPage4.Location = new System.Drawing.Point(4, 25);
@@ -2273,14 +2273,6 @@ namespace ECED_FORMS
             this.tabPage4.Size = new System.Drawing.Size(1228, 492);
             this.tabPage4.TabIndex = 5;
             this.tabPage4.Text = "Dados dos Responsaveís       ";
-            // 
-            // panel7
-            // 
-            this.panel7.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.panel7.Location = new System.Drawing.Point(0, 207);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(1236, 38);
-            this.panel7.TabIndex = 178;
             // 
             // label85
             // 
@@ -2762,12 +2754,12 @@ namespace ECED_FORMS
             this.label76.TabIndex = 90;
             this.label76.Text = "DATA DE EXPEDIÇÃO:";
             // 
-            // txtRg
+            // textBox3
             // 
-            this.txtRg.Location = new System.Drawing.Point(179, 85);
-            this.txtRg.Name = "txtRg";
-            this.txtRg.Size = new System.Drawing.Size(100, 22);
-            this.txtRg.TabIndex = 89;
+            this.textBox3.Location = new System.Drawing.Point(179, 85);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(100, 22);
+            this.textBox3.TabIndex = 89;
             // 
             // label47
             // 
@@ -2871,12 +2863,12 @@ namespace ECED_FORMS
             this.checkBox1.TabIndex = 77;
             this.checkBox1.UseVisualStyleBackColor = true;
             // 
-            // txtNome
+            // textBox5
             // 
-            this.txtNome.Location = new System.Drawing.Point(91, 46);
-            this.txtNome.Name = "txtNome";
-            this.txtNome.Size = new System.Drawing.Size(176, 22);
-            this.txtNome.TabIndex = 71;
+            this.textBox5.Location = new System.Drawing.Point(91, 46);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(176, 22);
+            this.textBox5.TabIndex = 71;
             // 
             // label17
             // 
@@ -2908,6 +2900,14 @@ namespace ECED_FORMS
             this.tabControl2.SelectedIndex = 0;
             this.tabControl2.Size = new System.Drawing.Size(1324, 638);
             this.tabControl2.TabIndex = 2;
+            // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel7.Location = new System.Drawing.Point(0, 207);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(1236, 38);
+            this.panel7.TabIndex = 178;
             // 
             // Form1
             // 
@@ -2988,33 +2988,33 @@ namespace ECED_FORMS
         private System.Windows.Forms.Button btnSalvarCadastro;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tbCadastrarAlunos;
-        private System.Windows.Forms.MaskedTextBox txtCpf;
+        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
         private System.Windows.Forms.TextBox txtNacionalidade;
         private System.Windows.Forms.Label label64;
-        private System.Windows.Forms.TextBox txtEmailAluno;
+        private System.Windows.Forms.TextBox textBox39;
         private System.Windows.Forms.Label label68;
-        private System.Windows.Forms.TextBox txtUfRg;
+        private System.Windows.Forms.TextBox textBox38;
         private System.Windows.Forms.Label label67;
-        private System.Windows.Forms.DateTimePicker dtDataExpedicaoRG;
+        private System.Windows.Forms.DateTimePicker dateTimePicker5;
         private System.Windows.Forms.Label label66;
-        private System.Windows.Forms.TextBox txtUfCartorio;
+        private System.Windows.Forms.TextBox textBox37;
         private System.Windows.Forms.Label label65;
-        private System.Windows.Forms.DateTimePicker dtRegistroCivilData;
+        private System.Windows.Forms.DateTimePicker dateTimePicker4;
         private System.Windows.Forms.Label label45;
-        private System.Windows.Forms.TextBox txtCertidaoNascimento;
+        private System.Windows.Forms.TextBox textBox36;
         private System.Windows.Forms.Label label44;
         private System.Windows.Forms.TextBox txtUf;
         private System.Windows.Forms.Label label43;
         private System.Windows.Forms.TextBox txtNaturalidade;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.DateTimePicker dtDataEmissao;
+        private System.Windows.Forms.DateTimePicker dateTimePicker3;
         private System.Windows.Forms.TextBox txtNomeAluno;
-        private System.Windows.Forms.TextBox txtNomeCartorio;
+        private System.Windows.Forms.TextBox textBox15;
         private System.Windows.Forms.TextBox textBox14;
-        private System.Windows.Forms.TextBox txtLivro;
-        private System.Windows.Forms.TextBox txtFolha;
-        private System.Windows.Forms.TextBox txtOrgaoEmissor;
-        private System.Windows.Forms.TextBox txtRegistroGeral;
+        private System.Windows.Forms.TextBox textBox13;
+        private System.Windows.Forms.TextBox textBox12;
+        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.ComboBox cmbEstadoCivil;
         private System.Windows.Forms.Label label46;
         private System.Windows.Forms.Label label27;
@@ -3185,7 +3185,7 @@ namespace ECED_FORMS
         private System.Windows.Forms.Label label78;
         private System.Windows.Forms.Label label77;
         private System.Windows.Forms.Label label76;
-        private System.Windows.Forms.TextBox txtRg;
+        private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label label47;
         private System.Windows.Forms.MaskedTextBox maskedTextBox5;
         private System.Windows.Forms.MaskedTextBox maskedTextBox4;
@@ -3197,7 +3197,7 @@ namespace ECED_FORMS
         private System.Windows.Forms.CheckBox checkBox7;
         private System.Windows.Forms.CheckBox checkBox2;
         private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.TextBox txtNome;
+        private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.TabControl tabControl2;

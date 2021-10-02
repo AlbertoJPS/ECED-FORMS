@@ -18,12 +18,9 @@ namespace DALProject
         public string CorERaca { get; set; }
         public string DataNascimento { get; set; }
         public string EstadoCivil { get; set; }
-        public string Cpf { get; set; }
-        public string Rg { get; set; }
-        public string DataEmissaoRg { get; set; }
-        public string UfRg { get; set; }
         public string nacionalidade{ get; set; }
         public string naturalidade{ get; set; }
+        public string UF{ get; set; }
 
     }
 }

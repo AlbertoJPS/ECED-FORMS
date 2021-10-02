@@ -83,10 +83,57 @@ namespace ECED_FORMS
             Aluno al = new Aluno()
             {
                 NomeAluno = txtNomeAluno.Text,
-                DataNascimento=dtNacimentoAluno.Text
-            };
+                DataNascimento=dtNacimentoAluno.Text,
+                naturalidade=txtNaturalidade.Text,
+                nacionalidade=txtNacionalidade.Text,
+                Sexo=cmbSexo.Text,
+                UF=txtUf.Text,
+                CorERaca=cmbCor.Text,
+                EstadoCivil=cmbEstadoCivil.Text
+                
 
+
+
+            };
+            DocumentosAluno docAluno = new DocumentosAluno()
+            {
+                Cpf = txtCpf.Text,
+                Rg = txtRg.Text,
+                DataExpedicaoRg = dtDataExpedicaoRG.Text,
+                OrgaoEmissor =txtOrgaoEmissor.Text,
+                UfRg = txtUfRg.Text,
+                NumCertidaoNascimento = txtCertidaoNascimento.Text,
+                DataEmissaoCertNascimento =dtDataEmissao.Text,
+                Folha = txtFolha.Text,
+                Livro = txtLivro.Text,
+                RegistroCivil = dtRegistroCivilData.Text,
+                DataEmissaoRegCivil = dtDataEmissao.Text
+            };
+            EnderecoAluno enderecoAluno = new EnderecoAluno()
+            {
+                Cep = txtCep.Text,
+                Rua = txtRua.Text,
+                Numero = txtNumRua.Text,
+                Bairro = txtBairro.Text,
+                Cidade = txtCidade.Text,
+                Estado = txtEstado.Text
+            };
+            IdentificacaoEscolar identEscola = new IdentificacaoEscolar()
+            {
+                CodigoDoInep = txtCodInep.Text,
+                AuthBuscarCrianca = txtAuthPegarCrianca.Text,
+                DataMatricula = dtDataMatricula.Text,
+                Idade = txtIdade.Text,
+                GrauParent = cbGrauParent.Text,
+                Telefone = txtTelefone.Text,
+                Turma = cbTurma.Text,
+                Turno = cbTurno.Text,
+                UnidadeEscolar = txtUnidadeEscolar.Text,
+            };
             Response res = Controller.AlunoInsert(al);
+            res = Controller.DocumentoInsert(docAluno, al);
+            res = Controller.EnderecoInsert(enderecoAluno, al);
+            res = Controller.IdentificacaoEscolaInsert(identEscola, al);
 
 
 
