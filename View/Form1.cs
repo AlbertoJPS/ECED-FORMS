@@ -24,10 +24,10 @@ namespace ECED_FORMS
         }
         private void Form1_Load(object sender, EventArgs e)
         {
-            string path = AppDomain.CurrentDomain.BaseDirectory + @"eced-e3031-firebase-adminsdk-fxr0o-786505f761.json";
-            Environment.SetEnvironmentVariable("GOOGLE_APPLICATION_CREDENTIALS", path);
+            //string path = AppDomain.CurrentDomain.BaseDirectory + @"eced-e3031-firebase-adminsdk-fxr0o-786505f761.json";
+            ///Environment.SetEnvironmentVariable("GOOGLE_APPLICATION_CREDENTIALS", path);
 
-            database = FirestoreDb.Create("eced-e3031");
+            //database = FirestoreDb.Create("eced-e3031");
 
         }
         private void btnSalvarCadastro_Click(object sender, EventArgs e)
@@ -105,6 +105,6 @@ namespace ECED_FORMS
 
         }
 
-
+       
     }
 }
