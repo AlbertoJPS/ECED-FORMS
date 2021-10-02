@@ -17,9 +17,19 @@ namespace BALProject
 
             return AlunoDB.Insert(al);
         }
+
         public static Response DocumentoInsert(DocumentosAluno docAluno, Aluno aluno)
         {
             return DocumentosDB.InsertDocumentos(docAluno, aluno);
+        }
+
+        public static Response EnderecoInsert(EnderecoAluno endereco, Aluno aluno)
+        {
+            return EnderecoDB.InsertEndereco(endereco, aluno);
+        }
+        public static Response IdentificacaoEscolaInsert(IdentificacaoEscolar identEscola, Aluno aluno)
+        {
+            return IdentificacaoEscolaDB.InsertIdentEscola(identEscola, aluno);
         }
     }
 }

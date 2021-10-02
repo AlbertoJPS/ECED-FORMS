@@ -11,11 +11,11 @@ namespace DALProject
         public string CodigoDoInep { get; set; }
         public string UnidadeEscolar { get; set; }
         public string Turno { get; set; }
-        public string Numero { get; set; }
         public string Turma { get; set; }
-        public bool Deficiencia { get; set; }
-        public bool BenefBolsaFamilia { get; set; }
-        public bool CartaoVacina { get; set; }
+        public string Idade { get; set; }
         public string DataMatricula { get; set; }
+        public string AuthBuscarCrianca { get; set; }
+        public string Telefone { get; set; }
+        public string GrauParent { get; set; }
     }
 }
