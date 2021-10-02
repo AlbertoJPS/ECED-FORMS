@@ -83,21 +83,31 @@ namespace ECED_FORMS
             Aluno al = new Aluno()
             {
                 NomeAluno = txtNomeAluno.Text,
-                DataNascimento=dtNacimentoAluno.Text
+                DataNascimento=dtNacimentoAluno.Text,
+                naturalidade=txtNaturalidade.Text,
+                nacionalidade=txtNacionalidade.Text,
+                Sexo=cmbSexo.Text,
+                UF=txtUf.Text,
+                CorERaca=cmbCor.Text,
+                EstadoCivil=cmbEstadoCivil.Text
+                
+
+
+
             };
             DocumentosAluno docAluno = new DocumentosAluno()
             {
                 Cpf = txtCpf.Text,
                 Rg = txtRg.Text,
-                DataExpedicaoRg = dtDataExpedicaoRg.Text,
-                OrgaoEmissor = txtOrgaoEmissorRg.Text,
+                DataExpedicaoRg = dtDataExpedicaoRG.Text,
+                OrgaoEmissor =txtOrgaoEmissor.Text,
                 UfRg = txtUfRg.Text,
-                NumCertidaoNascimento = txtCertNascimento.Text,
-                DataEmissaoCertNascimento = dtDataEmissaoCertNasc.Text,
+                NumCertidaoNascimento = txtCertidaoNascimento.Text,
+                DataEmissaoCertNascimento =dtDataEmissao.Text,
                 Folha = txtFolha.Text,
                 Livro = txtLivro.Text,
-                RegistroCivil = txtRegCivil.Text,
-                DataEmissaoRegCivil = dtDataEmissaoRegCivil.Text
+                RegistroCivil = dtRegistroCivilData.Text,
+                DataEmissaoRegCivil = dtDataEmissao.Text
             };
             EnderecoAluno enderecoAluno = new EnderecoAluno()
             {

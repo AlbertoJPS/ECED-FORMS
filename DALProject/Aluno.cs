@@ -20,6 +20,7 @@ namespace DALProject
         public string EstadoCivil { get; set; }
         public string nacionalidade{ get; set; }
         public string naturalidade{ get; set; }
+        public string UF{ get; set; }
 
     }
 }
