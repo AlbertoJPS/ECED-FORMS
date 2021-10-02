@@ -20,12 +20,12 @@ namespace DALProject
                 {
                     {"NOME",al.NomeAluno},
                     {"Data de Nascimento",al.DataNascimento},
-                    //{"Cor / Raça",cmbCor.Text },
-                    //{"Sexo",cmbSexo.Text },
-                    //{"Naturalidade",txtNacionalidade.Text },
-                    //{"Nacionalidade",txtNacionalidade.Text},
-                    //{"Uf",txtUf.Text },
-                    //{"Estado civil",txtEstado.Text },
+                    {"Cor / Raça",al.CorERaca },
+                    {"Sexo",al.Sexo },
+                    {"Naturalidade",al.naturalidade },
+                    {"Nacionalidade",al.nacionalidade},
+                    {"Uf",al.UF },
+                    {"Estado civil",al.EstadoCivil },
                 };
                 DadosPessoais.Add("Dados Pessoais", data1);
 
