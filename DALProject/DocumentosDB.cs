@@ -30,7 +30,7 @@ namespace DALProject
                     {"Data de Emissão Registro Civil",docAluno.DataEmissaoRegCivil},
                 };
                 Documentos.Add("Documentos", data1); 
-                doc.SetAsync(Documentos);
+                doc.UpdateAsync(Documentos);
                 return new Response()
                 {
                     Executed = true,
