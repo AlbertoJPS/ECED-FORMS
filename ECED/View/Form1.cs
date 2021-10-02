@@ -113,21 +113,21 @@ namespace ECED_FORMS
             {
                 Cep = txtCep.Text,
                 Rua = txtRua.Text,
-                Numero = txtNumRua.Text,
+                Numero = txtNumero.Text,
                 Bairro = txtBairro.Text,
                 Cidade = txtCidade.Text,
                 Estado = txtEstado.Text
             };
             IdentificacaoEscolar identEscola = new IdentificacaoEscolar()
             {
-                CodigoDoInep = txtCodInep.Text,
-                AuthBuscarCrianca = txtAuthPegarCrianca.Text,
-                DataMatricula = dtDataMatricula.Text,
-                Idade = txtIdade.Text,
-                GrauParent = cbGrauParent.Text,
-                Telefone = txtTelefone.Text,
-                Turma = cbTurma.Text,
-                Turno = cbTurno.Text,
+                CodigoDoInep = txtInep.Text,
+                AuthBuscarCrianca = txtPessoaAutorizada.Text,
+                DataMatricula = dtMatricula.Text,
+                Idade = txtIdadeParentesco.Text,
+                GrauParent =cmbParentesco.Text,
+                Telefone =txtTelefonePessAutorizada.Text,
+                Turma = cmbTurma.Text,
+                Turno = cmbPeriodo.Text,
                 UnidadeEscolar = txtUnidadeEscolar.Text,
             };
             Response res = Controller.AlunoInsert(al);

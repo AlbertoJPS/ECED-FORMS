@@ -112,10 +112,10 @@ namespace ECED_FORMS
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.textBox32 = new System.Windows.Forms.TextBox();
-            this.textBox18 = new System.Windows.Forms.TextBox();
-            this.textBox17 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.txtPontoReferencia = new System.Windows.Forms.TextBox();
+            this.txtComplemento = new System.Windows.Forms.TextBox();
+            this.txtNumero = new System.Windows.Forms.TextBox();
+            this.txtAvenida = new System.Windows.Forms.TextBox();
             this.txtCidade = new System.Windows.Forms.TextBox();
             this.txtBairro = new System.Windows.Forms.TextBox();
             this.txtEstado = new System.Windows.Forms.TextBox();
@@ -135,36 +135,36 @@ namespace ECED_FORMS
             this.label30 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox3 = new System.Windows.Forms.MaskedTextBox();
-            this.comboBox8 = new System.Windows.Forms.ComboBox();
+            this.txtTelefonePessAutorizada = new System.Windows.Forms.MaskedTextBox();
+            this.txtTelUrgencia = new System.Windows.Forms.MaskedTextBox();
+            this.cmbPeriodoIrmao = new System.Windows.Forms.ComboBox();
             this.label102 = new System.Windows.Forms.Label();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.cmbTurmaIrmao = new System.Windows.Forms.ComboBox();
             this.label72 = new System.Windows.Forms.Label();
-            this.textBox16 = new System.Windows.Forms.TextBox();
+            this.txtNomeIrmaoEstuda = new System.Windows.Forms.TextBox();
             this.label71 = new System.Windows.Forms.Label();
             this.label70 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cmbGrauUrgencia = new System.Windows.Forms.ComboBox();
             this.label69 = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.txtAvisoUrgencia = new System.Windows.Forms.TextBox();
             this.label37 = new System.Windows.Forms.Label();
-            this.textBox21 = new System.Windows.Forms.TextBox();
+            this.txtIdadeParentesco = new System.Windows.Forms.TextBox();
             this.label34 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.cmbParentesco = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox30 = new System.Windows.Forms.TextBox();
-            this.textBox23 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtPessoaAutorizada = new System.Windows.Forms.TextBox();
+            this.txtUnidadeEscolar = new System.Windows.Forms.TextBox();
+            this.txtInep = new System.Windows.Forms.TextBox();
             this.label62 = new System.Windows.Forms.Label();
             this.label42 = new System.Windows.Forms.Label();
             this.label36 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label28 = new System.Windows.Forms.Label();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.dtMatricula = new System.Windows.Forms.DateTimePicker();
             this.label9 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.comboBox6 = new System.Windows.Forms.ComboBox();
+            this.cmbPeriodo = new System.Windows.Forms.ComboBox();
+            this.cmbTurma = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -1134,10 +1134,10 @@ namespace ECED_FORMS
             // 
             // tabPage1
             // 
-            this.tabPage1.Controls.Add(this.textBox32);
-            this.tabPage1.Controls.Add(this.textBox18);
-            this.tabPage1.Controls.Add(this.textBox17);
-            this.tabPage1.Controls.Add(this.textBox11);
+            this.tabPage1.Controls.Add(this.txtPontoReferencia);
+            this.tabPage1.Controls.Add(this.txtComplemento);
+            this.tabPage1.Controls.Add(this.txtNumero);
+            this.tabPage1.Controls.Add(this.txtAvenida);
             this.tabPage1.Controls.Add(this.txtCidade);
             this.tabPage1.Controls.Add(this.txtBairro);
             this.tabPage1.Controls.Add(this.txtEstado);
@@ -1163,33 +1163,33 @@ namespace ECED_FORMS
             this.tabPage1.Text = "Endereço                   ";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
-            // textBox32
+            // txtPontoReferencia
             // 
-            this.textBox32.Location = new System.Drawing.Point(886, 193);
-            this.textBox32.Name = "textBox32";
-            this.textBox32.Size = new System.Drawing.Size(156, 22);
-            this.textBox32.TabIndex = 103;
+            this.txtPontoReferencia.Location = new System.Drawing.Point(886, 193);
+            this.txtPontoReferencia.Name = "txtPontoReferencia";
+            this.txtPontoReferencia.Size = new System.Drawing.Size(156, 22);
+            this.txtPontoReferencia.TabIndex = 103;
             // 
-            // textBox18
+            // txtComplemento
             // 
-            this.textBox18.Location = new System.Drawing.Point(742, 139);
-            this.textBox18.Name = "textBox18";
-            this.textBox18.Size = new System.Drawing.Size(156, 22);
-            this.textBox18.TabIndex = 101;
+            this.txtComplemento.Location = new System.Drawing.Point(742, 139);
+            this.txtComplemento.Name = "txtComplemento";
+            this.txtComplemento.Size = new System.Drawing.Size(156, 22);
+            this.txtComplemento.TabIndex = 101;
             // 
-            // textBox17
+            // txtNumero
             // 
-            this.textBox17.Location = new System.Drawing.Point(474, 136);
-            this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(62, 22);
-            this.textBox17.TabIndex = 99;
+            this.txtNumero.Location = new System.Drawing.Point(474, 136);
+            this.txtNumero.Name = "txtNumero";
+            this.txtNumero.Size = new System.Drawing.Size(62, 22);
+            this.txtNumero.TabIndex = 99;
             // 
-            // textBox11
+            // txtAvenida
             // 
-            this.textBox11.Location = new System.Drawing.Point(487, 196);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(211, 22);
-            this.textBox11.TabIndex = 97;
+            this.txtAvenida.Location = new System.Drawing.Point(487, 196);
+            this.txtAvenida.Name = "txtAvenida";
+            this.txtAvenida.Size = new System.Drawing.Size(211, 22);
+            this.txtAvenida.TabIndex = 97;
             // 
             // txtCidade
             // 
@@ -1357,31 +1357,31 @@ namespace ECED_FORMS
             // 
             // tabPage2
             // 
-            this.tabPage2.Controls.Add(this.maskedTextBox2);
-            this.tabPage2.Controls.Add(this.maskedTextBox3);
-            this.tabPage2.Controls.Add(this.comboBox8);
+            this.tabPage2.Controls.Add(this.txtTelefonePessAutorizada);
+            this.tabPage2.Controls.Add(this.txtTelUrgencia);
+            this.tabPage2.Controls.Add(this.cmbPeriodoIrmao);
             this.tabPage2.Controls.Add(this.label102);
-            this.tabPage2.Controls.Add(this.comboBox3);
+            this.tabPage2.Controls.Add(this.cmbTurmaIrmao);
             this.tabPage2.Controls.Add(this.label72);
-            this.tabPage2.Controls.Add(this.textBox16);
+            this.tabPage2.Controls.Add(this.txtNomeIrmaoEstuda);
             this.tabPage2.Controls.Add(this.label71);
             this.tabPage2.Controls.Add(this.label70);
-            this.tabPage2.Controls.Add(this.comboBox1);
+            this.tabPage2.Controls.Add(this.cmbGrauUrgencia);
             this.tabPage2.Controls.Add(this.label69);
-            this.tabPage2.Controls.Add(this.textBox8);
+            this.tabPage2.Controls.Add(this.txtAvisoUrgencia);
             this.tabPage2.Controls.Add(this.label37);
-            this.tabPage2.Controls.Add(this.textBox21);
+            this.tabPage2.Controls.Add(this.txtIdadeParentesco);
             this.tabPage2.Controls.Add(this.label34);
-            this.tabPage2.Controls.Add(this.comboBox2);
+            this.tabPage2.Controls.Add(this.cmbParentesco);
             this.tabPage2.Controls.Add(this.label7);
-            this.tabPage2.Controls.Add(this.textBox30);
-            this.tabPage2.Controls.Add(this.textBox23);
-            this.tabPage2.Controls.Add(this.textBox1);
+            this.tabPage2.Controls.Add(this.txtPessoaAutorizada);
+            this.tabPage2.Controls.Add(this.txtUnidadeEscolar);
+            this.tabPage2.Controls.Add(this.txtInep);
             this.tabPage2.Controls.Add(this.label62);
             this.tabPage2.Controls.Add(this.label42);
             this.tabPage2.Controls.Add(this.label36);
             this.tabPage2.Controls.Add(this.panel4);
-            this.tabPage2.Controls.Add(this.dateTimePicker2);
+            this.tabPage2.Controls.Add(this.dtMatricula);
             this.tabPage2.Controls.Add(this.label9);
             this.tabPage2.Controls.Add(this.panel1);
             this.tabPage2.Controls.Add(this.label1);
@@ -1394,34 +1394,34 @@ namespace ECED_FORMS
             this.tabPage2.Text = "Identificação escolar          ";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // maskedTextBox2
+            // txtTelefonePessAutorizada
             // 
-            this.maskedTextBox2.Location = new System.Drawing.Point(606, 251);
-            this.maskedTextBox2.Mask = "(99) 00000-0000";
-            this.maskedTextBox2.Name = "maskedTextBox2";
-            this.maskedTextBox2.Size = new System.Drawing.Size(107, 22);
-            this.maskedTextBox2.TabIndex = 124;
+            this.txtTelefonePessAutorizada.Location = new System.Drawing.Point(606, 251);
+            this.txtTelefonePessAutorizada.Mask = "(99) 00000-0000";
+            this.txtTelefonePessAutorizada.Name = "txtTelefonePessAutorizada";
+            this.txtTelefonePessAutorizada.Size = new System.Drawing.Size(107, 22);
+            this.txtTelefonePessAutorizada.TabIndex = 124;
             // 
-            // maskedTextBox3
+            // txtTelUrgencia
             // 
-            this.maskedTextBox3.Location = new System.Drawing.Point(856, 335);
-            this.maskedTextBox3.Mask = "(99) 00000-0000";
-            this.maskedTextBox3.Name = "maskedTextBox3";
-            this.maskedTextBox3.Size = new System.Drawing.Size(107, 22);
-            this.maskedTextBox3.TabIndex = 123;
+            this.txtTelUrgencia.Location = new System.Drawing.Point(856, 335);
+            this.txtTelUrgencia.Mask = "(99) 00000-0000";
+            this.txtTelUrgencia.Name = "txtTelUrgencia";
+            this.txtTelUrgencia.Size = new System.Drawing.Size(107, 22);
+            this.txtTelUrgencia.TabIndex = 123;
             // 
-            // comboBox8
+            // cmbPeriodoIrmao
             // 
-            this.comboBox8.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox8.FormattingEnabled = true;
-            this.comboBox8.Items.AddRange(new object[] {
+            this.cmbPeriodoIrmao.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbPeriodoIrmao.FormattingEnabled = true;
+            this.cmbPeriodoIrmao.Items.AddRange(new object[] {
             "MATUTINO",
             "VERPERTINO",
             "NOTURNO"});
-            this.comboBox8.Location = new System.Drawing.Point(730, 400);
-            this.comboBox8.Name = "comboBox8";
-            this.comboBox8.Size = new System.Drawing.Size(95, 24);
-            this.comboBox8.TabIndex = 16;
+            this.cmbPeriodoIrmao.Location = new System.Drawing.Point(730, 400);
+            this.cmbPeriodoIrmao.Name = "cmbPeriodoIrmao";
+            this.cmbPeriodoIrmao.Size = new System.Drawing.Size(95, 24);
+            this.cmbPeriodoIrmao.TabIndex = 16;
             // 
             // label102
             // 
@@ -1432,11 +1432,11 @@ namespace ECED_FORMS
             this.label102.TabIndex = 122;
             this.label102.Text = "PERÍODO:";
             // 
-            // comboBox3
+            // cmbTurmaIrmao
             // 
-            this.comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Items.AddRange(new object[] {
+            this.cmbTurmaIrmao.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbTurmaIrmao.FormattingEnabled = true;
+            this.cmbTurmaIrmao.Items.AddRange(new object[] {
             "PRÉ A",
             "PRÉ B",
             "1° Ano A",
@@ -1457,10 +1457,10 @@ namespace ECED_FORMS
             "8° Ano B",
             "9° Ano A",
             "9° Ano B"});
-            this.comboBox3.Location = new System.Drawing.Point(553, 400);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(88, 24);
-            this.comboBox3.TabIndex = 121;
+            this.cmbTurmaIrmao.Location = new System.Drawing.Point(553, 400);
+            this.cmbTurmaIrmao.Name = "cmbTurmaIrmao";
+            this.cmbTurmaIrmao.Size = new System.Drawing.Size(88, 24);
+            this.cmbTurmaIrmao.TabIndex = 121;
             // 
             // label72
             // 
@@ -1471,12 +1471,12 @@ namespace ECED_FORMS
             this.label72.TabIndex = 120;
             this.label72.Text = "TURMA:";
             // 
-            // textBox16
+            // txtNomeIrmaoEstuda
             // 
-            this.textBox16.Location = new System.Drawing.Point(294, 402);
-            this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(177, 22);
-            this.textBox16.TabIndex = 118;
+            this.txtNomeIrmaoEstuda.Location = new System.Drawing.Point(294, 402);
+            this.txtNomeIrmaoEstuda.Name = "txtNomeIrmaoEstuda";
+            this.txtNomeIrmaoEstuda.Size = new System.Drawing.Size(177, 22);
+            this.txtNomeIrmaoEstuda.TabIndex = 118;
             // 
             // label71
             // 
@@ -1496,20 +1496,20 @@ namespace ECED_FORMS
             this.label70.TabIndex = 116;
             this.label70.Text = "TEL:";
             // 
-            // comboBox1
+            // cmbGrauUrgencia
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cmbGrauUrgencia.FormattingEnabled = true;
+            this.cmbGrauUrgencia.Items.AddRange(new object[] {
             "AVÓS",
             "IRMÃOS",
             "MÃE",
             "PAI",
             "TIOS",
             "TIAS"});
-            this.comboBox1.Location = new System.Drawing.Point(675, 331);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 24);
-            this.comboBox1.TabIndex = 115;
+            this.cmbGrauUrgencia.Location = new System.Drawing.Point(675, 331);
+            this.cmbGrauUrgencia.Name = "cmbGrauUrgencia";
+            this.cmbGrauUrgencia.Size = new System.Drawing.Size(121, 24);
+            this.cmbGrauUrgencia.TabIndex = 115;
             // 
             // label69
             // 
@@ -1521,12 +1521,12 @@ namespace ECED_FORMS
             this.label69.TabIndex = 113;
             this.label69.Text = "GRAU DE PARENTESCO:";
             // 
-            // textBox8
+            // txtAvisoUrgencia
             // 
-            this.textBox8.Location = new System.Drawing.Point(315, 333);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(177, 22);
-            this.textBox8.TabIndex = 112;
+            this.txtAvisoUrgencia.Location = new System.Drawing.Point(315, 333);
+            this.txtAvisoUrgencia.Name = "txtAvisoUrgencia";
+            this.txtAvisoUrgencia.Size = new System.Drawing.Size(177, 22);
+            this.txtAvisoUrgencia.TabIndex = 112;
             // 
             // label37
             // 
@@ -1537,12 +1537,12 @@ namespace ECED_FORMS
             this.label37.TabIndex = 110;
             this.label37.Text = "EM URGÊNCIA/ACIDENTE PESSOA A SER AVISADA:";
             // 
-            // textBox21
+            // txtIdadeParentesco
             // 
-            this.textBox21.Location = new System.Drawing.Point(1100, 253);
-            this.textBox21.Name = "textBox21";
-            this.textBox21.Size = new System.Drawing.Size(93, 22);
-            this.textBox21.TabIndex = 109;
+            this.txtIdadeParentesco.Location = new System.Drawing.Point(1100, 253);
+            this.txtIdadeParentesco.Name = "txtIdadeParentesco";
+            this.txtIdadeParentesco.Size = new System.Drawing.Size(93, 22);
+            this.txtIdadeParentesco.TabIndex = 109;
             // 
             // label34
             // 
@@ -1554,20 +1554,20 @@ namespace ECED_FORMS
             this.label34.TabIndex = 108;
             this.label34.Text = "IDADE:";
             // 
-            // comboBox2
+            // cmbParentesco
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
+            this.cmbParentesco.FormattingEnabled = true;
+            this.cmbParentesco.Items.AddRange(new object[] {
             "AVÓS",
             "IRMÃOS",
             "MÃE",
             "PAI",
             "TIOS",
             "TIAS"});
-            this.comboBox2.Location = new System.Drawing.Point(912, 251);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 24);
-            this.comboBox2.TabIndex = 107;
+            this.cmbParentesco.Location = new System.Drawing.Point(912, 251);
+            this.cmbParentesco.Name = "cmbParentesco";
+            this.cmbParentesco.Size = new System.Drawing.Size(121, 24);
+            this.cmbParentesco.TabIndex = 107;
             // 
             // label7
             // 
@@ -1579,27 +1579,27 @@ namespace ECED_FORMS
             this.label7.TabIndex = 106;
             this.label7.Text = "GRAU DE PARENTESCO:";
             // 
-            // textBox30
+            // txtPessoaAutorizada
             // 
-            this.textBox30.Location = new System.Drawing.Point(419, 253);
-            this.textBox30.Name = "textBox30";
-            this.textBox30.Size = new System.Drawing.Size(140, 22);
-            this.textBox30.TabIndex = 101;
+            this.txtPessoaAutorizada.Location = new System.Drawing.Point(419, 253);
+            this.txtPessoaAutorizada.Name = "txtPessoaAutorizada";
+            this.txtPessoaAutorizada.Size = new System.Drawing.Size(140, 22);
+            this.txtPessoaAutorizada.TabIndex = 101;
             // 
-            // textBox23
+            // txtUnidadeEscolar
             // 
-            this.textBox23.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox23.Location = new System.Drawing.Point(142, 53);
-            this.textBox23.Name = "textBox23";
-            this.textBox23.Size = new System.Drawing.Size(305, 22);
-            this.textBox23.TabIndex = 95;
+            this.txtUnidadeEscolar.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUnidadeEscolar.Location = new System.Drawing.Point(142, 53);
+            this.txtUnidadeEscolar.Name = "txtUnidadeEscolar";
+            this.txtUnidadeEscolar.Size = new System.Drawing.Size(305, 22);
+            this.txtUnidadeEscolar.TabIndex = 95;
             // 
-            // textBox1
+            // txtInep
             // 
-            this.textBox1.Location = new System.Drawing.Point(574, 53);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(93, 22);
-            this.textBox1.TabIndex = 89;
+            this.txtInep.Location = new System.Drawing.Point(574, 53);
+            this.txtInep.Name = "txtInep";
+            this.txtInep.Size = new System.Drawing.Size(93, 22);
+            this.txtInep.TabIndex = 89;
             // 
             // label62
             // 
@@ -1649,15 +1649,15 @@ namespace ECED_FORMS
             this.label28.TabIndex = 33;
             this.label28.Text = "IDENTIFICAÇÃO ESCOLAR";
             // 
-            // dateTimePicker2
+            // dtMatricula
             // 
-            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.dateTimePicker2.Location = new System.Drawing.Point(820, 54);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(111, 22);
-            this.dateTimePicker2.TabIndex = 92;
-            this.dateTimePicker2.Value = new System.DateTime(2021, 9, 30, 0, 0, 0, 0);
+            this.dtMatricula.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtMatricula.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.dtMatricula.Location = new System.Drawing.Point(820, 54);
+            this.dtMatricula.Name = "dtMatricula";
+            this.dtMatricula.Size = new System.Drawing.Size(111, 22);
+            this.dtMatricula.TabIndex = 92;
+            this.dtMatricula.Value = new System.DateTime(2021, 9, 30, 0, 0, 0, 0);
             // 
             // label9
             // 
@@ -1672,8 +1672,8 @@ namespace ECED_FORMS
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Silver;
-            this.panel1.Controls.Add(this.comboBox4);
-            this.panel1.Controls.Add(this.comboBox6);
+            this.panel1.Controls.Add(this.cmbPeriodo);
+            this.panel1.Controls.Add(this.cmbTurma);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label8);
             this.panel1.Location = new System.Drawing.Point(375, 132);
@@ -1681,24 +1681,24 @@ namespace ECED_FORMS
             this.panel1.Size = new System.Drawing.Size(385, 50);
             this.panel1.TabIndex = 90;
             // 
-            // comboBox4
+            // cmbPeriodo
             // 
-            this.comboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Items.AddRange(new object[] {
+            this.cmbPeriodo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbPeriodo.FormattingEnabled = true;
+            this.cmbPeriodo.Items.AddRange(new object[] {
             "MATUTINO",
             "VERPERTINO",
             "NOTURNO"});
-            this.comboBox4.Location = new System.Drawing.Point(77, 10);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(95, 24);
-            this.comboBox4.TabIndex = 13;
+            this.cmbPeriodo.Location = new System.Drawing.Point(77, 10);
+            this.cmbPeriodo.Name = "cmbPeriodo";
+            this.cmbPeriodo.Size = new System.Drawing.Size(95, 24);
+            this.cmbPeriodo.TabIndex = 13;
             // 
-            // comboBox6
+            // cmbTurma
             // 
-            this.comboBox6.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox6.FormattingEnabled = true;
-            this.comboBox6.Items.AddRange(new object[] {
+            this.cmbTurma.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbTurma.FormattingEnabled = true;
+            this.cmbTurma.Items.AddRange(new object[] {
             "PRÉ A",
             "PRÉ B",
             "1° Ano A",
@@ -1719,10 +1719,10 @@ namespace ECED_FORMS
             "8° Ano B",
             "9° Ano A",
             "9° Ano B"});
-            this.comboBox6.Location = new System.Drawing.Point(250, 10);
-            this.comboBox6.Name = "comboBox6";
-            this.comboBox6.Size = new System.Drawing.Size(88, 24);
-            this.comboBox6.TabIndex = 15;
+            this.cmbTurma.Location = new System.Drawing.Point(250, 10);
+            this.cmbTurma.Name = "cmbTurma";
+            this.cmbTurma.Size = new System.Drawing.Size(88, 24);
+            this.cmbTurma.TabIndex = 15;
             // 
             // label5
             // 
@@ -3037,10 +3037,10 @@ namespace ECED_FORMS
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.TextBox textBox32;
-        private System.Windows.Forms.TextBox textBox18;
-        private System.Windows.Forms.TextBox textBox17;
-        private System.Windows.Forms.TextBox textBox11;
+        private System.Windows.Forms.TextBox txtPontoReferencia;
+        private System.Windows.Forms.TextBox txtComplemento;
+        private System.Windows.Forms.TextBox txtNumero;
+        private System.Windows.Forms.TextBox txtAvenida;
         private System.Windows.Forms.TextBox txtCidade;
         private System.Windows.Forms.TextBox txtBairro;
         private System.Windows.Forms.TextBox txtEstado;
@@ -3060,34 +3060,34 @@ namespace ECED_FORMS
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.ComboBox comboBox8;
+        private System.Windows.Forms.ComboBox cmbPeriodoIrmao;
         private System.Windows.Forms.Label label102;
-        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.ComboBox cmbTurmaIrmao;
         private System.Windows.Forms.Label label72;
-        private System.Windows.Forms.TextBox textBox16;
+        private System.Windows.Forms.TextBox txtNomeIrmaoEstuda;
         private System.Windows.Forms.Label label71;
         private System.Windows.Forms.Label label70;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cmbGrauUrgencia;
         private System.Windows.Forms.Label label69;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox txtAvisoUrgencia;
         private System.Windows.Forms.Label label37;
-        private System.Windows.Forms.TextBox textBox21;
+        private System.Windows.Forms.TextBox txtIdadeParentesco;
         private System.Windows.Forms.Label label34;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox cmbParentesco;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox30;
-        private System.Windows.Forms.TextBox textBox23;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtPessoaAutorizada;
+        private System.Windows.Forms.TextBox txtUnidadeEscolar;
+        private System.Windows.Forms.TextBox txtInep;
         private System.Windows.Forms.Label label62;
         private System.Windows.Forms.Label label42;
         private System.Windows.Forms.Label label36;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label28;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.DateTimePicker dtMatricula;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.ComboBox comboBox4;
-        private System.Windows.Forms.ComboBox comboBox6;
+        private System.Windows.Forms.ComboBox cmbPeriodo;
+        private System.Windows.Forms.ComboBox cmbTurma;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label1;
@@ -3202,8 +3202,8 @@ namespace ECED_FORMS
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.TabControl tabControl2;
         private System.Windows.Forms.MaskedTextBox maskedTextBox8;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox2;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox3;
+        private System.Windows.Forms.MaskedTextBox txtTelefonePessAutorizada;
+        private System.Windows.Forms.MaskedTextBox txtTelUrgencia;
         private System.Windows.Forms.MaskedTextBox maskedTextBox9;
         private System.Windows.Forms.Panel panel7;
     }
