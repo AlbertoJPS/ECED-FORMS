@@ -29,8 +29,31 @@ namespace ECED_FORMS
         /// </summary>
         private void InitializeComponent()
         {
-            this.tabControl2 = new System.Windows.Forms.TabControl();
-            this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.tabPage8 = new System.Windows.Forms.TabPage();
+            this.maskedTextBox8 = new System.Windows.Forms.MaskedTextBox();
+            this.comboBox11 = new System.Windows.Forms.ComboBox();
+            this.label106 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
+            this.label105 = new System.Windows.Forms.Label();
+            this.comboBox10 = new System.Windows.Forms.ComboBox();
+            this.comboBox9 = new System.Windows.Forms.ComboBox();
+            this.label103 = new System.Windows.Forms.Label();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.DISCIPLINACOL = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NOTACOL1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NOTA2TCOL = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ULTIMOTRIMESTRE = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label104 = new System.Windows.Forms.Label();
+            this.tabPage7 = new System.Windows.Forms.TabPage();
+            this.button1 = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.ColumnCodigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnMatricula = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnNome = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnEndereco = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnBairro = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
             this.tabPage6 = new System.Windows.Forms.TabPage();
             this.button7 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
@@ -40,33 +63,33 @@ namespace ECED_FORMS
             this.btnSalvarCadastro = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tbCadastrarAlunos = new System.Windows.Forms.TabPage();
-            this.txtCpf = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
             this.txtNacionalidade = new System.Windows.Forms.TextBox();
             this.label64 = new System.Windows.Forms.Label();
-            this.txtEmail = new System.Windows.Forms.TextBox();
+            this.textBox39 = new System.Windows.Forms.TextBox();
             this.label68 = new System.Windows.Forms.Label();
-            this.txtUfRg = new System.Windows.Forms.TextBox();
+            this.textBox38 = new System.Windows.Forms.TextBox();
             this.label67 = new System.Windows.Forms.Label();
-            this.dtDataExpedicaoRg = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePicker5 = new System.Windows.Forms.DateTimePicker();
             this.label66 = new System.Windows.Forms.Label();
-            this.txtUfNomeCartorio = new System.Windows.Forms.TextBox();
+            this.textBox37 = new System.Windows.Forms.TextBox();
             this.label65 = new System.Windows.Forms.Label();
-            this.dtDataEmissaoCertNasc = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePicker4 = new System.Windows.Forms.DateTimePicker();
             this.label45 = new System.Windows.Forms.Label();
-            this.txtCertNascimento = new System.Windows.Forms.TextBox();
+            this.textBox36 = new System.Windows.Forms.TextBox();
             this.label44 = new System.Windows.Forms.Label();
             this.txtUf = new System.Windows.Forms.TextBox();
             this.label43 = new System.Windows.Forms.Label();
             this.txtNaturalidade = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.dtDataEmissaoRegCivil = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
             this.txtNomeAluno = new System.Windows.Forms.TextBox();
             this.textBox15 = new System.Windows.Forms.TextBox();
-            this.txtRegCivil = new System.Windows.Forms.TextBox();
-            this.txtLivro = new System.Windows.Forms.TextBox();
-            this.txtFolha = new System.Windows.Forms.TextBox();
-            this.txtOrgaoEmissorRg = new System.Windows.Forms.TextBox();
-            this.txtRg = new System.Windows.Forms.TextBox();
+            this.textBox14 = new System.Windows.Forms.TextBox();
+            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.textBox7 = new System.Windows.Forms.TextBox();
             this.cmbEstadoCivil = new System.Windows.Forms.ComboBox();
             this.label46 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
@@ -113,6 +136,17 @@ namespace ECED_FORMS
             this.label29 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBox3 = new System.Windows.Forms.MaskedTextBox();
+            this.comboBox8 = new System.Windows.Forms.ComboBox();
+            this.label102 = new System.Windows.Forms.Label();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.label72 = new System.Windows.Forms.Label();
+            this.textBox16 = new System.Windows.Forms.TextBox();
+            this.label71 = new System.Windows.Forms.Label();
+            this.label70 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label69 = new System.Windows.Forms.Label();
+            this.textBox8 = new System.Windows.Forms.TextBox();
             this.label37 = new System.Windows.Forms.Label();
             this.textBox21 = new System.Windows.Forms.TextBox();
             this.label34 = new System.Windows.Forms.Label();
@@ -135,13 +169,13 @@ namespace ECED_FORMS
             this.label8 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.maskedTextBox9 = new System.Windows.Forms.MaskedTextBox();
             this.cbDeficiencia = new System.Windows.Forms.ComboBox();
             this.label39 = new System.Windows.Forms.Label();
             this.checkBox4 = new System.Windows.Forms.CheckBox();
             this.checkBox3 = new System.Windows.Forms.CheckBox();
             this.label3 = new System.Windows.Forms.Label();
             this.textBox29 = new System.Windows.Forms.TextBox();
-            this.textBox28 = new System.Windows.Forms.TextBox();
             this.textBox27 = new System.Windows.Forms.TextBox();
             this.textBox22 = new System.Windows.Forms.TextBox();
             this.textBox26 = new System.Windows.Forms.TextBox();
@@ -176,28 +210,80 @@ namespace ECED_FORMS
             this.panel6 = new System.Windows.Forms.Panel();
             this.label38 = new System.Windows.Forms.Label();
             this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.label47 = new System.Windows.Forms.Label();
-            this.textBox24 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.label85 = new System.Windows.Forms.Label();
+            this.textBox40 = new System.Windows.Forms.TextBox();
+            this.label86 = new System.Windows.Forms.Label();
+            this.textBox41 = new System.Windows.Forms.TextBox();
+            this.label87 = new System.Windows.Forms.Label();
+            this.textBox42 = new System.Windows.Forms.TextBox();
+            this.label88 = new System.Windows.Forms.Label();
+            this.textBox43 = new System.Windows.Forms.TextBox();
+            this.label89 = new System.Windows.Forms.Label();
+            this.textBox44 = new System.Windows.Forms.TextBox();
+            this.label90 = new System.Windows.Forms.Label();
+            this.comboBox7 = new System.Windows.Forms.ComboBox();
+            this.label91 = new System.Windows.Forms.Label();
+            this.textBox45 = new System.Windows.Forms.TextBox();
+            this.dateTimePicker7 = new System.Windows.Forms.DateTimePicker();
+            this.textBox46 = new System.Windows.Forms.TextBox();
+            this.label92 = new System.Windows.Forms.Label();
+            this.label93 = new System.Windows.Forms.Label();
+            this.label94 = new System.Windows.Forms.Label();
+            this.textBox47 = new System.Windows.Forms.TextBox();
+            this.label95 = new System.Windows.Forms.Label();
+            this.maskedTextBox6 = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBox7 = new System.Windows.Forms.MaskedTextBox();
+            this.dateTimePicker8 = new System.Windows.Forms.DateTimePicker();
+            this.label96 = new System.Windows.Forms.Label();
+            this.label97 = new System.Windows.Forms.Label();
+            this.label98 = new System.Windows.Forms.Label();
+            this.label99 = new System.Windows.Forms.Label();
+            this.checkBox8 = new System.Windows.Forms.CheckBox();
+            this.checkBox9 = new System.Windows.Forms.CheckBox();
+            this.checkBox10 = new System.Windows.Forms.CheckBox();
+            this.textBox48 = new System.Windows.Forms.TextBox();
+            this.label100 = new System.Windows.Forms.Label();
+            this.label101 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
+            this.textBox35 = new System.Windows.Forms.TextBox();
+            this.label84 = new System.Windows.Forms.Label();
+            this.textBox34 = new System.Windows.Forms.TextBox();
+            this.label83 = new System.Windows.Forms.Label();
+            this.textBox33 = new System.Windows.Forms.TextBox();
+            this.label82 = new System.Windows.Forms.Label();
+            this.textBox31 = new System.Windows.Forms.TextBox();
+            this.label81 = new System.Windows.Forms.Label();
+            this.textBox24 = new System.Windows.Forms.TextBox();
+            this.label80 = new System.Windows.Forms.Label();
+            this.comboBox5 = new System.Windows.Forms.ComboBox();
+            this.label79 = new System.Windows.Forms.Label();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.dateTimePicker6 = new System.Windows.Forms.DateTimePicker();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.label78 = new System.Windows.Forms.Label();
+            this.label77 = new System.Windows.Forms.Label();
+            this.label76 = new System.Windows.Forms.Label();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.label47 = new System.Windows.Forms.Label();
+            this.maskedTextBox5 = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBox4 = new System.Windows.Forms.MaskedTextBox();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label14 = new System.Windows.Forms.Label();
+            this.label75 = new System.Windows.Forms.Label();
+            this.label74 = new System.Windows.Forms.Label();
+            this.label73 = new System.Windows.Forms.Label();
+            this.checkBox7 = new System.Windows.Forms.CheckBox();
+            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.label17 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.tabPage7 = new System.Windows.Forms.TabPage();
-            this.button1 = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.ColumnCodigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnMatricula = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnNome = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnEndereco = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnBairro = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.tabPage8 = new System.Windows.Forms.TabPage();
-            this.tabControl2.SuspendLayout();
+            this.tabControl2 = new System.Windows.Forms.TabControl();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.tabPage8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            this.tabPage7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.tabPage6.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tbCadastrarAlunos.SuspendLayout();
@@ -211,30 +297,271 @@ namespace ECED_FORMS
             this.tabPage3.SuspendLayout();
             this.panel6.SuspendLayout();
             this.tabPage4.SuspendLayout();
-            this.tabPage7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.tabControl2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // tabControl2
+            // tabPage8
             // 
-            this.tabControl2.Controls.Add(this.tabPage5);
-            this.tabControl2.Controls.Add(this.tabPage6);
-            this.tabControl2.Controls.Add(this.tabPage7);
-            this.tabControl2.Controls.Add(this.tabPage8);
-            this.tabControl2.Location = new System.Drawing.Point(12, 5);
-            this.tabControl2.Name = "tabControl2";
-            this.tabControl2.SelectedIndex = 0;
-            this.tabControl2.Size = new System.Drawing.Size(1324, 638);
-            this.tabControl2.TabIndex = 2;
+            this.tabPage8.Controls.Add(this.maskedTextBox8);
+            this.tabPage8.Controls.Add(this.comboBox11);
+            this.tabPage8.Controls.Add(this.label106);
+            this.tabPage8.Controls.Add(this.button2);
+            this.tabPage8.Controls.Add(this.label105);
+            this.tabPage8.Controls.Add(this.comboBox10);
+            this.tabPage8.Controls.Add(this.comboBox9);
+            this.tabPage8.Controls.Add(this.label103);
+            this.tabPage8.Controls.Add(this.dataGridView2);
+            this.tabPage8.Controls.Add(this.label104);
+            this.tabPage8.Location = new System.Drawing.Point(4, 22);
+            this.tabPage8.Name = "tabPage8";
+            this.tabPage8.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage8.Size = new System.Drawing.Size(1316, 612);
+            this.tabPage8.TabIndex = 3;
+            this.tabPage8.Text = "Boletim                      ";
+            this.tabPage8.UseVisualStyleBackColor = true;
             // 
-            // tabPage5
+            // maskedTextBox8
             // 
-            this.tabPage5.Location = new System.Drawing.Point(4, 22);
-            this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage5.Size = new System.Drawing.Size(1316, 612);
-            this.tabPage5.TabIndex = 0;
-            this.tabPage5.UseVisualStyleBackColor = true;
+            this.maskedTextBox8.Location = new System.Drawing.Point(80, 161);
+            this.maskedTextBox8.Mask = "00.0";
+            this.maskedTextBox8.Name = "maskedTextBox8";
+            this.maskedTextBox8.Size = new System.Drawing.Size(32, 20);
+            this.maskedTextBox8.TabIndex = 86;
+            // 
+            // comboBox11
+            // 
+            this.comboBox11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox11.FormattingEnabled = true;
+            this.comboBox11.Items.AddRange(new object[] {
+            "PRÉ A",
+            "PRÉ B",
+            "1° Ano A",
+            "1° Ano B",
+            "2° Ano A",
+            "2° Ano B",
+            "3° Ano A",
+            "3° Ano B",
+            "4° Ano A",
+            "4° Ano B",
+            "5° Ano A",
+            "5° Ano B",
+            "6° Ano A",
+            "6° Ano B",
+            "7° Ano A",
+            "7° Ano B",
+            "8° Ano A",
+            "8° Ano B",
+            "9° Ano A",
+            "9° Ano B"});
+            this.comboBox11.Location = new System.Drawing.Point(89, 74);
+            this.comboBox11.Name = "comboBox11";
+            this.comboBox11.Size = new System.Drawing.Size(88, 21);
+            this.comboBox11.TabIndex = 19;
+            // 
+            // label106
+            // 
+            this.label106.AutoSize = true;
+            this.label106.Location = new System.Drawing.Point(34, 77);
+            this.label106.Name = "label106";
+            this.label106.Size = new System.Drawing.Size(49, 13);
+            this.label106.TabIndex = 18;
+            this.label106.Text = "TURMA:";
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(37, 202);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 34);
+            this.button2.TabIndex = 17;
+            this.button2.Text = "ADICIONAR";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // label105
+            // 
+            this.label105.AutoSize = true;
+            this.label105.Location = new System.Drawing.Point(34, 124);
+            this.label105.Name = "label105";
+            this.label105.Size = new System.Drawing.Size(55, 13);
+            this.label105.TabIndex = 15;
+            this.label105.Text = "MATÉRIA";
+            // 
+            // comboBox10
+            // 
+            this.comboBox10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox10.FormattingEnabled = true;
+            this.comboBox10.Items.AddRange(new object[] {
+            "ARTES",
+            "CIÊNCIAS",
+            "EDUCAÇÃO FÍSICA",
+            "ENSINO RELIGIOSO",
+            "GEOGRAFIA",
+            "HISTÓRIA",
+            "INGLÊS",
+            "MATEMÁTICA",
+            "PORTUGUÊS"});
+            this.comboBox10.Location = new System.Drawing.Point(95, 116);
+            this.comboBox10.Name = "comboBox10";
+            this.comboBox10.Size = new System.Drawing.Size(121, 21);
+            this.comboBox10.TabIndex = 14;
+            // 
+            // comboBox9
+            // 
+            this.comboBox9.FormattingEnabled = true;
+            this.comboBox9.Location = new System.Drawing.Point(155, 31);
+            this.comboBox9.Name = "comboBox9";
+            this.comboBox9.Size = new System.Drawing.Size(154, 21);
+            this.comboBox9.TabIndex = 13;
+            // 
+            // label103
+            // 
+            this.label103.AutoSize = true;
+            this.label103.Location = new System.Drawing.Point(34, 168);
+            this.label103.Name = "label103";
+            this.label103.Size = new System.Drawing.Size(40, 13);
+            this.label103.TabIndex = 12;
+            this.label103.Text = "NOTA:";
+            // 
+            // dataGridView2
+            // 
+            this.dataGridView2.AllowUserToAddRows = false;
+            this.dataGridView2.AllowUserToDeleteRows = false;
+            this.dataGridView2.AllowUserToOrderColumns = true;
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.DISCIPLINACOL,
+            this.NOTACOL1,
+            this.NOTA2TCOL,
+            this.ULTIMOTRIMESTRE});
+            this.dataGridView2.Location = new System.Drawing.Point(671, 74);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.ReadOnly = true;
+            this.dataGridView2.Size = new System.Drawing.Size(444, 477);
+            this.dataGridView2.TabIndex = 11;
+            // 
+            // DISCIPLINACOL
+            // 
+            this.DISCIPLINACOL.HeaderText = "DISCIPLINAS";
+            this.DISCIPLINACOL.Name = "DISCIPLINACOL";
+            this.DISCIPLINACOL.ReadOnly = true;
+            // 
+            // NOTACOL1
+            // 
+            this.NOTACOL1.HeaderText = "1° TRIMESTRE";
+            this.NOTACOL1.Name = "NOTACOL1";
+            this.NOTACOL1.ReadOnly = true;
+            // 
+            // NOTA2TCOL
+            // 
+            this.NOTA2TCOL.HeaderText = "2° TRIMESTRE";
+            this.NOTA2TCOL.Name = "NOTA2TCOL";
+            this.NOTA2TCOL.ReadOnly = true;
+            // 
+            // ULTIMOTRIMESTRE
+            // 
+            this.ULTIMOTRIMESTRE.HeaderText = "3° TRIMESTRE";
+            this.ULTIMOTRIMESTRE.Name = "ULTIMOTRIMESTRE";
+            this.ULTIMOTRIMESTRE.ReadOnly = true;
+            // 
+            // label104
+            // 
+            this.label104.AutoSize = true;
+            this.label104.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label104.Location = new System.Drawing.Point(34, 39);
+            this.label104.Name = "label104";
+            this.label104.Size = new System.Drawing.Size(115, 13);
+            this.label104.TabIndex = 1;
+            this.label104.Text = "NOME DO ALUNO:";
+            // 
+            // tabPage7
+            // 
+            this.tabPage7.Controls.Add(this.button1);
+            this.tabPage7.Controls.Add(this.dataGridView1);
+            this.tabPage7.Controls.Add(this.textBox2);
+            this.tabPage7.Controls.Add(this.label10);
+            this.tabPage7.Location = new System.Drawing.Point(4, 22);
+            this.tabPage7.Name = "tabPage7";
+            this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage7.Size = new System.Drawing.Size(1316, 612);
+            this.tabPage7.TabIndex = 2;
+            this.tabPage7.Text = "Pesquisar aluno";
+            this.tabPage7.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(1160, 57);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(91, 32);
+            this.button1.TabIndex = 7;
+            this.button1.Text = "Buscar";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ColumnCodigo,
+            this.ColumnMatricula,
+            this.ColumnNome,
+            this.ColumnEndereco,
+            this.ColumnBairro});
+            this.dataGridView1.Location = new System.Drawing.Point(60, 115);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.Size = new System.Drawing.Size(1241, 437);
+            this.dataGridView1.TabIndex = 6;
+            // 
+            // ColumnCodigo
+            // 
+            this.ColumnCodigo.HeaderText = "Código do aluno";
+            this.ColumnCodigo.Name = "ColumnCodigo";
+            this.ColumnCodigo.ReadOnly = true;
+            // 
+            // ColumnMatricula
+            // 
+            this.ColumnMatricula.HeaderText = "Codigo Matricula";
+            this.ColumnMatricula.Name = "ColumnMatricula";
+            this.ColumnMatricula.ReadOnly = true;
+            // 
+            // ColumnNome
+            // 
+            this.ColumnNome.HeaderText = "Nome do aluno";
+            this.ColumnNome.Name = "ColumnNome";
+            this.ColumnNome.ReadOnly = true;
+            this.ColumnNome.Width = 422;
+            // 
+            // ColumnEndereco
+            // 
+            this.ColumnEndereco.HeaderText = "Endereço";
+            this.ColumnEndereco.Name = "ColumnEndereco";
+            this.ColumnEndereco.ReadOnly = true;
+            this.ColumnEndereco.Width = 250;
+            // 
+            // ColumnBairro
+            // 
+            this.ColumnBairro.HeaderText = "Bairro";
+            this.ColumnBairro.Name = "ColumnBairro";
+            this.ColumnBairro.ReadOnly = true;
+            this.ColumnBairro.Width = 200;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.Location = new System.Drawing.Point(143, 60);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(988, 25);
+            this.textBox2.TabIndex = 5;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(56, 63);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(81, 22);
+            this.label10.TabIndex = 4;
+            this.label10.Text = "Localizar";
             // 
             // tabPage6
             // 
@@ -325,33 +652,33 @@ namespace ECED_FORMS
             // 
             // tbCadastrarAlunos
             // 
-            this.tbCadastrarAlunos.Controls.Add(this.txtCpf);
+            this.tbCadastrarAlunos.Controls.Add(this.maskedTextBox1);
             this.tbCadastrarAlunos.Controls.Add(this.txtNacionalidade);
             this.tbCadastrarAlunos.Controls.Add(this.label64);
-            this.tbCadastrarAlunos.Controls.Add(this.txtEmail);
+            this.tbCadastrarAlunos.Controls.Add(this.textBox39);
             this.tbCadastrarAlunos.Controls.Add(this.label68);
-            this.tbCadastrarAlunos.Controls.Add(this.txtUfRg);
+            this.tbCadastrarAlunos.Controls.Add(this.textBox38);
             this.tbCadastrarAlunos.Controls.Add(this.label67);
-            this.tbCadastrarAlunos.Controls.Add(this.dtDataExpedicaoRg);
+            this.tbCadastrarAlunos.Controls.Add(this.dateTimePicker5);
             this.tbCadastrarAlunos.Controls.Add(this.label66);
-            this.tbCadastrarAlunos.Controls.Add(this.txtUfNomeCartorio);
+            this.tbCadastrarAlunos.Controls.Add(this.textBox37);
             this.tbCadastrarAlunos.Controls.Add(this.label65);
-            this.tbCadastrarAlunos.Controls.Add(this.dtDataEmissaoCertNasc);
+            this.tbCadastrarAlunos.Controls.Add(this.dateTimePicker4);
             this.tbCadastrarAlunos.Controls.Add(this.label45);
-            this.tbCadastrarAlunos.Controls.Add(this.txtCertNascimento);
+            this.tbCadastrarAlunos.Controls.Add(this.textBox36);
             this.tbCadastrarAlunos.Controls.Add(this.label44);
             this.tbCadastrarAlunos.Controls.Add(this.txtUf);
             this.tbCadastrarAlunos.Controls.Add(this.label43);
             this.tbCadastrarAlunos.Controls.Add(this.txtNaturalidade);
             this.tbCadastrarAlunos.Controls.Add(this.label11);
-            this.tbCadastrarAlunos.Controls.Add(this.dtDataEmissaoRegCivil);
+            this.tbCadastrarAlunos.Controls.Add(this.dateTimePicker3);
             this.tbCadastrarAlunos.Controls.Add(this.txtNomeAluno);
             this.tbCadastrarAlunos.Controls.Add(this.textBox15);
-            this.tbCadastrarAlunos.Controls.Add(this.txtRegCivil);
-            this.tbCadastrarAlunos.Controls.Add(this.txtLivro);
-            this.tbCadastrarAlunos.Controls.Add(this.txtFolha);
-            this.tbCadastrarAlunos.Controls.Add(this.txtOrgaoEmissorRg);
-            this.tbCadastrarAlunos.Controls.Add(this.txtRg);
+            this.tbCadastrarAlunos.Controls.Add(this.textBox14);
+            this.tbCadastrarAlunos.Controls.Add(this.textBox13);
+            this.tbCadastrarAlunos.Controls.Add(this.textBox12);
+            this.tbCadastrarAlunos.Controls.Add(this.textBox9);
+            this.tbCadastrarAlunos.Controls.Add(this.textBox7);
             this.tbCadastrarAlunos.Controls.Add(this.cmbEstadoCivil);
             this.tbCadastrarAlunos.Controls.Add(this.label46);
             this.tbCadastrarAlunos.Controls.Add(this.label27);
@@ -380,13 +707,13 @@ namespace ECED_FORMS
             this.tbCadastrarAlunos.Text = "Dados pessoais            ";
             this.tbCadastrarAlunos.UseVisualStyleBackColor = true;
             // 
-            // txtCpf
+            // maskedTextBox1
             // 
-            this.txtCpf.Location = new System.Drawing.Point(56, 318);
-            this.txtCpf.Mask = "000.000.000\\-00";
-            this.txtCpf.Name = "txtCpf";
-            this.txtCpf.Size = new System.Drawing.Size(136, 23);
-            this.txtCpf.TabIndex = 86;
+            this.maskedTextBox1.Location = new System.Drawing.Point(56, 324);
+            this.maskedTextBox1.Mask = "000.000.000\\-00";
+            this.maskedTextBox1.Name = "maskedTextBox1";
+            this.maskedTextBox1.Size = new System.Drawing.Size(136, 23);
+            this.maskedTextBox1.TabIndex = 86;
             // 
             // txtNacionalidade
             // 
@@ -405,12 +732,12 @@ namespace ECED_FORMS
             this.label64.TabIndex = 84;
             this.label64.Text = "Nacionalidade:";
             // 
-            // txtEmail
+            // textBox39
             // 
-            this.txtEmail.Location = new System.Drawing.Point(146, 367);
-            this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(199, 23);
-            this.txtEmail.TabIndex = 83;
+            this.textBox39.Location = new System.Drawing.Point(146, 367);
+            this.textBox39.Name = "textBox39";
+            this.textBox39.Size = new System.Drawing.Size(199, 23);
+            this.textBox39.TabIndex = 83;
             // 
             // label68
             // 
@@ -421,29 +748,29 @@ namespace ECED_FORMS
             this.label68.TabIndex = 82;
             this.label68.Text = "EMAIL DO ALUNO:";
             // 
-            // txtUfRg
+            // textBox38
             // 
-            this.txtUfRg.Location = new System.Drawing.Point(1092, 321);
-            this.txtUfRg.Name = "txtUfRg";
-            this.txtUfRg.Size = new System.Drawing.Size(47, 23);
-            this.txtUfRg.TabIndex = 81;
+            this.textBox38.Location = new System.Drawing.Point(1092, 318);
+            this.textBox38.Name = "textBox38";
+            this.textBox38.Size = new System.Drawing.Size(47, 23);
+            this.textBox38.TabIndex = 81;
             // 
             // label67
             // 
             this.label67.AutoSize = true;
-            this.label67.Location = new System.Drawing.Point(1063, 324);
+            this.label67.Location = new System.Drawing.Point(1059, 324);
             this.label67.Name = "label67";
             this.label67.Size = new System.Drawing.Size(27, 17);
             this.label67.TabIndex = 80;
             this.label67.Text = "UF:";
             // 
-            // dtDataExpedicaoRg
+            // dateTimePicker5
             // 
-            this.dtDataExpedicaoRg.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtDataExpedicaoRg.Location = new System.Drawing.Point(921, 319);
-            this.dtDataExpedicaoRg.Name = "dtDataExpedicaoRg";
-            this.dtDataExpedicaoRg.Size = new System.Drawing.Size(127, 23);
-            this.dtDataExpedicaoRg.TabIndex = 79;
+            this.dateTimePicker5.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTimePicker5.Location = new System.Drawing.Point(921, 319);
+            this.dateTimePicker5.Name = "dateTimePicker5";
+            this.dateTimePicker5.Size = new System.Drawing.Size(127, 23);
+            this.dateTimePicker5.TabIndex = 79;
             // 
             // label66
             // 
@@ -454,12 +781,12 @@ namespace ECED_FORMS
             this.label66.TabIndex = 78;
             this.label66.Text = "DATA  DE EXPEDIÇÃO:";
             // 
-            // txtUfNomeCartorio
+            // textBox37
             // 
-            this.txtUfNomeCartorio.Location = new System.Drawing.Point(729, 291);
-            this.txtUfNomeCartorio.Name = "txtUfNomeCartorio";
-            this.txtUfNomeCartorio.Size = new System.Drawing.Size(47, 23);
-            this.txtUfNomeCartorio.TabIndex = 77;
+            this.textBox37.Location = new System.Drawing.Point(729, 291);
+            this.textBox37.Name = "textBox37";
+            this.textBox37.Size = new System.Drawing.Size(47, 23);
+            this.textBox37.TabIndex = 77;
             // 
             // label65
             // 
@@ -470,13 +797,13 @@ namespace ECED_FORMS
             this.label65.TabIndex = 76;
             this.label65.Text = "UF:";
             // 
-            // dtDataEmissaoCertNasc
+            // dateTimePicker4
             // 
-            this.dtDataEmissaoCertNasc.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtDataEmissaoCertNasc.Location = new System.Drawing.Point(831, 257);
-            this.dtDataEmissaoCertNasc.Name = "dtDataEmissaoCertNasc";
-            this.dtDataEmissaoCertNasc.Size = new System.Drawing.Size(127, 23);
-            this.dtDataEmissaoCertNasc.TabIndex = 75;
+            this.dateTimePicker4.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTimePicker4.Location = new System.Drawing.Point(831, 257);
+            this.dateTimePicker4.Name = "dateTimePicker4";
+            this.dateTimePicker4.Size = new System.Drawing.Size(127, 23);
+            this.dateTimePicker4.TabIndex = 75;
             // 
             // label45
             // 
@@ -487,12 +814,12 @@ namespace ECED_FORMS
             this.label45.TabIndex = 74;
             this.label45.Text = "DATA  DE EMISSÃO:";
             // 
-            // txtCertNascimento
+            // textBox36
             // 
-            this.txtCertNascimento.Location = new System.Drawing.Point(244, 259);
-            this.txtCertNascimento.Name = "txtCertNascimento";
-            this.txtCertNascimento.Size = new System.Drawing.Size(172, 23);
-            this.txtCertNascimento.TabIndex = 73;
+            this.textBox36.Location = new System.Drawing.Point(244, 259);
+            this.textBox36.Name = "textBox36";
+            this.textBox36.Size = new System.Drawing.Size(172, 23);
+            this.textBox36.TabIndex = 73;
             // 
             // label44
             // 
@@ -536,13 +863,13 @@ namespace ECED_FORMS
             this.label11.TabIndex = 68;
             this.label11.Text = "Naturalidade:";
             // 
-            // dtDataEmissaoRegCivil
+            // dateTimePicker3
             // 
-            this.dtDataEmissaoRegCivil.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtDataEmissaoRegCivil.Location = new System.Drawing.Point(831, 226);
-            this.dtDataEmissaoRegCivil.Name = "dtDataEmissaoRegCivil";
-            this.dtDataEmissaoRegCivil.Size = new System.Drawing.Size(127, 23);
-            this.dtDataEmissaoRegCivil.TabIndex = 67;
+            this.dateTimePicker3.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTimePicker3.Location = new System.Drawing.Point(831, 226);
+            this.dateTimePicker3.Name = "dateTimePicker3";
+            this.dateTimePicker3.Size = new System.Drawing.Size(127, 23);
+            this.dateTimePicker3.TabIndex = 67;
             // 
             // txtNomeAluno
             // 
@@ -558,43 +885,44 @@ namespace ECED_FORMS
             this.textBox15.Size = new System.Drawing.Size(428, 23);
             this.textBox15.TabIndex = 61;
             // 
-            // txtRegCivil
+            // textBox14
             // 
-            this.txtRegCivil.Location = new System.Drawing.Point(247, 226);
-            this.txtRegCivil.Name = "txtRegCivil";
-            this.txtRegCivil.Size = new System.Drawing.Size(421, 23);
-            this.txtRegCivil.TabIndex = 60;
+            this.textBox14.Location = new System.Drawing.Point(247, 226);
+            this.textBox14.Name = "textBox14";
+            this.textBox14.Size = new System.Drawing.Size(421, 23);
+            this.textBox14.TabIndex = 60;
             // 
-            // txtLivro
+            // textBox13
             // 
-            this.txtLivro.Location = new System.Drawing.Point(626, 259);
-            this.txtLivro.Name = "txtLivro";
-            this.txtLivro.Size = new System.Drawing.Size(42, 23);
-            this.txtLivro.TabIndex = 57;
+            this.textBox13.Location = new System.Drawing.Point(626, 259);
+            this.textBox13.Name = "textBox13";
+            this.textBox13.Size = new System.Drawing.Size(42, 23);
+            this.textBox13.TabIndex = 57;
             // 
-            // txtFolha
+            // textBox12
             // 
-            this.txtFolha.Location = new System.Drawing.Point(490, 259);
-            this.txtFolha.Name = "txtFolha";
-            this.txtFolha.Size = new System.Drawing.Size(50, 23);
-            this.txtFolha.TabIndex = 55;
+            this.textBox12.Location = new System.Drawing.Point(490, 259);
+            this.textBox12.Name = "textBox12";
+            this.textBox12.Size = new System.Drawing.Size(50, 23);
+            this.textBox12.TabIndex = 55;
             // 
-            // txtOrgaoEmissorRg
+            // textBox9
             // 
-            this.txtOrgaoEmissorRg.Location = new System.Drawing.Point(637, 318);
-            this.txtOrgaoEmissorRg.Name = "txtOrgaoEmissorRg";
-            this.txtOrgaoEmissorRg.Size = new System.Drawing.Size(125, 23);
-            this.txtOrgaoEmissorRg.TabIndex = 52;
+            this.textBox9.Location = new System.Drawing.Point(637, 321);
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(125, 23);
+            this.textBox9.TabIndex = 52;
             // 
-            // txtRg
+            // textBox7
             // 
-            this.txtRg.Location = new System.Drawing.Point(351, 318);
-            this.txtRg.Name = "txtRg";
-            this.txtRg.Size = new System.Drawing.Size(158, 23);
-            this.txtRg.TabIndex = 45;
+            this.textBox7.Location = new System.Drawing.Point(351, 324);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(158, 23);
+            this.textBox7.TabIndex = 45;
             // 
             // cmbEstadoCivil
             // 
+            this.cmbEstadoCivil.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbEstadoCivil.FormattingEnabled = true;
             this.cmbEstadoCivil.Items.AddRange(new object[] {
             "CASADO(A)",
@@ -665,7 +993,7 @@ namespace ECED_FORMS
             // label21
             // 
             this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(515, 321);
+            this.label21.Location = new System.Drawing.Point(515, 327);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(116, 17);
             this.label21.TabIndex = 48;
@@ -674,7 +1002,7 @@ namespace ECED_FORMS
             // label20
             // 
             this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(16, 324);
+            this.label20.Location = new System.Drawing.Point(16, 327);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(34, 17);
             this.label20.TabIndex = 46;
@@ -683,7 +1011,7 @@ namespace ECED_FORMS
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(198, 321);
+            this.label19.Location = new System.Drawing.Point(198, 327);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(147, 17);
             this.label19.TabIndex = 44;
@@ -710,6 +1038,7 @@ namespace ECED_FORMS
             // 
             // cmbCor
             // 
+            this.cmbCor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbCor.FormattingEnabled = true;
             this.cmbCor.Items.AddRange(new object[] {
             "AMARELO",
@@ -761,14 +1090,13 @@ namespace ECED_FORMS
             // 
             // cmbSexo
             // 
+            this.cmbSexo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbSexo.FormattingEnabled = true;
             this.cmbSexo.Items.AddRange(new object[] {
-            "BISSEXUAL",
             "FEMININO",
-            "HOMOSSEXUAL",
             "MASCULINO",
-            "NEUTRO",
-            "TRANSGÊNERO"});
+            "PREFIRO NÃO DIZER",
+            "OUTROS(A)"});
             this.cmbSexo.Location = new System.Drawing.Point(19, 131);
             this.cmbSexo.Name = "cmbSexo";
             this.cmbSexo.Size = new System.Drawing.Size(117, 25);
@@ -1030,6 +1358,17 @@ namespace ECED_FORMS
             // tabPage2
             // 
             this.tabPage2.Controls.Add(this.maskedTextBox2);
+            this.tabPage2.Controls.Add(this.maskedTextBox3);
+            this.tabPage2.Controls.Add(this.comboBox8);
+            this.tabPage2.Controls.Add(this.label102);
+            this.tabPage2.Controls.Add(this.comboBox3);
+            this.tabPage2.Controls.Add(this.label72);
+            this.tabPage2.Controls.Add(this.textBox16);
+            this.tabPage2.Controls.Add(this.label71);
+            this.tabPage2.Controls.Add(this.label70);
+            this.tabPage2.Controls.Add(this.comboBox1);
+            this.tabPage2.Controls.Add(this.label69);
+            this.tabPage2.Controls.Add(this.textBox8);
             this.tabPage2.Controls.Add(this.label37);
             this.tabPage2.Controls.Add(this.textBox21);
             this.tabPage2.Controls.Add(this.label34);
@@ -1046,6 +1385,7 @@ namespace ECED_FORMS
             this.tabPage2.Controls.Add(this.label9);
             this.tabPage2.Controls.Add(this.panel1);
             this.tabPage2.Controls.Add(this.label1);
+            this.tabPage2.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabPage2.Location = new System.Drawing.Point(4, 25);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
@@ -1056,24 +1396,150 @@ namespace ECED_FORMS
             // 
             // maskedTextBox2
             // 
-            this.maskedTextBox2.Location = new System.Drawing.Point(585, 153);
-            this.maskedTextBox2.Mask = "(999) 00000-0000";
+            this.maskedTextBox2.Location = new System.Drawing.Point(606, 251);
+            this.maskedTextBox2.Mask = "(99) 00000-0000";
             this.maskedTextBox2.Name = "maskedTextBox2";
-            this.maskedTextBox2.Size = new System.Drawing.Size(136, 22);
-            this.maskedTextBox2.TabIndex = 111;
+            this.maskedTextBox2.Size = new System.Drawing.Size(107, 22);
+            this.maskedTextBox2.TabIndex = 124;
+            // 
+            // maskedTextBox3
+            // 
+            this.maskedTextBox3.Location = new System.Drawing.Point(856, 335);
+            this.maskedTextBox3.Mask = "(99) 00000-0000";
+            this.maskedTextBox3.Name = "maskedTextBox3";
+            this.maskedTextBox3.Size = new System.Drawing.Size(107, 22);
+            this.maskedTextBox3.TabIndex = 123;
+            // 
+            // comboBox8
+            // 
+            this.comboBox8.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox8.FormattingEnabled = true;
+            this.comboBox8.Items.AddRange(new object[] {
+            "MATUTINO",
+            "VERPERTINO",
+            "NOTURNO"});
+            this.comboBox8.Location = new System.Drawing.Point(730, 400);
+            this.comboBox8.Name = "comboBox8";
+            this.comboBox8.Size = new System.Drawing.Size(95, 24);
+            this.comboBox8.TabIndex = 16;
+            // 
+            // label102
+            // 
+            this.label102.AutoSize = true;
+            this.label102.Location = new System.Drawing.Point(659, 406);
+            this.label102.Name = "label102";
+            this.label102.Size = new System.Drawing.Size(63, 16);
+            this.label102.TabIndex = 122;
+            this.label102.Text = "PERÍODO:";
+            // 
+            // comboBox3
+            // 
+            this.comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Items.AddRange(new object[] {
+            "PRÉ A",
+            "PRÉ B",
+            "1° Ano A",
+            "1° Ano B",
+            "2° Ano A",
+            "2° Ano B",
+            "3° Ano A",
+            "3° Ano B",
+            "4° Ano A",
+            "4° Ano B",
+            "5° Ano A",
+            "5° Ano B",
+            "6° Ano A",
+            "6° Ano B",
+            "7° Ano A",
+            "7° Ano B",
+            "8° Ano A",
+            "8° Ano B",
+            "9° Ano A",
+            "9° Ano B"});
+            this.comboBox3.Location = new System.Drawing.Point(553, 400);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(88, 24);
+            this.comboBox3.TabIndex = 121;
+            // 
+            // label72
+            // 
+            this.label72.AutoSize = true;
+            this.label72.Location = new System.Drawing.Point(493, 408);
+            this.label72.Name = "label72";
+            this.label72.Size = new System.Drawing.Size(54, 16);
+            this.label72.TabIndex = 120;
+            this.label72.Text = "TURMA:";
+            // 
+            // textBox16
+            // 
+            this.textBox16.Location = new System.Drawing.Point(294, 402);
+            this.textBox16.Name = "textBox16";
+            this.textBox16.Size = new System.Drawing.Size(177, 22);
+            this.textBox16.TabIndex = 118;
+            // 
+            // label71
+            // 
+            this.label71.AutoSize = true;
+            this.label71.Location = new System.Drawing.Point(11, 408);
+            this.label71.Name = "label71";
+            this.label71.Size = new System.Drawing.Size(277, 16);
+            this.label71.TabIndex = 117;
+            this.label71.Text = "NOME DOS IRMÂOS QUE ESTUDAM NA ESCOLA:";
+            // 
+            // label70
+            // 
+            this.label70.AutoSize = true;
+            this.label70.Location = new System.Drawing.Point(823, 339);
+            this.label70.Name = "label70";
+            this.label70.Size = new System.Drawing.Size(30, 16);
+            this.label70.TabIndex = 116;
+            this.label70.Text = "TEL:";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "AVÓS",
+            "IRMÃOS",
+            "MÃE",
+            "PAI",
+            "TIOS",
+            "TIAS"});
+            this.comboBox1.Location = new System.Drawing.Point(675, 331);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 24);
+            this.comboBox1.TabIndex = 115;
+            // 
+            // label69
+            // 
+            this.label69.AutoSize = true;
+            this.label69.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label69.Location = new System.Drawing.Point(514, 335);
+            this.label69.Name = "label69";
+            this.label69.Size = new System.Drawing.Size(153, 17);
+            this.label69.TabIndex = 113;
+            this.label69.Text = "GRAU DE PARENTESCO:";
+            // 
+            // textBox8
+            // 
+            this.textBox8.Location = new System.Drawing.Point(315, 333);
+            this.textBox8.Name = "textBox8";
+            this.textBox8.Size = new System.Drawing.Size(177, 22);
+            this.textBox8.TabIndex = 112;
             // 
             // label37
             // 
             this.label37.AutoSize = true;
-            this.label37.Location = new System.Drawing.Point(210, 206);
+            this.label37.Location = new System.Drawing.Point(11, 339);
             this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(145, 16);
+            this.label37.Size = new System.Drawing.Size(288, 16);
             this.label37.TabIndex = 110;
-            this.label37.Text = "EM URGÊNCIA/ ACIDENTE";
+            this.label37.Text = "EM URGÊNCIA/ACIDENTE PESSOA A SER AVISADA:";
             // 
             // textBox21
             // 
-            this.textBox21.Location = new System.Drawing.Point(1083, 145);
+            this.textBox21.Location = new System.Drawing.Point(1100, 253);
             this.textBox21.Name = "textBox21";
             this.textBox21.Size = new System.Drawing.Size(93, 22);
             this.textBox21.TabIndex = 109;
@@ -1081,10 +1547,10 @@ namespace ECED_FORMS
             // label34
             // 
             this.label34.AutoSize = true;
-            this.label34.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label34.Location = new System.Drawing.Point(1029, 152);
+            this.label34.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label34.Location = new System.Drawing.Point(1039, 258);
             this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(48, 17);
+            this.label34.Size = new System.Drawing.Size(51, 17);
             this.label34.TabIndex = 108;
             this.label34.Text = "IDADE:";
             // 
@@ -1098,7 +1564,7 @@ namespace ECED_FORMS
             "PAI",
             "TIOS",
             "TIAS"});
-            this.comboBox2.Location = new System.Drawing.Point(902, 145);
+            this.comboBox2.Location = new System.Drawing.Point(912, 251);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(121, 24);
             this.comboBox2.TabIndex = 107;
@@ -1106,30 +1572,31 @@ namespace ECED_FORMS
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(748, 152);
+            this.label7.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(753, 258);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(148, 17);
+            this.label7.Size = new System.Drawing.Size(153, 17);
             this.label7.TabIndex = 106;
             this.label7.Text = "GRAU DE PARENTESCO:";
             // 
             // textBox30
             // 
-            this.textBox30.Location = new System.Drawing.Point(404, 150);
+            this.textBox30.Location = new System.Drawing.Point(419, 253);
             this.textBox30.Name = "textBox30";
             this.textBox30.Size = new System.Drawing.Size(140, 22);
             this.textBox30.TabIndex = 101;
             // 
             // textBox23
             // 
-            this.textBox23.Location = new System.Drawing.Point(142, 47);
+            this.textBox23.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox23.Location = new System.Drawing.Point(142, 53);
             this.textBox23.Name = "textBox23";
             this.textBox23.Size = new System.Drawing.Size(305, 22);
             this.textBox23.TabIndex = 95;
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(574, 50);
+            this.textBox1.Location = new System.Drawing.Point(574, 53);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(93, 22);
             this.textBox1.TabIndex = 89;
@@ -1137,29 +1604,29 @@ namespace ECED_FORMS
             // label62
             // 
             this.label62.AutoSize = true;
-            this.label62.Location = new System.Drawing.Point(550, 156);
+            this.label62.Location = new System.Drawing.Point(575, 259);
             this.label62.Name = "label62";
-            this.label62.Size = new System.Drawing.Size(29, 16);
+            this.label62.Size = new System.Drawing.Size(30, 16);
             this.label62.TabIndex = 102;
             this.label62.Text = "TEL:";
             // 
             // label42
             // 
             this.label42.AutoSize = true;
-            this.label42.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label42.Location = new System.Drawing.Point(15, 155);
+            this.label42.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label42.Location = new System.Drawing.Point(6, 259);
             this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(383, 17);
+            this.label42.Size = new System.Drawing.Size(402, 17);
             this.label42.TabIndex = 100;
             this.label42.Text = "QUEM ESTÁ AUTORIZADO(A) A PEGAR A CRIANÇA NA ESCOLA: ";
             // 
             // label36
             // 
             this.label36.AutoSize = true;
-            this.label36.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label36.Location = new System.Drawing.Point(11, 52);
+            this.label36.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label36.Location = new System.Drawing.Point(11, 56);
             this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(125, 17);
+            this.label36.Size = new System.Drawing.Size(119, 16);
             this.label36.TabIndex = 94;
             this.label36.Text = "UNIDADE ESCOLAR:";
             // 
@@ -1186,7 +1653,7 @@ namespace ECED_FORMS
             // 
             this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dateTimePicker2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.dateTimePicker2.Location = new System.Drawing.Point(820, 50);
+            this.dateTimePicker2.Location = new System.Drawing.Point(820, 54);
             this.dateTimePicker2.Name = "dateTimePicker2";
             this.dateTimePicker2.Size = new System.Drawing.Size(111, 22);
             this.dateTimePicker2.TabIndex = 92;
@@ -1195,10 +1662,10 @@ namespace ECED_FORMS
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(697, 52);
+            this.label9.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(689, 54);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(117, 17);
+            this.label9.Size = new System.Drawing.Size(125, 17);
             this.label9.TabIndex = 91;
             this.label9.Text = "DATA MATRÍCULA:";
             // 
@@ -1209,13 +1676,14 @@ namespace ECED_FORMS
             this.panel1.Controls.Add(this.comboBox6);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label8);
-            this.panel1.Location = new System.Drawing.Point(18, 86);
+            this.panel1.Location = new System.Drawing.Point(375, 132);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(429, 46);
+            this.panel1.Size = new System.Drawing.Size(385, 50);
             this.panel1.TabIndex = 90;
             // 
             // comboBox4
             // 
+            this.comboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox4.FormattingEnabled = true;
             this.comboBox4.Items.AddRange(new object[] {
             "MATUTINO",
@@ -1228,6 +1696,7 @@ namespace ECED_FORMS
             // 
             // comboBox6
             // 
+            this.comboBox6.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox6.FormattingEnabled = true;
             this.comboBox6.Items.AddRange(new object[] {
             "PRÉ A",
@@ -1258,9 +1727,10 @@ namespace ECED_FORMS
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(22, 18);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(49, 16);
+            this.label5.Size = new System.Drawing.Size(50, 16);
             this.label5.TabIndex = 7;
             this.label5.Text = "Periodo";
             // 
@@ -1269,29 +1739,29 @@ namespace ECED_FORMS
             this.label8.AutoSize = true;
             this.label8.Location = new System.Drawing.Point(203, 18);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(41, 16);
+            this.label8.Size = new System.Drawing.Size(44, 16);
             this.label8.TabIndex = 12;
             this.label8.Text = "Turma";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(475, 52);
+            this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(473, 55);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(93, 17);
+            this.label1.Size = new System.Drawing.Size(86, 16);
             this.label1.TabIndex = 86;
             this.label1.Text = "CÓDIGO INEP:";
             // 
             // tabPage3
             // 
+            this.tabPage3.Controls.Add(this.maskedTextBox9);
             this.tabPage3.Controls.Add(this.cbDeficiencia);
             this.tabPage3.Controls.Add(this.label39);
             this.tabPage3.Controls.Add(this.checkBox4);
             this.tabPage3.Controls.Add(this.checkBox3);
             this.tabPage3.Controls.Add(this.label3);
             this.tabPage3.Controls.Add(this.textBox29);
-            this.tabPage3.Controls.Add(this.textBox28);
             this.tabPage3.Controls.Add(this.textBox27);
             this.tabPage3.Controls.Add(this.textBox22);
             this.tabPage3.Controls.Add(this.textBox26);
@@ -1332,8 +1802,17 @@ namespace ECED_FORMS
             this.tabPage3.Text = "Identificação saúde";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
+            // maskedTextBox9
+            // 
+            this.maskedTextBox9.Location = new System.Drawing.Point(190, 367);
+            this.maskedTextBox9.Mask = "(99) 00000-0000";
+            this.maskedTextBox9.Name = "maskedTextBox9";
+            this.maskedTextBox9.Size = new System.Drawing.Size(107, 22);
+            this.maskedTextBox9.TabIndex = 145;
+            // 
             // cbDeficiencia
             // 
+            this.cbDeficiencia.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbDeficiencia.FormattingEnabled = true;
             this.cbDeficiencia.Items.AddRange(new object[] {
             "BAIXA VISÃO",
@@ -1344,7 +1823,7 @@ namespace ECED_FORMS
             "DEFICIÊNCIA MUTÍPLA",
             "SURDO CEGUEIRA",
             "SURDO"});
-            this.cbDeficiencia.Location = new System.Drawing.Point(256, 77);
+            this.cbDeficiencia.Location = new System.Drawing.Point(256, 86);
             this.cbDeficiencia.Name = "cbDeficiencia";
             this.cbDeficiencia.Size = new System.Drawing.Size(147, 24);
             this.cbDeficiencia.TabIndex = 144;
@@ -1352,19 +1831,20 @@ namespace ECED_FORMS
             // label39
             // 
             this.label39.AutoSize = true;
-            this.label39.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label39.Location = new System.Drawing.Point(206, 84);
+            this.label39.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label39.Location = new System.Drawing.Point(206, 94);
             this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(44, 17);
+            this.label39.Size = new System.Drawing.Size(44, 13);
             this.label39.TabIndex = 143;
             this.label39.Text = "QUAL:";
             // 
             // checkBox4
             // 
             this.checkBox4.AutoSize = true;
-            this.checkBox4.Location = new System.Drawing.Point(147, 84);
+            this.checkBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox4.Location = new System.Drawing.Point(148, 93);
             this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(53, 20);
+            this.checkBox4.Size = new System.Drawing.Size(52, 17);
             this.checkBox4.TabIndex = 142;
             this.checkBox4.Text = "NÃO";
             this.checkBox4.UseVisualStyleBackColor = true;
@@ -1372,9 +1852,10 @@ namespace ECED_FORMS
             // checkBox3
             // 
             this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(98, 84);
+            this.checkBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox3.Location = new System.Drawing.Point(101, 93);
             this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(47, 20);
+            this.checkBox3.Size = new System.Drawing.Size(48, 17);
             this.checkBox3.TabIndex = 141;
             this.checkBox3.Text = "SIM";
             this.checkBox3.UseVisualStyleBackColor = true;
@@ -1382,58 +1863,51 @@ namespace ECED_FORMS
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(13, 84);
+            this.label3.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(9, 92);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(83, 17);
+            this.label3.Size = new System.Drawing.Size(86, 17);
             this.label3.TabIndex = 140;
             this.label3.Text = "DEFICIENTE?";
             // 
             // textBox29
             // 
-            this.textBox29.Location = new System.Drawing.Point(427, 166);
+            this.textBox29.Location = new System.Drawing.Point(422, 163);
             this.textBox29.Name = "textBox29";
             this.textBox29.Size = new System.Drawing.Size(161, 22);
             this.textBox29.TabIndex = 139;
             // 
-            // textBox28
-            // 
-            this.textBox28.Location = new System.Drawing.Point(206, 398);
-            this.textBox28.Name = "textBox28";
-            this.textBox28.Size = new System.Drawing.Size(161, 22);
-            this.textBox28.TabIndex = 134;
-            // 
             // textBox27
             // 
-            this.textBox27.Location = new System.Drawing.Point(616, 326);
+            this.textBox27.Location = new System.Drawing.Point(628, 323);
             this.textBox27.Name = "textBox27";
             this.textBox27.Size = new System.Drawing.Size(161, 22);
             this.textBox27.TabIndex = 132;
             // 
             // textBox22
             // 
-            this.textBox22.Location = new System.Drawing.Point(459, 326);
+            this.textBox22.Location = new System.Drawing.Point(470, 321);
             this.textBox22.Name = "textBox22";
             this.textBox22.Size = new System.Drawing.Size(113, 22);
             this.textBox22.TabIndex = 130;
             // 
             // textBox26
             // 
-            this.textBox26.Location = new System.Drawing.Point(518, 278);
+            this.textBox26.Location = new System.Drawing.Point(521, 278);
             this.textBox26.Name = "textBox26";
             this.textBox26.Size = new System.Drawing.Size(161, 22);
             this.textBox26.TabIndex = 128;
             // 
             // textBox25
             // 
-            this.textBox25.Location = new System.Drawing.Point(362, 278);
+            this.textBox25.Location = new System.Drawing.Point(369, 278);
             this.textBox25.Name = "textBox25";
             this.textBox25.Size = new System.Drawing.Size(113, 22);
             this.textBox25.TabIndex = 126;
             // 
             // textBox20
             // 
-            this.textBox20.Location = new System.Drawing.Point(444, 242);
+            this.textBox20.Location = new System.Drawing.Point(459, 238);
             this.textBox20.Name = "textBox20";
             this.textBox20.Size = new System.Drawing.Size(161, 22);
             this.textBox20.TabIndex = 119;
@@ -1447,7 +1921,7 @@ namespace ECED_FORMS
             // 
             // textBox10
             // 
-            this.textBox10.Location = new System.Drawing.Point(444, 126);
+            this.textBox10.Location = new System.Drawing.Point(459, 123);
             this.textBox10.Name = "textBox10";
             this.textBox10.Size = new System.Drawing.Size(161, 22);
             this.textBox10.TabIndex = 109;
@@ -1455,17 +1929,18 @@ namespace ECED_FORMS
             // label41
             // 
             this.label41.AutoSize = true;
-            this.label41.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label41.Location = new System.Drawing.Point(394, 128);
+            this.label41.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label41.Location = new System.Drawing.Point(409, 128);
             this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(44, 17);
+            this.label41.Size = new System.Drawing.Size(44, 13);
             this.label41.TabIndex = 138;
             this.label41.Text = "QUAL:";
             // 
             // checkBox6
             // 
             this.checkBox6.AutoSize = true;
-            this.checkBox6.Location = new System.Drawing.Point(223, 51);
+            this.checkBox6.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox6.Location = new System.Drawing.Point(249, 54);
             this.checkBox6.Name = "checkBox6";
             this.checkBox6.Size = new System.Drawing.Size(53, 20);
             this.checkBox6.TabIndex = 137;
@@ -1475,9 +1950,10 @@ namespace ECED_FORMS
             // checkBox5
             // 
             this.checkBox5.AutoSize = true;
-            this.checkBox5.Location = new System.Drawing.Point(179, 51);
+            this.checkBox5.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox5.Location = new System.Drawing.Point(190, 54);
             this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(47, 20);
+            this.checkBox5.Size = new System.Drawing.Size(49, 20);
             this.checkBox5.TabIndex = 136;
             this.checkBox5.Text = "SIM";
             this.checkBox5.UseVisualStyleBackColor = true;
@@ -1485,69 +1961,70 @@ namespace ECED_FORMS
             // label40
             // 
             this.label40.AutoSize = true;
-            this.label40.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label40.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label40.Location = new System.Drawing.Point(11, 54);
             this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(162, 17);
+            this.label40.Size = new System.Drawing.Size(173, 17);
             this.label40.TabIndex = 135;
-            this.label40.Text = "CARTEIRA DE VACINAÇÃO";
+            this.label40.Text = "CARTEIRA DE VACINAÇÃO:";
             // 
             // label61
             // 
             this.label61.AutoSize = true;
-            this.label61.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label61.Location = new System.Drawing.Point(30, 403);
+            this.label61.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label61.Location = new System.Drawing.Point(11, 372);
             this.label61.Name = "label61";
-            this.label61.Size = new System.Drawing.Size(170, 17);
+            this.label61.Size = new System.Drawing.Size(179, 17);
             this.label61.TabIndex = 133;
             this.label61.Text = "TELEFONE PARA CONTATO:";
             // 
             // label60
             // 
             this.label60.AutoSize = true;
-            this.label60.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label60.Location = new System.Drawing.Point(579, 328);
+            this.label60.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label60.Location = new System.Drawing.Point(589, 323);
             this.label60.Name = "label60";
-            this.label60.Size = new System.Drawing.Size(31, 17);
+            this.label60.Size = new System.Drawing.Size(33, 17);
             this.label60.TabIndex = 131;
             this.label60.Text = "TEL:";
             // 
             // label57
             // 
             this.label57.AutoSize = true;
-            this.label57.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label57.Location = new System.Drawing.Point(13, 328);
+            this.label57.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label57.Location = new System.Drawing.Point(9, 326);
             this.label57.Name = "label57";
-            this.label57.Size = new System.Drawing.Size(447, 17);
+            this.label57.Size = new System.Drawing.Size(461, 17);
             this.label57.TabIndex = 129;
             this.label57.Text = "CASO NÃO ENCONTRE A PESSOA DESCRITA, ENTRAR EM CONTATO COM:";
             // 
             // label59
             // 
             this.label59.AutoSize = true;
-            this.label59.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label59.Location = new System.Drawing.Point(481, 283);
+            this.label59.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label59.Location = new System.Drawing.Point(482, 280);
             this.label59.Name = "label59";
-            this.label59.Size = new System.Drawing.Size(31, 17);
+            this.label59.Size = new System.Drawing.Size(33, 17);
             this.label59.TabIndex = 127;
             this.label59.Text = "TEL:";
             // 
             // label58
             // 
             this.label58.AutoSize = true;
-            this.label58.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label58.Location = new System.Drawing.Point(12, 283);
+            this.label58.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label58.Location = new System.Drawing.Point(11, 280);
             this.label58.Name = "label58";
-            this.label58.Size = new System.Drawing.Size(344, 17);
+            this.label58.Size = new System.Drawing.Size(355, 17);
             this.label58.TabIndex = 125;
-            this.label58.Text = "EM CASO DE EMERGÊNCIA, ENTRAR EM CONTATO COM";
+            this.label58.Text = "EM CASO DE EMERGÊNCIA, ENTRAR EM CONTATO COM:";
             // 
             // checkBox18
             // 
             this.checkBox18.AutoSize = true;
-            this.checkBox18.Location = new System.Drawing.Point(334, 244);
+            this.checkBox18.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox18.Location = new System.Drawing.Point(350, 244);
             this.checkBox18.Name = "checkBox18";
-            this.checkBox18.Size = new System.Drawing.Size(53, 20);
+            this.checkBox18.Size = new System.Drawing.Size(52, 17);
             this.checkBox18.TabIndex = 122;
             this.checkBox18.Text = "NÃO";
             this.checkBox18.UseVisualStyleBackColor = true;
@@ -1555,9 +2032,10 @@ namespace ECED_FORMS
             // checkBox17
             // 
             this.checkBox17.AutoSize = true;
-            this.checkBox17.Location = new System.Drawing.Point(281, 244);
+            this.checkBox17.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox17.Location = new System.Drawing.Point(292, 243);
             this.checkBox17.Name = "checkBox17";
-            this.checkBox17.Size = new System.Drawing.Size(47, 20);
+            this.checkBox17.Size = new System.Drawing.Size(48, 17);
             this.checkBox17.TabIndex = 121;
             this.checkBox17.Text = "SIM";
             this.checkBox17.UseVisualStyleBackColor = true;
@@ -1565,29 +2043,30 @@ namespace ECED_FORMS
             // label56
             // 
             this.label56.AutoSize = true;
-            this.label56.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label56.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label56.Location = new System.Drawing.Point(11, 244);
             this.label56.Name = "label56";
-            this.label56.Size = new System.Drawing.Size(264, 17);
+            this.label56.Size = new System.Drawing.Size(275, 13);
             this.label56.TabIndex = 120;
             this.label56.Text = "NECESSITA DE ALGUMA DIETA ESPECÍFICA?";
             // 
             // label55
             // 
             this.label55.AutoSize = true;
-            this.label55.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label55.Location = new System.Drawing.Point(394, 244);
+            this.label55.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label55.Location = new System.Drawing.Point(409, 244);
             this.label55.Name = "label55";
-            this.label55.Size = new System.Drawing.Size(44, 17);
+            this.label55.Size = new System.Drawing.Size(44, 13);
             this.label55.TabIndex = 118;
             this.label55.Text = "QUAL:";
             // 
             // checkBox16
             // 
             this.checkBox16.AutoSize = true;
+            this.checkBox16.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox16.Location = new System.Drawing.Point(350, 208);
             this.checkBox16.Name = "checkBox16";
-            this.checkBox16.Size = new System.Drawing.Size(53, 20);
+            this.checkBox16.Size = new System.Drawing.Size(52, 17);
             this.checkBox16.TabIndex = 117;
             this.checkBox16.Text = "NÃO";
             this.checkBox16.UseVisualStyleBackColor = true;
@@ -1595,9 +2074,10 @@ namespace ECED_FORMS
             // checkBox15
             // 
             this.checkBox15.AutoSize = true;
-            this.checkBox15.Location = new System.Drawing.Point(297, 208);
+            this.checkBox15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox15.Location = new System.Drawing.Point(298, 206);
             this.checkBox15.Name = "checkBox15";
-            this.checkBox15.Size = new System.Drawing.Size(47, 20);
+            this.checkBox15.Size = new System.Drawing.Size(48, 17);
             this.checkBox15.TabIndex = 116;
             this.checkBox15.Text = "SIM";
             this.checkBox15.UseVisualStyleBackColor = true;
@@ -1605,29 +2085,30 @@ namespace ECED_FORMS
             // label54
             // 
             this.label54.AutoSize = true;
-            this.label54.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label54.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label54.Location = new System.Drawing.Point(11, 208);
             this.label54.Name = "label54";
-            this.label54.Size = new System.Drawing.Size(280, 17);
+            this.label54.Size = new System.Drawing.Size(281, 13);
             this.label54.TabIndex = 115;
             this.label54.Text = "POSSUI INTOLÊRANCIA A ALGUM ALIMENTO?";
             // 
             // label53
             // 
             this.label53.AutoSize = true;
-            this.label53.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label53.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label53.Location = new System.Drawing.Point(409, 208);
             this.label53.Name = "label53";
-            this.label53.Size = new System.Drawing.Size(44, 17);
+            this.label53.Size = new System.Drawing.Size(44, 13);
             this.label53.TabIndex = 114;
             this.label53.Text = "QUAL:";
             // 
             // checkBox14
             // 
             this.checkBox14.AutoSize = true;
-            this.checkBox14.Location = new System.Drawing.Point(313, 168);
+            this.checkBox14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox14.Location = new System.Drawing.Point(317, 168);
             this.checkBox14.Name = "checkBox14";
-            this.checkBox14.Size = new System.Drawing.Size(53, 20);
+            this.checkBox14.Size = new System.Drawing.Size(52, 17);
             this.checkBox14.TabIndex = 112;
             this.checkBox14.Text = "NÃO";
             this.checkBox14.UseVisualStyleBackColor = true;
@@ -1635,9 +2116,10 @@ namespace ECED_FORMS
             // checkBox13
             // 
             this.checkBox13.AutoSize = true;
-            this.checkBox13.Location = new System.Drawing.Point(260, 168);
+            this.checkBox13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox13.Location = new System.Drawing.Point(268, 168);
             this.checkBox13.Name = "checkBox13";
-            this.checkBox13.Size = new System.Drawing.Size(47, 20);
+            this.checkBox13.Size = new System.Drawing.Size(48, 17);
             this.checkBox13.TabIndex = 111;
             this.checkBox13.Text = "SIM";
             this.checkBox13.UseVisualStyleBackColor = true;
@@ -1645,29 +2127,30 @@ namespace ECED_FORMS
             // label52
             // 
             this.label52.AutoSize = true;
-            this.label52.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label52.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label52.Location = new System.Drawing.Point(11, 168);
             this.label52.Name = "label52";
-            this.label52.Size = new System.Drawing.Size(243, 17);
+            this.label52.Size = new System.Drawing.Size(251, 17);
             this.label52.TabIndex = 110;
             this.label52.Text = "É ALÉRGICO A ALGUM MEDICAMENTO?";
             // 
             // label51
             // 
             this.label51.AutoSize = true;
-            this.label51.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label51.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label51.Location = new System.Drawing.Point(372, 168);
             this.label51.Name = "label51";
-            this.label51.Size = new System.Drawing.Size(44, 17);
+            this.label51.Size = new System.Drawing.Size(44, 13);
             this.label51.TabIndex = 108;
             this.label51.Text = "QUAL:";
             // 
             // checkBox12
             // 
             this.checkBox12.AutoSize = true;
-            this.checkBox12.Location = new System.Drawing.Point(335, 128);
+            this.checkBox12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox12.Location = new System.Drawing.Point(350, 128);
             this.checkBox12.Name = "checkBox12";
-            this.checkBox12.Size = new System.Drawing.Size(53, 20);
+            this.checkBox12.Size = new System.Drawing.Size(52, 17);
             this.checkBox12.TabIndex = 107;
             this.checkBox12.Text = "NÃO";
             this.checkBox12.UseVisualStyleBackColor = true;
@@ -1675,9 +2158,10 @@ namespace ECED_FORMS
             // checkBox11
             // 
             this.checkBox11.AutoSize = true;
-            this.checkBox11.Location = new System.Drawing.Point(282, 128);
+            this.checkBox11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox11.Location = new System.Drawing.Point(296, 128);
             this.checkBox11.Name = "checkBox11";
-            this.checkBox11.Size = new System.Drawing.Size(47, 20);
+            this.checkBox11.Size = new System.Drawing.Size(48, 17);
             this.checkBox11.TabIndex = 106;
             this.checkBox11.Text = "SIM";
             this.checkBox11.UseVisualStyleBackColor = true;
@@ -1685,10 +2169,10 @@ namespace ECED_FORMS
             // label31
             // 
             this.label31.AutoSize = true;
-            this.label31.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label31.Location = new System.Drawing.Point(11, 128);
+            this.label31.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label31.Location = new System.Drawing.Point(9, 128);
             this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(265, 17);
+            this.label31.Size = new System.Drawing.Size(277, 17);
             this.label31.TabIndex = 105;
             this.label31.Text = "APRESENTA ALGUM PROBLEMA DE SAÚDE?";
             // 
@@ -1713,15 +2197,75 @@ namespace ECED_FORMS
             // 
             // tabPage4
             // 
-            this.tabPage4.Controls.Add(this.label47);
-            this.tabPage4.Controls.Add(this.textBox24);
-            this.tabPage4.Controls.Add(this.textBox6);
-            this.tabPage4.Controls.Add(this.textBox5);
-            this.tabPage4.Controls.Add(this.textBox4);
-            this.tabPage4.Controls.Add(this.textBox3);
+            this.tabPage4.BackColor = System.Drawing.Color.Transparent;
+            this.tabPage4.Controls.Add(this.panel7);
+            this.tabPage4.Controls.Add(this.label85);
+            this.tabPage4.Controls.Add(this.textBox40);
+            this.tabPage4.Controls.Add(this.label86);
+            this.tabPage4.Controls.Add(this.textBox41);
+            this.tabPage4.Controls.Add(this.label87);
+            this.tabPage4.Controls.Add(this.textBox42);
+            this.tabPage4.Controls.Add(this.label88);
+            this.tabPage4.Controls.Add(this.textBox43);
+            this.tabPage4.Controls.Add(this.label89);
+            this.tabPage4.Controls.Add(this.textBox44);
+            this.tabPage4.Controls.Add(this.label90);
+            this.tabPage4.Controls.Add(this.comboBox7);
+            this.tabPage4.Controls.Add(this.label91);
+            this.tabPage4.Controls.Add(this.textBox45);
+            this.tabPage4.Controls.Add(this.dateTimePicker7);
+            this.tabPage4.Controls.Add(this.textBox46);
+            this.tabPage4.Controls.Add(this.label92);
+            this.tabPage4.Controls.Add(this.label93);
+            this.tabPage4.Controls.Add(this.label94);
+            this.tabPage4.Controls.Add(this.textBox47);
+            this.tabPage4.Controls.Add(this.label95);
+            this.tabPage4.Controls.Add(this.maskedTextBox6);
+            this.tabPage4.Controls.Add(this.maskedTextBox7);
+            this.tabPage4.Controls.Add(this.dateTimePicker8);
+            this.tabPage4.Controls.Add(this.label96);
+            this.tabPage4.Controls.Add(this.label97);
+            this.tabPage4.Controls.Add(this.label98);
+            this.tabPage4.Controls.Add(this.label99);
+            this.tabPage4.Controls.Add(this.checkBox8);
+            this.tabPage4.Controls.Add(this.checkBox9);
+            this.tabPage4.Controls.Add(this.checkBox10);
+            this.tabPage4.Controls.Add(this.textBox48);
+            this.tabPage4.Controls.Add(this.label100);
+            this.tabPage4.Controls.Add(this.label101);
             this.tabPage4.Controls.Add(this.label16);
-            this.tabPage4.Controls.Add(this.label17);
+            this.tabPage4.Controls.Add(this.textBox35);
+            this.tabPage4.Controls.Add(this.label84);
+            this.tabPage4.Controls.Add(this.textBox34);
+            this.tabPage4.Controls.Add(this.label83);
+            this.tabPage4.Controls.Add(this.textBox33);
+            this.tabPage4.Controls.Add(this.label82);
+            this.tabPage4.Controls.Add(this.textBox31);
+            this.tabPage4.Controls.Add(this.label81);
+            this.tabPage4.Controls.Add(this.textBox24);
+            this.tabPage4.Controls.Add(this.label80);
+            this.tabPage4.Controls.Add(this.comboBox5);
+            this.tabPage4.Controls.Add(this.label79);
+            this.tabPage4.Controls.Add(this.textBox4);
+            this.tabPage4.Controls.Add(this.dateTimePicker6);
+            this.tabPage4.Controls.Add(this.textBox6);
+            this.tabPage4.Controls.Add(this.label78);
+            this.tabPage4.Controls.Add(this.label77);
+            this.tabPage4.Controls.Add(this.label76);
+            this.tabPage4.Controls.Add(this.textBox3);
+            this.tabPage4.Controls.Add(this.label47);
+            this.tabPage4.Controls.Add(this.maskedTextBox5);
+            this.tabPage4.Controls.Add(this.maskedTextBox4);
+            this.tabPage4.Controls.Add(this.dateTimePicker1);
             this.tabPage4.Controls.Add(this.label14);
+            this.tabPage4.Controls.Add(this.label75);
+            this.tabPage4.Controls.Add(this.label74);
+            this.tabPage4.Controls.Add(this.label73);
+            this.tabPage4.Controls.Add(this.checkBox7);
+            this.tabPage4.Controls.Add(this.checkBox2);
+            this.tabPage4.Controls.Add(this.checkBox1);
+            this.tabPage4.Controls.Add(this.textBox5);
+            this.tabPage4.Controls.Add(this.label17);
             this.tabPage4.Controls.Add(this.label13);
             this.tabPage4.Location = new System.Drawing.Point(4, 25);
             this.tabPage4.Name = "tabPage4";
@@ -1729,193 +2273,641 @@ namespace ECED_FORMS
             this.tabPage4.Size = new System.Drawing.Size(1228, 492);
             this.tabPage4.TabIndex = 5;
             this.tabPage4.Text = "Dados dos Responsaveís       ";
-            this.tabPage4.UseVisualStyleBackColor = true;
             // 
-            // label47
+            // label85
             // 
-            this.label47.AutoSize = true;
-            this.label47.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label47.Location = new System.Drawing.Point(129, 356);
-            this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(84, 17);
-            this.label47.TabIndex = 76;
-            this.label47.Text = "Responsável";
+            this.label85.AutoSize = true;
+            this.label85.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label85.Location = new System.Drawing.Point(717, 293);
+            this.label85.Name = "label85";
+            this.label85.Size = new System.Drawing.Size(34, 17);
+            this.label85.TabIndex = 177;
+            this.label85.Text = "CPF:";
             // 
-            // textBox24
+            // textBox40
             // 
-            this.textBox24.Location = new System.Drawing.Point(219, 351);
-            this.textBox24.Name = "textBox24";
-            this.textBox24.Size = new System.Drawing.Size(397, 22);
-            this.textBox24.TabIndex = 75;
+            this.textBox40.Location = new System.Drawing.Point(633, 412);
+            this.textBox40.Name = "textBox40";
+            this.textBox40.Size = new System.Drawing.Size(136, 22);
+            this.textBox40.TabIndex = 176;
             // 
-            // textBox6
+            // label86
             // 
-            this.textBox6.Location = new System.Drawing.Point(107, 283);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(132, 22);
-            this.textBox6.TabIndex = 72;
+            this.label86.AutoSize = true;
+            this.label86.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label86.Location = new System.Drawing.Point(575, 418);
+            this.label86.Name = "label86";
+            this.label86.Size = new System.Drawing.Size(52, 16);
+            this.label86.TabIndex = 175;
+            this.label86.Text = "RAMAL:";
             // 
-            // textBox5
+            // textBox41
             // 
-            this.textBox5.Location = new System.Drawing.Point(71, 51);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(132, 22);
-            this.textBox5.TabIndex = 71;
+            this.textBox41.Location = new System.Drawing.Point(431, 412);
+            this.textBox41.Name = "textBox41";
+            this.textBox41.Size = new System.Drawing.Size(136, 22);
+            this.textBox41.TabIndex = 174;
             // 
-            // textBox4
+            // label87
             // 
-            this.textBox4.Location = new System.Drawing.Point(132, 19);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(397, 22);
-            this.textBox4.TabIndex = 68;
+            this.label87.AutoSize = true;
+            this.label87.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label87.Location = new System.Drawing.Point(359, 418);
+            this.label87.Name = "label87";
+            this.label87.Size = new System.Drawing.Size(66, 16);
+            this.label87.TabIndex = 173;
+            this.label87.Text = "HORÁRIO:";
             // 
-            // textBox3
+            // textBox42
             // 
-            this.textBox3.Location = new System.Drawing.Point(162, 247);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(385, 22);
-            this.textBox3.TabIndex = 67;
+            this.textBox42.Location = new System.Drawing.Point(174, 415);
+            this.textBox42.Name = "textBox42";
+            this.textBox42.Size = new System.Drawing.Size(176, 22);
+            this.textBox42.TabIndex = 172;
+            // 
+            // label88
+            // 
+            this.label88.AutoSize = true;
+            this.label88.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label88.Location = new System.Drawing.Point(37, 421);
+            this.label88.Name = "label88";
+            this.label88.Size = new System.Drawing.Size(131, 16);
+            this.label88.TabIndex = 171;
+            this.label88.Text = "LOCAL DE TRABALHO:";
+            // 
+            // textBox43
+            // 
+            this.textBox43.Location = new System.Drawing.Point(633, 369);
+            this.textBox43.Name = "textBox43";
+            this.textBox43.Size = new System.Drawing.Size(136, 22);
+            this.textBox43.TabIndex = 170;
+            // 
+            // label89
+            // 
+            this.label89.AutoSize = true;
+            this.label89.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label89.Location = new System.Drawing.Point(551, 375);
+            this.label89.Name = "label89";
+            this.label89.Size = new System.Drawing.Size(76, 16);
+            this.label89.TabIndex = 169;
+            this.label89.Text = "PROFISSÃO:";
+            // 
+            // textBox44
+            // 
+            this.textBox44.Location = new System.Drawing.Point(393, 369);
+            this.textBox44.Name = "textBox44";
+            this.textBox44.Size = new System.Drawing.Size(136, 22);
+            this.textBox44.TabIndex = 168;
+            // 
+            // label90
+            // 
+            this.label90.AutoSize = true;
+            this.label90.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label90.Location = new System.Drawing.Point(286, 377);
+            this.label90.Name = "label90";
+            this.label90.Size = new System.Drawing.Size(98, 16);
+            this.label90.TabIndex = 167;
+            this.label90.Text = "ESCOLARIDADE:";
+            // 
+            // comboBox7
+            // 
+            this.comboBox7.FormattingEnabled = true;
+            this.comboBox7.Items.AddRange(new object[] {
+            "CASADO(A)",
+            "DIVORCIADO(A)",
+            "SEPARADO(A)",
+            "SOLTEIRO(A)",
+            "VIÚVO(A)"});
+            this.comboBox7.Location = new System.Drawing.Point(132, 369);
+            this.comboBox7.Name = "comboBox7";
+            this.comboBox7.Size = new System.Drawing.Size(121, 24);
+            this.comboBox7.TabIndex = 166;
+            // 
+            // label91
+            // 
+            this.label91.AutoSize = true;
+            this.label91.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label91.Location = new System.Drawing.Point(37, 377);
+            this.label91.Name = "label91";
+            this.label91.Size = new System.Drawing.Size(89, 16);
+            this.label91.TabIndex = 165;
+            this.label91.Text = "ESTADO CIVÍL:";
+            // 
+            // textBox45
+            // 
+            this.textBox45.Location = new System.Drawing.Point(789, 330);
+            this.textBox45.Name = "textBox45";
+            this.textBox45.Size = new System.Drawing.Size(108, 22);
+            this.textBox45.TabIndex = 164;
+            // 
+            // dateTimePicker7
+            // 
+            this.dateTimePicker7.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTimePicker7.Location = new System.Drawing.Point(420, 331);
+            this.dateTimePicker7.Name = "dateTimePicker7";
+            this.dateTimePicker7.Size = new System.Drawing.Size(109, 22);
+            this.dateTimePicker7.TabIndex = 163;
+            this.dateTimePicker7.Value = new System.DateTime(2021, 10, 1, 0, 0, 0, 0);
+            // 
+            // textBox46
+            // 
+            this.textBox46.Location = new System.Drawing.Point(578, 331);
+            this.textBox46.Name = "textBox46";
+            this.textBox46.Size = new System.Drawing.Size(91, 22);
+            this.textBox46.TabIndex = 162;
+            // 
+            // label92
+            // 
+            this.label92.AutoSize = true;
+            this.label92.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label92.Location = new System.Drawing.Point(675, 336);
+            this.label92.Name = "label92";
+            this.label92.Size = new System.Drawing.Size(108, 16);
+            this.label92.TabIndex = 161;
+            this.label92.Text = "ORGÃO EMISSOR:";
+            // 
+            // label93
+            // 
+            this.label93.AutoSize = true;
+            this.label93.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label93.Location = new System.Drawing.Point(546, 334);
+            this.label93.Name = "label93";
+            this.label93.Size = new System.Drawing.Size(26, 16);
+            this.label93.TabIndex = 160;
+            this.label93.Text = "UF:";
+            // 
+            // label94
+            // 
+            this.label94.AutoSize = true;
+            this.label94.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label94.Location = new System.Drawing.Point(286, 334);
+            this.label94.Name = "label94";
+            this.label94.Size = new System.Drawing.Size(128, 16);
+            this.label94.TabIndex = 159;
+            this.label94.Text = "DATA DE EXPEDIÇÃO:";
+            // 
+            // textBox47
+            // 
+            this.textBox47.Location = new System.Drawing.Point(179, 331);
+            this.textBox47.Name = "textBox47";
+            this.textBox47.Size = new System.Drawing.Size(100, 22);
+            this.textBox47.TabIndex = 158;
+            // 
+            // label95
+            // 
+            this.label95.AutoSize = true;
+            this.label95.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label95.Location = new System.Drawing.Point(37, 334);
+            this.label95.Name = "label95";
+            this.label95.Size = new System.Drawing.Size(131, 16);
+            this.label95.TabIndex = 157;
+            this.label95.Text = "REGISTRO GERAL(RG):";
+            // 
+            // maskedTextBox6
+            // 
+            this.maskedTextBox6.Location = new System.Drawing.Point(757, 291);
+            this.maskedTextBox6.Mask = "000.000.000\\-00";
+            this.maskedTextBox6.Name = "maskedTextBox6";
+            this.maskedTextBox6.Size = new System.Drawing.Size(107, 22);
+            this.maskedTextBox6.TabIndex = 156;
+            // 
+            // maskedTextBox7
+            // 
+            this.maskedTextBox7.Location = new System.Drawing.Point(585, 287);
+            this.maskedTextBox7.Mask = "(99) 00000-0000";
+            this.maskedTextBox7.Name = "maskedTextBox7";
+            this.maskedTextBox7.Size = new System.Drawing.Size(107, 22);
+            this.maskedTextBox7.TabIndex = 155;
+            // 
+            // dateTimePicker8
+            // 
+            this.dateTimePicker8.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTimePicker8.Location = new System.Drawing.Point(420, 289);
+            this.dateTimePicker8.Name = "dateTimePicker8";
+            this.dateTimePicker8.Size = new System.Drawing.Size(109, 22);
+            this.dateTimePicker8.TabIndex = 154;
+            this.dateTimePicker8.Value = new System.DateTime(2021, 10, 1, 0, 0, 0, 0);
+            // 
+            // label96
+            // 
+            this.label96.AutoSize = true;
+            this.label96.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label96.Location = new System.Drawing.Point(273, 294);
+            this.label96.Name = "label96";
+            this.label96.Size = new System.Drawing.Size(141, 16);
+            this.label96.TabIndex = 153;
+            this.label96.Text = "DATA DE NASCIMENTO:";
+            // 
+            // label97
+            // 
+            this.label97.AutoSize = true;
+            this.label97.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label97.Location = new System.Drawing.Point(452, 254);
+            this.label97.Name = "label97";
+            this.label97.Size = new System.Drawing.Size(30, 16);
+            this.label97.TabIndex = 152;
+            this.label97.Text = "PAI:";
+            // 
+            // label98
+            // 
+            this.label98.AutoSize = true;
+            this.label98.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label98.Location = new System.Drawing.Point(575, 254);
+            this.label98.Name = "label98";
+            this.label98.Size = new System.Drawing.Size(92, 16);
+            this.label98.TabIndex = 151;
+            this.label98.Text = "RESPONSÁVEL:";
+            // 
+            // label99
+            // 
+            this.label99.AutoSize = true;
+            this.label99.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label99.Location = new System.Drawing.Point(330, 256);
+            this.label99.Name = "label99";
+            this.label99.Size = new System.Drawing.Size(36, 16);
+            this.label99.TabIndex = 150;
+            this.label99.Text = "MÃE:";
+            // 
+            // checkBox8
+            // 
+            this.checkBox8.AutoSize = true;
+            this.checkBox8.Location = new System.Drawing.Point(535, 254);
+            this.checkBox8.Name = "checkBox8";
+            this.checkBox8.Size = new System.Drawing.Size(15, 14);
+            this.checkBox8.TabIndex = 149;
+            this.checkBox8.UseVisualStyleBackColor = true;
+            // 
+            // checkBox9
+            // 
+            this.checkBox9.AutoSize = true;
+            this.checkBox9.Location = new System.Drawing.Point(431, 254);
+            this.checkBox9.Name = "checkBox9";
+            this.checkBox9.Size = new System.Drawing.Size(15, 14);
+            this.checkBox9.TabIndex = 148;
+            this.checkBox9.UseVisualStyleBackColor = true;
+            // 
+            // checkBox10
+            // 
+            this.checkBox10.AutoSize = true;
+            this.checkBox10.Location = new System.Drawing.Point(300, 256);
+            this.checkBox10.Name = "checkBox10";
+            this.checkBox10.Size = new System.Drawing.Size(15, 14);
+            this.checkBox10.TabIndex = 147;
+            this.checkBox10.UseVisualStyleBackColor = true;
+            // 
+            // textBox48
+            // 
+            this.textBox48.Location = new System.Drawing.Point(91, 292);
+            this.textBox48.Name = "textBox48";
+            this.textBox48.Size = new System.Drawing.Size(176, 22);
+            this.textBox48.TabIndex = 145;
+            // 
+            // label100
+            // 
+            this.label100.AutoSize = true;
+            this.label100.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label100.Location = new System.Drawing.Point(546, 292);
+            this.label100.Name = "label100";
+            this.label100.Size = new System.Drawing.Size(33, 17);
+            this.label100.TabIndex = 146;
+            this.label100.Text = "TEL:";
+            // 
+            // label101
+            // 
+            this.label101.AutoSize = true;
+            this.label101.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label101.Location = new System.Drawing.Point(37, 294);
+            this.label101.Name = "label101";
+            this.label101.Size = new System.Drawing.Size(48, 17);
+            this.label101.TabIndex = 144;
+            this.label101.Text = "Nome:";
             // 
             // label16
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(68, 285);
+            this.label16.Location = new System.Drawing.Point(717, 47);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(33, 17);
-            this.label16.TabIndex = 74;
-            this.label16.Text = "TEL:";
+            this.label16.Size = new System.Drawing.Size(34, 17);
+            this.label16.TabIndex = 109;
+            this.label16.Text = "CPF:";
+            // 
+            // textBox35
+            // 
+            this.textBox35.Location = new System.Drawing.Point(633, 166);
+            this.textBox35.Name = "textBox35";
+            this.textBox35.Size = new System.Drawing.Size(136, 22);
+            this.textBox35.TabIndex = 108;
+            // 
+            // label84
+            // 
+            this.label84.AutoSize = true;
+            this.label84.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label84.Location = new System.Drawing.Point(575, 172);
+            this.label84.Name = "label84";
+            this.label84.Size = new System.Drawing.Size(52, 16);
+            this.label84.TabIndex = 107;
+            this.label84.Text = "RAMAL:";
+            // 
+            // textBox34
+            // 
+            this.textBox34.Location = new System.Drawing.Point(431, 166);
+            this.textBox34.Name = "textBox34";
+            this.textBox34.Size = new System.Drawing.Size(136, 22);
+            this.textBox34.TabIndex = 106;
+            // 
+            // label83
+            // 
+            this.label83.AutoSize = true;
+            this.label83.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label83.Location = new System.Drawing.Point(359, 172);
+            this.label83.Name = "label83";
+            this.label83.Size = new System.Drawing.Size(66, 16);
+            this.label83.TabIndex = 105;
+            this.label83.Text = "HORÁRIO:";
+            // 
+            // textBox33
+            // 
+            this.textBox33.Location = new System.Drawing.Point(174, 169);
+            this.textBox33.Name = "textBox33";
+            this.textBox33.Size = new System.Drawing.Size(176, 22);
+            this.textBox33.TabIndex = 104;
+            // 
+            // label82
+            // 
+            this.label82.AutoSize = true;
+            this.label82.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label82.Location = new System.Drawing.Point(37, 175);
+            this.label82.Name = "label82";
+            this.label82.Size = new System.Drawing.Size(131, 16);
+            this.label82.TabIndex = 103;
+            this.label82.Text = "LOCAL DE TRABALHO:";
+            // 
+            // textBox31
+            // 
+            this.textBox31.Location = new System.Drawing.Point(633, 123);
+            this.textBox31.Name = "textBox31";
+            this.textBox31.Size = new System.Drawing.Size(136, 22);
+            this.textBox31.TabIndex = 102;
+            // 
+            // label81
+            // 
+            this.label81.AutoSize = true;
+            this.label81.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label81.Location = new System.Drawing.Point(551, 129);
+            this.label81.Name = "label81";
+            this.label81.Size = new System.Drawing.Size(76, 16);
+            this.label81.TabIndex = 101;
+            this.label81.Text = "PROFISSÃO:";
+            // 
+            // textBox24
+            // 
+            this.textBox24.Location = new System.Drawing.Point(393, 123);
+            this.textBox24.Name = "textBox24";
+            this.textBox24.Size = new System.Drawing.Size(136, 22);
+            this.textBox24.TabIndex = 100;
+            // 
+            // label80
+            // 
+            this.label80.AutoSize = true;
+            this.label80.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label80.Location = new System.Drawing.Point(286, 131);
+            this.label80.Name = "label80";
+            this.label80.Size = new System.Drawing.Size(98, 16);
+            this.label80.TabIndex = 99;
+            this.label80.Text = "ESCOLARIDADE:";
+            // 
+            // comboBox5
+            // 
+            this.comboBox5.FormattingEnabled = true;
+            this.comboBox5.Items.AddRange(new object[] {
+            "CASADO(A)",
+            "DIVORCIADO(A)",
+            "SEPARADO(A)",
+            "SOLTEIRO(A)",
+            "VIÚVO(A)"});
+            this.comboBox5.Location = new System.Drawing.Point(132, 123);
+            this.comboBox5.Name = "comboBox5";
+            this.comboBox5.Size = new System.Drawing.Size(121, 24);
+            this.comboBox5.TabIndex = 98;
+            // 
+            // label79
+            // 
+            this.label79.AutoSize = true;
+            this.label79.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label79.Location = new System.Drawing.Point(37, 131);
+            this.label79.Name = "label79";
+            this.label79.Size = new System.Drawing.Size(89, 16);
+            this.label79.TabIndex = 97;
+            this.label79.Text = "ESTADO CIVÍL:";
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(789, 84);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(108, 22);
+            this.textBox4.TabIndex = 96;
+            // 
+            // dateTimePicker6
+            // 
+            this.dateTimePicker6.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTimePicker6.Location = new System.Drawing.Point(420, 85);
+            this.dateTimePicker6.Name = "dateTimePicker6";
+            this.dateTimePicker6.Size = new System.Drawing.Size(109, 22);
+            this.dateTimePicker6.TabIndex = 95;
+            this.dateTimePicker6.Value = new System.DateTime(2021, 10, 1, 0, 0, 0, 0);
+            // 
+            // textBox6
+            // 
+            this.textBox6.Location = new System.Drawing.Point(578, 85);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(91, 22);
+            this.textBox6.TabIndex = 94;
+            // 
+            // label78
+            // 
+            this.label78.AutoSize = true;
+            this.label78.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label78.Location = new System.Drawing.Point(675, 90);
+            this.label78.Name = "label78";
+            this.label78.Size = new System.Drawing.Size(108, 16);
+            this.label78.TabIndex = 92;
+            this.label78.Text = "ORGÃO EMISSOR:";
+            // 
+            // label77
+            // 
+            this.label77.AutoSize = true;
+            this.label77.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label77.Location = new System.Drawing.Point(546, 88);
+            this.label77.Name = "label77";
+            this.label77.Size = new System.Drawing.Size(26, 16);
+            this.label77.TabIndex = 91;
+            this.label77.Text = "UF:";
+            // 
+            // label76
+            // 
+            this.label76.AutoSize = true;
+            this.label76.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label76.Location = new System.Drawing.Point(286, 88);
+            this.label76.Name = "label76";
+            this.label76.Size = new System.Drawing.Size(128, 16);
+            this.label76.TabIndex = 90;
+            this.label76.Text = "DATA DE EXPEDIÇÃO:";
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(179, 85);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(100, 22);
+            this.textBox3.TabIndex = 89;
+            // 
+            // label47
+            // 
+            this.label47.AutoSize = true;
+            this.label47.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label47.Location = new System.Drawing.Point(37, 88);
+            this.label47.Name = "label47";
+            this.label47.Size = new System.Drawing.Size(131, 16);
+            this.label47.TabIndex = 88;
+            this.label47.Text = "REGISTRO GERAL(RG):";
+            // 
+            // maskedTextBox5
+            // 
+            this.maskedTextBox5.Location = new System.Drawing.Point(757, 45);
+            this.maskedTextBox5.Mask = "000.000.000\\-00";
+            this.maskedTextBox5.Name = "maskedTextBox5";
+            this.maskedTextBox5.Size = new System.Drawing.Size(107, 22);
+            this.maskedTextBox5.TabIndex = 87;
+            // 
+            // maskedTextBox4
+            // 
+            this.maskedTextBox4.Location = new System.Drawing.Point(585, 41);
+            this.maskedTextBox4.Mask = "(99) 00000-0000";
+            this.maskedTextBox4.Name = "maskedTextBox4";
+            this.maskedTextBox4.Size = new System.Drawing.Size(107, 22);
+            this.maskedTextBox4.TabIndex = 85;
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTimePicker1.Location = new System.Drawing.Point(420, 43);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(109, 22);
+            this.dateTimePicker1.TabIndex = 84;
+            this.dateTimePicker1.Value = new System.DateTime(2021, 10, 1, 0, 0, 0, 0);
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(273, 48);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(141, 16);
+            this.label14.TabIndex = 83;
+            this.label14.Text = "DATA DE NASCIMENTO:";
+            // 
+            // label75
+            // 
+            this.label75.AutoSize = true;
+            this.label75.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label75.Location = new System.Drawing.Point(452, 8);
+            this.label75.Name = "label75";
+            this.label75.Size = new System.Drawing.Size(30, 16);
+            this.label75.TabIndex = 82;
+            this.label75.Text = "PAI:";
+            // 
+            // label74
+            // 
+            this.label74.AutoSize = true;
+            this.label74.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label74.Location = new System.Drawing.Point(575, 8);
+            this.label74.Name = "label74";
+            this.label74.Size = new System.Drawing.Size(92, 16);
+            this.label74.TabIndex = 81;
+            this.label74.Text = "RESPONSÁVEL:";
+            // 
+            // label73
+            // 
+            this.label73.AutoSize = true;
+            this.label73.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label73.Location = new System.Drawing.Point(330, 10);
+            this.label73.Name = "label73";
+            this.label73.Size = new System.Drawing.Size(36, 16);
+            this.label73.TabIndex = 80;
+            this.label73.Text = "MÃE:";
+            // 
+            // checkBox7
+            // 
+            this.checkBox7.AutoSize = true;
+            this.checkBox7.Location = new System.Drawing.Point(535, 8);
+            this.checkBox7.Name = "checkBox7";
+            this.checkBox7.Size = new System.Drawing.Size(15, 14);
+            this.checkBox7.TabIndex = 79;
+            this.checkBox7.UseVisualStyleBackColor = true;
+            // 
+            // checkBox2
+            // 
+            this.checkBox2.AutoSize = true;
+            this.checkBox2.Location = new System.Drawing.Point(431, 8);
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.Size = new System.Drawing.Size(15, 14);
+            this.checkBox2.TabIndex = 78;
+            this.checkBox2.UseVisualStyleBackColor = true;
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(300, 10);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(15, 14);
+            this.checkBox1.TabIndex = 77;
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(91, 46);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(176, 22);
+            this.textBox5.TabIndex = 71;
             // 
             // label17
             // 
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(32, 56);
+            this.label17.Location = new System.Drawing.Point(546, 46);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(33, 17);
             this.label17.TabIndex = 73;
             this.label17.Text = "TEL:";
             // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(68, 247);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(88, 17);
-            this.label14.TabIndex = 70;
-            this.label14.Text = "Nome do pai";
-            // 
             // label13
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(32, 21);
+            this.label13.Location = new System.Drawing.Point(37, 48);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(97, 17);
+            this.label13.Size = new System.Drawing.Size(48, 17);
             this.label13.TabIndex = 69;
-            this.label13.Text = "Nome da Mãe:";
+            this.label13.Text = "Nome:";
             // 
-            // tabPage7
+            // tabControl2
             // 
-            this.tabPage7.Controls.Add(this.button1);
-            this.tabPage7.Controls.Add(this.dataGridView1);
-            this.tabPage7.Controls.Add(this.textBox2);
-            this.tabPage7.Controls.Add(this.label10);
-            this.tabPage7.Location = new System.Drawing.Point(4, 22);
-            this.tabPage7.Name = "tabPage7";
-            this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage7.Size = new System.Drawing.Size(1316, 612);
-            this.tabPage7.TabIndex = 2;
-            this.tabPage7.Text = "Pesquisar aluno";
-            this.tabPage7.UseVisualStyleBackColor = true;
+            this.tabControl2.Controls.Add(this.tabPage6);
+            this.tabControl2.Controls.Add(this.tabPage7);
+            this.tabControl2.Controls.Add(this.tabPage8);
+            this.tabControl2.Location = new System.Drawing.Point(12, 5);
+            this.tabControl2.Name = "tabControl2";
+            this.tabControl2.SelectedIndex = 0;
+            this.tabControl2.Size = new System.Drawing.Size(1324, 638);
+            this.tabControl2.TabIndex = 2;
             // 
-            // button1
+            // panel7
             // 
-            this.button1.Location = new System.Drawing.Point(1160, 57);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(91, 32);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "Buscar";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.ColumnCodigo,
-            this.ColumnMatricula,
-            this.ColumnNome,
-            this.ColumnEndereco,
-            this.ColumnBairro});
-            this.dataGridView1.Location = new System.Drawing.Point(60, 115);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(1241, 437);
-            this.dataGridView1.TabIndex = 6;
-            // 
-            // ColumnCodigo
-            // 
-            this.ColumnCodigo.HeaderText = "Código do aluno";
-            this.ColumnCodigo.Name = "ColumnCodigo";
-            this.ColumnCodigo.ReadOnly = true;
-            // 
-            // ColumnMatricula
-            // 
-            this.ColumnMatricula.HeaderText = "Codigo Matricula";
-            this.ColumnMatricula.Name = "ColumnMatricula";
-            this.ColumnMatricula.ReadOnly = true;
-            // 
-            // ColumnNome
-            // 
-            this.ColumnNome.HeaderText = "Nome do aluno";
-            this.ColumnNome.Name = "ColumnNome";
-            this.ColumnNome.ReadOnly = true;
-            this.ColumnNome.Width = 422;
-            // 
-            // ColumnEndereco
-            // 
-            this.ColumnEndereco.HeaderText = "Endereço";
-            this.ColumnEndereco.Name = "ColumnEndereco";
-            this.ColumnEndereco.ReadOnly = true;
-            this.ColumnEndereco.Width = 250;
-            // 
-            // ColumnBairro
-            // 
-            this.ColumnBairro.HeaderText = "Bairro";
-            this.ColumnBairro.Name = "ColumnBairro";
-            this.ColumnBairro.ReadOnly = true;
-            this.ColumnBairro.Width = 200;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(143, 60);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(988, 25);
-            this.textBox2.TabIndex = 5;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(56, 63);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(81, 22);
-            this.label10.TabIndex = 4;
-            this.label10.Text = "Localizar";
-            // 
-            // tabPage8
-            // 
-            this.tabPage8.Location = new System.Drawing.Point(4, 22);
-            this.tabPage8.Name = "tabPage8";
-            this.tabPage8.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage8.Size = new System.Drawing.Size(1316, 612);
-            this.tabPage8.TabIndex = 3;
-            this.tabPage8.Text = "Boletim                      ";
-            this.tabPage8.UseVisualStyleBackColor = true;
+            this.panel7.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel7.Location = new System.Drawing.Point(0, 207);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(1236, 38);
+            this.panel7.TabIndex = 178;
             // 
             // Form1
             // 
@@ -1926,7 +2918,12 @@ namespace ECED_FORMS
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
-            this.tabControl2.ResumeLayout(false);
+            this.tabPage8.ResumeLayout(false);
+            this.tabPage8.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            this.tabPage7.ResumeLayout(false);
+            this.tabPage7.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.tabPage6.ResumeLayout(false);
             this.tabControl1.ResumeLayout(false);
             this.tbCadastrarAlunos.ResumeLayout(false);
@@ -1951,17 +2948,37 @@ namespace ECED_FORMS
             this.panel6.PerformLayout();
             this.tabPage4.ResumeLayout(false);
             this.tabPage4.PerformLayout();
-            this.tabPage7.ResumeLayout(false);
-            this.tabPage7.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.tabControl2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.TabControl tabControl2;
-        private System.Windows.Forms.TabPage tabPage5;
+        private System.Windows.Forms.TabPage tabPage8;
+        private System.Windows.Forms.ComboBox comboBox11;
+        private System.Windows.Forms.Label label106;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label label105;
+        private System.Windows.Forms.ComboBox comboBox10;
+        private System.Windows.Forms.ComboBox comboBox9;
+        private System.Windows.Forms.Label label103;
+        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DISCIPLINACOL;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NOTACOL1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NOTA2TCOL;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ULTIMOTRIMESTRE;
+        private System.Windows.Forms.Label label104;
+        private System.Windows.Forms.TabPage tabPage7;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnCodigo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnMatricula;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnNome;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnEndereco;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnBairro;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TabPage tabPage6;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button6;
@@ -1971,30 +2988,33 @@ namespace ECED_FORMS
         private System.Windows.Forms.Button btnSalvarCadastro;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tbCadastrarAlunos;
-        private System.Windows.Forms.TextBox txtEmail;
+        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
+        private System.Windows.Forms.TextBox txtNacionalidade;
+        private System.Windows.Forms.Label label64;
+        private System.Windows.Forms.TextBox textBox39;
         private System.Windows.Forms.Label label68;
-        private System.Windows.Forms.TextBox txtUfRg;
+        private System.Windows.Forms.TextBox textBox38;
         private System.Windows.Forms.Label label67;
-        private System.Windows.Forms.DateTimePicker dtDataExpedicaoRg;
+        private System.Windows.Forms.DateTimePicker dateTimePicker5;
         private System.Windows.Forms.Label label66;
-        private System.Windows.Forms.TextBox txtUfNomeCartorio;
+        private System.Windows.Forms.TextBox textBox37;
         private System.Windows.Forms.Label label65;
-        private System.Windows.Forms.DateTimePicker dtDataEmissaoCertNasc;
+        private System.Windows.Forms.DateTimePicker dateTimePicker4;
         private System.Windows.Forms.Label label45;
-        private System.Windows.Forms.TextBox txtCertNascimento;
+        private System.Windows.Forms.TextBox textBox36;
         private System.Windows.Forms.Label label44;
         private System.Windows.Forms.TextBox txtUf;
         private System.Windows.Forms.Label label43;
         private System.Windows.Forms.TextBox txtNaturalidade;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.DateTimePicker dtDataEmissaoRegCivil;
+        private System.Windows.Forms.DateTimePicker dateTimePicker3;
         private System.Windows.Forms.TextBox txtNomeAluno;
         private System.Windows.Forms.TextBox textBox15;
-        private System.Windows.Forms.TextBox txtRegCivil;
-        private System.Windows.Forms.TextBox txtLivro;
-        private System.Windows.Forms.TextBox txtFolha;
-        private System.Windows.Forms.TextBox txtOrgaoEmissorRg;
-        private System.Windows.Forms.TextBox txtRg;
+        private System.Windows.Forms.TextBox textBox14;
+        private System.Windows.Forms.TextBox textBox13;
+        private System.Windows.Forms.TextBox textBox12;
+        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.ComboBox cmbEstadoCivil;
         private System.Windows.Forms.Label label46;
         private System.Windows.Forms.Label label27;
@@ -2040,6 +3060,16 @@ namespace ECED_FORMS
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.ComboBox comboBox8;
+        private System.Windows.Forms.Label label102;
+        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.Label label72;
+        private System.Windows.Forms.TextBox textBox16;
+        private System.Windows.Forms.Label label71;
+        private System.Windows.Forms.Label label70;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label label69;
+        private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.Label label37;
         private System.Windows.Forms.TextBox textBox21;
         private System.Windows.Forms.Label label34;
@@ -2068,7 +3098,6 @@ namespace ECED_FORMS
         private System.Windows.Forms.CheckBox checkBox3;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox textBox29;
-        private System.Windows.Forms.TextBox textBox28;
         private System.Windows.Forms.TextBox textBox27;
         private System.Windows.Forms.TextBox textBox22;
         private System.Windows.Forms.TextBox textBox26;
@@ -2103,31 +3132,80 @@ namespace ECED_FORMS
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Label label38;
         private System.Windows.Forms.TabPage tabPage4;
-        private System.Windows.Forms.Label label47;
-        private System.Windows.Forms.TextBox textBox24;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Label label85;
+        private System.Windows.Forms.TextBox textBox40;
+        private System.Windows.Forms.Label label86;
+        private System.Windows.Forms.TextBox textBox41;
+        private System.Windows.Forms.Label label87;
+        private System.Windows.Forms.TextBox textBox42;
+        private System.Windows.Forms.Label label88;
+        private System.Windows.Forms.TextBox textBox43;
+        private System.Windows.Forms.Label label89;
+        private System.Windows.Forms.TextBox textBox44;
+        private System.Windows.Forms.Label label90;
+        private System.Windows.Forms.ComboBox comboBox7;
+        private System.Windows.Forms.Label label91;
+        private System.Windows.Forms.TextBox textBox45;
+        private System.Windows.Forms.DateTimePicker dateTimePicker7;
+        private System.Windows.Forms.TextBox textBox46;
+        private System.Windows.Forms.Label label92;
+        private System.Windows.Forms.Label label93;
+        private System.Windows.Forms.Label label94;
+        private System.Windows.Forms.TextBox textBox47;
+        private System.Windows.Forms.Label label95;
+        private System.Windows.Forms.MaskedTextBox maskedTextBox6;
+        private System.Windows.Forms.MaskedTextBox maskedTextBox7;
+        private System.Windows.Forms.DateTimePicker dateTimePicker8;
+        private System.Windows.Forms.Label label96;
+        private System.Windows.Forms.Label label97;
+        private System.Windows.Forms.Label label98;
+        private System.Windows.Forms.Label label99;
+        private System.Windows.Forms.CheckBox checkBox8;
+        private System.Windows.Forms.CheckBox checkBox9;
+        private System.Windows.Forms.CheckBox checkBox10;
+        private System.Windows.Forms.TextBox textBox48;
+        private System.Windows.Forms.Label label100;
+        private System.Windows.Forms.Label label101;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.TextBox textBox35;
+        private System.Windows.Forms.Label label84;
+        private System.Windows.Forms.TextBox textBox34;
+        private System.Windows.Forms.Label label83;
+        private System.Windows.Forms.TextBox textBox33;
+        private System.Windows.Forms.Label label82;
+        private System.Windows.Forms.TextBox textBox31;
+        private System.Windows.Forms.Label label81;
+        private System.Windows.Forms.TextBox textBox24;
+        private System.Windows.Forms.Label label80;
+        private System.Windows.Forms.ComboBox comboBox5;
+        private System.Windows.Forms.Label label79;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.DateTimePicker dateTimePicker6;
+        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.Label label78;
+        private System.Windows.Forms.Label label77;
+        private System.Windows.Forms.Label label76;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Label label47;
+        private System.Windows.Forms.MaskedTextBox maskedTextBox5;
+        private System.Windows.Forms.MaskedTextBox maskedTextBox4;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label75;
+        private System.Windows.Forms.Label label74;
+        private System.Windows.Forms.Label label73;
+        private System.Windows.Forms.CheckBox checkBox7;
+        private System.Windows.Forms.CheckBox checkBox2;
+        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.TabPage tabPage7;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnCodigo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnMatricula;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnNome;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnEndereco;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnBairro;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox txtNacionalidade;
-        private System.Windows.Forms.Label label64;
-        private System.Windows.Forms.MaskedTextBox txtCpf;
+        private System.Windows.Forms.TabControl tabControl2;
+        private System.Windows.Forms.MaskedTextBox maskedTextBox8;
         private System.Windows.Forms.MaskedTextBox maskedTextBox2;
-        private System.Windows.Forms.TabPage tabPage8;
+        private System.Windows.Forms.MaskedTextBox maskedTextBox3;
+        private System.Windows.Forms.MaskedTextBox maskedTextBox9;
+        private System.Windows.Forms.Panel panel7;
     }
 }
 
