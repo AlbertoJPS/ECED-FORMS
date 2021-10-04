@@ -131,6 +131,7 @@
     <Compile Include="EnderecoDB.cs" />
     <Compile Include="IdentificacaoEscolaDB.cs" />
     <Compile Include="IdentificacaoEscolar.cs" />
+    <Compile Include="Mostrar.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Response.cs" />
   </ItemGroup>

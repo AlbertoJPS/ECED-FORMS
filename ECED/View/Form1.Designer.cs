@@ -45,14 +45,14 @@ namespace ECED_FORMS
             this.ULTIMOTRIMESTRE = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label104 = new System.Windows.Forms.Label();
             this.tabPage7 = new System.Windows.Forms.TabPage();
-            this.button1 = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.btnBuscarAluno = new System.Windows.Forms.Button();
+            this.dtgMostrarAlunos = new System.Windows.Forms.DataGridView();
             this.ColumnCodigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnMatricula = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnNome = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnEndereco = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnBairro = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtPesquisarAluno = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.tabPage6 = new System.Windows.Forms.TabPage();
             this.button7 = new System.Windows.Forms.Button();
@@ -283,7 +283,7 @@ namespace ECED_FORMS
             this.tabPage8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.tabPage7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgMostrarAlunos)).BeginInit();
             this.tabPage6.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tbCadastrarAlunos.SuspendLayout();
@@ -474,9 +474,9 @@ namespace ECED_FORMS
             // 
             // tabPage7
             // 
-            this.tabPage7.Controls.Add(this.button1);
-            this.tabPage7.Controls.Add(this.dataGridView1);
-            this.tabPage7.Controls.Add(this.textBox2);
+            this.tabPage7.Controls.Add(this.btnBuscarAluno);
+            this.tabPage7.Controls.Add(this.dtgMostrarAlunos);
+            this.tabPage7.Controls.Add(this.txtPesquisarAluno);
             this.tabPage7.Controls.Add(this.label10);
             this.tabPage7.Location = new System.Drawing.Point(4, 22);
             this.tabPage7.Name = "tabPage7";
@@ -486,31 +486,32 @@ namespace ECED_FORMS
             this.tabPage7.Text = "Pesquisar aluno";
             this.tabPage7.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // btnBuscarAluno
             // 
-            this.button1.Location = new System.Drawing.Point(1160, 57);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(91, 32);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "Buscar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnBuscarAluno.Location = new System.Drawing.Point(1160, 57);
+            this.btnBuscarAluno.Name = "btnBuscarAluno";
+            this.btnBuscarAluno.Size = new System.Drawing.Size(91, 32);
+            this.btnBuscarAluno.TabIndex = 7;
+            this.btnBuscarAluno.Text = "Buscar";
+            this.btnBuscarAluno.UseVisualStyleBackColor = true;
+            this.btnBuscarAluno.Click += new System.EventHandler(this.btnBuscarAluno_Click);
             // 
-            // dataGridView1
+            // dtgMostrarAlunos
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dtgMostrarAlunos.AllowUserToAddRows = false;
+            this.dtgMostrarAlunos.AllowUserToDeleteRows = false;
+            this.dtgMostrarAlunos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgMostrarAlunos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ColumnCodigo,
             this.ColumnMatricula,
             this.ColumnNome,
             this.ColumnEndereco,
             this.ColumnBairro});
-            this.dataGridView1.Location = new System.Drawing.Point(60, 115);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(1241, 437);
-            this.dataGridView1.TabIndex = 6;
+            this.dtgMostrarAlunos.Location = new System.Drawing.Point(60, 115);
+            this.dtgMostrarAlunos.Name = "dtgMostrarAlunos";
+            this.dtgMostrarAlunos.ReadOnly = true;
+            this.dtgMostrarAlunos.Size = new System.Drawing.Size(1241, 437);
+            this.dtgMostrarAlunos.TabIndex = 6;
             // 
             // ColumnCodigo
             // 
@@ -545,13 +546,13 @@ namespace ECED_FORMS
             this.ColumnBairro.ReadOnly = true;
             this.ColumnBairro.Width = 200;
             // 
-            // textBox2
+            // txtPesquisarAluno
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(143, 60);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(988, 25);
-            this.textBox2.TabIndex = 5;
+            this.txtPesquisarAluno.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPesquisarAluno.Location = new System.Drawing.Point(143, 60);
+            this.txtPesquisarAluno.Name = "txtPesquisarAluno";
+            this.txtPesquisarAluno.Size = new System.Drawing.Size(988, 25);
+            this.txtPesquisarAluno.TabIndex = 5;
             // 
             // label10
             // 
@@ -2923,7 +2924,7 @@ namespace ECED_FORMS
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.tabPage7.ResumeLayout(false);
             this.tabPage7.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgMostrarAlunos)).EndInit();
             this.tabPage6.ResumeLayout(false);
             this.tabControl1.ResumeLayout(false);
             this.tbCadastrarAlunos.ResumeLayout(false);
@@ -2970,14 +2971,14 @@ namespace ECED_FORMS
         private System.Windows.Forms.DataGridViewTextBoxColumn ULTIMOTRIMESTRE;
         private System.Windows.Forms.Label label104;
         private System.Windows.Forms.TabPage tabPage7;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button btnBuscarAluno;
+        private System.Windows.Forms.DataGridView dtgMostrarAlunos;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnCodigo;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnMatricula;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnNome;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnEndereco;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnBairro;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtPesquisarAluno;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TabPage tabPage6;
         private System.Windows.Forms.Button button7;

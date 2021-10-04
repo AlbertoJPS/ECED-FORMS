@@ -4,33 +4,39 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using DALProject;
 
 namespace DALProject
 {
-    public static class AlunoDB
+  public  class Mostrar
     {
-        public static Response Insert(Aluno al)
+        public static async Task<Response> mostrarAL(Aluno al)
         {
             try
             {
-                DocumentReference doc = DBConection.Getdatabase().Collection("Aluno").Document(al.NomeAluno);
+
+                Query alunodt = DBConection.Getdatabase().Collection(al.ToString());
+                QuerySnapshot snap = await alunodt.GetSnapshotAsync();
+
+
+
+               // DocumentReference doc = DBConection.Getdatabase().Collection("Aluno").Document(al.NomeAluno);
                 Dictionary<string, object> DadosPessoais = new Dictionary<string, object>();
 
                 Dictionary<string, object> data1 = new Dictionary<string, object>()
                 {
                     {"NOME",al.NomeAluno},
-                    {"Data de Nascimento",al.DataNascimento},
-                    {"Cor / Raça",al.CorERaca },
-                    {"Sexo",al.Sexo },
-                    {"Naturalidade",al.naturalidade },
-                    {"Nacionalidade",al.nacionalidade},
-                    {"Uf",al.UF },
-                    {"Estado civil",al.EstadoCivil },
+                    //{"Data de Nascimento",al.DataNascimento},
+                    //{"Cor / Raça",al.CorERaca },
+                    //{"Sexo",al.Sexo },
+                    //{"Naturalidade",al.naturalidade },
+                    //{"Nacionalidade",al.nacionalidade},
+                    //{"Uf",al.UF },
+                    //{"Estado civil",al.EstadoCivil },
                 };
                 DadosPessoais.Add("Dados Pessoais", data1);
 
-                Task<WriteResult> t = doc.SetAsync(DadosPessoais);
-                t.Wait();
+                
 
                 return new Response()
                 {
@@ -48,5 +54,6 @@ namespace DALProject
                 };
             }
         }
+
     }
 }

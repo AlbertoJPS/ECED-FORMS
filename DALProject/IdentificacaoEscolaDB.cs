@@ -31,7 +31,11 @@ namespace DALProject
                 };
                 IdentEscola.Add("Identificação Escolar", infoEscola);
 
-                doc.UpdateAsync(IdentEscola);
+               
+
+                Task<WriteResult> t =  doc.UpdateAsync(IdentEscola);
+                t.Wait();
+
 
                 return new Response()
                 {

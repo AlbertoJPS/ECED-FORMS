@@ -25,7 +25,13 @@ namespace DALProject
                     {"Estado", endereco.Estado}
                 };
                 Endereco.Add("Endereço", enderecoAluno);
-                doc.UpdateAsync(Endereco);
+               
+
+                Task<WriteResult> t =  doc.UpdateAsync(Endereco);
+                t.Wait();
+
+
+
                 return new Response()
                 {
                     Executed = true,
