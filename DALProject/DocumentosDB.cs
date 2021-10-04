@@ -29,8 +29,13 @@ namespace DALProject
                     {"Registro Civil",docAluno.RegistroCivil},
                     {"Data de Emissão Registro Civil",docAluno.DataEmissaoRegCivil},
                 };
-                Documentos.Add("Documentos", infoAluno); 
-                doc.UpdateAsync(Documentos);
+                Documentos.Add("Documentos", infoAluno);
+
+                Task<WriteResult> t = doc.UpdateAsync(Documentos);
+                t.Wait();
+
+                
+
                 return new Response()
                 {
                     Executed = true,

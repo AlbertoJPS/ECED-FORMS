@@ -137,29 +137,40 @@ namespace ECED_FORMS
 
 
 
-            //DocumentReference doc = database.Collection("Aluno").Document(txtNomeAluno.Text);
-            //Dictionary<string, object> DadosPessoais = new Dictionary<string, object>();
-
-            //Dictionary<string, object> data1 = new Dictionary<string, object>()
-
-            //{
-            //    {"NOME",txtNomeAluno.Text},
-            //    {"Data de Nascimento",dtNacimentoAluno.Text},
-            //    {"Cor / Raça",cmbCor.Text },
-            //    {"Sexo",cmbSexo.Text },
-            //    {"Naturalidade",txtNacionalidade.Text },
-            //    {"Nacionalidade",txtNacionalidade.Text},
-            //    {"Uf",txtUf.Text },
-            //    {"Estado civil",txtEstado.Text },
-
-            //};
-            //DadosPessoais.Add("Dados Pessoais",data1);
-
-            //doc.SetAsync(DadosPessoais);
-            //MessageBox.Show("Dados Adicionados com sucesso!");
+            
 
         }
 
+        private void btnBuscarAluno_Click(object sender, EventArgs e)
+        {
+
+            MostrarTodosAlunos("Aluno");
+
+        }
+        async void MostrarTodosAlunos(string NomeAluno)
+        {
+      
+
+
+
+            Query alunodt = database.Collection(NomeAluno);
+            QuerySnapshot snap = await alunodt.GetSnapshotAsync();
+
+            foreach (DocumentSnapshot docsnap in snap.Documents)
+            {
+                Aluno alsa = docsnap.ConvertTo<Aluno>();
+                
+                if (docsnap.Exists)
+                {
+
+                    dtgMostrarAlunos.Rows.Add(docsnap.Id, alsa.NomeAluno,alsa.DataNascimento);
+                    dtgMostrarAlunos.Rows.Add(docsnap.Id,docsnap);
+
+                }
+            
+            }
+        
+        }
 
     }
 }

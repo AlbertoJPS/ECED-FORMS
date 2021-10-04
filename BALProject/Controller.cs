@@ -5,9 +5,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace BALProject
 {
-  public  class Controller
+    public class Controller
     {
         public static Response AlunoInsert(Aluno al)
         {
@@ -31,5 +32,13 @@ namespace BALProject
         {
             return IdentificacaoEscolaDB.InsertIdentEscola(identEscola, aluno);
         }
+
+        //public static Response Mostrartudo(Aluno all)
+        //{
+        //    return Mostrar.mostrarAL(all);
+
+
+
+        //}
     }
 }
