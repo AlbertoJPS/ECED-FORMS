@@ -32,6 +32,10 @@ namespace BALProject
         {
             return IdentificacaoEscolaDB.InsertIdentEscola(identEscola, aluno);
         }
+        public static Response SaudeAlunoInsert(SaudeAluno saude, Aluno aluno)
+        {
+            return SaudeAlunoDB.InsertSaude(saude, aluno);
+        }
 
         //public static Response Mostrartudo(Aluno all)
         //{

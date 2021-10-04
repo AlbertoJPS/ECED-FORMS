@@ -169,43 +169,43 @@ namespace ECED_FORMS
             this.label8 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.maskedTextBox9 = new System.Windows.Forms.MaskedTextBox();
+            this.txtTelefoneContato = new System.Windows.Forms.MaskedTextBox();
             this.cbDeficiencia = new System.Windows.Forms.ComboBox();
             this.label39 = new System.Windows.Forms.Label();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
+            this.chDeficienciaNao = new System.Windows.Forms.CheckBox();
+            this.chDeficienciaSim = new System.Windows.Forms.CheckBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox29 = new System.Windows.Forms.TextBox();
-            this.textBox27 = new System.Windows.Forms.TextBox();
-            this.textBox22 = new System.Windows.Forms.TextBox();
-            this.textBox26 = new System.Windows.Forms.TextBox();
-            this.textBox25 = new System.Windows.Forms.TextBox();
-            this.textBox20 = new System.Windows.Forms.TextBox();
-            this.textBox19 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.txtAlergiaMedicamento = new System.Windows.Forms.TextBox();
+            this.txtTelefoneEmergDois = new System.Windows.Forms.TextBox();
+            this.txtContatoEmergDois = new System.Windows.Forms.TextBox();
+            this.txtTelefoneEmergUm = new System.Windows.Forms.TextBox();
+            this.txtContatoEmergUm = new System.Windows.Forms.TextBox();
+            this.txtDietaEspecifica = new System.Windows.Forms.TextBox();
+            this.txtIntoleranciaAlimento = new System.Windows.Forms.TextBox();
+            this.txtProblemaSaude = new System.Windows.Forms.TextBox();
             this.label41 = new System.Windows.Forms.Label();
-            this.checkBox6 = new System.Windows.Forms.CheckBox();
-            this.checkBox5 = new System.Windows.Forms.CheckBox();
+            this.chCarteiraNao = new System.Windows.Forms.CheckBox();
+            this.chCarteiraSim = new System.Windows.Forms.CheckBox();
             this.label40 = new System.Windows.Forms.Label();
             this.label61 = new System.Windows.Forms.Label();
             this.label60 = new System.Windows.Forms.Label();
             this.label57 = new System.Windows.Forms.Label();
             this.label59 = new System.Windows.Forms.Label();
             this.label58 = new System.Windows.Forms.Label();
-            this.checkBox18 = new System.Windows.Forms.CheckBox();
-            this.checkBox17 = new System.Windows.Forms.CheckBox();
+            this.chDietaEspecificaNao = new System.Windows.Forms.CheckBox();
+            this.chDietaEspecificaSim = new System.Windows.Forms.CheckBox();
             this.label56 = new System.Windows.Forms.Label();
             this.label55 = new System.Windows.Forms.Label();
-            this.checkBox16 = new System.Windows.Forms.CheckBox();
-            this.checkBox15 = new System.Windows.Forms.CheckBox();
+            this.chIntoleranciaAlimentoNao = new System.Windows.Forms.CheckBox();
+            this.chIntoleranciaAlimentoSim = new System.Windows.Forms.CheckBox();
             this.label54 = new System.Windows.Forms.Label();
             this.label53 = new System.Windows.Forms.Label();
-            this.checkBox14 = new System.Windows.Forms.CheckBox();
-            this.checkBox13 = new System.Windows.Forms.CheckBox();
+            this.chAlergiaMedicamentoNao = new System.Windows.Forms.CheckBox();
+            this.chAlergiaMedicamentoSim = new System.Windows.Forms.CheckBox();
             this.label52 = new System.Windows.Forms.Label();
             this.label51 = new System.Windows.Forms.Label();
-            this.checkBox12 = new System.Windows.Forms.CheckBox();
-            this.checkBox11 = new System.Windows.Forms.CheckBox();
+            this.chProblemaSaudeNao = new System.Windows.Forms.CheckBox();
+            this.chProblemaSaudeSim = new System.Windows.Forms.CheckBox();
             this.label31 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
             this.label38 = new System.Windows.Forms.Label();
@@ -1756,43 +1756,43 @@ namespace ECED_FORMS
             // 
             // tabPage3
             // 
-            this.tabPage3.Controls.Add(this.maskedTextBox9);
+            this.tabPage3.Controls.Add(this.txtTelefoneContato);
             this.tabPage3.Controls.Add(this.cbDeficiencia);
             this.tabPage3.Controls.Add(this.label39);
-            this.tabPage3.Controls.Add(this.checkBox4);
-            this.tabPage3.Controls.Add(this.checkBox3);
+            this.tabPage3.Controls.Add(this.chDeficienciaNao);
+            this.tabPage3.Controls.Add(this.chDeficienciaSim);
             this.tabPage3.Controls.Add(this.label3);
-            this.tabPage3.Controls.Add(this.textBox29);
-            this.tabPage3.Controls.Add(this.textBox27);
-            this.tabPage3.Controls.Add(this.textBox22);
-            this.tabPage3.Controls.Add(this.textBox26);
-            this.tabPage3.Controls.Add(this.textBox25);
-            this.tabPage3.Controls.Add(this.textBox20);
-            this.tabPage3.Controls.Add(this.textBox19);
-            this.tabPage3.Controls.Add(this.textBox10);
+            this.tabPage3.Controls.Add(this.txtAlergiaMedicamento);
+            this.tabPage3.Controls.Add(this.txtTelefoneEmergDois);
+            this.tabPage3.Controls.Add(this.txtContatoEmergDois);
+            this.tabPage3.Controls.Add(this.txtTelefoneEmergUm);
+            this.tabPage3.Controls.Add(this.txtContatoEmergUm);
+            this.tabPage3.Controls.Add(this.txtDietaEspecifica);
+            this.tabPage3.Controls.Add(this.txtIntoleranciaAlimento);
+            this.tabPage3.Controls.Add(this.txtProblemaSaude);
             this.tabPage3.Controls.Add(this.label41);
-            this.tabPage3.Controls.Add(this.checkBox6);
-            this.tabPage3.Controls.Add(this.checkBox5);
+            this.tabPage3.Controls.Add(this.chCarteiraNao);
+            this.tabPage3.Controls.Add(this.chCarteiraSim);
             this.tabPage3.Controls.Add(this.label40);
             this.tabPage3.Controls.Add(this.label61);
             this.tabPage3.Controls.Add(this.label60);
             this.tabPage3.Controls.Add(this.label57);
             this.tabPage3.Controls.Add(this.label59);
             this.tabPage3.Controls.Add(this.label58);
-            this.tabPage3.Controls.Add(this.checkBox18);
-            this.tabPage3.Controls.Add(this.checkBox17);
+            this.tabPage3.Controls.Add(this.chDietaEspecificaNao);
+            this.tabPage3.Controls.Add(this.chDietaEspecificaSim);
             this.tabPage3.Controls.Add(this.label56);
             this.tabPage3.Controls.Add(this.label55);
-            this.tabPage3.Controls.Add(this.checkBox16);
-            this.tabPage3.Controls.Add(this.checkBox15);
+            this.tabPage3.Controls.Add(this.chIntoleranciaAlimentoNao);
+            this.tabPage3.Controls.Add(this.chIntoleranciaAlimentoSim);
             this.tabPage3.Controls.Add(this.label54);
             this.tabPage3.Controls.Add(this.label53);
-            this.tabPage3.Controls.Add(this.checkBox14);
-            this.tabPage3.Controls.Add(this.checkBox13);
+            this.tabPage3.Controls.Add(this.chAlergiaMedicamentoNao);
+            this.tabPage3.Controls.Add(this.chAlergiaMedicamentoSim);
             this.tabPage3.Controls.Add(this.label52);
             this.tabPage3.Controls.Add(this.label51);
-            this.tabPage3.Controls.Add(this.checkBox12);
-            this.tabPage3.Controls.Add(this.checkBox11);
+            this.tabPage3.Controls.Add(this.chProblemaSaudeNao);
+            this.tabPage3.Controls.Add(this.chProblemaSaudeSim);
             this.tabPage3.Controls.Add(this.label31);
             this.tabPage3.Controls.Add(this.panel6);
             this.tabPage3.Location = new System.Drawing.Point(4, 25);
@@ -1803,13 +1803,13 @@ namespace ECED_FORMS
             this.tabPage3.Text = "Identificação saúde";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
-            // maskedTextBox9
+            // txtTelefoneContato
             // 
-            this.maskedTextBox9.Location = new System.Drawing.Point(190, 367);
-            this.maskedTextBox9.Mask = "(99) 00000-0000";
-            this.maskedTextBox9.Name = "maskedTextBox9";
-            this.maskedTextBox9.Size = new System.Drawing.Size(107, 22);
-            this.maskedTextBox9.TabIndex = 145;
+            this.txtTelefoneContato.Location = new System.Drawing.Point(190, 367);
+            this.txtTelefoneContato.Mask = "(99) 00000-0000";
+            this.txtTelefoneContato.Name = "txtTelefoneContato";
+            this.txtTelefoneContato.Size = new System.Drawing.Size(107, 22);
+            this.txtTelefoneContato.TabIndex = 145;
             // 
             // cbDeficiencia
             // 
@@ -1839,27 +1839,27 @@ namespace ECED_FORMS
             this.label39.TabIndex = 143;
             this.label39.Text = "QUAL:";
             // 
-            // checkBox4
+            // chDeficienciaNao
             // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox4.Location = new System.Drawing.Point(148, 93);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(52, 17);
-            this.checkBox4.TabIndex = 142;
-            this.checkBox4.Text = "NÃO";
-            this.checkBox4.UseVisualStyleBackColor = true;
+            this.chDeficienciaNao.AutoSize = true;
+            this.chDeficienciaNao.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chDeficienciaNao.Location = new System.Drawing.Point(148, 93);
+            this.chDeficienciaNao.Name = "chDeficienciaNao";
+            this.chDeficienciaNao.Size = new System.Drawing.Size(52, 17);
+            this.chDeficienciaNao.TabIndex = 142;
+            this.chDeficienciaNao.Text = "NÃO";
+            this.chDeficienciaNao.UseVisualStyleBackColor = true;
             // 
-            // checkBox3
+            // chDeficienciaSim
             // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox3.Location = new System.Drawing.Point(101, 93);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(48, 17);
-            this.checkBox3.TabIndex = 141;
-            this.checkBox3.Text = "SIM";
-            this.checkBox3.UseVisualStyleBackColor = true;
+            this.chDeficienciaSim.AutoSize = true;
+            this.chDeficienciaSim.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chDeficienciaSim.Location = new System.Drawing.Point(101, 93);
+            this.chDeficienciaSim.Name = "chDeficienciaSim";
+            this.chDeficienciaSim.Size = new System.Drawing.Size(48, 17);
+            this.chDeficienciaSim.TabIndex = 141;
+            this.chDeficienciaSim.Text = "SIM";
+            this.chDeficienciaSim.UseVisualStyleBackColor = true;
             // 
             // label3
             // 
@@ -1871,61 +1871,61 @@ namespace ECED_FORMS
             this.label3.TabIndex = 140;
             this.label3.Text = "DEFICIENTE?";
             // 
-            // textBox29
+            // txtAlergiaMedicamento
             // 
-            this.textBox29.Location = new System.Drawing.Point(422, 163);
-            this.textBox29.Name = "textBox29";
-            this.textBox29.Size = new System.Drawing.Size(161, 22);
-            this.textBox29.TabIndex = 139;
+            this.txtAlergiaMedicamento.Location = new System.Drawing.Point(422, 163);
+            this.txtAlergiaMedicamento.Name = "txtAlergiaMedicamento";
+            this.txtAlergiaMedicamento.Size = new System.Drawing.Size(161, 22);
+            this.txtAlergiaMedicamento.TabIndex = 139;
             // 
-            // textBox27
+            // txtTelefoneEmergDois
             // 
-            this.textBox27.Location = new System.Drawing.Point(628, 323);
-            this.textBox27.Name = "textBox27";
-            this.textBox27.Size = new System.Drawing.Size(161, 22);
-            this.textBox27.TabIndex = 132;
+            this.txtTelefoneEmergDois.Location = new System.Drawing.Point(628, 323);
+            this.txtTelefoneEmergDois.Name = "txtTelefoneEmergDois";
+            this.txtTelefoneEmergDois.Size = new System.Drawing.Size(161, 22);
+            this.txtTelefoneEmergDois.TabIndex = 132;
             // 
-            // textBox22
+            // txtContatoEmergDois
             // 
-            this.textBox22.Location = new System.Drawing.Point(470, 321);
-            this.textBox22.Name = "textBox22";
-            this.textBox22.Size = new System.Drawing.Size(113, 22);
-            this.textBox22.TabIndex = 130;
+            this.txtContatoEmergDois.Location = new System.Drawing.Point(470, 321);
+            this.txtContatoEmergDois.Name = "txtContatoEmergDois";
+            this.txtContatoEmergDois.Size = new System.Drawing.Size(113, 22);
+            this.txtContatoEmergDois.TabIndex = 130;
             // 
-            // textBox26
+            // txtTelefoneEmergUm
             // 
-            this.textBox26.Location = new System.Drawing.Point(521, 278);
-            this.textBox26.Name = "textBox26";
-            this.textBox26.Size = new System.Drawing.Size(161, 22);
-            this.textBox26.TabIndex = 128;
+            this.txtTelefoneEmergUm.Location = new System.Drawing.Point(521, 278);
+            this.txtTelefoneEmergUm.Name = "txtTelefoneEmergUm";
+            this.txtTelefoneEmergUm.Size = new System.Drawing.Size(161, 22);
+            this.txtTelefoneEmergUm.TabIndex = 128;
             // 
-            // textBox25
+            // txtContatoEmergUm
             // 
-            this.textBox25.Location = new System.Drawing.Point(369, 278);
-            this.textBox25.Name = "textBox25";
-            this.textBox25.Size = new System.Drawing.Size(113, 22);
-            this.textBox25.TabIndex = 126;
+            this.txtContatoEmergUm.Location = new System.Drawing.Point(369, 278);
+            this.txtContatoEmergUm.Name = "txtContatoEmergUm";
+            this.txtContatoEmergUm.Size = new System.Drawing.Size(113, 22);
+            this.txtContatoEmergUm.TabIndex = 126;
             // 
-            // textBox20
+            // txtDietaEspecifica
             // 
-            this.textBox20.Location = new System.Drawing.Point(459, 238);
-            this.textBox20.Name = "textBox20";
-            this.textBox20.Size = new System.Drawing.Size(161, 22);
-            this.textBox20.TabIndex = 119;
+            this.txtDietaEspecifica.Location = new System.Drawing.Point(459, 238);
+            this.txtDietaEspecifica.Name = "txtDietaEspecifica";
+            this.txtDietaEspecifica.Size = new System.Drawing.Size(161, 22);
+            this.txtDietaEspecifica.TabIndex = 119;
             // 
-            // textBox19
+            // txtIntoleranciaAlimento
             // 
-            this.textBox19.Location = new System.Drawing.Point(459, 206);
-            this.textBox19.Name = "textBox19";
-            this.textBox19.Size = new System.Drawing.Size(161, 22);
-            this.textBox19.TabIndex = 113;
+            this.txtIntoleranciaAlimento.Location = new System.Drawing.Point(459, 206);
+            this.txtIntoleranciaAlimento.Name = "txtIntoleranciaAlimento";
+            this.txtIntoleranciaAlimento.Size = new System.Drawing.Size(161, 22);
+            this.txtIntoleranciaAlimento.TabIndex = 113;
             // 
-            // textBox10
+            // txtProblemaSaude
             // 
-            this.textBox10.Location = new System.Drawing.Point(459, 123);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(161, 22);
-            this.textBox10.TabIndex = 109;
+            this.txtProblemaSaude.Location = new System.Drawing.Point(459, 123);
+            this.txtProblemaSaude.Name = "txtProblemaSaude";
+            this.txtProblemaSaude.Size = new System.Drawing.Size(161, 22);
+            this.txtProblemaSaude.TabIndex = 109;
             // 
             // label41
             // 
@@ -1937,27 +1937,27 @@ namespace ECED_FORMS
             this.label41.TabIndex = 138;
             this.label41.Text = "QUAL:";
             // 
-            // checkBox6
+            // chCarteiraNao
             // 
-            this.checkBox6.AutoSize = true;
-            this.checkBox6.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox6.Location = new System.Drawing.Point(249, 54);
-            this.checkBox6.Name = "checkBox6";
-            this.checkBox6.Size = new System.Drawing.Size(53, 20);
-            this.checkBox6.TabIndex = 137;
-            this.checkBox6.Text = "NÃO";
-            this.checkBox6.UseVisualStyleBackColor = true;
+            this.chCarteiraNao.AutoSize = true;
+            this.chCarteiraNao.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chCarteiraNao.Location = new System.Drawing.Point(249, 54);
+            this.chCarteiraNao.Name = "chCarteiraNao";
+            this.chCarteiraNao.Size = new System.Drawing.Size(53, 20);
+            this.chCarteiraNao.TabIndex = 137;
+            this.chCarteiraNao.Text = "NÃO";
+            this.chCarteiraNao.UseVisualStyleBackColor = true;
             // 
-            // checkBox5
+            // chCarteiraSim
             // 
-            this.checkBox5.AutoSize = true;
-            this.checkBox5.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox5.Location = new System.Drawing.Point(190, 54);
-            this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(49, 20);
-            this.checkBox5.TabIndex = 136;
-            this.checkBox5.Text = "SIM";
-            this.checkBox5.UseVisualStyleBackColor = true;
+            this.chCarteiraSim.AutoSize = true;
+            this.chCarteiraSim.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chCarteiraSim.Location = new System.Drawing.Point(190, 54);
+            this.chCarteiraSim.Name = "chCarteiraSim";
+            this.chCarteiraSim.Size = new System.Drawing.Size(49, 20);
+            this.chCarteiraSim.TabIndex = 136;
+            this.chCarteiraSim.Text = "SIM";
+            this.chCarteiraSim.UseVisualStyleBackColor = true;
             // 
             // label40
             // 
@@ -2019,27 +2019,27 @@ namespace ECED_FORMS
             this.label58.TabIndex = 125;
             this.label58.Text = "EM CASO DE EMERGÊNCIA, ENTRAR EM CONTATO COM:";
             // 
-            // checkBox18
+            // chDietaEspecificaNao
             // 
-            this.checkBox18.AutoSize = true;
-            this.checkBox18.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox18.Location = new System.Drawing.Point(350, 244);
-            this.checkBox18.Name = "checkBox18";
-            this.checkBox18.Size = new System.Drawing.Size(52, 17);
-            this.checkBox18.TabIndex = 122;
-            this.checkBox18.Text = "NÃO";
-            this.checkBox18.UseVisualStyleBackColor = true;
+            this.chDietaEspecificaNao.AutoSize = true;
+            this.chDietaEspecificaNao.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chDietaEspecificaNao.Location = new System.Drawing.Point(350, 244);
+            this.chDietaEspecificaNao.Name = "chDietaEspecificaNao";
+            this.chDietaEspecificaNao.Size = new System.Drawing.Size(52, 17);
+            this.chDietaEspecificaNao.TabIndex = 122;
+            this.chDietaEspecificaNao.Text = "NÃO";
+            this.chDietaEspecificaNao.UseVisualStyleBackColor = true;
             // 
-            // checkBox17
+            // chDietaEspecificaSim
             // 
-            this.checkBox17.AutoSize = true;
-            this.checkBox17.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox17.Location = new System.Drawing.Point(292, 243);
-            this.checkBox17.Name = "checkBox17";
-            this.checkBox17.Size = new System.Drawing.Size(48, 17);
-            this.checkBox17.TabIndex = 121;
-            this.checkBox17.Text = "SIM";
-            this.checkBox17.UseVisualStyleBackColor = true;
+            this.chDietaEspecificaSim.AutoSize = true;
+            this.chDietaEspecificaSim.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chDietaEspecificaSim.Location = new System.Drawing.Point(292, 243);
+            this.chDietaEspecificaSim.Name = "chDietaEspecificaSim";
+            this.chDietaEspecificaSim.Size = new System.Drawing.Size(48, 17);
+            this.chDietaEspecificaSim.TabIndex = 121;
+            this.chDietaEspecificaSim.Text = "SIM";
+            this.chDietaEspecificaSim.UseVisualStyleBackColor = true;
             // 
             // label56
             // 
@@ -2061,27 +2061,27 @@ namespace ECED_FORMS
             this.label55.TabIndex = 118;
             this.label55.Text = "QUAL:";
             // 
-            // checkBox16
+            // chIntoleranciaAlimentoNao
             // 
-            this.checkBox16.AutoSize = true;
-            this.checkBox16.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox16.Location = new System.Drawing.Point(350, 208);
-            this.checkBox16.Name = "checkBox16";
-            this.checkBox16.Size = new System.Drawing.Size(52, 17);
-            this.checkBox16.TabIndex = 117;
-            this.checkBox16.Text = "NÃO";
-            this.checkBox16.UseVisualStyleBackColor = true;
+            this.chIntoleranciaAlimentoNao.AutoSize = true;
+            this.chIntoleranciaAlimentoNao.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chIntoleranciaAlimentoNao.Location = new System.Drawing.Point(350, 208);
+            this.chIntoleranciaAlimentoNao.Name = "chIntoleranciaAlimentoNao";
+            this.chIntoleranciaAlimentoNao.Size = new System.Drawing.Size(52, 17);
+            this.chIntoleranciaAlimentoNao.TabIndex = 117;
+            this.chIntoleranciaAlimentoNao.Text = "NÃO";
+            this.chIntoleranciaAlimentoNao.UseVisualStyleBackColor = true;
             // 
-            // checkBox15
+            // chIntoleranciaAlimentoSim
             // 
-            this.checkBox15.AutoSize = true;
-            this.checkBox15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox15.Location = new System.Drawing.Point(298, 206);
-            this.checkBox15.Name = "checkBox15";
-            this.checkBox15.Size = new System.Drawing.Size(48, 17);
-            this.checkBox15.TabIndex = 116;
-            this.checkBox15.Text = "SIM";
-            this.checkBox15.UseVisualStyleBackColor = true;
+            this.chIntoleranciaAlimentoSim.AutoSize = true;
+            this.chIntoleranciaAlimentoSim.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chIntoleranciaAlimentoSim.Location = new System.Drawing.Point(298, 206);
+            this.chIntoleranciaAlimentoSim.Name = "chIntoleranciaAlimentoSim";
+            this.chIntoleranciaAlimentoSim.Size = new System.Drawing.Size(48, 17);
+            this.chIntoleranciaAlimentoSim.TabIndex = 116;
+            this.chIntoleranciaAlimentoSim.Text = "SIM";
+            this.chIntoleranciaAlimentoSim.UseVisualStyleBackColor = true;
             // 
             // label54
             // 
@@ -2103,27 +2103,27 @@ namespace ECED_FORMS
             this.label53.TabIndex = 114;
             this.label53.Text = "QUAL:";
             // 
-            // checkBox14
+            // chAlergiaMedicamentoNao
             // 
-            this.checkBox14.AutoSize = true;
-            this.checkBox14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox14.Location = new System.Drawing.Point(317, 168);
-            this.checkBox14.Name = "checkBox14";
-            this.checkBox14.Size = new System.Drawing.Size(52, 17);
-            this.checkBox14.TabIndex = 112;
-            this.checkBox14.Text = "NÃO";
-            this.checkBox14.UseVisualStyleBackColor = true;
+            this.chAlergiaMedicamentoNao.AutoSize = true;
+            this.chAlergiaMedicamentoNao.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chAlergiaMedicamentoNao.Location = new System.Drawing.Point(317, 168);
+            this.chAlergiaMedicamentoNao.Name = "chAlergiaMedicamentoNao";
+            this.chAlergiaMedicamentoNao.Size = new System.Drawing.Size(52, 17);
+            this.chAlergiaMedicamentoNao.TabIndex = 112;
+            this.chAlergiaMedicamentoNao.Text = "NÃO";
+            this.chAlergiaMedicamentoNao.UseVisualStyleBackColor = true;
             // 
-            // checkBox13
+            // chAlergiaMedicamentoSim
             // 
-            this.checkBox13.AutoSize = true;
-            this.checkBox13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox13.Location = new System.Drawing.Point(268, 168);
-            this.checkBox13.Name = "checkBox13";
-            this.checkBox13.Size = new System.Drawing.Size(48, 17);
-            this.checkBox13.TabIndex = 111;
-            this.checkBox13.Text = "SIM";
-            this.checkBox13.UseVisualStyleBackColor = true;
+            this.chAlergiaMedicamentoSim.AutoSize = true;
+            this.chAlergiaMedicamentoSim.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chAlergiaMedicamentoSim.Location = new System.Drawing.Point(268, 168);
+            this.chAlergiaMedicamentoSim.Name = "chAlergiaMedicamentoSim";
+            this.chAlergiaMedicamentoSim.Size = new System.Drawing.Size(48, 17);
+            this.chAlergiaMedicamentoSim.TabIndex = 111;
+            this.chAlergiaMedicamentoSim.Text = "SIM";
+            this.chAlergiaMedicamentoSim.UseVisualStyleBackColor = true;
             // 
             // label52
             // 
@@ -2145,27 +2145,27 @@ namespace ECED_FORMS
             this.label51.TabIndex = 108;
             this.label51.Text = "QUAL:";
             // 
-            // checkBox12
+            // chProblemaSaudeNao
             // 
-            this.checkBox12.AutoSize = true;
-            this.checkBox12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox12.Location = new System.Drawing.Point(350, 128);
-            this.checkBox12.Name = "checkBox12";
-            this.checkBox12.Size = new System.Drawing.Size(52, 17);
-            this.checkBox12.TabIndex = 107;
-            this.checkBox12.Text = "NÃO";
-            this.checkBox12.UseVisualStyleBackColor = true;
+            this.chProblemaSaudeNao.AutoSize = true;
+            this.chProblemaSaudeNao.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chProblemaSaudeNao.Location = new System.Drawing.Point(350, 128);
+            this.chProblemaSaudeNao.Name = "chProblemaSaudeNao";
+            this.chProblemaSaudeNao.Size = new System.Drawing.Size(52, 17);
+            this.chProblemaSaudeNao.TabIndex = 107;
+            this.chProblemaSaudeNao.Text = "NÃO";
+            this.chProblemaSaudeNao.UseVisualStyleBackColor = true;
             // 
-            // checkBox11
+            // chProblemaSaudeSim
             // 
-            this.checkBox11.AutoSize = true;
-            this.checkBox11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox11.Location = new System.Drawing.Point(296, 128);
-            this.checkBox11.Name = "checkBox11";
-            this.checkBox11.Size = new System.Drawing.Size(48, 17);
-            this.checkBox11.TabIndex = 106;
-            this.checkBox11.Text = "SIM";
-            this.checkBox11.UseVisualStyleBackColor = true;
+            this.chProblemaSaudeSim.AutoSize = true;
+            this.chProblemaSaudeSim.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chProblemaSaudeSim.Location = new System.Drawing.Point(296, 128);
+            this.chProblemaSaudeSim.Name = "chProblemaSaudeSim";
+            this.chProblemaSaudeSim.Size = new System.Drawing.Size(48, 17);
+            this.chProblemaSaudeSim.TabIndex = 106;
+            this.chProblemaSaudeSim.Text = "SIM";
+            this.chProblemaSaudeSim.UseVisualStyleBackColor = true;
             // 
             // label31
             // 
@@ -3095,40 +3095,40 @@ namespace ECED_FORMS
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.ComboBox cbDeficiencia;
         private System.Windows.Forms.Label label39;
-        private System.Windows.Forms.CheckBox checkBox4;
-        private System.Windows.Forms.CheckBox checkBox3;
+        private System.Windows.Forms.CheckBox chDeficienciaNao;
+        private System.Windows.Forms.CheckBox chDeficienciaSim;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox29;
-        private System.Windows.Forms.TextBox textBox27;
-        private System.Windows.Forms.TextBox textBox22;
-        private System.Windows.Forms.TextBox textBox26;
-        private System.Windows.Forms.TextBox textBox25;
-        private System.Windows.Forms.TextBox textBox20;
-        private System.Windows.Forms.TextBox textBox19;
-        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.TextBox txtAlergiaMedicamento;
+        private System.Windows.Forms.TextBox txtTelefoneEmergDois;
+        private System.Windows.Forms.TextBox txtContatoEmergDois;
+        private System.Windows.Forms.TextBox txtTelefoneEmergUm;
+        private System.Windows.Forms.TextBox txtContatoEmergUm;
+        private System.Windows.Forms.TextBox txtDietaEspecifica;
+        private System.Windows.Forms.TextBox txtIntoleranciaAlimento;
+        private System.Windows.Forms.TextBox txtProblemaSaude;
         private System.Windows.Forms.Label label41;
-        private System.Windows.Forms.CheckBox checkBox6;
-        private System.Windows.Forms.CheckBox checkBox5;
+        private System.Windows.Forms.CheckBox chCarteiraNao;
+        private System.Windows.Forms.CheckBox chCarteiraSim;
         private System.Windows.Forms.Label label40;
         private System.Windows.Forms.Label label61;
         private System.Windows.Forms.Label label60;
         private System.Windows.Forms.Label label57;
         private System.Windows.Forms.Label label59;
         private System.Windows.Forms.Label label58;
-        private System.Windows.Forms.CheckBox checkBox18;
-        private System.Windows.Forms.CheckBox checkBox17;
+        private System.Windows.Forms.CheckBox chDietaEspecificaNao;
+        private System.Windows.Forms.CheckBox chDietaEspecificaSim;
         private System.Windows.Forms.Label label56;
         private System.Windows.Forms.Label label55;
-        private System.Windows.Forms.CheckBox checkBox16;
-        private System.Windows.Forms.CheckBox checkBox15;
+        private System.Windows.Forms.CheckBox chIntoleranciaAlimentoNao;
+        private System.Windows.Forms.CheckBox chIntoleranciaAlimentoSim;
         private System.Windows.Forms.Label label54;
         private System.Windows.Forms.Label label53;
-        private System.Windows.Forms.CheckBox checkBox14;
-        private System.Windows.Forms.CheckBox checkBox13;
+        private System.Windows.Forms.CheckBox chAlergiaMedicamentoNao;
+        private System.Windows.Forms.CheckBox chAlergiaMedicamentoSim;
         private System.Windows.Forms.Label label52;
         private System.Windows.Forms.Label label51;
-        private System.Windows.Forms.CheckBox checkBox12;
-        private System.Windows.Forms.CheckBox checkBox11;
+        private System.Windows.Forms.CheckBox chProblemaSaudeNao;
+        private System.Windows.Forms.CheckBox chProblemaSaudeSim;
         private System.Windows.Forms.Label label31;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Label label38;
@@ -3205,7 +3205,7 @@ namespace ECED_FORMS
         private System.Windows.Forms.MaskedTextBox maskedTextBox8;
         private System.Windows.Forms.MaskedTextBox txtTelefonePessAutorizada;
         private System.Windows.Forms.MaskedTextBox txtTelUrgencia;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox9;
+        private System.Windows.Forms.MaskedTextBox txtTelefoneContato;
         private System.Windows.Forms.Panel panel7;
     }
 }

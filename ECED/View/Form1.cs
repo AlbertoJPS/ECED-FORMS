@@ -27,9 +27,14 @@ namespace ECED_FORMS
         {
             string path = AppDomain.CurrentDomain.BaseDirectory + @"eced-e3031-firebase-adminsdk-fxr0o-786505f761.json";
             Environment.SetEnvironmentVariable("GOOGLE_APPLICATION_CREDENTIALS", path);
-
             database = FirestoreDb.Create("eced-e3031");
 
+            chAlergiaMedicamentoNao.Checked = true;
+            chCarteiraSim.Checked = true;
+            chDeficienciaNao.Checked = true;
+            chDietaEspecificaNao.Checked = true;
+            chIntoleranciaAlimentoNao.Checked = true;
+            chProblemaSaudeNao.Checked = true;
         }
         private void btnSalvarCadastro_Click(object sender, EventArgs e)
         {
@@ -77,20 +82,20 @@ namespace ECED_FORMS
             txtEstado.Text = string.Empty;
             txtRua.Text = string.Empty;
         }
-        
+
         void AdicionaDadosPersonalizados()
         {
             Aluno al = new Aluno()
             {
                 NomeAluno = txtNomeAluno.Text,
-                DataNascimento=dtNacimentoAluno.Text,
-                naturalidade=txtNaturalidade.Text,
-                nacionalidade=txtNacionalidade.Text,
-                Sexo=cmbSexo.Text,
-                UF=txtUf.Text,
-                CorERaca=cmbCor.Text,
-                EstadoCivil=cmbEstadoCivil.Text
-                
+                DataNascimento = dtNacimentoAluno.Text,
+                naturalidade = txtNaturalidade.Text,
+                nacionalidade = txtNacionalidade.Text,
+                Sexo = cmbSexo.Text,
+                UF = txtUf.Text,
+                CorERaca = cmbCor.Text,
+                EstadoCivil = cmbEstadoCivil.Text
+
 
 
 
@@ -100,10 +105,10 @@ namespace ECED_FORMS
                 Cpf = txtCpf.Text,
                 Rg = txtRg.Text,
                 DataExpedicaoRg = dtDataExpedicaoRG.Text,
-                OrgaoEmissor =txtOrgaoEmissor.Text,
+                OrgaoEmissor = txtOrgaoEmissor.Text,
                 UfRg = txtUfRg.Text,
                 NumCertidaoNascimento = txtCertidaoNascimento.Text,
-                DataEmissaoCertNascimento =dtDataEmissao.Text,
+                DataEmissaoCertNascimento = dtDataEmissao.Text,
                 Folha = txtFolha.Text,
                 Livro = txtLivro.Text,
                 RegistroCivil = dtRegistroCivilData.Text,
@@ -124,20 +129,29 @@ namespace ECED_FORMS
                 AuthBuscarCrianca = txtPessoaAutorizada.Text,
                 DataMatricula = dtMatricula.Text,
                 Idade = txtIdadeParentesco.Text,
-                GrauParent =cmbParentesco.Text,
-                Telefone =txtTelefonePessAutorizada.Text,
+                GrauParent = cmbParentesco.Text,
+                Telefone = txtTelefonePessAutorizada.Text,
                 Turma = cmbTurma.Text,
                 Turno = cmbPeriodo.Text,
                 UnidadeEscolar = txtUnidadeEscolar.Text,
+            };
+            SaudeAluno saudeAluno = new SaudeAluno()
+            {
+                ContatoEmergUm = txtContatoEmergUm.Text,
+                TelefoneEmergUm = txtTelefoneEmergUm.Text,
+                ContatoEmergDois = txtContatoEmergDois.Text,
+                TelefoneEmergDois = txtTelefoneEmergDois.Text,
+                TelefoneContato = txtTelefoneContato.Text
             };
             Response res = Controller.AlunoInsert(al);
             res = Controller.DocumentoInsert(docAluno, al);
             res = Controller.EnderecoInsert(enderecoAluno, al);
             res = Controller.IdentificacaoEscolaInsert(identEscola, al);
+            res = Controller.SaudeAlunoInsert(saudeAluno, al);
 
 
 
-            
+
 
         }
 
@@ -149,7 +163,7 @@ namespace ECED_FORMS
         }
         async void MostrarTodosAlunos(string NomeAluno)
         {
-      
+
 
 
 
@@ -159,18 +173,17 @@ namespace ECED_FORMS
             foreach (DocumentSnapshot docsnap in snap.Documents)
             {
                 Aluno alsa = docsnap.ConvertTo<Aluno>();
-                
+
                 if (docsnap.Exists)
                 {
 
-                    dtgMostrarAlunos.Rows.Add(docsnap.Id, alsa.NomeAluno,alsa.DataNascimento);
-                    dtgMostrarAlunos.Rows.Add(docsnap.Id,docsnap);
+                    dtgMostrarAlunos.Rows.Add(docsnap.Id, alsa.NomeAluno, alsa.DataNascimento);
+                    dtgMostrarAlunos.Rows.Add(docsnap.Id, docsnap);
 
                 }
-            
-            }
-        
-        }
 
+            }
+
+        }
     }
 }
