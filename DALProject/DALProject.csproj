@@ -124,6 +124,7 @@
     <Compile Include="BoletimAluno.cs" />
     <Compile Include="Checker.cs" />
     <Compile Include="ControllerFunc.cs" />
+    <Compile Include="DadosPaisBD.cs" />
     <Compile Include="DBConection.cs" />
     <Compile Include="DocumentosAluno.cs" />
     <Compile Include="DocumentosDB.cs" />
@@ -132,6 +133,7 @@
     <Compile Include="IdentificacaoEscolaDB.cs" />
     <Compile Include="IdentificacaoEscolar.cs" />
     <Compile Include="Mostrar.cs" />
+    <Compile Include="DadosPais.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Response.cs" />
     <Compile Include="SaudeAluno.cs" />

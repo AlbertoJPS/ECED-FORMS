@@ -18,7 +18,6 @@ namespace ECED_FORMS
     public partial class Form1 : Form
     {
         FirestoreDb database;
-
         public Form1()
         {
             InitializeComponent();
@@ -35,17 +34,16 @@ namespace ECED_FORMS
             chDietaEspecificaNao.Checked = true;
             chIntoleranciaAlimentoNao.Checked = true;
             chProblemaSaudeNao.Checked = true;
+            chMaeUm.Checked = true;
+            chPaiUm.Checked = true;
         }
         private void btnSalvarCadastro_Click(object sender, EventArgs e)
         {
             // AdicionaDados();
             AdicionaDadosPersonalizados();
-
         }
-
         private void btnBuscarCep_Click(object sender, EventArgs e)
         {
-
             if (!string.IsNullOrWhiteSpace(txtCep.Text))
             {
 
@@ -73,7 +71,6 @@ namespace ECED_FORMS
                 MessageBox.Show("Informe um cep valido..", this.Text, MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
         private void btnLimpaCep_Click(object sender, EventArgs e)
         {
             txtCep.Text = string.Empty;
@@ -82,7 +79,6 @@ namespace ECED_FORMS
             txtEstado.Text = string.Empty;
             txtRua.Text = string.Empty;
         }
-
         void AdicionaDadosPersonalizados()
         {
             Aluno al = new Aluno()
@@ -95,15 +91,11 @@ namespace ECED_FORMS
                 UF = txtUf.Text,
                 CorERaca = cmbCor.Text,
                 EstadoCivil = cmbEstadoCivil.Text
-
-
-
-
             };
             DocumentosAluno docAluno = new DocumentosAluno()
             {
                 Cpf = txtCpf.Text,
-                Rg = txtRg.Text,
+                Rg = txtRgAluno.Text,
                 DataExpedicaoRg = dtDataExpedicaoRG.Text,
                 OrgaoEmissor = txtOrgaoEmissor.Text,
                 UfRg = txtUfRg.Text,
@@ -137,53 +129,156 @@ namespace ECED_FORMS
             };
             SaudeAluno saudeAluno = new SaudeAluno()
             {
+                ProblemaSaudeDetalhe = txtProblemaSaude.Text,
+                AlergiaMedicamentoDetalhe = txtAlergiaMedicamento.Text,
+                IntoleranciaAlimentoDetalhe = txtIntoleranciaAlimento.Text,
+                DietaEspecificaDetalhe = txtDietaEspecifica.Text,
                 ContatoEmergUm = txtContatoEmergUm.Text,
                 TelefoneEmergUm = txtTelefoneEmergUm.Text,
                 ContatoEmergDois = txtContatoEmergDois.Text,
                 TelefoneEmergDois = txtTelefoneEmergDois.Text,
                 TelefoneContato = txtTelefoneContato.Text
             };
+            saudeAluno.ProblemaSaude = FuncaoPropCheckBox(chProblemaSaudeSim);
+            saudeAluno.AlergiaMedicamento = FuncaoPropCheckBox(chAlergiaMedicamentoSim);
+            saudeAluno.IntoleranciaAlimento = FuncaoPropCheckBox(chIntoleranciaAlimentoSim);
+            saudeAluno.DietaEspecifica = FuncaoPropCheckBox(chDietaEspecificaSim);
+            DadosPais dadosPais = new DadosPais()
+            {
+                NomeResponsavelUm = txtNomeRespUm.Text,
+                DataNascimentoRespUm = dtDataNascRespUm.Text,
+                TelefoneRespUm = txtTelefoneRespUm.Text,
+                CpfRespUm = txtCpfRespUm.Text,
+                RgRespUm = txtRgRespUm.Text,
+                DataExpedicaoRgRespUm = dtDataExpedicaoRespUm.Text,
+                UfRgRespUm = txtRgRespUm.Text,
+                orgaoEmissorRgRespUm = txtOrgaoEmissorRespUm.Text,
+                EstadoCivilRespUm = cbEstadoCivilRespUm.Text,
+                EscolaridadeRespUm = txtEscolaridadeRespUm.Text,
+                ProfissaoRespUm = txtProfissaoRespUm.Text,
+                LocalTrabalhoRespUm = txtLocalTrabalhoRespUm.Text,
+                HorarioTrabalhoRespUm = txtHorarioTrabalhoRespUm.Text,
+                RamalRespUm = txtHorarioTrabalhoRespUm.Text,
+                NomeResponsavelDois = txtNomeRespDois.Text,
+                DataNascimentoRespDois = dtDataNascRespDois.Text,
+                TelefoneRespDois = txtTelefoneRespDois.Text,
+                CpfRespDois = txtCpfRespDois.Text,
+                RgRespDois = txtRgRespDois.Text,
+                DataExpedicaoRgRespDois = dtDataExpedicaoRespDois.Text,
+                UfRgRespDois = txtRgRespDois.Text,
+                orgaoEmissorRgRespDois = txtOrgaoEmissorRespDois.Text,
+                EstadoCivilRespDois = cbEstadoCivilRespDois.Text,
+                EscolaridadeRespDois = txtEscolaridadeRespDois.Text,
+                ProfissaoRespDois = txtProfissaoRespDois.Text,
+                LocalTrabalhoRespDois = txtLocalTrabalhoRespDois.Text,
+                HorarioTrabalhoRespDois = txtHorarioTrabalhoRespDois.Text,
+                RamalRespDois = txtHorarioTrabalhoRespDois.Text
+            };
             Response res = Controller.AlunoInsert(al);
             res = Controller.DocumentoInsert(docAluno, al);
             res = Controller.EnderecoInsert(enderecoAluno, al);
             res = Controller.IdentificacaoEscolaInsert(identEscola, al);
             res = Controller.SaudeAlunoInsert(saudeAluno, al);
-
-
-
-
-
+            res = Controller.DadosPaisInsert(dadosPais, al);
         }
-
         private void btnBuscarAluno_Click(object sender, EventArgs e)
         {
-
             MostrarTodosAlunos("Aluno");
-
         }
         async void MostrarTodosAlunos(string NomeAluno)
         {
-
-
-
-
             Query alunodt = database.Collection(NomeAluno);
             QuerySnapshot snap = await alunodt.GetSnapshotAsync();
-
             foreach (DocumentSnapshot docsnap in snap.Documents)
             {
                 Aluno alsa = docsnap.ConvertTo<Aluno>();
 
                 if (docsnap.Exists)
                 {
-
                     dtgMostrarAlunos.Rows.Add(docsnap.Id, alsa.NomeAluno, alsa.DataNascimento);
                     dtgMostrarAlunos.Rows.Add(docsnap.Id, docsnap);
-
                 }
-
             }
-
+        }
+        void FuncaoCheckBox(CheckBox cb, CheckBox cb2)
+        {
+            if (cb.Checked)
+            {
+                cb2.Checked = false;
+            }
+            else
+            {
+                cb2.Checked = true;
+            }
+        }
+        bool FuncaoPropCheckBox(CheckBox cb)
+        {
+            if (cb.Checked)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+        private void chCarteiraSim_CheckedChanged(object sender, EventArgs e)
+        {
+            FuncaoCheckBox(chCarteiraSim, chCarteiraNao);
+        }
+        private void chCarteiraNao_CheckedChanged(object sender, EventArgs e)
+        {
+            FuncaoCheckBox(chCarteiraNao, chCarteiraSim);
+        }
+        private void chDeficienciaSim_CheckedChanged(object sender, EventArgs e)
+        {
+            FuncaoCheckBox(chDeficienciaSim, chDeficienciaNao);
+            cbDeficiencia.Enabled = true;
+        }
+        private void chDeficienciaNao_CheckedChanged(object sender, EventArgs e)
+        {
+            FuncaoCheckBox(chDeficienciaNao, chDeficienciaSim);
+            cbDeficiencia.Enabled = false;
+        }
+        private void chProblemaSaudeSim_CheckedChanged(object sender, EventArgs e)
+        {
+            FuncaoCheckBox(chProblemaSaudeSim, chProblemaSaudeNao);
+            txtProblemaSaude.Enabled = true;
+        }
+        private void chProblemaSaudeNao_CheckedChanged(object sender, EventArgs e)
+        {
+            FuncaoCheckBox(chProblemaSaudeNao, chProblemaSaudeSim);
+            txtProblemaSaude.Enabled = false;
+        }
+        private void chAlergiaMedicamentoSim_CheckedChanged(object sender, EventArgs e)
+        {
+            FuncaoCheckBox(chAlergiaMedicamentoSim, chAlergiaMedicamentoNao);
+            txtAlergiaMedicamento.Enabled = true;
+        }
+        private void chAlergiaMedicamentoNao_CheckedChanged(object sender, EventArgs e)
+        {
+            FuncaoCheckBox(chAlergiaMedicamentoNao, chAlergiaMedicamentoSim);
+            txtAlergiaMedicamento.Enabled = false;
+        }
+        private void chIntoleranciaAlimentoSim_CheckedChanged(object sender, EventArgs e)
+        {
+            FuncaoCheckBox(chIntoleranciaAlimentoSim, chIntoleranciaAlimentoNao);
+            txtIntoleranciaAlimento.Enabled = true;
+        }
+        private void chIntoleranciaAlimentoNao_CheckedChanged(object sender, EventArgs e)
+        {
+            FuncaoCheckBox(chIntoleranciaAlimentoNao, chIntoleranciaAlimentoSim);
+            txtIntoleranciaAlimento.Enabled = false;
+        }
+        private void chDietaEspecificaSim_CheckedChanged(object sender, EventArgs e)
+        {
+            FuncaoCheckBox(chDietaEspecificaSim, chDietaEspecificaNao);
+            txtDietaEspecifica.Enabled = true;
+        }
+        private void chDietaEspecificaNao_CheckedChanged(object sender, EventArgs e)
+        {
+            FuncaoCheckBox(chDietaEspecificaNao, chDietaEspecificaSim);
+            txtDietaEspecifica.Enabled = false;
         }
     }
 }

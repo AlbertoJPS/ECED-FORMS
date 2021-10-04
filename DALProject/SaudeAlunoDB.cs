@@ -17,6 +17,14 @@ namespace DALProject
                 Dictionary<string, object> SaudeAluno = new Dictionary<string, object>();
                 Dictionary<string, object> saudeInfo = new Dictionary<string, object>()
                 {
+                    {"Problema Saude", saude.ProblemaSaude},
+                    {"Problema Saude Detalhe", saude.ProblemaSaudeDetalhe},
+                    {"Alergia Medicamento", saude.AlergiaMedicamento},
+                    {"Alergia Medicamento Detalhe", saude.AlergiaMedicamentoDetalhe},
+                    {"Intolerancia Alimento", saude.IntoleranciaAlimento},
+                    {"Intolerancia Alimento Detalhe", saude.IntoleranciaAlimentoDetalhe},
+                    {"Dieta Especifica", saude.DietaEspecifica},
+                    {"Dieta Especifica Detalhe", saude.DietaEspecificaDetalhe},
                     {"Contato Emergencia Um", saude.ContatoEmergUm},
                     {"Telefone Emergencia Um", saude.TelefoneEmergUm},
                     {"Contato Emergencia Dois", saude.ContatoEmergDois},
