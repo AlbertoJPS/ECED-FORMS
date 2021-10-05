@@ -36,13 +36,9 @@ namespace BALProject
         {
             return SaudeAlunoDB.InsertSaude(saude, aluno);
         }
-
-        //public static Response Mostrartudo(Aluno all)
-        //{
-        //    return Mostrar.mostrarAL(all);
-
-
-
-        //}
+        public static Response DadosPaisInsert(DadosPais dadosPais, Aluno aluno)
+        {
+            return DadosPaisBD.InsertDadosPais(dadosPais, aluno);
+        }
     }
 }
