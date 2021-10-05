@@ -121,7 +121,8 @@
   <ItemGroup>
     <Compile Include="Aluno.cs" />
     <Compile Include="AlunoDB.cs" />
-    <Compile Include="BoletimAluno.cs" />
+    <Compile Include="Boletim.cs" />
+    <Compile Include="BoletimDB.cs" />
     <Compile Include="Checker.cs" />
     <Compile Include="ControllerFunc.cs" />
     <Compile Include="DadosPaisBD.cs" />

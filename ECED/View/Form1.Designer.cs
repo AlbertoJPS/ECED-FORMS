@@ -30,13 +30,13 @@ namespace ECED_FORMS
         private void InitializeComponent()
         {
             this.tabPage8 = new System.Windows.Forms.TabPage();
-            this.maskedTextBox8 = new System.Windows.Forms.MaskedTextBox();
-            this.comboBox11 = new System.Windows.Forms.ComboBox();
+            this.txtNota1 = new System.Windows.Forms.MaskedTextBox();
+            this.cbTurmaNota = new System.Windows.Forms.ComboBox();
             this.label106 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnAddNota = new System.Windows.Forms.Button();
             this.label105 = new System.Windows.Forms.Label();
-            this.comboBox10 = new System.Windows.Forms.ComboBox();
-            this.comboBox9 = new System.Windows.Forms.ComboBox();
+            this.cbMateriaNota = new System.Windows.Forms.ComboBox();
+            this.cbNomeAlunoNota = new System.Windows.Forms.ComboBox();
             this.label103 = new System.Windows.Forms.Label();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.DISCIPLINACOL = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -210,6 +210,9 @@ namespace ECED_FORMS
             this.panel6 = new System.Windows.Forms.Panel();
             this.label38 = new System.Windows.Forms.Label();
             this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.chResponsavelDois = new System.Windows.Forms.CheckBox();
+            this.chPaiDois = new System.Windows.Forms.CheckBox();
+            this.chMaeDois = new System.Windows.Forms.CheckBox();
             this.txtUfRespUm = new System.Windows.Forms.ComboBox();
             this.txtUfRespDois = new System.Windows.Forms.ComboBox();
             this.txtRgRespDois = new System.Windows.Forms.MaskedTextBox();
@@ -271,9 +274,10 @@ namespace ECED_FORMS
             this.label17 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.tabControl2 = new System.Windows.Forms.TabControl();
-            this.chResponsavelDois = new System.Windows.Forms.CheckBox();
-            this.chPaiDois = new System.Windows.Forms.CheckBox();
-            this.chMaeDois = new System.Windows.Forms.CheckBox();
+            this.txtNota2 = new System.Windows.Forms.MaskedTextBox();
+            this.label73 = new System.Windows.Forms.Label();
+            this.txtNota3 = new System.Windows.Forms.MaskedTextBox();
+            this.label74 = new System.Windows.Forms.Label();
             this.tabPage8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.tabPage7.SuspendLayout();
@@ -296,13 +300,17 @@ namespace ECED_FORMS
             // 
             // tabPage8
             // 
-            this.tabPage8.Controls.Add(this.maskedTextBox8);
-            this.tabPage8.Controls.Add(this.comboBox11);
+            this.tabPage8.Controls.Add(this.txtNota3);
+            this.tabPage8.Controls.Add(this.label74);
+            this.tabPage8.Controls.Add(this.txtNota2);
+            this.tabPage8.Controls.Add(this.label73);
+            this.tabPage8.Controls.Add(this.txtNota1);
+            this.tabPage8.Controls.Add(this.cbTurmaNota);
             this.tabPage8.Controls.Add(this.label106);
-            this.tabPage8.Controls.Add(this.button2);
+            this.tabPage8.Controls.Add(this.btnAddNota);
             this.tabPage8.Controls.Add(this.label105);
-            this.tabPage8.Controls.Add(this.comboBox10);
-            this.tabPage8.Controls.Add(this.comboBox9);
+            this.tabPage8.Controls.Add(this.cbMateriaNota);
+            this.tabPage8.Controls.Add(this.cbNomeAlunoNota);
             this.tabPage8.Controls.Add(this.label103);
             this.tabPage8.Controls.Add(this.dataGridView2);
             this.tabPage8.Controls.Add(this.label104);
@@ -314,19 +322,19 @@ namespace ECED_FORMS
             this.tabPage8.Text = "Boletim                      ";
             this.tabPage8.UseVisualStyleBackColor = true;
             // 
-            // maskedTextBox8
+            // txtNota1
             // 
-            this.maskedTextBox8.Location = new System.Drawing.Point(80, 161);
-            this.maskedTextBox8.Mask = "00.0";
-            this.maskedTextBox8.Name = "maskedTextBox8";
-            this.maskedTextBox8.Size = new System.Drawing.Size(32, 20);
-            this.maskedTextBox8.TabIndex = 86;
+            this.txtNota1.Location = new System.Drawing.Point(90, 147);
+            this.txtNota1.Mask = "00.0";
+            this.txtNota1.Name = "txtNota1";
+            this.txtNota1.Size = new System.Drawing.Size(32, 20);
+            this.txtNota1.TabIndex = 86;
             // 
-            // comboBox11
+            // cbTurmaNota
             // 
-            this.comboBox11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox11.FormattingEnabled = true;
-            this.comboBox11.Items.AddRange(new object[] {
+            this.cbTurmaNota.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbTurmaNota.FormattingEnabled = true;
+            this.cbTurmaNota.Items.AddRange(new object[] {
             "PRÉ A",
             "PRÉ B",
             "1° Ano A",
@@ -347,10 +355,10 @@ namespace ECED_FORMS
             "8° Ano B",
             "9° Ano A",
             "9° Ano B"});
-            this.comboBox11.Location = new System.Drawing.Point(89, 74);
-            this.comboBox11.Name = "comboBox11";
-            this.comboBox11.Size = new System.Drawing.Size(88, 21);
-            this.comboBox11.TabIndex = 19;
+            this.cbTurmaNota.Location = new System.Drawing.Point(89, 74);
+            this.cbTurmaNota.Name = "cbTurmaNota";
+            this.cbTurmaNota.Size = new System.Drawing.Size(88, 21);
+            this.cbTurmaNota.TabIndex = 19;
             // 
             // label106
             // 
@@ -361,14 +369,15 @@ namespace ECED_FORMS
             this.label106.TabIndex = 18;
             this.label106.Text = "TURMA:";
             // 
-            // button2
+            // btnAddNota
             // 
-            this.button2.Location = new System.Drawing.Point(37, 202);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 34);
-            this.button2.TabIndex = 17;
-            this.button2.Text = "ADICIONAR";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnAddNota.Location = new System.Drawing.Point(37, 226);
+            this.btnAddNota.Name = "btnAddNota";
+            this.btnAddNota.Size = new System.Drawing.Size(75, 34);
+            this.btnAddNota.TabIndex = 17;
+            this.btnAddNota.Text = "ADICIONAR";
+            this.btnAddNota.UseVisualStyleBackColor = true;
+            this.btnAddNota.Click += new System.EventHandler(this.btnAddNota_Click);
             // 
             // label105
             // 
@@ -379,11 +388,11 @@ namespace ECED_FORMS
             this.label105.TabIndex = 15;
             this.label105.Text = "MATÉRIA";
             // 
-            // comboBox10
+            // cbMateriaNota
             // 
-            this.comboBox10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox10.FormattingEnabled = true;
-            this.comboBox10.Items.AddRange(new object[] {
+            this.cbMateriaNota.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbMateriaNota.FormattingEnabled = true;
+            this.cbMateriaNota.Items.AddRange(new object[] {
             "ARTES",
             "CIÊNCIAS",
             "EDUCAÇÃO FÍSICA",
@@ -393,27 +402,27 @@ namespace ECED_FORMS
             "INGLÊS",
             "MATEMÁTICA",
             "PORTUGUÊS"});
-            this.comboBox10.Location = new System.Drawing.Point(95, 116);
-            this.comboBox10.Name = "comboBox10";
-            this.comboBox10.Size = new System.Drawing.Size(121, 21);
-            this.comboBox10.TabIndex = 14;
+            this.cbMateriaNota.Location = new System.Drawing.Point(95, 116);
+            this.cbMateriaNota.Name = "cbMateriaNota";
+            this.cbMateriaNota.Size = new System.Drawing.Size(121, 21);
+            this.cbMateriaNota.TabIndex = 14;
             // 
-            // comboBox9
+            // cbNomeAlunoNota
             // 
-            this.comboBox9.FormattingEnabled = true;
-            this.comboBox9.Location = new System.Drawing.Point(155, 31);
-            this.comboBox9.Name = "comboBox9";
-            this.comboBox9.Size = new System.Drawing.Size(154, 21);
-            this.comboBox9.TabIndex = 13;
+            this.cbNomeAlunoNota.FormattingEnabled = true;
+            this.cbNomeAlunoNota.Location = new System.Drawing.Point(155, 31);
+            this.cbNomeAlunoNota.Name = "cbNomeAlunoNota";
+            this.cbNomeAlunoNota.Size = new System.Drawing.Size(154, 21);
+            this.cbNomeAlunoNota.TabIndex = 13;
             // 
             // label103
             // 
             this.label103.AutoSize = true;
-            this.label103.Location = new System.Drawing.Point(34, 168);
+            this.label103.Location = new System.Drawing.Point(40, 154);
             this.label103.Name = "label103";
-            this.label103.Size = new System.Drawing.Size(40, 13);
+            this.label103.Size = new System.Drawing.Size(49, 13);
             this.label103.TabIndex = 12;
-            this.label103.Text = "NOTA:";
+            this.label103.Text = "NOTA 1:";
             // 
             // dataGridView2
             // 
@@ -1931,7 +1940,8 @@ namespace ECED_FORMS
             "DEFICIÊNCIA MENTAL",
             "DEFICIÊNCIA MUTÍPLA",
             "SURDO CEGUEIRA",
-            "SURDO"});
+            "SURDO",
+            " "});
             this.cbDeficiencia.Location = new System.Drawing.Point(256, 86);
             this.cbDeficiencia.Name = "cbDeficiencia";
             this.cbDeficiencia.Size = new System.Drawing.Size(147, 24);
@@ -2374,6 +2384,39 @@ namespace ECED_FORMS
             this.tabPage4.Size = new System.Drawing.Size(1228, 492);
             this.tabPage4.TabIndex = 5;
             this.tabPage4.Text = "Dados dos Responsaveís       ";
+            // 
+            // chResponsavelDois
+            // 
+            this.chResponsavelDois.AutoSize = true;
+            this.chResponsavelDois.Location = new System.Drawing.Point(487, 251);
+            this.chResponsavelDois.Name = "chResponsavelDois";
+            this.chResponsavelDois.Size = new System.Drawing.Size(92, 20);
+            this.chResponsavelDois.TabIndex = 189;
+            this.chResponsavelDois.Text = "Responsável";
+            this.chResponsavelDois.UseVisualStyleBackColor = true;
+            this.chResponsavelDois.CheckedChanged += new System.EventHandler(this.chResponsavelDois_CheckedChanged);
+            // 
+            // chPaiDois
+            // 
+            this.chPaiDois.AutoSize = true;
+            this.chPaiDois.Location = new System.Drawing.Point(431, 251);
+            this.chPaiDois.Name = "chPaiDois";
+            this.chPaiDois.Size = new System.Drawing.Size(43, 20);
+            this.chPaiDois.TabIndex = 188;
+            this.chPaiDois.Text = "Pai";
+            this.chPaiDois.UseVisualStyleBackColor = true;
+            this.chPaiDois.CheckedChanged += new System.EventHandler(this.chPaiDois_CheckedChanged);
+            // 
+            // chMaeDois
+            // 
+            this.chMaeDois.AutoSize = true;
+            this.chMaeDois.Location = new System.Drawing.Point(362, 251);
+            this.chMaeDois.Name = "chMaeDois";
+            this.chMaeDois.Size = new System.Drawing.Size(50, 20);
+            this.chMaeDois.TabIndex = 187;
+            this.chMaeDois.Text = "Mãe";
+            this.chMaeDois.UseVisualStyleBackColor = true;
+            this.chMaeDois.CheckedChanged += new System.EventHandler(this.chMaeDois_CheckedChanged);
             // 
             // txtUfRespUm
             // 
@@ -2953,6 +2996,7 @@ namespace ECED_FORMS
             this.chResponsavelUm.TabIndex = 79;
             this.chResponsavelUm.Text = "Responsável";
             this.chResponsavelUm.UseVisualStyleBackColor = true;
+            this.chResponsavelUm.CheckedChanged += new System.EventHandler(this.chResponsavelUm_CheckedChanged);
             // 
             // chPaiUm
             // 
@@ -2963,6 +3007,7 @@ namespace ECED_FORMS
             this.chPaiUm.TabIndex = 78;
             this.chPaiUm.Text = "Pai";
             this.chPaiUm.UseVisualStyleBackColor = true;
+            this.chPaiUm.CheckedChanged += new System.EventHandler(this.chPaiUm_CheckedChanged);
             // 
             // chMaeUm
             // 
@@ -2973,6 +3018,7 @@ namespace ECED_FORMS
             this.chMaeUm.TabIndex = 77;
             this.chMaeUm.Text = "Mãe";
             this.chMaeUm.UseVisualStyleBackColor = true;
+            this.chMaeUm.CheckedChanged += new System.EventHandler(this.chMaeUm_CheckedChanged);
             // 
             // txtNomeRespUm
             // 
@@ -3012,35 +3058,39 @@ namespace ECED_FORMS
             this.tabControl2.Size = new System.Drawing.Size(1324, 638);
             this.tabControl2.TabIndex = 2;
             // 
-            // chResponsavelDois
+            // txtNota2
             // 
-            this.chResponsavelDois.AutoSize = true;
-            this.chResponsavelDois.Location = new System.Drawing.Point(487, 251);
-            this.chResponsavelDois.Name = "chResponsavelDois";
-            this.chResponsavelDois.Size = new System.Drawing.Size(92, 20);
-            this.chResponsavelDois.TabIndex = 189;
-            this.chResponsavelDois.Text = "Responsável";
-            this.chResponsavelDois.UseVisualStyleBackColor = true;
+            this.txtNota2.Location = new System.Drawing.Point(90, 172);
+            this.txtNota2.Mask = "00.0";
+            this.txtNota2.Name = "txtNota2";
+            this.txtNota2.Size = new System.Drawing.Size(32, 20);
+            this.txtNota2.TabIndex = 88;
             // 
-            // chPaiDois
+            // label73
             // 
-            this.chPaiDois.AutoSize = true;
-            this.chPaiDois.Location = new System.Drawing.Point(431, 251);
-            this.chPaiDois.Name = "chPaiDois";
-            this.chPaiDois.Size = new System.Drawing.Size(43, 20);
-            this.chPaiDois.TabIndex = 188;
-            this.chPaiDois.Text = "Pai";
-            this.chPaiDois.UseVisualStyleBackColor = true;
+            this.label73.AutoSize = true;
+            this.label73.Location = new System.Drawing.Point(40, 179);
+            this.label73.Name = "label73";
+            this.label73.Size = new System.Drawing.Size(49, 13);
+            this.label73.TabIndex = 87;
+            this.label73.Text = "NOTA 2:";
             // 
-            // chMaeDois
+            // txtNota3
             // 
-            this.chMaeDois.AutoSize = true;
-            this.chMaeDois.Location = new System.Drawing.Point(362, 251);
-            this.chMaeDois.Name = "chMaeDois";
-            this.chMaeDois.Size = new System.Drawing.Size(50, 20);
-            this.chMaeDois.TabIndex = 187;
-            this.chMaeDois.Text = "Mãe";
-            this.chMaeDois.UseVisualStyleBackColor = true;
+            this.txtNota3.Location = new System.Drawing.Point(90, 200);
+            this.txtNota3.Mask = "00.0";
+            this.txtNota3.Name = "txtNota3";
+            this.txtNota3.Size = new System.Drawing.Size(32, 20);
+            this.txtNota3.TabIndex = 90;
+            // 
+            // label74
+            // 
+            this.label74.AutoSize = true;
+            this.label74.Location = new System.Drawing.Point(40, 207);
+            this.label74.Name = "label74";
+            this.label74.Size = new System.Drawing.Size(49, 13);
+            this.label74.TabIndex = 89;
+            this.label74.Text = "NOTA 3:";
             // 
             // Form1
             // 
@@ -3089,12 +3139,12 @@ namespace ECED_FORMS
         #endregion
 
         private System.Windows.Forms.TabPage tabPage8;
-        private System.Windows.Forms.ComboBox comboBox11;
+        private System.Windows.Forms.ComboBox cbTurmaNota;
         private System.Windows.Forms.Label label106;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnAddNota;
         private System.Windows.Forms.Label label105;
-        private System.Windows.Forms.ComboBox comboBox10;
-        private System.Windows.Forms.ComboBox comboBox9;
+        private System.Windows.Forms.ComboBox cbMateriaNota;
+        private System.Windows.Forms.ComboBox cbNomeAlunoNota;
         private System.Windows.Forms.Label label103;
         private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.DataGridViewTextBoxColumn DISCIPLINACOL;
@@ -3304,7 +3354,7 @@ namespace ECED_FORMS
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.TabControl tabControl2;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox8;
+        private System.Windows.Forms.MaskedTextBox txtNota1;
         private System.Windows.Forms.MaskedTextBox txtTelefonePessAutorizada;
         private System.Windows.Forms.MaskedTextBox txtTelUrgencia;
         private System.Windows.Forms.MaskedTextBox txtTelefoneContato;
@@ -3333,6 +3383,10 @@ namespace ECED_FORMS
         private System.Windows.Forms.CheckBox chResponsavelDois;
         private System.Windows.Forms.CheckBox chPaiDois;
         private System.Windows.Forms.CheckBox chMaeDois;
+        private System.Windows.Forms.MaskedTextBox txtNota3;
+        private System.Windows.Forms.Label label74;
+        private System.Windows.Forms.MaskedTextBox txtNota2;
+        private System.Windows.Forms.Label label73;
     }
 }
 
