@@ -14,5 +14,8 @@ namespace DALProject
         public string Cidade { get; set; }
         public string Numero { get; set; }
         public string Estado { get; set; }
+        public string Avenida { get; set; }
+        public string Complemento { get; set; }
+        public string PontoReferencia { get; set; }
     }
 }

@@ -25,6 +25,8 @@ namespace DALProject
                     {"Intolerancia Alimento Detalhe", saude.IntoleranciaAlimentoDetalhe},
                     {"Dieta Especifica", saude.DietaEspecifica},
                     {"Dieta Especifica Detalhe", saude.DietaEspecificaDetalhe},
+                    {"Deficiencia", saude.Deficiencia},
+                    {"Deficiencia Detalhe", saude.DeficienciaDetalhe},
                     {"Contato Emergencia Um", saude.ContatoEmergUm},
                     {"Telefone Emergencia Um", saude.TelefoneEmergUm},
                     {"Contato Emergencia Dois", saude.ContatoEmergDois},

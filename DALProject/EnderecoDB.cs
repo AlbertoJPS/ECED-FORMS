@@ -22,7 +22,10 @@ namespace DALProject
                     {"Bairro", endereco.Bairro},
                     {"Cidade", endereco.Cidade},
                     {"Número", endereco.Numero},
-                    {"Estado", endereco.Estado}
+                    {"Estado", endereco.Estado},
+                    {"Avenida", endereco.Avenida},
+                    {"Complemento", endereco.Complemento},
+                    {"Ponto de Referencia", endereco.PontoReferencia}
                 };
                 Endereco.Add("Endereço", enderecoAluno);
                

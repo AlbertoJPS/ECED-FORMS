@@ -62,7 +62,7 @@ namespace DALProject
                 return new Response()
                 {
                     Executed = false,
-                    Message = "Deu Ruim"
+                    Message = "Dados incorretos!"
                 };
             }
         }

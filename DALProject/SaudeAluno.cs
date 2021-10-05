@@ -16,6 +16,8 @@ namespace DALProject
         public string IntoleranciaAlimentoDetalhe { get; set; }
         public bool DietaEspecifica { get; set; }
         public string DietaEspecificaDetalhe{ get; set; }
+        public bool Deficiencia{ get; set; }
+        public string DeficienciaDetalhe{ get; set; }
         public string ContatoEmergUm{ get; set; }
         public string TelefoneEmergUm{ get; set; }
         public string ContatoEmergDois{ get; set; }

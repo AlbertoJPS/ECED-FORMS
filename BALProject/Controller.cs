@@ -12,13 +12,8 @@ namespace BALProject
     {
         public static Response AlunoInsert(Aluno al)
         {
-            // conferencias
-
-            // DAL
-
             return AlunoDB.Insert(al);
         }
-
         public static Response DocumentoInsert(DocumentosAluno docAluno, Aluno aluno)
         {
             return DocumentosDB.InsertDocumentos(docAluno, aluno);
@@ -39,6 +34,10 @@ namespace BALProject
         public static Response DadosPaisInsert(DadosPais dadosPais, Aluno aluno)
         {
             return DadosPaisBD.InsertDadosPais(dadosPais, aluno);
+        }
+        public static Response NotasInsert(Boletim notas, string aluno)
+        {
+            return BoletimDB.InsertEndereco(notas, aluno);
         }
     }
 }

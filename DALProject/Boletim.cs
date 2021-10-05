@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace DALProject
 {
-  public  class BoletimAluno
+    public class Boletim
     {
         public string NomeAluno { get; set; }
+        public string Turma { get; set; }
         public string Materia { get; set; }
-        public string AssuntoNota { get; set; }
-        public double Nota { get; set; }
-
-
+        public double Nota1 { get; set; }
+        public double Nota2 { get; set; }
+        public double Nota3 { get; set; }
     }
 }
