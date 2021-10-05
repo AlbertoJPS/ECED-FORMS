@@ -13,7 +13,7 @@ namespace DALProject
         {
             try
             {
-                DocumentReference doc = DBConection.Getdatabase().Collection("Dados Pessoais").Document(al.NomeAluno);
+                DocumentReference doc = DBConection.Getdatabase().Collection(al.NomeAluno).Document("Saude Aluno");
                 Dictionary<string, object> saudealuno = new Dictionary<string, object>
                 {
                     {"Problema Saude", saude.ProblemaSaude},

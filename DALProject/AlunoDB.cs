@@ -13,8 +13,8 @@ namespace DALProject
         {
             try
             {
-
-                DocumentReference doc = DBConection.Getdatabase().Collection("Dados Pessoais").Document(al.NomeAluno);
+                
+                DocumentReference doc = DBConection.Getdatabase().Collection(al.NomeAluno).Document("Dados Pessoais");
                 Dictionary<string, object> city = new Dictionary<string, object>
             {
                     {"NOME",al.NomeAluno},

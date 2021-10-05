@@ -227,8 +227,8 @@ namespace ECED_FORMS
         private void btnBuscarAluno_Click(object sender, EventArgs e)
         {
             //MostrarTodosAlunos("Aluno");
-            mostrardata("Aluno");
-            ritmostrar.Clear();
+            mostrardata("Nome");
+            mostrardocumento("Documento");
         }
         async void MostrarTodosAlunos(string NomeAluno)
         {
@@ -429,7 +429,7 @@ namespace ECED_FORMS
 
 
         }
-        async void mostrardata(string name)
+        async void mostrardata(string name )
         {
 
             //Query city = DBConection.Getdatabase().Collection(name);
@@ -449,21 +449,13 @@ namespace ECED_FORMS
 
 
 
-
-
-
-
-           
-
-
-
-            DocumentReference docref = DBConection.Getdatabase().Collection("Alunno").Document(txtPesquisarAluno.Text);
-            docref = DBConection.Getdatabase().Collection("cities").Document("LA");
+            DocumentReference docref = DBConection.Getdatabase().Collection(txtPesquisarAluno.Text).Document("Dados Pessoais");
+          
             DocumentSnapshot snap = await docref.GetSnapshotAsync();
             if (snap.Exists)
             {
                 Dictionary<string, object> city = snap.ToDictionary();
-                ritmostrar.Text += string.Format("Dados Pessoais\n  ");
+                ritmostrar.Text += string.Format("\n----Dados Pessoais--------\n  ");
                 foreach (var item in city)
                 {
                     ritmostrar.Text += string.Format(" \n{0}: {1}\n", item.Key, item.Value);
@@ -471,8 +463,42 @@ namespace ECED_FORMS
 
             }
 
-        
 
+        }
+        
+        async void mostrardocumento(string name )
+        {
+
+            //Query city = DBConection.Getdatabase().Collection(name);
+            //QuerySnapshot snap = await city.GetSnapshotAsync();
+            //foreach (DocumentSnapshot docsnap in snap.Documents)
+            //{
+
+            //    Aluno al = docsnap.ConvertTo<Aluno>();
+
+            //    if (docsnap.Exists)
+            //    {
+            //        dtgMostrarAlunos.Rows.Add(docsnap.Id,al.CorERaca,al.DataNascimento,al.EstadoCivil,al.NomeAluno);
+            //    }
+
+
+            //}
+
+
+
+            DocumentReference docref = DBConection.Getdatabase().Collection(txtPesquisarAluno.Text).Document("Documento");
+          
+            DocumentSnapshot snap = await docref.GetSnapshotAsync();
+            if (snap.Exists)
+            {
+                Dictionary<string, object> city = snap.ToDictionary();
+                ritmostrar.Text += string.Format("\n----Documento----- \n  ");
+                foreach (var item in city)
+                {
+                    ritmostrar.Text += string.Format(" \n{0}: {1}\n", item.Key, item.Value);
+                }
+
+            }
 
 
         }

@@ -14,7 +14,7 @@ namespace DALProject
         {
             try
             {
-                DocumentReference doc = DBConection.Getdatabase().Collection("Dados Pessoais").Document(aluno.NomeAluno);
+                DocumentReference doc = DBConection.Getdatabase().Collection(aluno.NomeAluno).Document("Identificação escolar");
                 Dictionary<string, object> identeficacao = new Dictionary<string, object>
                 {
                     {"Unidade Escolar", identEscola.UnidadeEscolar},
