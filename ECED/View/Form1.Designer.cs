@@ -30,6 +30,10 @@ namespace ECED_FORMS
         private void InitializeComponent()
         {
             this.tabPage8 = new System.Windows.Forms.TabPage();
+            this.txtNota3 = new System.Windows.Forms.MaskedTextBox();
+            this.label74 = new System.Windows.Forms.Label();
+            this.txtNota2 = new System.Windows.Forms.MaskedTextBox();
+            this.label73 = new System.Windows.Forms.Label();
             this.txtNota1 = new System.Windows.Forms.MaskedTextBox();
             this.cbTurmaNota = new System.Windows.Forms.ComboBox();
             this.label106 = new System.Windows.Forms.Label();
@@ -45,13 +49,8 @@ namespace ECED_FORMS
             this.ULTIMOTRIMESTRE = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label104 = new System.Windows.Forms.Label();
             this.tabPage7 = new System.Windows.Forms.TabPage();
+            this.ritmostrar = new System.Windows.Forms.RichTextBox();
             this.btnBuscarAluno = new System.Windows.Forms.Button();
-            this.dtgMostrarAlunos = new System.Windows.Forms.DataGridView();
-            this.ColumnCodigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnMatricula = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnNome = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnEndereco = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnBairro = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txtPesquisarAluno = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.tabPage6 = new System.Windows.Forms.TabPage();
@@ -274,14 +273,10 @@ namespace ECED_FORMS
             this.label17 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.tabControl2 = new System.Windows.Forms.TabControl();
-            this.txtNota2 = new System.Windows.Forms.MaskedTextBox();
-            this.label73 = new System.Windows.Forms.Label();
-            this.txtNota3 = new System.Windows.Forms.MaskedTextBox();
-            this.label74 = new System.Windows.Forms.Label();
+            this.cmbEscolha = new System.Windows.Forms.ComboBox();
             this.tabPage8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.tabPage7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgMostrarAlunos)).BeginInit();
             this.tabPage6.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tbCadastrarAlunos.SuspendLayout();
@@ -321,6 +316,40 @@ namespace ECED_FORMS
             this.tabPage8.TabIndex = 3;
             this.tabPage8.Text = "Boletim                      ";
             this.tabPage8.UseVisualStyleBackColor = true;
+            // 
+            // txtNota3
+            // 
+            this.txtNota3.Location = new System.Drawing.Point(90, 200);
+            this.txtNota3.Mask = "00.0";
+            this.txtNota3.Name = "txtNota3";
+            this.txtNota3.Size = new System.Drawing.Size(32, 20);
+            this.txtNota3.TabIndex = 90;
+            // 
+            // label74
+            // 
+            this.label74.AutoSize = true;
+            this.label74.Location = new System.Drawing.Point(40, 207);
+            this.label74.Name = "label74";
+            this.label74.Size = new System.Drawing.Size(49, 13);
+            this.label74.TabIndex = 89;
+            this.label74.Text = "NOTA 3:";
+            // 
+            // txtNota2
+            // 
+            this.txtNota2.Location = new System.Drawing.Point(90, 172);
+            this.txtNota2.Mask = "00.0";
+            this.txtNota2.Name = "txtNota2";
+            this.txtNota2.Size = new System.Drawing.Size(32, 20);
+            this.txtNota2.TabIndex = 88;
+            // 
+            // label73
+            // 
+            this.label73.AutoSize = true;
+            this.label73.Location = new System.Drawing.Point(40, 179);
+            this.label73.Name = "label73";
+            this.label73.Size = new System.Drawing.Size(49, 13);
+            this.label73.TabIndex = 87;
+            this.label73.Text = "NOTA 2:";
             // 
             // txtNota1
             // 
@@ -477,8 +506,9 @@ namespace ECED_FORMS
             // 
             // tabPage7
             // 
+            this.tabPage7.Controls.Add(this.cmbEscolha);
+            this.tabPage7.Controls.Add(this.ritmostrar);
             this.tabPage7.Controls.Add(this.btnBuscarAluno);
-            this.tabPage7.Controls.Add(this.dtgMostrarAlunos);
             this.tabPage7.Controls.Add(this.txtPesquisarAluno);
             this.tabPage7.Controls.Add(this.label10);
             this.tabPage7.Location = new System.Drawing.Point(4, 22);
@@ -488,6 +518,15 @@ namespace ECED_FORMS
             this.tabPage7.TabIndex = 2;
             this.tabPage7.Text = "Pesquisar aluno";
             this.tabPage7.UseVisualStyleBackColor = true;
+            // 
+            // ritmostrar
+            // 
+            this.ritmostrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ritmostrar.Location = new System.Drawing.Point(143, 101);
+            this.ritmostrar.Name = "ritmostrar";
+            this.ritmostrar.Size = new System.Drawing.Size(988, 408);
+            this.ritmostrar.TabIndex = 9;
+            this.ritmostrar.Text = "";
             // 
             // btnBuscarAluno
             // 
@@ -499,62 +538,12 @@ namespace ECED_FORMS
             this.btnBuscarAluno.UseVisualStyleBackColor = true;
             this.btnBuscarAluno.Click += new System.EventHandler(this.btnBuscarAluno_Click);
             // 
-            // dtgMostrarAlunos
-            // 
-            this.dtgMostrarAlunos.AllowUserToAddRows = false;
-            this.dtgMostrarAlunos.AllowUserToDeleteRows = false;
-            this.dtgMostrarAlunos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgMostrarAlunos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.ColumnCodigo,
-            this.ColumnMatricula,
-            this.ColumnNome,
-            this.ColumnEndereco,
-            this.ColumnBairro});
-            this.dtgMostrarAlunos.Location = new System.Drawing.Point(60, 115);
-            this.dtgMostrarAlunos.Name = "dtgMostrarAlunos";
-            this.dtgMostrarAlunos.ReadOnly = true;
-            this.dtgMostrarAlunos.Size = new System.Drawing.Size(1241, 437);
-            this.dtgMostrarAlunos.TabIndex = 6;
-            // 
-            // ColumnCodigo
-            // 
-            this.ColumnCodigo.HeaderText = "Código do aluno";
-            this.ColumnCodigo.Name = "ColumnCodigo";
-            this.ColumnCodigo.ReadOnly = true;
-            // 
-            // ColumnMatricula
-            // 
-            this.ColumnMatricula.HeaderText = "Codigo Matricula";
-            this.ColumnMatricula.Name = "ColumnMatricula";
-            this.ColumnMatricula.ReadOnly = true;
-            // 
-            // ColumnNome
-            // 
-            this.ColumnNome.HeaderText = "Nome do aluno";
-            this.ColumnNome.Name = "ColumnNome";
-            this.ColumnNome.ReadOnly = true;
-            this.ColumnNome.Width = 422;
-            // 
-            // ColumnEndereco
-            // 
-            this.ColumnEndereco.HeaderText = "Endereço";
-            this.ColumnEndereco.Name = "ColumnEndereco";
-            this.ColumnEndereco.ReadOnly = true;
-            this.ColumnEndereco.Width = 250;
-            // 
-            // ColumnBairro
-            // 
-            this.ColumnBairro.HeaderText = "Bairro";
-            this.ColumnBairro.Name = "ColumnBairro";
-            this.ColumnBairro.ReadOnly = true;
-            this.ColumnBairro.Width = 200;
-            // 
             // txtPesquisarAluno
             // 
             this.txtPesquisarAluno.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPesquisarAluno.Location = new System.Drawing.Point(143, 60);
             this.txtPesquisarAluno.Name = "txtPesquisarAluno";
-            this.txtPesquisarAluno.Size = new System.Drawing.Size(988, 25);
+            this.txtPesquisarAluno.Size = new System.Drawing.Size(827, 25);
             this.txtPesquisarAluno.TabIndex = 5;
             // 
             // label10
@@ -3058,39 +3047,16 @@ namespace ECED_FORMS
             this.tabControl2.Size = new System.Drawing.Size(1324, 638);
             this.tabControl2.TabIndex = 2;
             // 
-            // txtNota2
+            // cmbEscolha
             // 
-            this.txtNota2.Location = new System.Drawing.Point(90, 172);
-            this.txtNota2.Mask = "00.0";
-            this.txtNota2.Name = "txtNota2";
-            this.txtNota2.Size = new System.Drawing.Size(32, 20);
-            this.txtNota2.TabIndex = 88;
-            // 
-            // label73
-            // 
-            this.label73.AutoSize = true;
-            this.label73.Location = new System.Drawing.Point(40, 179);
-            this.label73.Name = "label73";
-            this.label73.Size = new System.Drawing.Size(49, 13);
-            this.label73.TabIndex = 87;
-            this.label73.Text = "NOTA 2:";
-            // 
-            // txtNota3
-            // 
-            this.txtNota3.Location = new System.Drawing.Point(90, 200);
-            this.txtNota3.Mask = "00.0";
-            this.txtNota3.Name = "txtNota3";
-            this.txtNota3.Size = new System.Drawing.Size(32, 20);
-            this.txtNota3.TabIndex = 90;
-            // 
-            // label74
-            // 
-            this.label74.AutoSize = true;
-            this.label74.Location = new System.Drawing.Point(40, 207);
-            this.label74.Name = "label74";
-            this.label74.Size = new System.Drawing.Size(49, 13);
-            this.label74.TabIndex = 89;
-            this.label74.Text = "NOTA 3:";
+            this.cmbEscolha.FormattingEnabled = true;
+            this.cmbEscolha.Items.AddRange(new object[] {
+            "Aluno",
+            "cities"});
+            this.cmbEscolha.Location = new System.Drawing.Point(985, 64);
+            this.cmbEscolha.Name = "cmbEscolha";
+            this.cmbEscolha.Size = new System.Drawing.Size(133, 21);
+            this.cmbEscolha.TabIndex = 10;
             // 
             // Form1
             // 
@@ -3106,7 +3072,6 @@ namespace ECED_FORMS
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.tabPage7.ResumeLayout(false);
             this.tabPage7.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgMostrarAlunos)).EndInit();
             this.tabPage6.ResumeLayout(false);
             this.tabControl1.ResumeLayout(false);
             this.tbCadastrarAlunos.ResumeLayout(false);
@@ -3154,12 +3119,6 @@ namespace ECED_FORMS
         private System.Windows.Forms.Label label104;
         private System.Windows.Forms.TabPage tabPage7;
         private System.Windows.Forms.Button btnBuscarAluno;
-        private System.Windows.Forms.DataGridView dtgMostrarAlunos;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnCodigo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnMatricula;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnNome;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnEndereco;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnBairro;
         private System.Windows.Forms.TextBox txtPesquisarAluno;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TabPage tabPage6;
@@ -3387,6 +3346,8 @@ namespace ECED_FORMS
         private System.Windows.Forms.Label label74;
         private System.Windows.Forms.MaskedTextBox txtNota2;
         private System.Windows.Forms.Label label73;
+        private System.Windows.Forms.RichTextBox ritmostrar;
+        private System.Windows.Forms.ComboBox cmbEscolha;
     }
 }
 

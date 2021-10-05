@@ -14,10 +14,8 @@ namespace DALProject
         {
             try
             {
-                DocumentReference doc = DBConection.Getdatabase().Collection("Aluno").Document(aluno.NomeAluno);
-                Dictionary<string, object> IdentEscola = new Dictionary<string, object>();
-
-                Dictionary<string, object> infoEscola = new Dictionary<string, object>()
+                DocumentReference doc = DBConection.Getdatabase().Collection("Dados Pessoais").Document(aluno.NomeAluno);
+                Dictionary<string, object> identeficacao = new Dictionary<string, object>
                 {
                     {"Unidade Escolar", identEscola.UnidadeEscolar},
                     {"Código do Inep", identEscola.CodigoDoInep},
@@ -29,13 +27,9 @@ namespace DALProject
                     {"Grau Parentesco", identEscola.GrauParent},
                     {"Idade", identEscola.Idade},
                 };
-                IdentEscola.Add("Identificação Escolar", infoEscola);
-
-               
-
-                Task<WriteResult> t =  doc.UpdateAsync(IdentEscola);
+              
+                Task<WriteResult> t = doc.SetAsync(identeficacao);
                 t.Wait();
-
 
                 return new Response()
                 {

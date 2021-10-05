@@ -41,6 +41,8 @@ namespace ECED_FORMS
         {
             // AdicionaDados();
             AdicionaDadosPersonalizados();
+            //mOST("");
+            //AdicionaAluno();
         }
         private void btnBuscarCep_Click(object sender, EventArgs e)
         {
@@ -79,7 +81,23 @@ namespace ECED_FORMS
             txtEstado.Text = string.Empty;
             txtRua.Text = string.Empty;
         }
-        void AdicionaDadosPersonalizados()
+        void AdicionaAluno()
+        {
+            //Cria objetos para serem adicionados no banco de dados
+            Aluno al = new Aluno()
+            {
+                NomeAluno = txtNomeAluno.Text,
+                DataNascimento = dtNacimentoAluno.Text,
+                naturalidade = txtNaturalidade.Text,
+                nacionalidade = txtNacionalidade.Text,
+                Sexo = cmbSexo.Text,
+                UF = txtUf.Text,
+                CorERaca = cmbCor.Text,
+                EstadoCivil = cmbEstadoCivil.Text
+        };
+                Response res = Controller.AlunoInsert(al);
+        }
+            void AdicionaDadosPersonalizados()
         {
             //Cria objetos para serem adicionados no banco de dados
             Aluno al = new Aluno()
@@ -192,6 +210,9 @@ namespace ECED_FORMS
         }
         void AdicionaNota()
         {
+
+
+            Boletim bole = new Boletim();
             Boletim boletim = new Boletim()
             {
                 NomeAluno = cbNomeAlunoNota.Text,
@@ -201,26 +222,28 @@ namespace ECED_FORMS
                 Nota2 = Convert.ToDouble(txtNota2.Text),
                 Nota3 = Convert.ToDouble(txtNota3.Text),
             };
-            Controller.NotasInsert(boletim, boletim.NomeAluno);
+            Response res = Controller.NotasInsert(boletim,bole);
         }
         private void btnBuscarAluno_Click(object sender, EventArgs e)
         {
-            MostrarTodosAlunos("Aluno");
+            //MostrarTodosAlunos("Aluno");
+            mostrardata("Aluno");
+            ritmostrar.Clear();
         }
         async void MostrarTodosAlunos(string NomeAluno)
         {
-            Query alunodt = database.Collection(NomeAluno);
-            QuerySnapshot snap = await alunodt.GetSnapshotAsync();
-            foreach (DocumentSnapshot docsnap in snap.Documents)
-            {
-                Aluno alsa = docsnap.ConvertTo<Aluno>();
+            DocumentReference docRef = database.Collection("Aluno").Document("Felipe");
 
-                if (docsnap.Exists)
-                {
-                    dtgMostrarAlunos.Rows.Add(docsnap.Id, alsa.NomeAluno, alsa.DataNascimento);
-                    dtgMostrarAlunos.Rows.Add(docsnap.Id, docsnap);
-                }
+            IAsyncEnumerable<CollectionReference> subcollections = docRef.ListCollectionsAsync();
+            IAsyncEnumerator<CollectionReference> subcollectionsEnumerator = subcollections.GetAsyncEnumerator(default);
+            while (await subcollectionsEnumerator.MoveNextAsync())
+            {
+                CollectionReference subcollectionRef = subcollectionsEnumerator.Current;
+                MessageBox.Show("Found subcollection with ID: {0}", subcollectionRef.Id);
             }
+
+
+
         }
         //Funções para a View
         void FuncaoCheckBox(CheckBox cb, CheckBox cb2)
@@ -390,5 +413,71 @@ namespace ECED_FORMS
         {
             AdicionaNota();
         }
+
+
+        private static async Task mOST(string project)
+        {
+            DocumentReference docRef = DBConection.Getdatabase().Collection("cities").Document("LA");
+            Dictionary<string, object> city = new Dictionary<string, object>
+            {
+                { "name", "Los Angeles" },
+                { "state", "CA" },
+                { "country", "USA" }
+            };
+            await docRef.SetAsync(city);
+
+
+
+        }
+        async void mostrardata(string name)
+        {
+
+            //Query city = DBConection.Getdatabase().Collection(name);
+            //QuerySnapshot snap = await city.GetSnapshotAsync();
+            //foreach (DocumentSnapshot docsnap in snap.Documents)
+            //{
+
+            //    Aluno al = docsnap.ConvertTo<Aluno>();
+
+            //    if (docsnap.Exists)
+            //    {
+            //        dtgMostrarAlunos.Rows.Add(docsnap.Id,al.CorERaca,al.DataNascimento,al.EstadoCivil,al.NomeAluno);
+            //    }
+
+
+            //}
+
+
+
+
+
+
+
+           
+
+
+
+            DocumentReference docref = DBConection.Getdatabase().Collection("Alunno").Document(txtPesquisarAluno.Text);
+            docref = DBConection.Getdatabase().Collection("cities").Document("LA");
+            DocumentSnapshot snap = await docref.GetSnapshotAsync();
+            if (snap.Exists)
+            {
+                Dictionary<string, object> city = snap.ToDictionary();
+                ritmostrar.Text += string.Format("Dados Pessoais\n  ");
+                foreach (var item in city)
+                {
+                    ritmostrar.Text += string.Format(" \n{0}: {1}\n", item.Key, item.Value);
+                }
+
+            }
+
+        
+
+
+
+        }
+
+
+
     }
 }

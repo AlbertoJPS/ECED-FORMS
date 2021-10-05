@@ -124,7 +124,6 @@
     <Compile Include="Boletim.cs" />
     <Compile Include="BoletimDB.cs" />
     <Compile Include="Checker.cs" />
-    <Compile Include="ControllerFunc.cs" />
     <Compile Include="DadosPaisBD.cs" />
     <Compile Include="DBConection.cs" />
     <Compile Include="DocumentosAluno.cs" />

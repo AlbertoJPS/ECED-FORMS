@@ -9,36 +9,51 @@ namespace DALProject
 {
     public static class BoletimDB
     {
-        public static Response InsertEndereco(Boletim notas, string aluno)
+        public static Response InsertEndereco(Boletim notas,Boletim aluno)
         {
+
             try
             {
-                DocumentReference doc = DBConection.Getdatabase().Collection("Boletim").Document(aluno).Collection("Matéria").Document(notas.Materia);
-                Dictionary<string, object> Boletim = new Dictionary<string, object>();
-                Dictionary<string, object> notasBoletim = new Dictionary<string, object>()
-                {
+
+                DocumentReference doc = DBConection.Getdatabase().Collection("Dados Pessoais").Document(aluno.NomeAluno);
+                Dictionary<string, object> city = new Dictionary<string, object>
+            {
                     {"Nome Aluno", notas.NomeAluno},
                     {"Materia", notas.Materia},
                     {"Turma", notas.Turma},
                     {"Nota 1", notas.Nota1},
                     {"Nota 2", notas.Nota2},
                     {"Nota 3", notas.Nota3},
-                };
-                Boletim.Add(notas.Materia, notasBoletim);
-                Task<WriteResult> t = doc.SetAsync(Boletim);
-                t.Wait();
+
+            };
+                doc.SetAsync(city);
+
+
+                //DocumentReference doc = DBConection.Getdatabase().Collection("Aluno").Document(al.NomeAluno);
+                //Dictionary<string, object> DadosPessoais = new Dictionary<string, object>();
+
+                //Dictionary<string, object> data1 = new Dictionary<string, object>()
+                //{
+
+                //};
+                //DadosPessoais.Add("Dados Pessoais", data1);
+
+                //Task<WriteResult> t = doc.SetAsync(DadosPessoais);
+                //t.Wait();
+
                 return new Response()
                 {
                     Executed = true,
-                    Message = "Nota adicionada!"
+                    Message = "Deu Certo"
                 };
+
             }
             catch (Exception)
             {
                 return new Response()
                 {
                     Executed = false,
-                    Message = "Erro"
+                    Message = "Deu Ruim"
                 };
             }
         }

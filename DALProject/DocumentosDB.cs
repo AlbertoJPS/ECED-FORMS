@@ -13,9 +13,8 @@ namespace DALProject
         {
             try
             {
-                DocumentReference doc = DBConection.Getdatabase().Collection("Aluno").Document(aluno.NomeAluno); //Nome do aluno para adicionar no mesmo documento que as outras informações
-                Dictionary<string, object> Documentos = new Dictionary<string, object>(); //Nova coleção
-                Dictionary<string, object> infoAluno = new Dictionary<string, object>()
+                DocumentReference doc = DBConection.Getdatabase().Collection("Dados Pessoais").Document(aluno.NomeAluno);
+                Dictionary<string, object> documen = new Dictionary<string, object>
                 {
                     {"CPF",docAluno.Cpf},
                     {"RG",docAluno.Rg},
@@ -29,12 +28,8 @@ namespace DALProject
                     {"Registro Civil",docAluno.RegistroCivil},
                     {"Data de Emissão Registro Civil",docAluno.DataEmissaoRegCivil},
                 };
-                Documentos.Add("Documentos", infoAluno);
+                doc.SetAsync(documen);
 
-                Task<WriteResult> t = doc.UpdateAsync(Documentos);
-                t.Wait();
-
-                
 
                 return new Response()
                 {

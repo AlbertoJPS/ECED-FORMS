@@ -13,9 +13,8 @@ namespace DALProject
         {
             try
             {
-                DocumentReference doc = DBConection.Getdatabase().Collection("Aluno").Document(al.NomeAluno);
-                Dictionary<string, object> SaudeAluno = new Dictionary<string, object>();
-                Dictionary<string, object> saudeInfo = new Dictionary<string, object>()
+                DocumentReference doc = DBConection.Getdatabase().Collection("Dados Pessoais").Document(al.NomeAluno);
+                Dictionary<string, object> saudealuno = new Dictionary<string, object>
                 {
                     {"Problema Saude", saude.ProblemaSaude},
                     {"Problema Saude Detalhe", saude.ProblemaSaudeDetalhe},
@@ -33,9 +32,10 @@ namespace DALProject
                     {"Telefone Emergencia Dois", saude.TelefoneEmergDois},
                     {"Telefone Contato", saude.TelefoneContato},
                 };
-                SaudeAluno.Add("Saúde Aluno", saudeInfo);
-                Task<WriteResult> t = doc.UpdateAsync(SaudeAluno);
+               
+                Task<WriteResult> t = doc.SetAsync(saudealuno);
                 t.Wait();
+
                 return new Response()
                 {
                     Executed = true,
