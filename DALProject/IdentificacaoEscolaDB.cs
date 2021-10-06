@@ -14,10 +14,8 @@ namespace DALProject
         {
             try
             {
-                DocumentReference doc = DBConection.Getdatabase().Collection("Aluno").Document(aluno.NomeAluno);
-                Dictionary<string, object> IdentEscola = new Dictionary<string, object>();
-
-                Dictionary<string, object> infoEscola = new Dictionary<string, object>()
+                DocumentReference doc = DBConection.Getdatabase().Collection(aluno.NomeAluno).Document("Identificação escolar");
+                Dictionary<string, object> identeficacao = new Dictionary<string, object>
                 {
                     {"Unidade Escolar", identEscola.UnidadeEscolar},
                     {"Código do Inep", identEscola.CodigoDoInep},
@@ -28,19 +26,14 @@ namespace DALProject
                     {"Telefone Autorizado", identEscola.Telefone},
                     {"Grau Parentesco", identEscola.GrauParent},
                     {"Idade", identEscola.Idade},
-                };
-                IdentEscola.Add("Identificação Escolar", infoEscola);
-
-               
-
-                Task<WriteResult> t =  doc.UpdateAsync(IdentEscola);
+                };         
+                Task<WriteResult> t = doc.SetAsync(identeficacao);
                 t.Wait();
-
 
                 return new Response()
                 {
                     Executed = true,
-                    Message = "Deu Certo"
+                    Message = "Cadastro com Sucesso."
                 };
 
             }
@@ -49,7 +42,7 @@ namespace DALProject
                 return new Response()
                 {
                     Executed = false,
-                    Message = "Deu Ruim"
+                    Message = "Cadastro não efetuado. \n Por favor verifique suas informações."
                 };
             }
         }

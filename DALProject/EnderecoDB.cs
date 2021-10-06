@@ -13,9 +13,8 @@ namespace DALProject
         {
             try
             {
-                DocumentReference doc = DBConection.Getdatabase().Collection("Aluno").Document(aluno.NomeAluno);
-                Dictionary<string, object> Endereco = new Dictionary<string, object>();
-                Dictionary<string, object> enderecoAluno = new Dictionary<string, object>()
+                DocumentReference doc = DBConection.Getdatabase().Collection(aluno.NomeAluno).Document("Endereço");
+                Dictionary<string, object> city = new Dictionary<string, object>
                 {
                     {"CEP", endereco.Cep},
                     {"Rua", endereco.Rua},
@@ -27,18 +26,13 @@ namespace DALProject
                     {"Complemento", endereco.Complemento},
                     {"Ponto de Referencia", endereco.PontoReferencia}
                 };
-                Endereco.Add("Endereço", enderecoAluno);
-               
-
-                Task<WriteResult> t =  doc.UpdateAsync(Endereco);
+                Task<WriteResult> t = doc.SetAsync(city);
                 t.Wait();
-
-
 
                 return new Response()
                 {
                     Executed = true,
-                    Message = "Deu Certo"
+                    Message = "Cadastro com Sucesso."
                 };
             }
             catch (Exception)
@@ -46,7 +40,7 @@ namespace DALProject
                 return new Response()
                 {
                     Executed = false,
-                    Message = "Deu Ruim"
+                    Message = "Cadastro não efetuado. \n Por favor verifique suas informações."
                 };
             }
         }

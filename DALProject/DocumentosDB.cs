@@ -13,9 +13,8 @@ namespace DALProject
         {
             try
             {
-                DocumentReference doc = DBConection.Getdatabase().Collection("Aluno").Document(aluno.NomeAluno); //Nome do aluno para adicionar no mesmo documento que as outras informações
-                Dictionary<string, object> Documentos = new Dictionary<string, object>(); //Nova coleção
-                Dictionary<string, object> infoAluno = new Dictionary<string, object>()
+                DocumentReference doc = DBConection.Getdatabase().Collection(aluno.NomeAluno).Document("Documento");
+                Dictionary<string, object> documen = new Dictionary<string, object>
                 {
                     {"CPF",docAluno.Cpf},
                     {"RG",docAluno.Rg},
@@ -29,17 +28,12 @@ namespace DALProject
                     {"Registro Civil",docAluno.RegistroCivil},
                     {"Data de Emissão Registro Civil",docAluno.DataEmissaoRegCivil},
                 };
-                Documentos.Add("Documentos", infoAluno);
-
-                Task<WriteResult> t = doc.UpdateAsync(Documentos);
-                t.Wait();
-
-                
+                doc.SetAsync(documen);
 
                 return new Response()
                 {
                     Executed = true,
-                    Message = "Deu Certo"
+                    Message = "Cadastro com Sucesso."
                 };
             }
             catch (Exception)
@@ -47,7 +41,7 @@ namespace DALProject
                 return new Response()
                 {
                     Executed = false,
-                    Message = "Deu Ruim"
+                    Message = "Cadastro não efetuado. \n Por favor verifique suas informações."
                 };
             }
         }

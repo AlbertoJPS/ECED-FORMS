@@ -7,30 +7,25 @@ using System.Threading.Tasks;
 
 namespace DALProject
 {
-    public static class BoletimDB
+    public class DeletarAlunoDB
     {
-        public static Response InsertEndereco(Boletim notas,Boletim aluno)
+        public static async Task<Response> DeletarAluno(DeletarAluno delete)
         {
             try
             {
-                DocumentReference doc = DBConection.Getdatabase().Collection(aluno.NomeAluno).Document("Boletim");
-                Dictionary<string, object> city = new Dictionary<string, object>
-            {
-                    {"Nome Aluno", notas.NomeAluno},
-                    {"Materia", notas.Materia},
-                    {"Turma", notas.Turma},
-                    {"Nota 1", notas.Nota1},
-                    {"Nota 2", notas.Nota2},
-                    {"Nota 3", notas.Nota3},
-            };
-                doc.SetAsync(city);
+                CollectionReference coRef = DBConection.Getdatabase().Collection(delete.Nome);            
+                QuerySnapshot snap = await coRef.GetSnapshotAsync();
 
+                foreach (DocumentSnapshot doc in snap.Documents)
+                {
+                    await doc.Reference.DeleteAsync();
+                }  
+                
                 return new Response()
                 {
                     Executed = true,
                     Message = "Cadastro com Sucesso."
                 };
-
             }
             catch (Exception)
             {
@@ -42,4 +37,6 @@ namespace DALProject
             }
         }
     }
+
 }
+

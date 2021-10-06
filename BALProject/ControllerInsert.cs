@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace BALProject
 {
-    public class Controller
+    public class ControllerInsert
     {
         public static Response AlunoInsert(Aluno al)
         {
@@ -35,9 +35,9 @@ namespace BALProject
         {
             return DadosPaisBD.InsertDadosPais(dadosPais, aluno);
         }
-        public static Response NotasInsert(Boletim notas, string aluno)
+        public static Response NotasInsert(Boletim notas,Boletim aluno)
         {
-            return BoletimDB.InsertEndereco(notas, aluno);
+            return BoletimDB.InsertEndereco(notas,aluno);
         }
     }
 }

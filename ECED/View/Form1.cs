@@ -8,7 +8,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Google.Cloud.Firestore;
-
 using System.Collections;
 using DALProject;
 using BALProject;
@@ -17,17 +16,12 @@ namespace ECED_FORMS
 {
     public partial class Form1 : Form
     {
-        FirestoreDb database;
         public Form1()
         {
             InitializeComponent();
         }
         private void Form1_Load(object sender, EventArgs e)
         {
-            string path = AppDomain.CurrentDomain.BaseDirectory + @"eced-e3031-firebase-adminsdk-fxr0o-786505f761.json";
-            Environment.SetEnvironmentVariable("GOOGLE_APPLICATION_CREDENTIALS", path);
-            database = FirestoreDb.Create("eced-e3031");
-
             chAlergiaMedicamentoNao.Checked = true;
             chCarteiraSim.Checked = true;
             chDeficienciaNao.Checked = true;
@@ -39,8 +33,7 @@ namespace ECED_FORMS
         }
         private void btnSalvarCadastro_Click(object sender, EventArgs e)
         {
-            // AdicionaDados();
-            AdicionaDadosPersonalizados();
+            AdicionaDadosAlunos();
         }
         private void btnBuscarCep_Click(object sender, EventArgs e)
         {
@@ -51,17 +44,14 @@ namespace ECED_FORMS
                 {
                     try
                     {
-
                         var endereco = ws.consultaCEP(txtCep.Text.Trim());
                         txtEstado.Text = endereco.uf;
                         txtCidade.Text = endereco.cidade;
                         txtBairro.Text = endereco.bairro;
                         txtRua.Text = endereco.end;
-
                     }
                     catch (Exception ex)
                     {
-
                         MessageBox.Show(ex.Message, this.Text, MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
@@ -79,7 +69,15 @@ namespace ECED_FORMS
             txtEstado.Text = string.Empty;
             txtRua.Text = string.Empty;
         }
-        void AdicionaDadosPersonalizados()
+        private void btnDeletar_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("O cadastro do aluno " + txtPesquisarAluno.Text + " foi deletado do sistema.");
+            deletarCadastro("Name");
+            txtPesquisarAluno.Clear();
+            ritmostrar.Clear();
+
+        }    
+        void AdicionaDadosAlunos()
         {
             //Cria objetos para serem adicionados no banco de dados
             Aluno al = new Aluno()
@@ -183,15 +181,16 @@ namespace ECED_FORMS
             };
             dadosPais.ResponsavelUm = FuncaoPropCheckBox(chMaeUm, chPaiUm, chResponsavelUm);
             dadosPais.ResponsavelDois = FuncaoPropCheckBox(chMaeDois, chPaiDois, chResponsavelDois);
-            Response res = Controller.AlunoInsert(al);
-            res = Controller.DocumentoInsert(docAluno, al);
-            res = Controller.EnderecoInsert(enderecoAluno, al);
-            res = Controller.IdentificacaoEscolaInsert(identEscola, al);
-            res = Controller.SaudeAlunoInsert(saudeAluno, al);
-            res = Controller.DadosPaisInsert(dadosPais, al);
+            Response res = ControllerInsert.AlunoInsert(al);
+            res = ControllerInsert.DocumentoInsert(docAluno, al);
+            res = ControllerInsert.EnderecoInsert(enderecoAluno, al);
+            res = ControllerInsert.IdentificacaoEscolaInsert(identEscola, al);
+            res = ControllerInsert.SaudeAlunoInsert(saudeAluno, al);
+            res = ControllerInsert.DadosPaisInsert(dadosPais, al);
         }
         void AdicionaNota()
         {
+            Boletim bole = new Boletim();
             Boletim boletim = new Boletim()
             {
                 NomeAluno = cbNomeAlunoNota.Text,
@@ -201,27 +200,63 @@ namespace ECED_FORMS
                 Nota2 = Convert.ToDouble(txtNota2.Text),
                 Nota3 = Convert.ToDouble(txtNota3.Text),
             };
-            Controller.NotasInsert(boletim, boletim.NomeAluno);
+            Response res = ControllerInsert.NotasInsert(boletim, bole);
         }
         private void btnBuscarAluno_Click(object sender, EventArgs e)
         {
-            MostrarTodosAlunos("Aluno");
-        }
-        async void MostrarTodosAlunos(string NomeAluno)
-        {
-            Query alunodt = database.Collection(NomeAluno);
-            QuerySnapshot snap = await alunodt.GetSnapshotAsync();
-            foreach (DocumentSnapshot docsnap in snap.Documents)
-            {
-                Aluno alsa = docsnap.ConvertTo<Aluno>();
 
-                if (docsnap.Exists)
+            mostrardata("Nome");
+            mostrardocumento("Documento");
+        }
+        async void mostrardata(string name)
+        {
+            DocumentReference docref = DBConection.Getdatabase().Collection(txtPesquisarAluno.Text).Document("Dados Pessoais");
+
+            DocumentSnapshot snap = await docref.GetSnapshotAsync();
+            if (snap.Exists)
+            {
+                Dictionary<string, object> city = snap.ToDictionary();
+                ritmostrar.Text += string.Format("\n----Dados Pessoais--------\n  ");
+                foreach (var item in city)
                 {
-                    dtgMostrarAlunos.Rows.Add(docsnap.Id, alsa.NomeAluno, alsa.DataNascimento);
-                    dtgMostrarAlunos.Rows.Add(docsnap.Id, docsnap);
+                    ritmostrar.Text += string.Format(" \n{0}: {1}\n", item.Key, item.Value);
                 }
             }
         }
+     
+        async void mostrardocumento(string name)
+        {
+            DocumentReference docref = DBConection.Getdatabase().Collection(txtPesquisarAluno.Text).Document("Documento");
+
+            DocumentSnapshot snap = await docref.GetSnapshotAsync();
+            if (snap.Exists)
+            {
+                Dictionary<string, object> city = snap.ToDictionary();
+
+                ritmostrar.Text += string.Format("\n----Documento----- \n  ");
+                foreach (var item in city)
+                {
+                    ritmostrar.Text += string.Format(" \n{0}: {1}\n", item.Key, item.Value);
+                }
+            }
+        }
+
+        /// <summary>
+        /// Função para deletar o aluno do banco de dados
+        /// </summary>
+        /// <param name="name"></param>
+        void deletarCadastro(string name)
+        {
+            DeletarAluno delete = new DeletarAluno()
+            {
+                Nome = txtPesquisarAluno.Text,
+
+            };
+            _ = ControllerDeletarAluno.DeletarAluno(delete);
+        }
+
+
+
         //Funções para a View
         void FuncaoCheckBox(CheckBox cb, CheckBox cb2)
         {
@@ -385,10 +420,10 @@ namespace ECED_FORMS
         {
             FuncaoCheckBox(chResponsavelDois, chMaeDois, chPaiDois);
         }
-
         private void btnAddNota_Click(object sender, EventArgs e)
         {
             AdicionaNota();
         }
+
     }
 }

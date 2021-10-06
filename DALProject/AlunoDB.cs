@@ -13,38 +13,33 @@ namespace DALProject
         {
             try
             {
-                DocumentReference doc = DBConection.Getdatabase().Collection("Aluno").Document(al.NomeAluno);
-                Dictionary<string, object> DadosPessoais = new Dictionary<string, object>();
-
-                Dictionary<string, object> data1 = new Dictionary<string, object>()
-                {
+                DocumentReference doc = DBConection.Getdatabase().Collection(al.NomeAluno).Document("Dados Pessoais");
+                Dictionary<string, object> aluno = new Dictionary<string, object>
+            {
                     {"NOME",al.NomeAluno},
                     {"Data de Nascimento",al.DataNascimento},
                     {"Cor / Raça",al.CorERaca },
                     {"Sexo",al.Sexo },
                     {"Naturalidade",al.naturalidade },
-                    {"Nacionalidade",al.nacionalidade},
+                    {"nacionalidade",al.nacionalidade},
                     {"Uf",al.UF },
                     {"Estado civil",al.EstadoCivil },
-                };
-                DadosPessoais.Add("Dados Pessoais", data1);
-
-                Task<WriteResult> t = doc.SetAsync(DadosPessoais);
+            };
+                Task<WriteResult> t = doc.SetAsync(aluno);
                 t.Wait();
 
                 return new Response()
                 {
                     Executed = true,
-                    Message = "Deu Certo"
+                    Message = "Cadastro com Sucesso."
                 };
-
             }
             catch (Exception)
             {
                 return new Response()
                 {
                     Executed = false,
-                    Message = "Deu Ruim"
+                    Message = "Cadastro não efetuado. \n Por favor verifique suas informações."
                 };
             }
         }
