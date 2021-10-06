@@ -17,17 +17,12 @@ namespace ECED_FORMS
 {
     public partial class Form1 : Form
     {
-        FirestoreDb database;
         public Form1()
         {
             InitializeComponent();
         }
         private void Form1_Load(object sender, EventArgs e)
-        {
-            string path = AppDomain.CurrentDomain.BaseDirectory + @"eced-e3031-firebase-adminsdk-fxr0o-786505f761.json";
-            Environment.SetEnvironmentVariable("GOOGLE_APPLICATION_CREDENTIALS", path);
-            database = FirestoreDb.Create("eced-e3031");
-
+        {            
             chAlergiaMedicamentoNao.Checked = true;
             chCarteiraSim.Checked = true;
             chDeficienciaNao.Checked = true;
@@ -39,10 +34,7 @@ namespace ECED_FORMS
         }
         private void btnSalvarCadastro_Click(object sender, EventArgs e)
         {
-            // AdicionaDados();
-            AdicionaDadosPersonalizados();
-            //mOST("");
-            //AdicionaAluno();
+            AdicionaDadosPersonalizados();          
         }
         private void btnBuscarCep_Click(object sender, EventArgs e)
         {
@@ -53,17 +45,14 @@ namespace ECED_FORMS
                 {
                     try
                     {
-
                         var endereco = ws.consultaCEP(txtCep.Text.Trim());
                         txtEstado.Text = endereco.uf;
                         txtCidade.Text = endereco.cidade;
                         txtBairro.Text = endereco.bairro;
                         txtRua.Text = endereco.end;
-
                     }
                     catch (Exception ex)
                     {
-
                         MessageBox.Show(ex.Message, this.Text, MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
@@ -210,8 +199,6 @@ namespace ECED_FORMS
         }
         void AdicionaNota()
         {
-
-
             Boletim bole = new Boletim();
             Boletim boletim = new Boletim()
             {
@@ -226,24 +213,9 @@ namespace ECED_FORMS
         }
         private void btnBuscarAluno_Click(object sender, EventArgs e)
         {
-            //MostrarTodosAlunos("Aluno");
+         
             mostrardata("Nome");
             mostrardocumento("Documento");
-        }
-        async void MostrarTodosAlunos(string NomeAluno)
-        {
-            DocumentReference docRef = database.Collection("Aluno").Document("Felipe");
-
-            IAsyncEnumerable<CollectionReference> subcollections = docRef.ListCollectionsAsync();
-            IAsyncEnumerator<CollectionReference> subcollectionsEnumerator = subcollections.GetAsyncEnumerator(default);
-            while (await subcollectionsEnumerator.MoveNextAsync())
-            {
-                CollectionReference subcollectionRef = subcollectionsEnumerator.Current;
-                MessageBox.Show("Found subcollection with ID: {0}", subcollectionRef.Id);
-            }
-
-
-
         }
         //Funções para a View
         void FuncaoCheckBox(CheckBox cb, CheckBox cb2)
@@ -414,41 +386,8 @@ namespace ECED_FORMS
             AdicionaNota();
         }
 
-
-        private static async Task mOST(string project)
-        {
-            DocumentReference docRef = DBConection.Getdatabase().Collection("cities").Document("LA");
-            Dictionary<string, object> city = new Dictionary<string, object>
-            {
-                { "name", "Los Angeles" },
-                { "state", "CA" },
-                { "country", "USA" }
-            };
-            await docRef.SetAsync(city);
-
-
-
-        }
         async void mostrardata(string name )
         {
-
-            //Query city = DBConection.Getdatabase().Collection(name);
-            //QuerySnapshot snap = await city.GetSnapshotAsync();
-            //foreach (DocumentSnapshot docsnap in snap.Documents)
-            //{
-
-            //    Aluno al = docsnap.ConvertTo<Aluno>();
-
-            //    if (docsnap.Exists)
-            //    {
-            //        dtgMostrarAlunos.Rows.Add(docsnap.Id,al.CorERaca,al.DataNascimento,al.EstadoCivil,al.NomeAluno);
-            //    }
-
-
-            //}
-
-
-
             DocumentReference docref = DBConection.Getdatabase().Collection(txtPesquisarAluno.Text).Document("Dados Pessoais");
           
             DocumentSnapshot snap = await docref.GetSnapshotAsync();
@@ -460,32 +399,11 @@ namespace ECED_FORMS
                 {
                     ritmostrar.Text += string.Format(" \n{0}: {1}\n", item.Key, item.Value);
                 }
-
             }
-
-
         }
         
         async void mostrardocumento(string name )
         {
-
-            //Query city = DBConection.Getdatabase().Collection(name);
-            //QuerySnapshot snap = await city.GetSnapshotAsync();
-            //foreach (DocumentSnapshot docsnap in snap.Documents)
-            //{
-
-            //    Aluno al = docsnap.ConvertTo<Aluno>();
-
-            //    if (docsnap.Exists)
-            //    {
-            //        dtgMostrarAlunos.Rows.Add(docsnap.Id,al.CorERaca,al.DataNascimento,al.EstadoCivil,al.NomeAluno);
-            //    }
-
-
-            //}
-
-
-
             DocumentReference docref = DBConection.Getdatabase().Collection(txtPesquisarAluno.Text).Document("Documento");
           
             DocumentSnapshot snap = await docref.GetSnapshotAsync();
@@ -497,13 +415,7 @@ namespace ECED_FORMS
                 {
                     ritmostrar.Text += string.Format(" \n{0}: {1}\n", item.Key, item.Value);
                 }
-
             }
-
-
         }
-
-
-
     }
 }
