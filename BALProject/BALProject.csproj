@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="Checker.cs" />
     <Compile Include="Controller.cs" />
+    <Compile Include="ControllerDeletarAluno.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

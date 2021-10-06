@@ -126,6 +126,8 @@
     <Compile Include="Checker.cs" />
     <Compile Include="DadosPaisBD.cs" />
     <Compile Include="DBConection.cs" />
+    <Compile Include="DeletarAluno.cs" />
+    <Compile Include="DeletarAlunoDB.cs" />
     <Compile Include="DocumentosAluno.cs" />
     <Compile Include="DocumentosDB.cs" />
     <Compile Include="EnderecoAluno.cs" />

@@ -22,7 +22,7 @@ namespace ECED_FORMS
             InitializeComponent();
         }
         private void Form1_Load(object sender, EventArgs e)
-        {            
+        {
             chAlergiaMedicamentoNao.Checked = true;
             chCarteiraSim.Checked = true;
             chDeficienciaNao.Checked = true;
@@ -34,7 +34,7 @@ namespace ECED_FORMS
         }
         private void btnSalvarCadastro_Click(object sender, EventArgs e)
         {
-            AdicionaDadosPersonalizados();          
+            AdicionaDadosPersonalizados();
         }
         private void btnBuscarCep_Click(object sender, EventArgs e)
         {
@@ -83,10 +83,10 @@ namespace ECED_FORMS
                 UF = txtUf.Text,
                 CorERaca = cmbCor.Text,
                 EstadoCivil = cmbEstadoCivil.Text
-        };
-                Response res = Controller.AlunoInsert(al);
+            };
+            Response res = Controller.AlunoInsert(al);
         }
-            void AdicionaDadosPersonalizados()
+        void AdicionaDadosPersonalizados()
         {
             //Cria objetos para serem adicionados no banco de dados
             Aluno al = new Aluno()
@@ -209,11 +209,11 @@ namespace ECED_FORMS
                 Nota2 = Convert.ToDouble(txtNota2.Text),
                 Nota3 = Convert.ToDouble(txtNota3.Text),
             };
-            Response res = Controller.NotasInsert(boletim,bole);
+            Response res = Controller.NotasInsert(boletim, bole);
         }
         private void btnBuscarAluno_Click(object sender, EventArgs e)
         {
-         
+
             mostrardata("Nome");
             mostrardocumento("Documento");
         }
@@ -386,10 +386,10 @@ namespace ECED_FORMS
             AdicionaNota();
         }
 
-        async void mostrardata(string name )
+        async void mostrardata(string name)
         {
             DocumentReference docref = DBConection.Getdatabase().Collection(txtPesquisarAluno.Text).Document("Dados Pessoais");
-          
+
             DocumentSnapshot snap = await docref.GetSnapshotAsync();
             if (snap.Exists)
             {
@@ -401,15 +401,16 @@ namespace ECED_FORMS
                 }
             }
         }
-        
-        async void mostrardocumento(string name )
+
+        async void mostrardocumento(string name)
         {
             DocumentReference docref = DBConection.Getdatabase().Collection(txtPesquisarAluno.Text).Document("Documento");
-          
+
             DocumentSnapshot snap = await docref.GetSnapshotAsync();
             if (snap.Exists)
             {
                 Dictionary<string, object> city = snap.ToDictionary();
+
                 ritmostrar.Text += string.Format("\n----Documento----- \n  ");
                 foreach (var item in city)
                 {
@@ -417,5 +418,38 @@ namespace ECED_FORMS
                 }
             }
         }
+
+        private void btnDeletar_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("O cadastro do aluno " +txtPesquisarAluno.Text+" foi deletado do sistema.");
+            deletarCadastro("Name");
+            txtPesquisarAluno.Clear();
+            ritmostrar.Clear();
+
+        }
+        void deletarCadastro(string name)
+        {
+            DeletarAluno delete = new DeletarAluno()
+            {
+                Nome = txtPesquisarAluno.Text,
+
+            };
+            _ = ControllerDeletarAluno.DeletarAluno(delete);
+
+
+
+            //            CollectionReference coRef = DBConection.Getdatabase().Collection
+            //(txtPesquisarAluno.Text);
+            //            QuerySnapshot snap = await coRef.GetSnapshotAsync();
+
+            //            foreach (DocumentSnapshot doc in snap.Documents)
+            //            {
+            //                await doc.Reference.DeleteAsync();
+            //            }
+
+
+        }
+
+
     }
 }

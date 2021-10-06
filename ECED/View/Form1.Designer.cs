@@ -49,6 +49,7 @@ namespace ECED_FORMS
             this.ULTIMOTRIMESTRE = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label104 = new System.Windows.Forms.Label();
             this.tabPage7 = new System.Windows.Forms.TabPage();
+            this.cmbEscolha = new System.Windows.Forms.ComboBox();
             this.ritmostrar = new System.Windows.Forms.RichTextBox();
             this.btnBuscarAluno = new System.Windows.Forms.Button();
             this.txtPesquisarAluno = new System.Windows.Forms.TextBox();
@@ -273,7 +274,9 @@ namespace ECED_FORMS
             this.label17 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.tabControl2 = new System.Windows.Forms.TabControl();
-            this.cmbEscolha = new System.Windows.Forms.ComboBox();
+            this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.btnDeletar = new System.Windows.Forms.Button();
             this.tabPage8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.tabPage7.SuspendLayout();
@@ -291,6 +294,7 @@ namespace ECED_FORMS
             this.panel6.SuspendLayout();
             this.tabPage4.SuspendLayout();
             this.tabControl2.SuspendLayout();
+            this.tabPage5.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabPage8
@@ -464,10 +468,10 @@ namespace ECED_FORMS
             this.NOTACOL1,
             this.NOTA2TCOL,
             this.ULTIMOTRIMESTRE});
-            this.dataGridView2.Location = new System.Drawing.Point(671, 74);
+            this.dataGridView2.Location = new System.Drawing.Point(470, 17);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.ReadOnly = true;
-            this.dataGridView2.Size = new System.Drawing.Size(444, 477);
+            this.dataGridView2.Size = new System.Drawing.Size(444, 419);
             this.dataGridView2.TabIndex = 11;
             // 
             // DISCIPLINACOL
@@ -506,6 +510,7 @@ namespace ECED_FORMS
             // 
             // tabPage7
             // 
+            this.tabPage7.Controls.Add(this.btnDeletar);
             this.tabPage7.Controls.Add(this.cmbEscolha);
             this.tabPage7.Controls.Add(this.ritmostrar);
             this.tabPage7.Controls.Add(this.btnBuscarAluno);
@@ -519,10 +524,21 @@ namespace ECED_FORMS
             this.tabPage7.Text = "Pesquisar aluno";
             this.tabPage7.UseVisualStyleBackColor = true;
             // 
+            // cmbEscolha
+            // 
+            this.cmbEscolha.FormattingEnabled = true;
+            this.cmbEscolha.Items.AddRange(new object[] {
+            "Aluno",
+            "cities"});
+            this.cmbEscolha.Location = new System.Drawing.Point(1046, 199);
+            this.cmbEscolha.Name = "cmbEscolha";
+            this.cmbEscolha.Size = new System.Drawing.Size(133, 21);
+            this.cmbEscolha.TabIndex = 10;
+            // 
             // ritmostrar
             // 
             this.ritmostrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ritmostrar.Location = new System.Drawing.Point(143, 101);
+            this.ritmostrar.Location = new System.Drawing.Point(20, 64);
             this.ritmostrar.Name = "ritmostrar";
             this.ritmostrar.Size = new System.Drawing.Size(988, 408);
             this.ritmostrar.TabIndex = 9;
@@ -530,7 +546,7 @@ namespace ECED_FORMS
             // 
             // btnBuscarAluno
             // 
-            this.btnBuscarAluno.Location = new System.Drawing.Point(1160, 57);
+            this.btnBuscarAluno.Location = new System.Drawing.Point(951, 22);
             this.btnBuscarAluno.Name = "btnBuscarAluno";
             this.btnBuscarAluno.Size = new System.Drawing.Size(91, 32);
             this.btnBuscarAluno.TabIndex = 7;
@@ -540,8 +556,9 @@ namespace ECED_FORMS
             // 
             // txtPesquisarAluno
             // 
+            this.txtPesquisarAluno.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtPesquisarAluno.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPesquisarAluno.Location = new System.Drawing.Point(143, 60);
+            this.txtPesquisarAluno.Location = new System.Drawing.Point(103, 26);
             this.txtPesquisarAluno.Name = "txtPesquisarAluno";
             this.txtPesquisarAluno.Size = new System.Drawing.Size(827, 25);
             this.txtPesquisarAluno.TabIndex = 5;
@@ -550,7 +567,7 @@ namespace ECED_FORMS
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(56, 63);
+            this.label10.Location = new System.Drawing.Point(16, 26);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(81, 22);
             this.label10.TabIndex = 4;
@@ -981,6 +998,7 @@ namespace ECED_FORMS
             // 
             // txtNomeAluno
             // 
+            this.txtNomeAluno.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtNomeAluno.Location = new System.Drawing.Point(19, 69);
             this.txtNomeAluno.Name = "txtNomeAluno";
             this.txtNomeAluno.Size = new System.Drawing.Size(397, 23);
@@ -3041,22 +3059,40 @@ namespace ECED_FORMS
             this.tabControl2.Controls.Add(this.tabPage6);
             this.tabControl2.Controls.Add(this.tabPage7);
             this.tabControl2.Controls.Add(this.tabPage8);
+            this.tabControl2.Controls.Add(this.tabPage5);
             this.tabControl2.Location = new System.Drawing.Point(12, 5);
             this.tabControl2.Name = "tabControl2";
             this.tabControl2.SelectedIndex = 0;
             this.tabControl2.Size = new System.Drawing.Size(1324, 638);
             this.tabControl2.TabIndex = 2;
             // 
-            // cmbEscolha
+            // tabPage5
             // 
-            this.cmbEscolha.FormattingEnabled = true;
-            this.cmbEscolha.Items.AddRange(new object[] {
-            "Aluno",
-            "cities"});
-            this.cmbEscolha.Location = new System.Drawing.Point(985, 64);
-            this.cmbEscolha.Name = "cmbEscolha";
-            this.cmbEscolha.Size = new System.Drawing.Size(133, 21);
-            this.cmbEscolha.TabIndex = 10;
+            this.tabPage5.Controls.Add(this.textBox1);
+            this.tabPage5.Location = new System.Drawing.Point(4, 22);
+            this.tabPage5.Name = "tabPage5";
+            this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage5.Size = new System.Drawing.Size(1316, 612);
+            this.tabPage5.TabIndex = 4;
+            this.tabPage5.Text = "Deletar um cadastro";
+            this.tabPage5.UseVisualStyleBackColor = true;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(87, 53);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(459, 20);
+            this.textBox1.TabIndex = 0;
+            // 
+            // btnDeletar
+            // 
+            this.btnDeletar.Location = new System.Drawing.Point(1105, 22);
+            this.btnDeletar.Name = "btnDeletar";
+            this.btnDeletar.Size = new System.Drawing.Size(103, 27);
+            this.btnDeletar.TabIndex = 11;
+            this.btnDeletar.Text = "Deletar Cadastro";
+            this.btnDeletar.UseVisualStyleBackColor = true;
+            this.btnDeletar.Click += new System.EventHandler(this.btnDeletar_Click);
             // 
             // Form1
             // 
@@ -3097,6 +3133,8 @@ namespace ECED_FORMS
             this.tabPage4.ResumeLayout(false);
             this.tabPage4.PerformLayout();
             this.tabControl2.ResumeLayout(false);
+            this.tabPage5.ResumeLayout(false);
+            this.tabPage5.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -3348,6 +3386,9 @@ namespace ECED_FORMS
         private System.Windows.Forms.Label label73;
         private System.Windows.Forms.RichTextBox ritmostrar;
         private System.Windows.Forms.ComboBox cmbEscolha;
+        private System.Windows.Forms.TabPage tabPage5;
+        private System.Windows.Forms.Button btnDeletar;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
 
