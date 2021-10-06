@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace BALProject
 {
-    public class Controller
+    public class ControllerInsert
     {
         public static Response AlunoInsert(Aluno al)
         {

@@ -10,7 +10,6 @@ namespace DALProject
     public static class DBConection
     {
         private static FirestoreDb database;
-
         /// <summary>
         /// return an instance of the DataBese Connection
         /// </summary>
@@ -22,9 +21,7 @@ namespace DALProject
             database = FirestoreDb.Create("eced-e3031");
             return database;
         }
-
     }
-
 }
 
 

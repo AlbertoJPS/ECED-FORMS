@@ -30,11 +30,10 @@ namespace DALProject
                 };
                 doc.SetAsync(documen);
 
-
                 return new Response()
                 {
                     Executed = true,
-                    Message = "Deu Certo"
+                    Message = "Cadastro com Sucesso."
                 };
             }
             catch (Exception)
@@ -42,7 +41,7 @@ namespace DALProject
                 return new Response()
                 {
                     Executed = false,
-                    Message = "Deu Ruim"
+                    Message = "Cadastro não efetuado. \n Por favor verifique suas informações."
                 };
             }
         }

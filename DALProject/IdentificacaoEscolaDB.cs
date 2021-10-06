@@ -26,15 +26,14 @@ namespace DALProject
                     {"Telefone Autorizado", identEscola.Telefone},
                     {"Grau Parentesco", identEscola.GrauParent},
                     {"Idade", identEscola.Idade},
-                };
-              
+                };         
                 Task<WriteResult> t = doc.SetAsync(identeficacao);
                 t.Wait();
 
                 return new Response()
                 {
                     Executed = true,
-                    Message = "Deu Certo"
+                    Message = "Cadastro com Sucesso."
                 };
 
             }
@@ -43,7 +42,7 @@ namespace DALProject
                 return new Response()
                 {
                     Executed = false,
-                    Message = "Deu Ruim"
+                    Message = "Cadastro não efetuado. \n Por favor verifique suas informações."
                 };
             }
         }
