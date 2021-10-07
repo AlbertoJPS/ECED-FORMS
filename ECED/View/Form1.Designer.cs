@@ -49,6 +49,7 @@ namespace ECED_FORMS
             this.ULTIMOTRIMESTRE = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label104 = new System.Windows.Forms.Label();
             this.tabPage7 = new System.Windows.Forms.TabPage();
+            this.btnDeletar = new System.Windows.Forms.Button();
             this.cmbEscolha = new System.Windows.Forms.ComboBox();
             this.ritmostrar = new System.Windows.Forms.RichTextBox();
             this.btnBuscarAluno = new System.Windows.Forms.Button();
@@ -276,7 +277,6 @@ namespace ECED_FORMS
             this.tabControl2 = new System.Windows.Forms.TabControl();
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.btnDeletar = new System.Windows.Forms.Button();
             this.tabPage8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.tabPage7.SuspendLayout();
@@ -524,50 +524,66 @@ namespace ECED_FORMS
             this.tabPage7.Text = "Pesquisar aluno";
             this.tabPage7.UseVisualStyleBackColor = true;
             // 
+            // btnDeletar
+            // 
+            this.btnDeletar.BackColor = System.Drawing.Color.Red;
+            this.btnDeletar.ForeColor = System.Drawing.Color.White;
+            this.btnDeletar.Location = new System.Drawing.Point(928, 561);
+            this.btnDeletar.Name = "btnDeletar";
+            this.btnDeletar.Size = new System.Drawing.Size(103, 27);
+            this.btnDeletar.TabIndex = 11;
+            this.btnDeletar.Text = "Deletar Cadastro";
+            this.btnDeletar.UseVisualStyleBackColor = false;
+            this.btnDeletar.Click += new System.EventHandler(this.btnDeletar_Click);
+            // 
             // cmbEscolha
             // 
             this.cmbEscolha.FormattingEnabled = true;
             this.cmbEscolha.Items.AddRange(new object[] {
             "Aluno",
             "cities"});
-            this.cmbEscolha.Location = new System.Drawing.Point(1046, 199);
+            this.cmbEscolha.Location = new System.Drawing.Point(1075, 346);
             this.cmbEscolha.Name = "cmbEscolha";
             this.cmbEscolha.Size = new System.Drawing.Size(133, 21);
             this.cmbEscolha.TabIndex = 10;
             // 
             // ritmostrar
             // 
-            this.ritmostrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ritmostrar.Location = new System.Drawing.Point(20, 64);
+            this.ritmostrar.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.ritmostrar.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.ritmostrar.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ritmostrar.Location = new System.Drawing.Point(230, 147);
             this.ritmostrar.Name = "ritmostrar";
-            this.ritmostrar.Size = new System.Drawing.Size(988, 408);
+            this.ritmostrar.Size = new System.Drawing.Size(801, 408);
             this.ritmostrar.TabIndex = 9;
             this.ritmostrar.Text = "";
             // 
             // btnBuscarAluno
             // 
-            this.btnBuscarAluno.Location = new System.Drawing.Point(951, 22);
+            this.btnBuscarAluno.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btnBuscarAluno.ForeColor = System.Drawing.Color.White;
+            this.btnBuscarAluno.Location = new System.Drawing.Point(940, 85);
             this.btnBuscarAluno.Name = "btnBuscarAluno";
             this.btnBuscarAluno.Size = new System.Drawing.Size(91, 32);
             this.btnBuscarAluno.TabIndex = 7;
             this.btnBuscarAluno.Text = "Buscar";
-            this.btnBuscarAluno.UseVisualStyleBackColor = true;
+            this.btnBuscarAluno.UseVisualStyleBackColor = false;
             this.btnBuscarAluno.Click += new System.EventHandler(this.btnBuscarAluno_Click);
             // 
             // txtPesquisarAluno
             // 
             this.txtPesquisarAluno.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtPesquisarAluno.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPesquisarAluno.Location = new System.Drawing.Point(103, 26);
+            this.txtPesquisarAluno.Location = new System.Drawing.Point(230, 88);
             this.txtPesquisarAluno.Name = "txtPesquisarAluno";
-            this.txtPesquisarAluno.Size = new System.Drawing.Size(827, 25);
+            this.txtPesquisarAluno.Size = new System.Drawing.Size(684, 25);
             this.txtPesquisarAluno.TabIndex = 5;
             // 
             // label10
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(16, 26);
+            this.label10.Location = new System.Drawing.Point(143, 91);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(81, 22);
             this.label10.TabIndex = 4;
@@ -585,7 +601,7 @@ namespace ECED_FORMS
             this.tabPage6.Location = new System.Drawing.Point(4, 22);
             this.tabPage6.Name = "tabPage6";
             this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage6.Size = new System.Drawing.Size(1316, 612);
+            this.tabPage6.Size = new System.Drawing.Size(1316, 563);
             this.tabPage6.TabIndex = 1;
             this.tabPage6.Text = "Cadastro de aluno ";
             this.tabPage6.UseVisualStyleBackColor = true;
@@ -657,7 +673,7 @@ namespace ECED_FORMS
             this.tabControl1.Margin = new System.Windows.Forms.Padding(10, 30, 20, 33);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1236, 521);
+            this.tabControl1.Size = new System.Drawing.Size(1236, 462);
             this.tabControl1.TabIndex = 1;
             // 
             // tbCadastrarAlunos
@@ -712,7 +728,7 @@ namespace ECED_FORMS
             this.tbCadastrarAlunos.Location = new System.Drawing.Point(4, 25);
             this.tbCadastrarAlunos.Name = "tbCadastrarAlunos";
             this.tbCadastrarAlunos.Padding = new System.Windows.Forms.Padding(3);
-            this.tbCadastrarAlunos.Size = new System.Drawing.Size(1228, 492);
+            this.tbCadastrarAlunos.Size = new System.Drawing.Size(1228, 433);
             this.tbCadastrarAlunos.TabIndex = 1;
             this.tbCadastrarAlunos.Text = "Dados pessoais            ";
             this.tbCadastrarAlunos.UseVisualStyleBackColor = true;
@@ -3060,10 +3076,10 @@ namespace ECED_FORMS
             this.tabControl2.Controls.Add(this.tabPage7);
             this.tabControl2.Controls.Add(this.tabPage8);
             this.tabControl2.Controls.Add(this.tabPage5);
-            this.tabControl2.Location = new System.Drawing.Point(12, 5);
+            this.tabControl2.Location = new System.Drawing.Point(27, 52);
             this.tabControl2.Name = "tabControl2";
             this.tabControl2.SelectedIndex = 0;
-            this.tabControl2.Size = new System.Drawing.Size(1324, 638);
+            this.tabControl2.Size = new System.Drawing.Size(1324, 589);
             this.tabControl2.TabIndex = 2;
             // 
             // tabPage5
@@ -3084,16 +3100,6 @@ namespace ECED_FORMS
             this.textBox1.Size = new System.Drawing.Size(459, 20);
             this.textBox1.TabIndex = 0;
             // 
-            // btnDeletar
-            // 
-            this.btnDeletar.Location = new System.Drawing.Point(1105, 22);
-            this.btnDeletar.Name = "btnDeletar";
-            this.btnDeletar.Size = new System.Drawing.Size(103, 27);
-            this.btnDeletar.TabIndex = 11;
-            this.btnDeletar.Text = "Deletar Cadastro";
-            this.btnDeletar.UseVisualStyleBackColor = true;
-            this.btnDeletar.Click += new System.EventHandler(this.btnDeletar_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -3103,6 +3109,7 @@ namespace ECED_FORMS
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
+            //this.Paint += new System.Windows.Forms.PaintEventHandler(this.Form1_Paint);
             this.tabPage8.ResumeLayout(false);
             this.tabPage8.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();

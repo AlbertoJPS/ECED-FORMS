@@ -35,9 +35,9 @@ namespace BALProject
         {
             return DadosPaisBD.InsertDadosPais(dadosPais, aluno);
         }
-        public static Response NotasInsert(Boletim notas,Boletim aluno)
+        public static Response NotasInsert(Boletim notas)
         {
-            return BoletimDB.InsertEndereco(notas,aluno);
+            return BoletimDB.InsertBoletim(notas);
         }
     }
 }

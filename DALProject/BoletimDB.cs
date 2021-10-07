@@ -9,11 +9,11 @@ namespace DALProject
 {
     public static class BoletimDB
     {
-        public static Response InsertEndereco(Boletim notas,Boletim aluno)
+        public static Response InsertBoletim(Boletim notas)
         {
             try
             {
-                DocumentReference doc = DBConection.Getdatabase().Collection(aluno.NomeAluno).Document("Boletim");
+                DocumentReference doc = DBConection.Getdatabase().Collection(notas.NomeAluno).Document("Boletim");
                 Dictionary<string, object> city = new Dictionary<string, object>
             {
                     {"Nome Aluno", notas.NomeAluno},
@@ -23,7 +23,9 @@ namespace DALProject
                     {"Nota 2", notas.Nota2},
                     {"Nota 3", notas.Nota3},
             };
-                doc.SetAsync(city);
+                Task<WriteResult> t = doc.SetAsync(city);
+                t.Wait();
+                
 
                 return new Response()
                 {

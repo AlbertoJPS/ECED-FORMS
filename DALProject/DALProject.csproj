@@ -140,6 +140,7 @@
     <Compile Include="Response.cs" />
     <Compile Include="SaudeAluno.cs" />
     <Compile Include="SaudeAlunoDB.cs" />
+    <Compile Include="SelectDB.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />

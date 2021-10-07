@@ -11,6 +11,7 @@ using Google.Cloud.Firestore;
 using System.Collections;
 using DALProject;
 using BALProject;
+using System.Drawing.Drawing2D;
 
 namespace ECED_FORMS
 {
@@ -68,6 +69,10 @@ namespace ECED_FORMS
             txtCidade.Text = string.Empty;
             txtEstado.Text = string.Empty;
             txtRua.Text = string.Empty;
+        }
+        private void btnAddNota_Click(object sender, EventArgs e)
+        {
+            AdicionaNota();
         }
         private void btnDeletar_Click(object sender, EventArgs e)
         {
@@ -190,7 +195,7 @@ namespace ECED_FORMS
         }
         void AdicionaNota()
         {
-            Boletim bole = new Boletim();
+            //Boletim bole = new Boletim();
             Boletim boletim = new Boletim()
             {
                 NomeAluno = cbNomeAlunoNota.Text,
@@ -200,30 +205,41 @@ namespace ECED_FORMS
                 Nota2 = Convert.ToDouble(txtNota2.Text),
                 Nota3 = Convert.ToDouble(txtNota3.Text),
             };
-            Response res = ControllerInsert.NotasInsert(boletim, bole);
+            Response res = ControllerInsert.NotasInsert(boletim);
         }
         private void btnBuscarAluno_Click(object sender, EventArgs e)
         {
 
-            mostrardata("Nome");
             mostrardocumento("Documento");
+            mostrarDdosPessoais("Nome");
         }
-        async void mostrardata(string name)
+        async void mostrarDdosPessoais(string name)
         {
+
+            //Aluno al = new Aluno()
+            //{
+            //    NomeAluno = txtNomeAluno.Text,
+
+            //};
+            //Response res = await ControllerSelect.MostrarDados(al);
+
+
+
+
             DocumentReference docref = DBConection.Getdatabase().Collection(txtPesquisarAluno.Text).Document("Dados Pessoais");
 
             DocumentSnapshot snap = await docref.GetSnapshotAsync();
             if (snap.Exists)
             {
                 Dictionary<string, object> city = snap.ToDictionary();
-                ritmostrar.Text += string.Format("\n----Dados Pessoais--------\n  ");
+                ritmostrar.Text += string.Format("\n \n                                                       Dados Pessoais     \n  ");
                 foreach (var item in city)
                 {
-                    ritmostrar.Text += string.Format(" \n{0}: {1}\n", item.Key, item.Value);
+                    ritmostrar.Text += string.Format("\n                                          {0}: {1}\n", item.Key, item.Value);
                 }
             }
         }
-     
+
         async void mostrardocumento(string name)
         {
             DocumentReference docref = DBConection.Getdatabase().Collection(txtPesquisarAluno.Text).Document("Documento");
@@ -233,10 +249,10 @@ namespace ECED_FORMS
             {
                 Dictionary<string, object> city = snap.ToDictionary();
 
-                ritmostrar.Text += string.Format("\n----Documento----- \n  ");
+                ritmostrar.Text += string.Format("\n \n                                                    Documentos do aluno     \n  ");
                 foreach (var item in city)
                 {
-                    ritmostrar.Text += string.Format(" \n{0}: {1}\n", item.Key, item.Value);
+                    ritmostrar.Text += string.Format("\n                                          {0}: {1}\n", item.Key, item.Value);
                 }
             }
         }
@@ -420,10 +436,19 @@ namespace ECED_FORMS
         {
             FuncaoCheckBox(chResponsavelDois, chMaeDois, chPaiDois);
         }
-        private void btnAddNota_Click(object sender, EventArgs e)
-        {
-            AdicionaNota();
-        }
 
+
+        //private void SetBackColorDegrade(object sender, PaintEventArgs e)
+        //{
+        //    Graphics graphics = e.Graphics; Rectangle gradient_rect = new Rectangle(0, 0, Width, Height);
+        //    //RGB vermelho verde azul
+        //    Brush br = new LinearGradientBrush(gradient_rect, Color.FromArgb(108, 226, 252), Color.FromArgb(221, 247, 220), 15f);
+        //    graphics.FillRectangle(br, gradient_rect);
+        //}
+
+        //private void Form1_Paint(object sender, PaintEventArgs e)
+        //{
+        //    SetBackColorDegrade(sender,e);
+        //}
     }
 }
