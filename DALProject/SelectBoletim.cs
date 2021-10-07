@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace DALProject
 {
-    public class SelectDB
+    public class SelectBoletim
     {
-        public static async Task<Response> MostrarDados(Boletim name,List<string> vetor)
+        public static async Task<Response> MostrarBoletim(Aluno name, List<string> vetor)
         {
             try
             {
@@ -19,7 +19,7 @@ namespace DALProject
                 if (snap.Exists)
                 {
                     Dictionary<string, object> dados = snap.ToDictionary();
-                    
+
 
                     //i/*nt acumulador = 0;*/
                     foreach (var item in dados)
@@ -51,9 +51,6 @@ namespace DALProject
 
         }
 
-        public static Task<Response> MostrarDados(Aluno name, List<string> vetor)
-        {
-            throw new NotImplementedException();
-        }
+
     }
 }

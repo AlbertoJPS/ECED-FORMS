@@ -260,8 +260,23 @@ namespace ECED_FORMS
             //    }
             //}
         }
+        async void mostrarBolet(string name)
+        {
 
-        async void mostrardocumento(string name)
+            Boletim al = new Boletim()
+            {
+                NomeAluno = cbNomeAlunoNota.Text
+               
+            };
+            //string[] vetor = new string[1];
+            List<string> vetor = new List<string>();
+            await ControllerBoletim.MostrarBoletim(al, vetor);
+            string[] elementos = vetor.ToArray();
+            dtgBoletim.Rows.Add(elementos);
+
+        }
+
+            async void mostrardocumento(string name)
         {
             DocumentReference docref = DBConection.Getdatabase().Collection(txtPesquisarAluno.Text).Document("Documento");
 
@@ -513,6 +528,11 @@ namespace ECED_FORMS
                 //dtgDadosPessoais.Visible = false;
                 //dtgDocumento.Visible = true;
             }
+        }
+
+        private void btnMostrarBoletim_Click(object sender, EventArgs e)
+        {
+            mostrarBolet("boletim");
         }
 
 
