@@ -50,7 +50,6 @@ namespace ECED_FORMS
             this.label104 = new System.Windows.Forms.Label();
             this.tabPage7 = new System.Windows.Forms.TabPage();
             this.btnDeletar = new System.Windows.Forms.Button();
-            this.cmbEscolha = new System.Windows.Forms.ComboBox();
             this.ritmostrar = new System.Windows.Forms.RichTextBox();
             this.btnBuscarAluno = new System.Windows.Forms.Button();
             this.txtPesquisarAluno = new System.Windows.Forms.TextBox();
@@ -316,7 +315,7 @@ namespace ECED_FORMS
             this.tabPage8.Location = new System.Drawing.Point(4, 22);
             this.tabPage8.Name = "tabPage8";
             this.tabPage8.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage8.Size = new System.Drawing.Size(1316, 612);
+            this.tabPage8.Size = new System.Drawing.Size(1227, 573);
             this.tabPage8.TabIndex = 3;
             this.tabPage8.Text = "Boletim                      ";
             this.tabPage8.UseVisualStyleBackColor = true;
@@ -511,7 +510,6 @@ namespace ECED_FORMS
             // tabPage7
             // 
             this.tabPage7.Controls.Add(this.btnDeletar);
-            this.tabPage7.Controls.Add(this.cmbEscolha);
             this.tabPage7.Controls.Add(this.ritmostrar);
             this.tabPage7.Controls.Add(this.btnBuscarAluno);
             this.tabPage7.Controls.Add(this.txtPesquisarAluno);
@@ -519,7 +517,7 @@ namespace ECED_FORMS
             this.tabPage7.Location = new System.Drawing.Point(4, 22);
             this.tabPage7.Name = "tabPage7";
             this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage7.Size = new System.Drawing.Size(1316, 612);
+            this.tabPage7.Size = new System.Drawing.Size(1227, 573);
             this.tabPage7.TabIndex = 2;
             this.tabPage7.Text = "Pesquisar aluno";
             this.tabPage7.UseVisualStyleBackColor = true;
@@ -528,7 +526,7 @@ namespace ECED_FORMS
             // 
             this.btnDeletar.BackColor = System.Drawing.Color.Red;
             this.btnDeletar.ForeColor = System.Drawing.Color.White;
-            this.btnDeletar.Location = new System.Drawing.Point(928, 561);
+            this.btnDeletar.Location = new System.Drawing.Point(924, 528);
             this.btnDeletar.Name = "btnDeletar";
             this.btnDeletar.Size = new System.Drawing.Size(103, 27);
             this.btnDeletar.TabIndex = 11;
@@ -536,23 +534,12 @@ namespace ECED_FORMS
             this.btnDeletar.UseVisualStyleBackColor = false;
             this.btnDeletar.Click += new System.EventHandler(this.btnDeletar_Click);
             // 
-            // cmbEscolha
-            // 
-            this.cmbEscolha.FormattingEnabled = true;
-            this.cmbEscolha.Items.AddRange(new object[] {
-            "Aluno",
-            "cities"});
-            this.cmbEscolha.Location = new System.Drawing.Point(1075, 346);
-            this.cmbEscolha.Name = "cmbEscolha";
-            this.cmbEscolha.Size = new System.Drawing.Size(133, 21);
-            this.cmbEscolha.TabIndex = 10;
-            // 
             // ritmostrar
             // 
             this.ritmostrar.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.ritmostrar.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.ritmostrar.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ritmostrar.Location = new System.Drawing.Point(230, 147);
+            this.ritmostrar.Location = new System.Drawing.Point(226, 114);
             this.ritmostrar.Name = "ritmostrar";
             this.ritmostrar.Size = new System.Drawing.Size(801, 408);
             this.ritmostrar.TabIndex = 9;
@@ -562,7 +549,7 @@ namespace ECED_FORMS
             // 
             this.btnBuscarAluno.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.btnBuscarAluno.ForeColor = System.Drawing.Color.White;
-            this.btnBuscarAluno.Location = new System.Drawing.Point(940, 85);
+            this.btnBuscarAluno.Location = new System.Drawing.Point(936, 52);
             this.btnBuscarAluno.Name = "btnBuscarAluno";
             this.btnBuscarAluno.Size = new System.Drawing.Size(91, 32);
             this.btnBuscarAluno.TabIndex = 7;
@@ -574,7 +561,7 @@ namespace ECED_FORMS
             // 
             this.txtPesquisarAluno.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtPesquisarAluno.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPesquisarAluno.Location = new System.Drawing.Point(230, 88);
+            this.txtPesquisarAluno.Location = new System.Drawing.Point(226, 55);
             this.txtPesquisarAluno.Name = "txtPesquisarAluno";
             this.txtPesquisarAluno.Size = new System.Drawing.Size(684, 25);
             this.txtPesquisarAluno.TabIndex = 5;
@@ -583,7 +570,7 @@ namespace ECED_FORMS
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(143, 91);
+            this.label10.Location = new System.Drawing.Point(139, 58);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(81, 22);
             this.label10.TabIndex = 4;
@@ -601,7 +588,7 @@ namespace ECED_FORMS
             this.tabPage6.Location = new System.Drawing.Point(4, 22);
             this.tabPage6.Name = "tabPage6";
             this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage6.Size = new System.Drawing.Size(1316, 563);
+            this.tabPage6.Size = new System.Drawing.Size(1227, 573);
             this.tabPage6.TabIndex = 1;
             this.tabPage6.Text = "Cadastro de aluno ";
             this.tabPage6.UseVisualStyleBackColor = true;
@@ -673,7 +660,7 @@ namespace ECED_FORMS
             this.tabControl1.Margin = new System.Windows.Forms.Padding(10, 30, 20, 33);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1236, 462);
+            this.tabControl1.Size = new System.Drawing.Size(1142, 479);
             this.tabControl1.TabIndex = 1;
             // 
             // tbCadastrarAlunos
@@ -728,7 +715,7 @@ namespace ECED_FORMS
             this.tbCadastrarAlunos.Location = new System.Drawing.Point(4, 25);
             this.tbCadastrarAlunos.Name = "tbCadastrarAlunos";
             this.tbCadastrarAlunos.Padding = new System.Windows.Forms.Padding(3);
-            this.tbCadastrarAlunos.Size = new System.Drawing.Size(1228, 433);
+            this.tbCadastrarAlunos.Size = new System.Drawing.Size(1134, 450);
             this.tbCadastrarAlunos.TabIndex = 1;
             this.tbCadastrarAlunos.Text = "Dados pessoais            ";
             this.tbCadastrarAlunos.UseVisualStyleBackColor = true;
@@ -826,7 +813,7 @@ namespace ECED_FORMS
             "MT",
             "GO",
             "DF"});
-            this.txtUfRg.Location = new System.Drawing.Point(1092, 319);
+            this.txtUfRg.Location = new System.Drawing.Point(904, 341);
             this.txtUfRg.Name = "txtUfRg";
             this.txtUfRg.Size = new System.Drawing.Size(91, 25);
             this.txtUfRg.TabIndex = 188;
@@ -863,14 +850,14 @@ namespace ECED_FORMS
             "MT",
             "GO",
             "DF"});
-            this.txtUfCartorio.Location = new System.Drawing.Point(729, 291);
+            this.txtUfCartorio.Location = new System.Drawing.Point(942, 292);
             this.txtUfCartorio.Name = "txtUfCartorio";
             this.txtUfCartorio.Size = new System.Drawing.Size(91, 25);
             this.txtUfCartorio.TabIndex = 187;
             // 
             // txtRgAluno
             // 
-            this.txtRgAluno.Location = new System.Drawing.Point(348, 321);
+            this.txtRgAluno.Location = new System.Drawing.Point(173, 343);
             this.txtRgAluno.Mask = "0\\.000\\.000";
             this.txtRgAluno.Name = "txtRgAluno";
             this.txtRgAluno.Size = new System.Drawing.Size(136, 23);
@@ -878,7 +865,7 @@ namespace ECED_FORMS
             // 
             // txtCpf
             // 
-            this.txtCpf.Location = new System.Drawing.Point(56, 324);
+            this.txtCpf.Location = new System.Drawing.Point(56, 296);
             this.txtCpf.Mask = "000\\.000\\.000\\-00";
             this.txtCpf.Name = "txtCpf";
             this.txtCpf.Size = new System.Drawing.Size(136, 23);
@@ -903,7 +890,7 @@ namespace ECED_FORMS
             // 
             // txtEmailAluno
             // 
-            this.txtEmailAluno.Location = new System.Drawing.Point(146, 367);
+            this.txtEmailAluno.Location = new System.Drawing.Point(150, 386);
             this.txtEmailAluno.Name = "txtEmailAluno";
             this.txtEmailAluno.Size = new System.Drawing.Size(320, 23);
             this.txtEmailAluno.TabIndex = 83;
@@ -911,7 +898,7 @@ namespace ECED_FORMS
             // label68
             // 
             this.label68.AutoSize = true;
-            this.label68.Location = new System.Drawing.Point(16, 373);
+            this.label68.Location = new System.Drawing.Point(20, 392);
             this.label68.Name = "label68";
             this.label68.Size = new System.Drawing.Size(123, 17);
             this.label68.TabIndex = 82;
@@ -920,7 +907,7 @@ namespace ECED_FORMS
             // label67
             // 
             this.label67.AutoSize = true;
-            this.label67.Location = new System.Drawing.Point(1059, 324);
+            this.label67.Location = new System.Drawing.Point(871, 346);
             this.label67.Name = "label67";
             this.label67.Size = new System.Drawing.Size(27, 17);
             this.label67.TabIndex = 80;
@@ -929,7 +916,7 @@ namespace ECED_FORMS
             // dtDataExpedicaoRG
             // 
             this.dtDataExpedicaoRG.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtDataExpedicaoRG.Location = new System.Drawing.Point(921, 319);
+            this.dtDataExpedicaoRG.Location = new System.Drawing.Point(733, 341);
             this.dtDataExpedicaoRG.Name = "dtDataExpedicaoRG";
             this.dtDataExpedicaoRG.Size = new System.Drawing.Size(127, 23);
             this.dtDataExpedicaoRG.TabIndex = 79;
@@ -937,7 +924,7 @@ namespace ECED_FORMS
             // label66
             // 
             this.label66.AutoSize = true;
-            this.label66.Location = new System.Drawing.Point(768, 324);
+            this.label66.Location = new System.Drawing.Point(580, 346);
             this.label66.Name = "label66";
             this.label66.Size = new System.Drawing.Size(147, 17);
             this.label66.TabIndex = 78;
@@ -946,7 +933,7 @@ namespace ECED_FORMS
             // label65
             // 
             this.label65.AutoSize = true;
-            this.label65.Location = new System.Drawing.Point(696, 294);
+            this.label65.Location = new System.Drawing.Point(899, 295);
             this.label65.Name = "label65";
             this.label65.Size = new System.Drawing.Size(27, 17);
             this.label65.TabIndex = 76;
@@ -1022,7 +1009,7 @@ namespace ECED_FORMS
             // 
             // txtNomeCartorio
             // 
-            this.txtNomeCartorio.Location = new System.Drawing.Point(244, 291);
+            this.txtNomeCartorio.Location = new System.Drawing.Point(465, 296);
             this.txtNomeCartorio.Name = "txtNomeCartorio";
             this.txtNomeCartorio.Size = new System.Drawing.Size(428, 23);
             this.txtNomeCartorio.TabIndex = 61;
@@ -1036,7 +1023,7 @@ namespace ECED_FORMS
             // 
             // txtOrgaoEmissor
             // 
-            this.txtOrgaoEmissor.Location = new System.Drawing.Point(637, 321);
+            this.txtOrgaoEmissor.Location = new System.Drawing.Point(449, 343);
             this.txtOrgaoEmissor.Name = "txtOrgaoEmissor";
             this.txtOrgaoEmissor.Size = new System.Drawing.Size(125, 23);
             this.txtOrgaoEmissor.TabIndex = 52;
@@ -1069,7 +1056,7 @@ namespace ECED_FORMS
             // label27
             // 
             this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(16, 294);
+            this.label27.Location = new System.Drawing.Point(239, 299);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(218, 17);
             this.label27.TabIndex = 59;
@@ -1114,7 +1101,7 @@ namespace ECED_FORMS
             // label21
             // 
             this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(515, 327);
+            this.label21.Location = new System.Drawing.Point(327, 349);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(116, 17);
             this.label21.TabIndex = 48;
@@ -1123,7 +1110,7 @@ namespace ECED_FORMS
             // label20
             // 
             this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(16, 327);
+            this.label20.Location = new System.Drawing.Point(16, 299);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(34, 17);
             this.label20.TabIndex = 46;
@@ -1132,7 +1119,7 @@ namespace ECED_FORMS
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(198, 327);
+            this.label19.Location = new System.Drawing.Point(20, 346);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(147, 17);
             this.label19.TabIndex = 44;
@@ -1279,7 +1266,7 @@ namespace ECED_FORMS
             this.tabPage1.Location = new System.Drawing.Point(4, 25);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1228, 492);
+            this.tabPage1.Size = new System.Drawing.Size(1134, 450);
             this.tabPage1.TabIndex = 2;
             this.tabPage1.Text = "Endereço                   ";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -1391,7 +1378,7 @@ namespace ECED_FORMS
             // 
             // btnLimpaCep
             // 
-            this.btnLimpaCep.Location = new System.Drawing.Point(1017, 324);
+            this.btnLimpaCep.Location = new System.Drawing.Point(914, 345);
             this.btnLimpaCep.Name = "btnLimpaCep";
             this.btnLimpaCep.Size = new System.Drawing.Size(75, 34);
             this.btnLimpaCep.TabIndex = 93;
@@ -1512,14 +1499,14 @@ namespace ECED_FORMS
             this.tabPage2.Location = new System.Drawing.Point(4, 25);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1228, 492);
+            this.tabPage2.Size = new System.Drawing.Size(1134, 430);
             this.tabPage2.TabIndex = 3;
             this.tabPage2.Text = "Identificação escolar          ";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // txtIdadeParentesco
             // 
-            this.txtIdadeParentesco.Location = new System.Drawing.Point(1096, 251);
+            this.txtIdadeParentesco.Location = new System.Drawing.Point(1055, 254);
             this.txtIdadeParentesco.Mask = "000";
             this.txtIdadeParentesco.Name = "txtIdadeParentesco";
             this.txtIdadeParentesco.Size = new System.Drawing.Size(55, 22);
@@ -1535,7 +1522,7 @@ namespace ECED_FORMS
             // 
             // txtTelefonePessAutorizada
             // 
-            this.txtTelefonePessAutorizada.Location = new System.Drawing.Point(606, 251);
+            this.txtTelefonePessAutorizada.Location = new System.Drawing.Point(565, 254);
             this.txtTelefonePessAutorizada.Mask = "(99) 00000-0000";
             this.txtTelefonePessAutorizada.Name = "txtTelefonePessAutorizada";
             this.txtTelefonePessAutorizada.Size = new System.Drawing.Size(107, 22);
@@ -1543,7 +1530,7 @@ namespace ECED_FORMS
             // 
             // txtTelUrgencia
             // 
-            this.txtTelUrgencia.Location = new System.Drawing.Point(856, 335);
+            this.txtTelUrgencia.Location = new System.Drawing.Point(856, 315);
             this.txtTelUrgencia.Mask = "(99) 00000-0000";
             this.txtTelUrgencia.Name = "txtTelUrgencia";
             this.txtTelUrgencia.Size = new System.Drawing.Size(107, 22);
@@ -1556,7 +1543,7 @@ namespace ECED_FORMS
             this.cmbPeriodoIrmao.Items.AddRange(new object[] {
             "MATUTINO",
             "VERPERTINO"});
-            this.cmbPeriodoIrmao.Location = new System.Drawing.Point(730, 400);
+            this.cmbPeriodoIrmao.Location = new System.Drawing.Point(802, 379);
             this.cmbPeriodoIrmao.Name = "cmbPeriodoIrmao";
             this.cmbPeriodoIrmao.Size = new System.Drawing.Size(95, 24);
             this.cmbPeriodoIrmao.TabIndex = 16;
@@ -1564,7 +1551,7 @@ namespace ECED_FORMS
             // label102
             // 
             this.label102.AutoSize = true;
-            this.label102.Location = new System.Drawing.Point(659, 406);
+            this.label102.Location = new System.Drawing.Point(731, 385);
             this.label102.Name = "label102";
             this.label102.Size = new System.Drawing.Size(63, 16);
             this.label102.TabIndex = 122;
@@ -1595,7 +1582,7 @@ namespace ECED_FORMS
             "8° Ano B",
             "9° Ano A",
             "9° Ano B"});
-            this.cmbTurmaIrmao.Location = new System.Drawing.Point(553, 400);
+            this.cmbTurmaIrmao.Location = new System.Drawing.Point(625, 379);
             this.cmbTurmaIrmao.Name = "cmbTurmaIrmao";
             this.cmbTurmaIrmao.Size = new System.Drawing.Size(88, 24);
             this.cmbTurmaIrmao.TabIndex = 121;
@@ -1603,7 +1590,7 @@ namespace ECED_FORMS
             // label72
             // 
             this.label72.AutoSize = true;
-            this.label72.Location = new System.Drawing.Point(493, 408);
+            this.label72.Location = new System.Drawing.Point(565, 387);
             this.label72.Name = "label72";
             this.label72.Size = new System.Drawing.Size(54, 16);
             this.label72.TabIndex = 120;
@@ -1611,7 +1598,7 @@ namespace ECED_FORMS
             // 
             // txtNomeIrmaoEstuda
             // 
-            this.txtNomeIrmaoEstuda.Location = new System.Drawing.Point(294, 402);
+            this.txtNomeIrmaoEstuda.Location = new System.Drawing.Point(328, 376);
             this.txtNomeIrmaoEstuda.Name = "txtNomeIrmaoEstuda";
             this.txtNomeIrmaoEstuda.Size = new System.Drawing.Size(177, 22);
             this.txtNomeIrmaoEstuda.TabIndex = 118;
@@ -1619,7 +1606,7 @@ namespace ECED_FORMS
             // label71
             // 
             this.label71.AutoSize = true;
-            this.label71.Location = new System.Drawing.Point(11, 408);
+            this.label71.Location = new System.Drawing.Point(45, 376);
             this.label71.Name = "label71";
             this.label71.Size = new System.Drawing.Size(277, 16);
             this.label71.TabIndex = 117;
@@ -1628,7 +1615,7 @@ namespace ECED_FORMS
             // label70
             // 
             this.label70.AutoSize = true;
-            this.label70.Location = new System.Drawing.Point(823, 339);
+            this.label70.Location = new System.Drawing.Point(823, 319);
             this.label70.Name = "label70";
             this.label70.Size = new System.Drawing.Size(30, 16);
             this.label70.TabIndex = 116;
@@ -1645,7 +1632,7 @@ namespace ECED_FORMS
             "PAI",
             "TIOS",
             "TIAS"});
-            this.cmbGrauUrgencia.Location = new System.Drawing.Point(675, 331);
+            this.cmbGrauUrgencia.Location = new System.Drawing.Point(675, 311);
             this.cmbGrauUrgencia.Name = "cmbGrauUrgencia";
             this.cmbGrauUrgencia.Size = new System.Drawing.Size(121, 24);
             this.cmbGrauUrgencia.TabIndex = 115;
@@ -1654,7 +1641,7 @@ namespace ECED_FORMS
             // 
             this.label69.AutoSize = true;
             this.label69.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label69.Location = new System.Drawing.Point(514, 335);
+            this.label69.Location = new System.Drawing.Point(514, 315);
             this.label69.Name = "label69";
             this.label69.Size = new System.Drawing.Size(153, 17);
             this.label69.TabIndex = 113;
@@ -1662,7 +1649,7 @@ namespace ECED_FORMS
             // 
             // txtAvisoUrgencia
             // 
-            this.txtAvisoUrgencia.Location = new System.Drawing.Point(315, 333);
+            this.txtAvisoUrgencia.Location = new System.Drawing.Point(328, 310);
             this.txtAvisoUrgencia.Name = "txtAvisoUrgencia";
             this.txtAvisoUrgencia.Size = new System.Drawing.Size(177, 22);
             this.txtAvisoUrgencia.TabIndex = 112;
@@ -1670,7 +1657,7 @@ namespace ECED_FORMS
             // label37
             // 
             this.label37.AutoSize = true;
-            this.label37.Location = new System.Drawing.Point(11, 339);
+            this.label37.Location = new System.Drawing.Point(34, 313);
             this.label37.Name = "label37";
             this.label37.Size = new System.Drawing.Size(288, 16);
             this.label37.TabIndex = 110;
@@ -1680,7 +1667,7 @@ namespace ECED_FORMS
             // 
             this.label34.AutoSize = true;
             this.label34.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label34.Location = new System.Drawing.Point(1039, 258);
+            this.label34.Location = new System.Drawing.Point(998, 261);
             this.label34.Name = "label34";
             this.label34.Size = new System.Drawing.Size(51, 17);
             this.label34.TabIndex = 108;
@@ -1697,7 +1684,7 @@ namespace ECED_FORMS
             "PAI",
             "TIOS",
             "TIAS"});
-            this.cmbParentesco.Location = new System.Drawing.Point(912, 251);
+            this.cmbParentesco.Location = new System.Drawing.Point(846, 252);
             this.cmbParentesco.Name = "cmbParentesco";
             this.cmbParentesco.Size = new System.Drawing.Size(121, 24);
             this.cmbParentesco.TabIndex = 107;
@@ -1706,7 +1693,7 @@ namespace ECED_FORMS
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(753, 258);
+            this.label7.Location = new System.Drawing.Point(686, 256);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(153, 17);
             this.label7.TabIndex = 106;
@@ -1714,9 +1701,9 @@ namespace ECED_FORMS
             // 
             // txtPessoaAutorizada
             // 
-            this.txtPessoaAutorizada.Location = new System.Drawing.Point(419, 253);
+            this.txtPessoaAutorizada.Location = new System.Drawing.Point(341, 257);
             this.txtPessoaAutorizada.Name = "txtPessoaAutorizada";
-            this.txtPessoaAutorizada.Size = new System.Drawing.Size(140, 22);
+            this.txtPessoaAutorizada.Size = new System.Drawing.Size(164, 22);
             this.txtPessoaAutorizada.TabIndex = 101;
             // 
             // txtUnidadeEscolar
@@ -1730,7 +1717,7 @@ namespace ECED_FORMS
             // label62
             // 
             this.label62.AutoSize = true;
-            this.label62.Location = new System.Drawing.Point(575, 259);
+            this.label62.Location = new System.Drawing.Point(534, 262);
             this.label62.Name = "label62";
             this.label62.Size = new System.Drawing.Size(30, 16);
             this.label62.TabIndex = 102;
@@ -1742,9 +1729,9 @@ namespace ECED_FORMS
             this.label42.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label42.Location = new System.Drawing.Point(6, 259);
             this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(402, 17);
+            this.label42.Size = new System.Drawing.Size(329, 17);
             this.label42.TabIndex = 100;
-            this.label42.Text = "QUEM ESTÁ AUTORIZADO(A) A PEGAR A CRIANÇA NA ESCOLA: ";
+            this.label42.Text = " AUTORIZADO(A) A PEGAR A CRIANÇA NA ESCOLA: ";
             // 
             // label36
             // 
@@ -1802,7 +1789,7 @@ namespace ECED_FORMS
             this.panel1.Controls.Add(this.cmbTurma);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label8);
-            this.panel1.Location = new System.Drawing.Point(375, 132);
+            this.panel1.Location = new System.Drawing.Point(328, 125);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(385, 50);
             this.panel1.TabIndex = 90;
@@ -1922,7 +1909,7 @@ namespace ECED_FORMS
             this.tabPage3.Location = new System.Drawing.Point(4, 25);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(1228, 492);
+            this.tabPage3.Size = new System.Drawing.Size(1134, 445);
             this.tabPage3.TabIndex = 4;
             this.tabPage3.Text = "Identificação saúde";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -2404,14 +2391,14 @@ namespace ECED_FORMS
             this.tabPage4.Location = new System.Drawing.Point(4, 25);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(1228, 492);
+            this.tabPage4.Size = new System.Drawing.Size(1134, 450);
             this.tabPage4.TabIndex = 5;
             this.tabPage4.Text = "Dados dos Responsaveís       ";
             // 
             // chResponsavelDois
             // 
             this.chResponsavelDois.AutoSize = true;
-            this.chResponsavelDois.Location = new System.Drawing.Point(487, 251);
+            this.chResponsavelDois.Location = new System.Drawing.Point(489, 242);
             this.chResponsavelDois.Name = "chResponsavelDois";
             this.chResponsavelDois.Size = new System.Drawing.Size(92, 20);
             this.chResponsavelDois.TabIndex = 189;
@@ -2422,7 +2409,7 @@ namespace ECED_FORMS
             // chPaiDois
             // 
             this.chPaiDois.AutoSize = true;
-            this.chPaiDois.Location = new System.Drawing.Point(431, 251);
+            this.chPaiDois.Location = new System.Drawing.Point(433, 242);
             this.chPaiDois.Name = "chPaiDois";
             this.chPaiDois.Size = new System.Drawing.Size(43, 20);
             this.chPaiDois.TabIndex = 188;
@@ -2433,7 +2420,7 @@ namespace ECED_FORMS
             // chMaeDois
             // 
             this.chMaeDois.AutoSize = true;
-            this.chMaeDois.Location = new System.Drawing.Point(362, 251);
+            this.chMaeDois.Location = new System.Drawing.Point(364, 242);
             this.chMaeDois.Name = "chMaeDois";
             this.chMaeDois.Size = new System.Drawing.Size(50, 20);
             this.chMaeDois.TabIndex = 187;
@@ -2510,14 +2497,14 @@ namespace ECED_FORMS
             "MT",
             "GO",
             "DF"});
-            this.txtUfRespDois.Location = new System.Drawing.Point(578, 331);
+            this.txtUfRespDois.Location = new System.Drawing.Point(578, 322);
             this.txtUfRespDois.Name = "txtUfRespDois";
             this.txtUfRespDois.Size = new System.Drawing.Size(91, 24);
             this.txtUfRespDois.TabIndex = 185;
             // 
             // txtRgRespDois
             // 
-            this.txtRgRespDois.Location = new System.Drawing.Point(174, 330);
+            this.txtRgRespDois.Location = new System.Drawing.Point(174, 321);
             this.txtRgRespDois.Mask = "0\\.000\\.000";
             this.txtRgRespDois.Name = "txtRgRespDois";
             this.txtRgRespDois.Size = new System.Drawing.Size(106, 22);
@@ -2558,7 +2545,7 @@ namespace ECED_FORMS
             "PÓS-GRADUAÇÃO",
             "MESTRADO",
             "DOUTORADO"});
-            this.txtEscolaridadeRespDois.Location = new System.Drawing.Point(408, 372);
+            this.txtEscolaridadeRespDois.Location = new System.Drawing.Point(408, 363);
             this.txtEscolaridadeRespDois.Name = "txtEscolaridadeRespDois";
             this.txtEscolaridadeRespDois.Size = new System.Drawing.Size(121, 24);
             this.txtEscolaridadeRespDois.TabIndex = 181;
@@ -2574,7 +2561,7 @@ namespace ECED_FORMS
             // 
             // txtHorarioTrabalhoRespDois
             // 
-            this.txtHorarioTrabalhoRespDois.Location = new System.Drawing.Point(431, 412);
+            this.txtHorarioTrabalhoRespDois.Location = new System.Drawing.Point(431, 403);
             this.txtHorarioTrabalhoRespDois.Mask = "90:00";
             this.txtHorarioTrabalhoRespDois.Name = "txtHorarioTrabalhoRespDois";
             this.txtHorarioTrabalhoRespDois.Size = new System.Drawing.Size(67, 22);
@@ -2586,14 +2573,14 @@ namespace ECED_FORMS
             this.panel7.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.panel7.Location = new System.Drawing.Point(0, 207);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(1236, 38);
+            this.panel7.Size = new System.Drawing.Size(1236, 29);
             this.panel7.TabIndex = 178;
             // 
             // label85
             // 
             this.label85.AutoSize = true;
             this.label85.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label85.Location = new System.Drawing.Point(717, 293);
+            this.label85.Location = new System.Drawing.Point(717, 284);
             this.label85.Name = "label85";
             this.label85.Size = new System.Drawing.Size(34, 17);
             this.label85.TabIndex = 177;
@@ -2601,7 +2588,7 @@ namespace ECED_FORMS
             // 
             // txtRamalRespDois
             // 
-            this.txtRamalRespDois.Location = new System.Drawing.Point(633, 412);
+            this.txtRamalRespDois.Location = new System.Drawing.Point(633, 403);
             this.txtRamalRespDois.Name = "txtRamalRespDois";
             this.txtRamalRespDois.Size = new System.Drawing.Size(136, 22);
             this.txtRamalRespDois.TabIndex = 176;
@@ -2610,7 +2597,7 @@ namespace ECED_FORMS
             // 
             this.label86.AutoSize = true;
             this.label86.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label86.Location = new System.Drawing.Point(575, 418);
+            this.label86.Location = new System.Drawing.Point(575, 409);
             this.label86.Name = "label86";
             this.label86.Size = new System.Drawing.Size(52, 16);
             this.label86.TabIndex = 175;
@@ -2620,7 +2607,7 @@ namespace ECED_FORMS
             // 
             this.label87.AutoSize = true;
             this.label87.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label87.Location = new System.Drawing.Point(359, 418);
+            this.label87.Location = new System.Drawing.Point(359, 409);
             this.label87.Name = "label87";
             this.label87.Size = new System.Drawing.Size(66, 16);
             this.label87.TabIndex = 173;
@@ -2628,7 +2615,7 @@ namespace ECED_FORMS
             // 
             // txtLocalTrabalhoRespDois
             // 
-            this.txtLocalTrabalhoRespDois.Location = new System.Drawing.Point(174, 415);
+            this.txtLocalTrabalhoRespDois.Location = new System.Drawing.Point(174, 406);
             this.txtLocalTrabalhoRespDois.Name = "txtLocalTrabalhoRespDois";
             this.txtLocalTrabalhoRespDois.Size = new System.Drawing.Size(176, 22);
             this.txtLocalTrabalhoRespDois.TabIndex = 172;
@@ -2637,7 +2624,7 @@ namespace ECED_FORMS
             // 
             this.label88.AutoSize = true;
             this.label88.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label88.Location = new System.Drawing.Point(37, 421);
+            this.label88.Location = new System.Drawing.Point(37, 412);
             this.label88.Name = "label88";
             this.label88.Size = new System.Drawing.Size(131, 16);
             this.label88.TabIndex = 171;
@@ -2645,7 +2632,7 @@ namespace ECED_FORMS
             // 
             // txtProfissaoRespDois
             // 
-            this.txtProfissaoRespDois.Location = new System.Drawing.Point(633, 369);
+            this.txtProfissaoRespDois.Location = new System.Drawing.Point(633, 360);
             this.txtProfissaoRespDois.Name = "txtProfissaoRespDois";
             this.txtProfissaoRespDois.Size = new System.Drawing.Size(136, 22);
             this.txtProfissaoRespDois.TabIndex = 170;
@@ -2654,7 +2641,7 @@ namespace ECED_FORMS
             // 
             this.label89.AutoSize = true;
             this.label89.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label89.Location = new System.Drawing.Point(551, 375);
+            this.label89.Location = new System.Drawing.Point(551, 366);
             this.label89.Name = "label89";
             this.label89.Size = new System.Drawing.Size(76, 16);
             this.label89.TabIndex = 169;
@@ -2664,7 +2651,7 @@ namespace ECED_FORMS
             // 
             this.label90.AutoSize = true;
             this.label90.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label90.Location = new System.Drawing.Point(286, 377);
+            this.label90.Location = new System.Drawing.Point(286, 368);
             this.label90.Name = "label90";
             this.label90.Size = new System.Drawing.Size(98, 16);
             this.label90.TabIndex = 167;
@@ -2680,7 +2667,7 @@ namespace ECED_FORMS
             "SEPARADO(A)",
             "SOLTEIRO(A)",
             "VIÚVO(A)"});
-            this.cbEstadoCivilRespDois.Location = new System.Drawing.Point(132, 369);
+            this.cbEstadoCivilRespDois.Location = new System.Drawing.Point(132, 360);
             this.cbEstadoCivilRespDois.Name = "cbEstadoCivilRespDois";
             this.cbEstadoCivilRespDois.Size = new System.Drawing.Size(121, 24);
             this.cbEstadoCivilRespDois.TabIndex = 166;
@@ -2689,7 +2676,7 @@ namespace ECED_FORMS
             // 
             this.label91.AutoSize = true;
             this.label91.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label91.Location = new System.Drawing.Point(37, 377);
+            this.label91.Location = new System.Drawing.Point(37, 368);
             this.label91.Name = "label91";
             this.label91.Size = new System.Drawing.Size(89, 16);
             this.label91.TabIndex = 165;
@@ -2697,7 +2684,7 @@ namespace ECED_FORMS
             // 
             // txtOrgaoEmissorRespDois
             // 
-            this.txtOrgaoEmissorRespDois.Location = new System.Drawing.Point(789, 330);
+            this.txtOrgaoEmissorRespDois.Location = new System.Drawing.Point(789, 321);
             this.txtOrgaoEmissorRespDois.Name = "txtOrgaoEmissorRespDois";
             this.txtOrgaoEmissorRespDois.Size = new System.Drawing.Size(108, 22);
             this.txtOrgaoEmissorRespDois.TabIndex = 164;
@@ -2705,7 +2692,7 @@ namespace ECED_FORMS
             // dtDataExpedicaoRespDois
             // 
             this.dtDataExpedicaoRespDois.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtDataExpedicaoRespDois.Location = new System.Drawing.Point(420, 331);
+            this.dtDataExpedicaoRespDois.Location = new System.Drawing.Point(420, 322);
             this.dtDataExpedicaoRespDois.Name = "dtDataExpedicaoRespDois";
             this.dtDataExpedicaoRespDois.Size = new System.Drawing.Size(109, 22);
             this.dtDataExpedicaoRespDois.TabIndex = 163;
@@ -2715,7 +2702,7 @@ namespace ECED_FORMS
             // 
             this.label92.AutoSize = true;
             this.label92.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label92.Location = new System.Drawing.Point(675, 336);
+            this.label92.Location = new System.Drawing.Point(675, 327);
             this.label92.Name = "label92";
             this.label92.Size = new System.Drawing.Size(108, 16);
             this.label92.TabIndex = 161;
@@ -2725,7 +2712,7 @@ namespace ECED_FORMS
             // 
             this.label93.AutoSize = true;
             this.label93.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label93.Location = new System.Drawing.Point(546, 334);
+            this.label93.Location = new System.Drawing.Point(546, 325);
             this.label93.Name = "label93";
             this.label93.Size = new System.Drawing.Size(26, 16);
             this.label93.TabIndex = 160;
@@ -2735,7 +2722,7 @@ namespace ECED_FORMS
             // 
             this.label94.AutoSize = true;
             this.label94.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label94.Location = new System.Drawing.Point(286, 334);
+            this.label94.Location = new System.Drawing.Point(286, 325);
             this.label94.Name = "label94";
             this.label94.Size = new System.Drawing.Size(128, 16);
             this.label94.TabIndex = 159;
@@ -2745,7 +2732,7 @@ namespace ECED_FORMS
             // 
             this.label95.AutoSize = true;
             this.label95.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label95.Location = new System.Drawing.Point(37, 334);
+            this.label95.Location = new System.Drawing.Point(37, 325);
             this.label95.Name = "label95";
             this.label95.Size = new System.Drawing.Size(131, 16);
             this.label95.TabIndex = 157;
@@ -2753,7 +2740,7 @@ namespace ECED_FORMS
             // 
             // txtCpfRespDois
             // 
-            this.txtCpfRespDois.Location = new System.Drawing.Point(757, 291);
+            this.txtCpfRespDois.Location = new System.Drawing.Point(757, 282);
             this.txtCpfRespDois.Mask = "000\\.000\\.000\\-00";
             this.txtCpfRespDois.Name = "txtCpfRespDois";
             this.txtCpfRespDois.Size = new System.Drawing.Size(107, 22);
@@ -2761,7 +2748,7 @@ namespace ECED_FORMS
             // 
             // txtTelefoneRespDois
             // 
-            this.txtTelefoneRespDois.Location = new System.Drawing.Point(585, 287);
+            this.txtTelefoneRespDois.Location = new System.Drawing.Point(585, 278);
             this.txtTelefoneRespDois.Mask = "(99) 00000-0000";
             this.txtTelefoneRespDois.Name = "txtTelefoneRespDois";
             this.txtTelefoneRespDois.Size = new System.Drawing.Size(107, 22);
@@ -2770,7 +2757,7 @@ namespace ECED_FORMS
             // dtDataNascRespDois
             // 
             this.dtDataNascRespDois.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtDataNascRespDois.Location = new System.Drawing.Point(420, 289);
+            this.dtDataNascRespDois.Location = new System.Drawing.Point(420, 280);
             this.dtDataNascRespDois.Name = "dtDataNascRespDois";
             this.dtDataNascRespDois.Size = new System.Drawing.Size(109, 22);
             this.dtDataNascRespDois.TabIndex = 154;
@@ -2780,7 +2767,7 @@ namespace ECED_FORMS
             // 
             this.label96.AutoSize = true;
             this.label96.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label96.Location = new System.Drawing.Point(273, 294);
+            this.label96.Location = new System.Drawing.Point(273, 285);
             this.label96.Name = "label96";
             this.label96.Size = new System.Drawing.Size(141, 16);
             this.label96.TabIndex = 153;
@@ -2788,7 +2775,7 @@ namespace ECED_FORMS
             // 
             // txtNomeRespDois
             // 
-            this.txtNomeRespDois.Location = new System.Drawing.Point(91, 292);
+            this.txtNomeRespDois.Location = new System.Drawing.Point(91, 283);
             this.txtNomeRespDois.Name = "txtNomeRespDois";
             this.txtNomeRespDois.Size = new System.Drawing.Size(176, 22);
             this.txtNomeRespDois.TabIndex = 145;
@@ -2797,7 +2784,7 @@ namespace ECED_FORMS
             // 
             this.label100.AutoSize = true;
             this.label100.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label100.Location = new System.Drawing.Point(546, 292);
+            this.label100.Location = new System.Drawing.Point(546, 283);
             this.label100.Name = "label100";
             this.label100.Size = new System.Drawing.Size(33, 17);
             this.label100.TabIndex = 146;
@@ -2807,7 +2794,7 @@ namespace ECED_FORMS
             // 
             this.label101.AutoSize = true;
             this.label101.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label101.Location = new System.Drawing.Point(37, 294);
+            this.label101.Location = new System.Drawing.Point(37, 285);
             this.label101.Name = "label101";
             this.label101.Size = new System.Drawing.Size(48, 17);
             this.label101.TabIndex = 144;
@@ -3076,10 +3063,10 @@ namespace ECED_FORMS
             this.tabControl2.Controls.Add(this.tabPage7);
             this.tabControl2.Controls.Add(this.tabPage8);
             this.tabControl2.Controls.Add(this.tabPage5);
-            this.tabControl2.Location = new System.Drawing.Point(27, 52);
+            this.tabControl2.Location = new System.Drawing.Point(96, 12);
             this.tabControl2.Name = "tabControl2";
             this.tabControl2.SelectedIndex = 0;
-            this.tabControl2.Size = new System.Drawing.Size(1324, 589);
+            this.tabControl2.Size = new System.Drawing.Size(1235, 599);
             this.tabControl2.TabIndex = 2;
             // 
             // tabPage5
@@ -3088,7 +3075,7 @@ namespace ECED_FORMS
             this.tabPage5.Location = new System.Drawing.Point(4, 22);
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage5.Size = new System.Drawing.Size(1316, 612);
+            this.tabPage5.Size = new System.Drawing.Size(1227, 573);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "Deletar um cadastro";
             this.tabPage5.UseVisualStyleBackColor = true;
@@ -3109,7 +3096,6 @@ namespace ECED_FORMS
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
-            //this.Paint += new System.Windows.Forms.PaintEventHandler(this.Form1_Paint);
             this.tabPage8.ResumeLayout(false);
             this.tabPage8.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
@@ -3392,7 +3378,6 @@ namespace ECED_FORMS
         private System.Windows.Forms.MaskedTextBox txtNota2;
         private System.Windows.Forms.Label label73;
         private System.Windows.Forms.RichTextBox ritmostrar;
-        private System.Windows.Forms.ComboBox cmbEscolha;
         private System.Windows.Forms.TabPage tabPage5;
         private System.Windows.Forms.Button btnDeletar;
         private System.Windows.Forms.TextBox textBox1;
