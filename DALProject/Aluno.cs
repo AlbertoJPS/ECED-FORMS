@@ -36,6 +36,8 @@ namespace DALProject
         public string naturalidade{ get; set; }
         [FirestoreProperty]
         public string UF{ get; set; }
+        [FirestoreProperty]
+        public string Tipo{ get; set; }
 
     }
 }

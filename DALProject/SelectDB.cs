@@ -9,18 +9,29 @@ namespace DALProject
 {
     public class SelectDB
     {
-        public static async Task<Response> MostrarDados(Aluno name)
+        public static async Task<Response> MostrarDados(Aluno name,List<string> vetor)
         {
             try
             {
-                DocumentReference docref = DBConection.Getdatabase().Collection(name.NomeAluno).Document("Dados Pessoais");
+                DocumentReference docref = DBConection.Getdatabase().Collection(name.NomeAluno).Document(name.Tipo);
 
                 DocumentSnapshot snap = await docref.GetSnapshotAsync();
                 if (snap.Exists)
                 {
-                    Dictionary<string, object> city = snap.ToDictionary();
+                    Dictionary<string, object> dados = snap.ToDictionary();
+                    
 
+                    //i/*nt acumulador = 0;*/
+                    foreach (var item in dados)
+                    {
+                        vetor.Add(item.Value.ToString());
+                        //vetor[acumulador] = item.Value.ToString();
+                        //acumulador++;
+                    }
                 }
+                vetor.Sort();
+
+
                 return new Response()
                 {
                     Executed = true,
@@ -29,17 +40,17 @@ namespace DALProject
 
 
             }
-            catch (Exception)
+            catch (Exception e)
             {
-
-                throw;
+                return new Response()
+                {
+                    Executed = false,
+                    Message = "Cadastro não efetuado. \n Por favor verifique suas informações."
+                };
             }
 
         }
 
-        public static Task MostrarDados()
-        {
-            throw new NotImplementedException();
-        }
+        
     }
 }

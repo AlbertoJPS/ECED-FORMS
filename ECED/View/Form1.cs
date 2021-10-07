@@ -23,6 +23,7 @@ namespace ECED_FORMS
         }
         private void Form1_Load(object sender, EventArgs e)
         {
+            cmbTipo.SelectedIndex = 0;
             chAlergiaMedicamentoNao.Checked = true;
             chCarteiraSim.Checked = true;
             chDeficienciaNao.Checked = true;
@@ -216,28 +217,48 @@ namespace ECED_FORMS
         async void mostrarDdosPessoais(string name)
         {
 
-            //Aluno al = new Aluno()
-            //{
-            //    NomeAluno = txtNomeAluno.Text,
-
-            //};
-            //Response res = await ControllerSelect.MostrarDados(al);
-
-
-
-
-            DocumentReference docref = DBConection.Getdatabase().Collection(txtPesquisarAluno.Text).Document("Dados Pessoais");
-
-            DocumentSnapshot snap = await docref.GetSnapshotAsync();
-            if (snap.Exists)
+            Aluno al = new Aluno()
             {
-                Dictionary<string, object> city = snap.ToDictionary();
-                ritmostrar.Text += string.Format("\n \n                                                       Dados Pessoais     \n  ");
-                foreach (var item in city)
-                {
-                    ritmostrar.Text += string.Format("\n                                          {0}: {1}\n", item.Key, item.Value);
-                }
-            }
+                NomeAluno = txtPesquisarAluno.Text,
+                Tipo=cmbTipo.Text
+            };
+            //string[] vetor = new string[1];
+            List<string> vetor=new List<string>();
+            await ControllerSelect.MostrarDados(al, vetor);
+            string[]elementos = vetor.ToArray();
+            dtgDadosPessoais.Rows.Add(elementos);
+            dtgDocumento.Rows.Add(elementos);
+            dtgDadosPais.Rows.Add(elementos);
+            dtgEndereco.Rows.Add(elementos);
+            
+
+
+
+            //string acumulado = " ";
+            //foreach (var item in elementos)
+            //{
+            //    acumulado += "Dados Pessoais";
+            //    acumulado += item +  "\n";
+
+            //}
+            //ritmostrar.Text = acumulado;
+
+
+
+
+
+            //DocumentReference docref = DBConection.Getdatabase().Collection(txtPesquisarAluno.Text).Document("Dados Pessoais");
+
+            //DocumentSnapshot snap = await docref.GetSnapshotAsync();
+            //if (snap.Exists)
+            //{
+            //    Dictionary<string, object> city = snap.ToDictionary();
+            //    ritmostrar.Text += string.Format("\n \n                                                       Dados Pessoais     \n  ");
+            //    foreach (var item in city)
+            //    {
+            //        ritmostrar.Text += string.Format("\n                                          {0}: {1}\n", item.Key, item.Value);
+            //    }
+            //}
         }
 
         async void mostrardocumento(string name)
@@ -437,7 +458,64 @@ namespace ECED_FORMS
             FuncaoCheckBox(chResponsavelDois, chMaeDois, chPaiDois);
         }
 
-       
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Environment.Exit(1);
+        }
+
+        private void cmbTipo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbTipo.Text=="Dados Pessoais")
+            {
+                dtgDadosPessoais.Visible = true;
+                dtgDocumento.Visible = false;
+                dtgEndereco.Visible = false;
+                dtgDadosPais.Visible=false;
+            }
+            else if(cmbTipo.Text=="Documento")
+            {
+                dtgDadosPessoais.Visible = false;
+                dtgDocumento.Visible = true;
+                dtgEndereco.Visible = false;
+                dtgDadosPais.Visible = false;
+                dtgDocumento.Location = dtgDadosPessoais.Location;
+            }
+            else if(cmbTipo.Text=="Dados dos pais")
+            {
+                dtgDadosPessoais.Visible = false;
+                dtgDocumento.Visible = false;
+                dtgEndereco.Visible = false;
+                dtgDadosPais.Visible = true;
+                dtgDadosPais.Location =  dtgDadosPessoais.Location;
+            }
+            else if(cmbTipo.Text=="Endereço")
+            {
+                dtgDadosPessoais.Visible = false;
+                dtgDocumento.Visible = false;
+                dtgEndereco.Visible = true;
+                dtgDadosPais.Visible = false;       
+                dtgEndereco.Location=dtgDadosPessoais.Location;
+            }
+            else if(cmbTipo.Text=="Identificação escolar")
+            {
+                //dtgDadosPessoais.Visible = false;
+                //dtgDocumento.Visible = true;
+                //dtgEndereco.Visible = false;
+                //dtgDadosPessoais.Visible = false;
+                //dtgDocumento.Location = dtgDadosPessoais.Location;
+            }
+            else if(cmbTipo.Text=="Saude Aluno")
+            {
+                //dtgDadosPessoais.Visible = false;
+                //dtgDocumento.Visible = true;
+            }else if(cmbTipo.Text=="Boletim")
+            {
+                //dtgDadosPessoais.Visible = false;
+                //dtgDocumento.Visible = true;
+            }
+        }
+
+
 
         //private void SetBackColorDegrade(object sender, PaintEventArgs e)
         //{

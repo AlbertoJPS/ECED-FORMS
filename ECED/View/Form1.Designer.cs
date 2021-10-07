@@ -276,6 +276,46 @@ namespace ECED_FORMS
             this.tabControl2 = new System.Windows.Forms.TabControl();
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.dtgDadosPessoais = new System.Windows.Forms.DataGridView();
+            this.ColumnNome = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DataNascimento = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.coluna3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cmbTipo = new System.Windows.Forms.ComboBox();
+            this.dtgDocumento = new System.Windows.Forms.DataGridView();
+            this.dtgDadosPais = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dtgEndereco = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn17 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn18 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn19 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn20 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn21 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn22 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn23 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn24 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.tabPage7.SuspendLayout();
@@ -294,6 +334,10 @@ namespace ECED_FORMS
             this.tabPage4.SuspendLayout();
             this.tabControl2.SuspendLayout();
             this.tabPage5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgDadosPessoais)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgDocumento)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgDadosPais)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgEndereco)).BeginInit();
             this.SuspendLayout();
             // 
             // tabPage8
@@ -509,6 +553,11 @@ namespace ECED_FORMS
             // 
             // tabPage7
             // 
+            this.tabPage7.Controls.Add(this.dtgEndereco);
+            this.tabPage7.Controls.Add(this.dtgDadosPais);
+            this.tabPage7.Controls.Add(this.dtgDocumento);
+            this.tabPage7.Controls.Add(this.cmbTipo);
+            this.tabPage7.Controls.Add(this.dtgDadosPessoais);
             this.tabPage7.Controls.Add(this.btnDeletar);
             this.tabPage7.Controls.Add(this.ritmostrar);
             this.tabPage7.Controls.Add(this.btnBuscarAluno);
@@ -517,7 +566,7 @@ namespace ECED_FORMS
             this.tabPage7.Location = new System.Drawing.Point(4, 22);
             this.tabPage7.Name = "tabPage7";
             this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage7.Size = new System.Drawing.Size(1227, 573);
+            this.tabPage7.Size = new System.Drawing.Size(1227, 603);
             this.tabPage7.TabIndex = 2;
             this.tabPage7.Text = "Pesquisar aluno";
             this.tabPage7.UseVisualStyleBackColor = true;
@@ -526,7 +575,7 @@ namespace ECED_FORMS
             // 
             this.btnDeletar.BackColor = System.Drawing.Color.Red;
             this.btnDeletar.ForeColor = System.Drawing.Color.White;
-            this.btnDeletar.Location = new System.Drawing.Point(924, 528);
+            this.btnDeletar.Location = new System.Drawing.Point(1095, 558);
             this.btnDeletar.Name = "btnDeletar";
             this.btnDeletar.Size = new System.Drawing.Size(103, 27);
             this.btnDeletar.TabIndex = 11;
@@ -539,9 +588,9 @@ namespace ECED_FORMS
             this.ritmostrar.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.ritmostrar.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.ritmostrar.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ritmostrar.Location = new System.Drawing.Point(226, 114);
+            this.ritmostrar.Location = new System.Drawing.Point(29, 492);
             this.ritmostrar.Name = "ritmostrar";
-            this.ritmostrar.Size = new System.Drawing.Size(801, 408);
+            this.ritmostrar.Size = new System.Drawing.Size(65, 66);
             this.ritmostrar.TabIndex = 9;
             this.ritmostrar.Text = "";
             // 
@@ -549,7 +598,7 @@ namespace ECED_FORMS
             // 
             this.btnBuscarAluno.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.btnBuscarAluno.ForeColor = System.Drawing.Color.White;
-            this.btnBuscarAluno.Location = new System.Drawing.Point(936, 52);
+            this.btnBuscarAluno.Location = new System.Drawing.Point(959, 31);
             this.btnBuscarAluno.Name = "btnBuscarAluno";
             this.btnBuscarAluno.Size = new System.Drawing.Size(91, 32);
             this.btnBuscarAluno.TabIndex = 7;
@@ -561,7 +610,7 @@ namespace ECED_FORMS
             // 
             this.txtPesquisarAluno.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtPesquisarAluno.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPesquisarAluno.Location = new System.Drawing.Point(226, 55);
+            this.txtPesquisarAluno.Location = new System.Drawing.Point(112, 31);
             this.txtPesquisarAluno.Name = "txtPesquisarAluno";
             this.txtPesquisarAluno.Size = new System.Drawing.Size(684, 25);
             this.txtPesquisarAluno.TabIndex = 5;
@@ -570,7 +619,7 @@ namespace ECED_FORMS
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(139, 58);
+            this.label10.Location = new System.Drawing.Point(25, 31);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(81, 22);
             this.label10.TabIndex = 4;
@@ -588,7 +637,7 @@ namespace ECED_FORMS
             this.tabPage6.Location = new System.Drawing.Point(4, 22);
             this.tabPage6.Name = "tabPage6";
             this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage6.Size = new System.Drawing.Size(1227, 573);
+            this.tabPage6.Size = new System.Drawing.Size(1227, 603);
             this.tabPage6.TabIndex = 1;
             this.tabPage6.Text = "Cadastro de aluno ";
             this.tabPage6.UseVisualStyleBackColor = true;
@@ -619,6 +668,7 @@ namespace ECED_FORMS
             this.button5.TabIndex = 5;
             this.button5.Text = "Sair";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button4
             // 
@@ -1499,7 +1549,7 @@ namespace ECED_FORMS
             this.tabPage2.Location = new System.Drawing.Point(4, 25);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1134, 430);
+            this.tabPage2.Size = new System.Drawing.Size(1134, 450);
             this.tabPage2.TabIndex = 3;
             this.tabPage2.Text = "Identificação escolar          ";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -1909,7 +1959,7 @@ namespace ECED_FORMS
             this.tabPage3.Location = new System.Drawing.Point(4, 25);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(1134, 445);
+            this.tabPage3.Size = new System.Drawing.Size(1134, 450);
             this.tabPage3.TabIndex = 4;
             this.tabPage3.Text = "Identificação saúde";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -3066,7 +3116,7 @@ namespace ECED_FORMS
             this.tabControl2.Location = new System.Drawing.Point(96, 12);
             this.tabControl2.Name = "tabControl2";
             this.tabControl2.SelectedIndex = 0;
-            this.tabControl2.Size = new System.Drawing.Size(1235, 599);
+            this.tabControl2.Size = new System.Drawing.Size(1235, 629);
             this.tabControl2.TabIndex = 2;
             // 
             // tabPage5
@@ -3086,6 +3136,269 @@ namespace ECED_FORMS
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(459, 20);
             this.textBox1.TabIndex = 0;
+            // 
+            // dtgDadosPessoais
+            // 
+            this.dtgDadosPessoais.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgDadosPessoais.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ColumnNome,
+            this.DataNascimento,
+            this.coluna3,
+            this.Column4,
+            this.Column5,
+            this.Column6,
+            this.Column7,
+            this.Column8});
+            this.dtgDadosPessoais.Location = new System.Drawing.Point(29, 83);
+            this.dtgDadosPessoais.Name = "dtgDadosPessoais";
+            this.dtgDadosPessoais.Size = new System.Drawing.Size(846, 164);
+            this.dtgDadosPessoais.TabIndex = 12;
+            // 
+            // ColumnNome
+            // 
+            this.ColumnNome.HeaderText = "Data Nascimento";
+            this.ColumnNome.Name = "ColumnNome";
+            // 
+            // DataNascimento
+            // 
+            this.DataNascimento.HeaderText = "Cor e raça";
+            this.DataNascimento.Name = "DataNascimento";
+            // 
+            // coluna3
+            // 
+            this.coluna3.HeaderText = "Nome";
+            this.coluna3.Name = "coluna3";
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "Naturalidade";
+            this.Column4.Name = "Column4";
+            // 
+            // Column5
+            // 
+            this.Column5.HeaderText = "Sexo";
+            this.Column5.Name = "Column5";
+            // 
+            // Column6
+            // 
+            this.Column6.HeaderText = "Uf";
+            this.Column6.Name = "Column6";
+            // 
+            // Column7
+            // 
+            this.Column7.HeaderText = "Nacionalidade";
+            this.Column7.Name = "Column7";
+            // 
+            // Column8
+            // 
+            this.Column8.HeaderText = "Estado Civil";
+            this.Column8.Name = "Column8";
+            // 
+            // cmbTipo
+            // 
+            this.cmbTipo.FormattingEnabled = true;
+            this.cmbTipo.Items.AddRange(new object[] {
+            "Dados Pessoais",
+            "Documento",
+            "Dados dos pais",
+            "Endereço",
+            "Identificação escolar",
+            "Saude Aluno",
+            "Boletim"});
+            this.cmbTipo.Location = new System.Drawing.Point(811, 35);
+            this.cmbTipo.Name = "cmbTipo";
+            this.cmbTipo.Size = new System.Drawing.Size(121, 21);
+            this.cmbTipo.TabIndex = 13;
+            this.cmbTipo.SelectedIndexChanged += new System.EventHandler(this.cmbTipo_SelectedIndexChanged);
+            // 
+            // dtgDocumento
+            // 
+            this.dtgDocumento.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgDocumento.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.Column10,
+            this.Column1,
+            this.Column9,
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn3,
+            this.dataGridViewTextBoxColumn4,
+            this.dataGridViewTextBoxColumn5,
+            this.dataGridViewTextBoxColumn6,
+            this.dataGridViewTextBoxColumn7,
+            this.dataGridViewTextBoxColumn8});
+            this.dtgDocumento.Location = new System.Drawing.Point(29, 253);
+            this.dtgDocumento.Name = "dtgDocumento";
+            this.dtgDocumento.Size = new System.Drawing.Size(1126, 150);
+            this.dtgDocumento.TabIndex = 14;
+            // 
+            // dtgDadosPais
+            // 
+            this.dtgDadosPais.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgDadosPais.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn9,
+            this.dataGridViewTextBoxColumn10,
+            this.dataGridViewTextBoxColumn11,
+            this.dataGridViewTextBoxColumn12,
+            this.dataGridViewTextBoxColumn13,
+            this.dataGridViewTextBoxColumn14,
+            this.dataGridViewTextBoxColumn15,
+            this.dataGridViewTextBoxColumn16});
+            this.dtgDadosPais.Location = new System.Drawing.Point(112, 409);
+            this.dtgDadosPais.Name = "dtgDadosPais";
+            this.dtgDadosPais.Size = new System.Drawing.Size(846, 150);
+            this.dtgDadosPais.TabIndex = 15;
+            // 
+            // dataGridViewTextBoxColumn9
+            // 
+            this.dataGridViewTextBoxColumn9.HeaderText = "cpc";
+            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
+            // 
+            // dataGridViewTextBoxColumn10
+            // 
+            this.dataGridViewTextBoxColumn10.HeaderText = "Cor e raça";
+            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
+            // 
+            // dataGridViewTextBoxColumn11
+            // 
+            this.dataGridViewTextBoxColumn11.HeaderText = "Nome";
+            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
+            // 
+            // dataGridViewTextBoxColumn12
+            // 
+            this.dataGridViewTextBoxColumn12.HeaderText = "Naturalidade";
+            this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
+            // 
+            // dataGridViewTextBoxColumn13
+            // 
+            this.dataGridViewTextBoxColumn13.HeaderText = "Sexo";
+            this.dataGridViewTextBoxColumn13.Name = "dataGridViewTextBoxColumn13";
+            // 
+            // dataGridViewTextBoxColumn14
+            // 
+            this.dataGridViewTextBoxColumn14.HeaderText = "Uf";
+            this.dataGridViewTextBoxColumn14.Name = "dataGridViewTextBoxColumn14";
+            // 
+            // dataGridViewTextBoxColumn15
+            // 
+            this.dataGridViewTextBoxColumn15.HeaderText = "Nacionalidade";
+            this.dataGridViewTextBoxColumn15.Name = "dataGridViewTextBoxColumn15";
+            // 
+            // dataGridViewTextBoxColumn16
+            // 
+            this.dataGridViewTextBoxColumn16.HeaderText = "Estado Civil";
+            this.dataGridViewTextBoxColumn16.Name = "dataGridViewTextBoxColumn16";
+            // 
+            // dtgEndereco
+            // 
+            this.dtgEndereco.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgEndereco.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn17,
+            this.dataGridViewTextBoxColumn18,
+            this.dataGridViewTextBoxColumn19,
+            this.dataGridViewTextBoxColumn20,
+            this.dataGridViewTextBoxColumn21,
+            this.dataGridViewTextBoxColumn22,
+            this.dataGridViewTextBoxColumn23,
+            this.dataGridViewTextBoxColumn24});
+            this.dtgEndereco.Location = new System.Drawing.Point(309, 450);
+            this.dtgEndereco.Name = "dtgEndereco";
+            this.dtgEndereco.Size = new System.Drawing.Size(846, 150);
+            this.dtgEndereco.TabIndex = 16;
+            // 
+            // dataGridViewTextBoxColumn17
+            // 
+            this.dataGridViewTextBoxColumn17.HeaderText = "cpc";
+            this.dataGridViewTextBoxColumn17.Name = "dataGridViewTextBoxColumn17";
+            // 
+            // dataGridViewTextBoxColumn18
+            // 
+            this.dataGridViewTextBoxColumn18.HeaderText = "Cor e raça";
+            this.dataGridViewTextBoxColumn18.Name = "dataGridViewTextBoxColumn18";
+            // 
+            // dataGridViewTextBoxColumn19
+            // 
+            this.dataGridViewTextBoxColumn19.HeaderText = "Nome";
+            this.dataGridViewTextBoxColumn19.Name = "dataGridViewTextBoxColumn19";
+            // 
+            // dataGridViewTextBoxColumn20
+            // 
+            this.dataGridViewTextBoxColumn20.HeaderText = "Naturalidade";
+            this.dataGridViewTextBoxColumn20.Name = "dataGridViewTextBoxColumn20";
+            // 
+            // dataGridViewTextBoxColumn21
+            // 
+            this.dataGridViewTextBoxColumn21.HeaderText = "Sexo";
+            this.dataGridViewTextBoxColumn21.Name = "dataGridViewTextBoxColumn21";
+            // 
+            // dataGridViewTextBoxColumn22
+            // 
+            this.dataGridViewTextBoxColumn22.HeaderText = "Uf";
+            this.dataGridViewTextBoxColumn22.Name = "dataGridViewTextBoxColumn22";
+            // 
+            // dataGridViewTextBoxColumn23
+            // 
+            this.dataGridViewTextBoxColumn23.HeaderText = "Nacionalidade";
+            this.dataGridViewTextBoxColumn23.Name = "dataGridViewTextBoxColumn23";
+            // 
+            // dataGridViewTextBoxColumn24
+            // 
+            this.dataGridViewTextBoxColumn24.HeaderText = "Estado Civil";
+            this.dataGridViewTextBoxColumn24.Name = "dataGridViewTextBoxColumn24";
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.HeaderText = "livro";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            // 
+            // Column10
+            // 
+            this.Column10.HeaderText = "orgao emissor";
+            this.Column10.Name = "Column10";
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "ufd";
+            this.Column1.Name = "Column1";
+            // 
+            // Column9
+            // 
+            this.Column9.HeaderText = "cpf";
+            this.Column9.Name = "Column9";
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.HeaderText = "Folha";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.HeaderText = "Registro civil";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.HeaderText = "Data expedição";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.HeaderText = "Data emissão certidao";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            // 
+            // dataGridViewTextBoxColumn6
+            // 
+            this.dataGridViewTextBoxColumn6.HeaderText = "Data registro civil";
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            // 
+            // dataGridViewTextBoxColumn7
+            // 
+            this.dataGridViewTextBoxColumn7.HeaderText = "RG";
+            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            // 
+            // dataGridViewTextBoxColumn8
+            // 
+            this.dataGridViewTextBoxColumn8.HeaderText = "Numero Cartao de nascimento";
+            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
             // 
             // Form1
             // 
@@ -3128,6 +3441,10 @@ namespace ECED_FORMS
             this.tabControl2.ResumeLayout(false);
             this.tabPage5.ResumeLayout(false);
             this.tabPage5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgDadosPessoais)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgDocumento)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgDadosPais)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgEndereco)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -3381,6 +3698,46 @@ namespace ECED_FORMS
         private System.Windows.Forms.TabPage tabPage5;
         private System.Windows.Forms.Button btnDeletar;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.DataGridView dtgDadosPessoais;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnNome;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DataNascimento;
+        private System.Windows.Forms.DataGridViewTextBoxColumn coluna3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
+        private System.Windows.Forms.ComboBox cmbTipo;
+        private System.Windows.Forms.DataGridView dtgDocumento;
+        private System.Windows.Forms.DataGridView dtgEndereco;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn17;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn18;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn19;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn20;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn21;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn22;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn23;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn24;
+        private System.Windows.Forms.DataGridView dtgDadosPais;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn11;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn12;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn13;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn14;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn15;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn16;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column10;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
     }
 }
 

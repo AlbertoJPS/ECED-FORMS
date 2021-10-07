@@ -10,9 +10,9 @@ namespace BALProject
 {
     public class ControllerSelect
     {
-        public static async Task<Response> MostrarDados(Aluno name)
+        public static async Task<Response> MostrarDados(Aluno name,List<string> vetor)
         {
-            return await SelectDB.MostrarDados(name);
+            return await SelectDB.MostrarDados(name,vetor);
         }
     }
 }
