@@ -50,6 +50,7 @@ namespace ECED_FORMS
             this.ULTIMOTRIMESTRE = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label104 = new System.Windows.Forms.Label();
             this.tabPage7 = new System.Windows.Forms.TabPage();
+            this.ritMostra = new System.Windows.Forms.RichTextBox();
             this.cmbTipo = new System.Windows.Forms.ComboBox();
             this.btnDeletar = new System.Windows.Forms.Button();
             this.btnBuscarAluno = new System.Windows.Forms.Button();
@@ -80,7 +81,7 @@ namespace ECED_FORMS
             this.dtDataExpedicaoRG = new System.Windows.Forms.DateTimePicker();
             this.label66 = new System.Windows.Forms.Label();
             this.label65 = new System.Windows.Forms.Label();
-            this.dtRegistroCivilData = new System.Windows.Forms.DateTimePicker();
+            this.dtDataEmissaoCertNasc = new System.Windows.Forms.DateTimePicker();
             this.label45 = new System.Windows.Forms.Label();
             this.label44 = new System.Windows.Forms.Label();
             this.label43 = new System.Windows.Forms.Label();
@@ -89,7 +90,7 @@ namespace ECED_FORMS
             this.dtDataEmissao = new System.Windows.Forms.DateTimePicker();
             this.txtNomeAluno = new System.Windows.Forms.TextBox();
             this.txtNomeCartorio = new System.Windows.Forms.TextBox();
-            this.textBox14 = new System.Windows.Forms.TextBox();
+            this.txtRegCivil = new System.Windows.Forms.TextBox();
             this.txtOrgaoEmissor = new System.Windows.Forms.TextBox();
             this.cmbEstadoCivil = new System.Windows.Forms.ComboBox();
             this.label46 = new System.Windows.Forms.Label();
@@ -107,7 +108,7 @@ namespace ECED_FORMS
             this.label15 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label12 = new System.Windows.Forms.Label();
-            this.dtNacimentoAluno = new System.Windows.Forms.DateTimePicker();
+            this.dtNascimentoAluno = new System.Windows.Forms.DateTimePicker();
             this.cmbSexo = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -277,7 +278,6 @@ namespace ECED_FORMS
             this.tabControl2 = new System.Windows.Forms.TabControl();
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.ritMostra = new System.Windows.Forms.RichTextBox();
             this.tabPage8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgBoletim)).BeginInit();
             this.tabPage7.SuspendLayout();
@@ -536,6 +536,16 @@ namespace ECED_FORMS
             this.tabPage7.Text = "Pesquisar aluno";
             this.tabPage7.UseVisualStyleBackColor = true;
             // 
+            // ritMostra
+            // 
+            this.ritMostra.BackColor = System.Drawing.Color.CadetBlue;
+            this.ritMostra.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ritMostra.Location = new System.Drawing.Point(150, 81);
+            this.ritMostra.Name = "ritMostra";
+            this.ritMostra.Size = new System.Drawing.Size(700, 469);
+            this.ritMostra.TabIndex = 17;
+            this.ritMostra.Text = "";
+            // 
             // cmbTipo
             // 
             this.cmbTipo.FormattingEnabled = true;
@@ -702,7 +712,7 @@ namespace ECED_FORMS
             this.tbCadastrarAlunos.Controls.Add(this.dtDataExpedicaoRG);
             this.tbCadastrarAlunos.Controls.Add(this.label66);
             this.tbCadastrarAlunos.Controls.Add(this.label65);
-            this.tbCadastrarAlunos.Controls.Add(this.dtRegistroCivilData);
+            this.tbCadastrarAlunos.Controls.Add(this.dtDataEmissaoCertNasc);
             this.tbCadastrarAlunos.Controls.Add(this.label45);
             this.tbCadastrarAlunos.Controls.Add(this.label44);
             this.tbCadastrarAlunos.Controls.Add(this.label43);
@@ -711,7 +721,7 @@ namespace ECED_FORMS
             this.tbCadastrarAlunos.Controls.Add(this.dtDataEmissao);
             this.tbCadastrarAlunos.Controls.Add(this.txtNomeAluno);
             this.tbCadastrarAlunos.Controls.Add(this.txtNomeCartorio);
-            this.tbCadastrarAlunos.Controls.Add(this.textBox14);
+            this.tbCadastrarAlunos.Controls.Add(this.txtRegCivil);
             this.tbCadastrarAlunos.Controls.Add(this.txtOrgaoEmissor);
             this.tbCadastrarAlunos.Controls.Add(this.cmbEstadoCivil);
             this.tbCadastrarAlunos.Controls.Add(this.label46);
@@ -727,7 +737,7 @@ namespace ECED_FORMS
             this.tbCadastrarAlunos.Controls.Add(this.cmbCor);
             this.tbCadastrarAlunos.Controls.Add(this.label15);
             this.tbCadastrarAlunos.Controls.Add(this.panel2);
-            this.tbCadastrarAlunos.Controls.Add(this.dtNacimentoAluno);
+            this.tbCadastrarAlunos.Controls.Add(this.dtNascimentoAluno);
             this.tbCadastrarAlunos.Controls.Add(this.cmbSexo);
             this.tbCadastrarAlunos.Controls.Add(this.label6);
             this.tbCadastrarAlunos.Controls.Add(this.label4);
@@ -960,13 +970,13 @@ namespace ECED_FORMS
             this.label65.TabIndex = 76;
             this.label65.Text = "UF:";
             // 
-            // dtRegistroCivilData
+            // dtDataEmissaoCertNasc
             // 
-            this.dtRegistroCivilData.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtRegistroCivilData.Location = new System.Drawing.Point(831, 257);
-            this.dtRegistroCivilData.Name = "dtRegistroCivilData";
-            this.dtRegistroCivilData.Size = new System.Drawing.Size(127, 23);
-            this.dtRegistroCivilData.TabIndex = 75;
+            this.dtDataEmissaoCertNasc.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtDataEmissaoCertNasc.Location = new System.Drawing.Point(831, 257);
+            this.dtDataEmissaoCertNasc.Name = "dtDataEmissaoCertNasc";
+            this.dtDataEmissaoCertNasc.Size = new System.Drawing.Size(127, 23);
+            this.dtDataEmissaoCertNasc.TabIndex = 75;
             // 
             // label45
             // 
@@ -1035,12 +1045,12 @@ namespace ECED_FORMS
             this.txtNomeCartorio.Size = new System.Drawing.Size(428, 23);
             this.txtNomeCartorio.TabIndex = 61;
             // 
-            // textBox14
+            // txtRegCivil
             // 
-            this.textBox14.Location = new System.Drawing.Point(247, 226);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(421, 23);
-            this.textBox14.TabIndex = 60;
+            this.txtRegCivil.Location = new System.Drawing.Point(247, 226);
+            this.txtRegCivil.Name = "txtRegCivil";
+            this.txtRegCivil.Size = new System.Drawing.Size(421, 23);
+            this.txtRegCivil.TabIndex = 60;
             // 
             // txtOrgaoEmissor
             // 
@@ -1209,13 +1219,13 @@ namespace ECED_FORMS
             this.label12.TabIndex = 33;
             this.label12.Text = "Identificação";
             // 
-            // dtNacimentoAluno
+            // dtNascimentoAluno
             // 
-            this.dtNacimentoAluno.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtNacimentoAluno.Location = new System.Drawing.Point(443, 67);
-            this.dtNacimentoAluno.Name = "dtNacimentoAluno";
-            this.dtNacimentoAluno.Size = new System.Drawing.Size(127, 23);
-            this.dtNacimentoAluno.TabIndex = 28;
+            this.dtNascimentoAluno.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtNascimentoAluno.Location = new System.Drawing.Point(443, 67);
+            this.dtNascimentoAluno.Name = "dtNascimentoAluno";
+            this.dtNascimentoAluno.Size = new System.Drawing.Size(127, 23);
+            this.dtNascimentoAluno.TabIndex = 28;
             // 
             // cmbSexo
             // 
@@ -3108,16 +3118,6 @@ namespace ECED_FORMS
             this.textBox1.Size = new System.Drawing.Size(459, 20);
             this.textBox1.TabIndex = 0;
             // 
-            // ritMostra
-            // 
-            this.ritMostra.BackColor = System.Drawing.Color.CadetBlue;
-            this.ritMostra.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ritMostra.Location = new System.Drawing.Point(150, 81);
-            this.ritMostra.Name = "ritMostra";
-            this.ritMostra.Size = new System.Drawing.Size(700, 469);
-            this.ritMostra.TabIndex = 17;
-            this.ritMostra.Text = "";
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -3201,7 +3201,7 @@ namespace ECED_FORMS
         private System.Windows.Forms.DateTimePicker dtDataExpedicaoRG;
         private System.Windows.Forms.Label label66;
         private System.Windows.Forms.Label label65;
-        private System.Windows.Forms.DateTimePicker dtRegistroCivilData;
+        private System.Windows.Forms.DateTimePicker dtDataEmissaoCertNasc;
         private System.Windows.Forms.Label label45;
         private System.Windows.Forms.Label label44;
         private System.Windows.Forms.Label label43;
@@ -3210,7 +3210,7 @@ namespace ECED_FORMS
         private System.Windows.Forms.DateTimePicker dtDataEmissao;
         private System.Windows.Forms.TextBox txtNomeAluno;
         private System.Windows.Forms.TextBox txtNomeCartorio;
-        private System.Windows.Forms.TextBox textBox14;
+        private System.Windows.Forms.TextBox txtRegCivil;
         private System.Windows.Forms.TextBox txtOrgaoEmissor;
         private System.Windows.Forms.ComboBox cmbEstadoCivil;
         private System.Windows.Forms.Label label46;
@@ -3228,7 +3228,7 @@ namespace ECED_FORMS
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.DateTimePicker dtNacimentoAluno;
+        private System.Windows.Forms.DateTimePicker dtNascimentoAluno;
         private System.Windows.Forms.ComboBox cmbSexo;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label4;
