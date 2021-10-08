@@ -41,7 +41,6 @@ namespace ECED_FORMS
         {
             if (!string.IsNullOrWhiteSpace(txtCep.Text))
             {
-
                 using (var ws = new correio.AtendeClienteClient())
                 {
                     try
@@ -82,14 +81,14 @@ namespace ECED_FORMS
             txtPesquisarAluno.Clear();
             ritMostra.Clear();
 
-        }    
+        }
         void AdicionaDadosAlunos()
         {
             //Cria objetos para serem adicionados no banco de dados
             Aluno al = new Aluno()
             {
                 NomeAluno = txtNomeAluno.Text,
-                DataNascimento = dtNacimentoAluno.Text,
+                DataNascimento = dtNascimentoAluno.Text,
                 naturalidade = txtNaturalidade.Text,
                 nacionalidade = txtNacionalidade.Text,
                 Sexo = cmbSexo.Text,
@@ -108,7 +107,7 @@ namespace ECED_FORMS
                 DataEmissaoCertNascimento = dtDataEmissao.Text,
                 Folha = txtFolha.Text,
                 Livro = txtLivro.Text,
-                RegistroCivil = dtRegistroCivilData.Text,
+                RegistroCivil = dtDataEmissaoCertNasc.Text,
                 DataEmissaoRegCivil = dtDataEmissao.Text
             };
             EnderecoAluno enderecoAluno = new EnderecoAluno()
@@ -187,12 +186,64 @@ namespace ECED_FORMS
             };
             dadosPais.ResponsavelUm = FuncaoPropCheckBox(chMaeUm, chPaiUm, chResponsavelUm);
             dadosPais.ResponsavelDois = FuncaoPropCheckBox(chMaeDois, chPaiDois, chResponsavelDois);
-            Response res = ControllerInsert.AlunoInsert(al);
-            res = ControllerInsert.DocumentoInsert(docAluno, al);
-            res = ControllerInsert.EnderecoInsert(enderecoAluno, al);
-            res = ControllerInsert.IdentificacaoEscolaInsert(identEscola, al);
-            res = ControllerInsert.SaudeAlunoInsert(saudeAluno, al);
-            res = ControllerInsert.DadosPaisInsert(dadosPais, al);
+            Response res = ControllerInsert.AlunoInsert(al, txtNomeAluno.Text, dtNascimentoAluno.Text, cmbSexo.Text, cmbCor.Text, cmbEstadoCivil.Text, txtNaturalidade.Text, txtNacionalidade.Text, txtUf.Text);
+            if (res.Executed)
+            {
+                res = ControllerInsert.DocumentoInsert(docAluno, al, txtRegCivil.Text, txtCertidaoNascimento.Text, txtCpf.Text, txtRgAluno.Text, txtEmailAluno.Text, txtFolha.Text, txtLivro.Text, txtOrgaoEmissor.Text, dtDataEmissaoCertNasc.Text, dtDataEmissaoCertNasc.Text, dtDataExpedicaoRG.Text, txtUfRg.Text, txtUfCartorio.Text, txtNomeCartorio.Text);
+                if (res.Executed)
+                {
+                    res = ControllerInsert.EnderecoInsert(enderecoAluno, al, txtCep.Text, txtRua.Text, txtBairro.Text, txtCidade.Text, txtNumero.Text, txtEstado.Text);
+                    if (res.Executed)
+                    {
+                        if (res.Executed)
+                        {
+                            res = ControllerInsert.IdentificacaoEscolaInsert(identEscola, al, txtUnidadeEscolar.Text, txtInep.Text, dtMatricula.Text, cmbPeriodo.Text, cmbTurma.Text, txtPessoaAutorizada.Text, txtTelefonePessAutorizada.Text, cmbParentesco.Text, txtIdadeParentesco.Text, txtAvisoUrgencia.Text, cmbGrauUrgencia.Text, txtTelUrgencia.Text, txtNomeIrmaoEstuda.Text, cmbTurmaIrmao.Text, cmbPeriodoIrmao.Text);
+                            if (res.Executed)
+                            {
+                                res = ControllerInsert.SaudeAlunoInsert(saudeAluno, al, txtContatoEmergUm.Text, txtTelefoneEmergUm.Text, txtContatoEmergDois.Text, txtTelefoneEmergDois.Text, txtTelefoneContato.Text);
+                                if (res.Executed)
+                                {
+                                    res = ControllerInsert.DadosPaisInsert(dadosPais, al, txtNomeRespUm.Text, dtDataNascRespUm.Text, txtTelefoneRespUm.Text, txtCpfRespUm.Text, txtRgRespUm.Text, dtDataExpedicaoRespUm.Text, txtUfRespUm.Text, txtOrgaoEmissorRespUm.Text, cbEstadoCivilRespUm.Text, txtEscolaridadeRespUm.Text, txtProfissaoRespUm.Text, txtLocalTrabalhoRespUm.Text, txtHorarioTrabalhoRespUm.Text, txtRamalRespUm.Text, txtNomeRespDois.Text, dtDataNascRespDois.Text, txtTelefoneRespDois.Text, txtCpfRespDois.Text, txtRgRespDois.Text, dtDataExpedicaoRespDois.Text, txtUfRespDois.Text, txtOrgaoEmissorRespDois.Text, cbEstadoCivilRespDois.Text, txtEscolaridadeRespDois.Text, txtProfissaoRespDois.Text, txtLocalTrabalhoRespDois.Text, txtHorarioTrabalhoRespDois.Text, txtRamalRespDois.Text);
+                                    if (res.Executed)
+                                    {
+                                        MessageBox.Show(res.Message);
+                                    }
+                                    else //Verifica se o insert foi executado, caso não retorna a mensagem de erro e deleta o perfil que está pela metade
+                                    {
+                                        MessageBox.Show(res.Message);
+                                        Deletar();
+                                    }
+                                }
+                                else
+                                {
+                                    MessageBox.Show(res.Message);
+                                    Deletar();
+                                }
+                            }
+                            else
+                            {
+                                MessageBox.Show(res.Message);
+                                Deletar();
+                            }
+                        }
+                        else
+                        {
+                            MessageBox.Show(res.Message);
+                            Deletar();
+                        }
+                    }
+                }
+                else
+                {
+                    MessageBox.Show(res.Message);
+                    Deletar();
+                }
+            }
+            else
+            {
+                MessageBox.Show(res.Message);
+                Deletar();
+            }
         }
         void AdicionaNota()
         {
@@ -210,19 +261,23 @@ namespace ECED_FORMS
         }
         private void btnBuscarAluno_Click(object sender, EventArgs e)
         {
-
-            mostrardocumento("Documento");
-            mostrarDdosPessoais("Nome");
-            mostrarEndereco("Endereco");
-            mostrarDadosPais("DadosPais");
-            mostrarIdentificacaoEscolar("Identificação");
-            mostrarSaudeAluno("Saude");
-            ritMostra.Clear();
-
+            if (!String.IsNullOrWhiteSpace(txtPesquisarAluno.Text))
+            {
+                mostrardocumento("Documento");
+                mostrarDdosPessoais("Nome");
+                mostrarEndereco("Endereco");
+                mostrarDadosPais("DadosPais");
+                mostrarIdentificacaoEscolar("Identificação");
+                mostrarSaudeAluno("Saude");
+                ritMostra.Clear();
+            }
+            else
+            {
+                MessageBox.Show("Insira um nome!");
+            }
         }
         async void mostrarDdosPessoais(string name)
         {
-
             //Aluno al = new Aluno()
             //{
             //    NomeAluno = txtPesquisarAluno.Text,
@@ -236,10 +291,6 @@ namespace ECED_FORMS
             //dtgDocumento.Rows.Add(elementos);
             //dtgDadosPais.Rows.Add(elementos);
             //dtgEndereco.Rows.Add(elementos);
-
-
-
-
             //string acumulado = " ";
             //foreach (var item in elementos)
             //{
@@ -248,13 +299,7 @@ namespace ECED_FORMS
 
             //}
             //ritmostrar.Text = acumulado;
-
-
-
-
-
             DocumentReference docref = DBConection.Getdatabase().Collection(txtPesquisarAluno.Text).Document("Dados Pessoais");
-
             DocumentSnapshot snap = await docref.GetSnapshotAsync();
             if (snap.Exists)
             {
@@ -272,17 +317,15 @@ namespace ECED_FORMS
             Boletim al = new Boletim()
             {
                 NomeAluno = cbNomeAlunoNota.Text
-               
+
             };
             //string[] vetor = new string[1];
             List<string> vetor = new List<string>();
             await ControllerBoletim.MostrarBoletim(al, vetor);
             string[] elementos = vetor.ToArray();
-            dtgBoletim.Rows.Add(elementos);
 
         }
-
-            async void mostrardocumento(string name)
+        async void mostrardocumento(string name)
         {
             DocumentReference docref = DBConection.Getdatabase().Collection(txtPesquisarAluno.Text).Document("Documento");
 
@@ -291,7 +334,7 @@ namespace ECED_FORMS
             {
                 Dictionary<string, object> city = snap.ToDictionary();
 
-                ritMostra.Text += string.Format("\n \n                                                    Documentos do aluno     \n  ");
+                ritMostra.Text += string.Format("\n \n                                                    Documentos do Aluno     \n  ");
                 foreach (var item in city)
                 {
                     ritMostra.Text += string.Format("\n                                          {0}: {1}\n", item.Key, item.Value);
@@ -307,7 +350,7 @@ namespace ECED_FORMS
             {
                 Dictionary<string, object> city = snap.ToDictionary();
 
-                ritMostra.Text += string.Format("\n \n                                                       Identificação escolar     \n  ");
+                ritMostra.Text += string.Format("\n \n                                                       Identificação Escolar     \n  ");
                 foreach (var item in city)
                 {
                     ritMostra.Text += string.Format("\n                                          {0}: {1}\n", item.Key, item.Value);
@@ -323,7 +366,7 @@ namespace ECED_FORMS
             {
                 Dictionary<string, object> city = snap.ToDictionary();
 
-                ritMostra.Text += string.Format("\n \n                                                         Dados dos pais     \n  ");
+                ritMostra.Text += string.Format("\n \n                                                         Dados dos Pais     \n  ");
                 foreach (var item in city)
                 {
                     ritMostra.Text += string.Format("\n                                          {0}: {1}\n", item.Key, item.Value);
@@ -356,15 +399,13 @@ namespace ECED_FORMS
             {
                 Dictionary<string, object> city = snap.ToDictionary();
 
-                ritMostra.Text += string.Format("\n \n                                                          Saude Aluno    \n  ");
+                ritMostra.Text += string.Format("\n \n                                                          Saúde Aluno    \n  ");
                 foreach (var item in city)
                 {
                     ritMostra.Text += string.Format("\n                                          {0}: {1}\n", item.Key, item.Value);
                 }
             }
         }
-
-
         /// <summary>
         /// Função para deletar o aluno do banco de dados
         /// </summary>
@@ -378,9 +419,15 @@ namespace ECED_FORMS
             };
             _ = ControllerDeletarAluno.DeletarAluno(delete);
         }
+        void Deletar()
+        {
+            DeletarAluno delete = new DeletarAluno()
+            {
+                Nome = txtNomeAluno.Text,
 
-
-
+            };
+            _ = ControllerDeletarAluno.DeletarAluno(delete);
+        }
         //Funções para a View
         void FuncaoCheckBox(CheckBox cb, CheckBox cb2)
         {
@@ -544,24 +591,18 @@ namespace ECED_FORMS
         {
             FuncaoCheckBox(chResponsavelDois, chMaeDois, chPaiDois);
         }
-
         private void button5_Click(object sender, EventArgs e)
         {
             Environment.Exit(1);
         }
-
         private void cmbTipo_SelectedIndexChanged(object sender, EventArgs e)
         {
-            
-        }
 
+        }
         private void btnMostrarBoletim_Click(object sender, EventArgs e)
         {
             mostrarBolet("boletim");
         }
-
-
-
         //private void SetBackColorDegrade(object sender, PaintEventArgs e)
         //{
         //    Graphics graphics = e.Graphics; Rectangle gradient_rect = new Rectangle(0, 0, Width, Height);
