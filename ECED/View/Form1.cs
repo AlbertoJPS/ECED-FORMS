@@ -80,7 +80,7 @@ namespace ECED_FORMS
             MessageBox.Show("O cadastro do aluno " + txtPesquisarAluno.Text + " foi deletado do sistema.");
             deletarCadastro("Name");
             txtPesquisarAluno.Clear();
-            ritmostrar.Clear();
+            ritMostra.Clear();
 
         }    
         void AdicionaDadosAlunos()
@@ -213,24 +213,30 @@ namespace ECED_FORMS
 
             mostrardocumento("Documento");
             mostrarDdosPessoais("Nome");
+            mostrarEndereco("Endereco");
+            mostrarDadosPais("DadosPais");
+            mostrarIdentificacaoEscolar("Identificação");
+            mostrarSaudeAluno("Saude");
+            ritMostra.Clear();
+
         }
         async void mostrarDdosPessoais(string name)
         {
 
-            Aluno al = new Aluno()
-            {
-                NomeAluno = txtPesquisarAluno.Text,
-                Tipo=cmbTipo.Text
-            };
-            //string[] vetor = new string[1];
-            List<string> vetor=new List<string>();
-            await ControllerSelect.MostrarDados(al, vetor);
-            string[]elementos = vetor.ToArray();
-            dtgDadosPessoais.Rows.Add(elementos);
-            dtgDocumento.Rows.Add(elementos);
-            dtgDadosPais.Rows.Add(elementos);
-            dtgEndereco.Rows.Add(elementos);
-            
+            //Aluno al = new Aluno()
+            //{
+            //    NomeAluno = txtPesquisarAluno.Text,
+            //    Tipo=cmbTipo.Text
+            //};
+            ////string[] vetor = new string[1];
+            //List<string> vetor=new List<string>();
+            //await ControllerSelect.MostrarDados(al, vetor);
+            //string[]elementos = vetor.ToArray();
+            //dtgDadosPessoais.Rows.Add(elementos);
+            //dtgDocumento.Rows.Add(elementos);
+            //dtgDadosPais.Rows.Add(elementos);
+            //dtgEndereco.Rows.Add(elementos);
+
 
 
 
@@ -247,21 +253,36 @@ namespace ECED_FORMS
 
 
 
-            //DocumentReference docref = DBConection.Getdatabase().Collection(txtPesquisarAluno.Text).Document("Dados Pessoais");
+            DocumentReference docref = DBConection.Getdatabase().Collection(txtPesquisarAluno.Text).Document("Dados Pessoais");
 
-            //DocumentSnapshot snap = await docref.GetSnapshotAsync();
-            //if (snap.Exists)
-            //{
-            //    Dictionary<string, object> city = snap.ToDictionary();
-            //    ritmostrar.Text += string.Format("\n \n                                                       Dados Pessoais     \n  ");
-            //    foreach (var item in city)
-            //    {
-            //        ritmostrar.Text += string.Format("\n                                          {0}: {1}\n", item.Key, item.Value);
-            //    }
-            //}
+            DocumentSnapshot snap = await docref.GetSnapshotAsync();
+            if (snap.Exists)
+            {
+                Dictionary<string, object> city = snap.ToDictionary();
+                ritMostra.Text += string.Format("\n \n                                                       Dados Pessoais     \n  ");
+                foreach (var item in city)
+                {
+                    ritMostra.Text += string.Format("\n                                          {0}: {1}\n", item.Key, item.Value);
+                }
+            }
+        }
+        async void mostrarBolet(string name)
+        {
+
+            Boletim al = new Boletim()
+            {
+                NomeAluno = cbNomeAlunoNota.Text
+               
+            };
+            //string[] vetor = new string[1];
+            List<string> vetor = new List<string>();
+            await ControllerBoletim.MostrarBoletim(al, vetor);
+            string[] elementos = vetor.ToArray();
+            dtgBoletim.Rows.Add(elementos);
+
         }
 
-        async void mostrardocumento(string name)
+            async void mostrardocumento(string name)
         {
             DocumentReference docref = DBConection.Getdatabase().Collection(txtPesquisarAluno.Text).Document("Documento");
 
@@ -270,13 +291,79 @@ namespace ECED_FORMS
             {
                 Dictionary<string, object> city = snap.ToDictionary();
 
-                ritmostrar.Text += string.Format("\n \n                                                    Documentos do aluno     \n  ");
+                ritMostra.Text += string.Format("\n \n                                                    Documentos do aluno     \n  ");
                 foreach (var item in city)
                 {
-                    ritmostrar.Text += string.Format("\n                                          {0}: {1}\n", item.Key, item.Value);
+                    ritMostra.Text += string.Format("\n                                          {0}: {1}\n", item.Key, item.Value);
                 }
             }
         }
+        async void mostrarIdentificacaoEscolar(string name)
+        {
+            DocumentReference docref = DBConection.Getdatabase().Collection(txtPesquisarAluno.Text).Document("Identificação escolar");
+
+            DocumentSnapshot snap = await docref.GetSnapshotAsync();
+            if (snap.Exists)
+            {
+                Dictionary<string, object> city = snap.ToDictionary();
+
+                ritMostra.Text += string.Format("\n \n                                                       Identificação escolar     \n  ");
+                foreach (var item in city)
+                {
+                    ritMostra.Text += string.Format("\n                                          {0}: {1}\n", item.Key, item.Value);
+                }
+            }
+        }
+        async void mostrarDadosPais(string name)
+        {
+            DocumentReference docref = DBConection.Getdatabase().Collection(txtPesquisarAluno.Text).Document("Dados dos pais");
+
+            DocumentSnapshot snap = await docref.GetSnapshotAsync();
+            if (snap.Exists)
+            {
+                Dictionary<string, object> city = snap.ToDictionary();
+
+                ritMostra.Text += string.Format("\n \n                                                         Dados dos pais     \n  ");
+                foreach (var item in city)
+                {
+                    ritMostra.Text += string.Format("\n                                          {0}: {1}\n", item.Key, item.Value);
+                }
+            }
+        }
+
+        async void mostrarEndereco(string name)
+        {
+            DocumentReference docref = DBConection.Getdatabase().Collection(txtPesquisarAluno.Text).Document("Endereço");
+
+            DocumentSnapshot snap = await docref.GetSnapshotAsync();
+            if (snap.Exists)
+            {
+                Dictionary<string, object> city = snap.ToDictionary();
+
+                ritMostra.Text += string.Format("\n \n                                                          ENDEREÇO      \n  ");
+                foreach (var item in city)
+                {
+                    ritMostra.Text += string.Format("\n                                          {0}: {1}\n", item.Key, item.Value);
+                }
+            }
+        }
+        async void mostrarSaudeAluno(string name)
+        {
+            DocumentReference docref = DBConection.Getdatabase().Collection(txtPesquisarAluno.Text).Document("Saude Aluno");
+
+            DocumentSnapshot snap = await docref.GetSnapshotAsync();
+            if (snap.Exists)
+            {
+                Dictionary<string, object> city = snap.ToDictionary();
+
+                ritMostra.Text += string.Format("\n \n                                                          Saude Aluno    \n  ");
+                foreach (var item in city)
+                {
+                    ritMostra.Text += string.Format("\n                                          {0}: {1}\n", item.Key, item.Value);
+                }
+            }
+        }
+
 
         /// <summary>
         /// Função para deletar o aluno do banco de dados
@@ -465,54 +552,12 @@ namespace ECED_FORMS
 
         private void cmbTipo_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (cmbTipo.Text=="Dados Pessoais")
-            {
-                dtgDadosPessoais.Visible = true;
-                dtgDocumento.Visible = false;
-                dtgEndereco.Visible = false;
-                dtgDadosPais.Visible=false;
-            }
-            else if(cmbTipo.Text=="Documento")
-            {
-                dtgDadosPessoais.Visible = false;
-                dtgDocumento.Visible = true;
-                dtgEndereco.Visible = false;
-                dtgDadosPais.Visible = false;
-                dtgDocumento.Location = dtgDadosPessoais.Location;
-            }
-            else if(cmbTipo.Text=="Dados dos pais")
-            {
-                dtgDadosPessoais.Visible = false;
-                dtgDocumento.Visible = false;
-                dtgEndereco.Visible = false;
-                dtgDadosPais.Visible = true;
-                dtgDadosPais.Location =  dtgDadosPessoais.Location;
-            }
-            else if(cmbTipo.Text=="Endereço")
-            {
-                dtgDadosPessoais.Visible = false;
-                dtgDocumento.Visible = false;
-                dtgEndereco.Visible = true;
-                dtgDadosPais.Visible = false;       
-                dtgEndereco.Location=dtgDadosPessoais.Location;
-            }
-            else if(cmbTipo.Text=="Identificação escolar")
-            {
-                //dtgDadosPessoais.Visible = false;
-                //dtgDocumento.Visible = true;
-                //dtgEndereco.Visible = false;
-                //dtgDadosPessoais.Visible = false;
-                //dtgDocumento.Location = dtgDadosPessoais.Location;
-            }
-            else if(cmbTipo.Text=="Saude Aluno")
-            {
-                //dtgDadosPessoais.Visible = false;
-                //dtgDocumento.Visible = true;
-            }else if(cmbTipo.Text=="Boletim")
-            {
-                //dtgDadosPessoais.Visible = false;
-                //dtgDocumento.Visible = true;
-            }
+            
+        }
+
+        private void btnMostrarBoletim_Click(object sender, EventArgs e)
+        {
+            mostrarBolet("boletim");
         }
 
 
