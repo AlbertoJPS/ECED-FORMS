@@ -12,6 +12,7 @@ using System.Collections;
 using DALProject;
 using BALProject;
 using System.Drawing.Drawing2D;
+using ECED_FORMS.View;
 
 namespace ECED_FORMS
 {
@@ -23,15 +24,7 @@ namespace ECED_FORMS
         }
         private void Form1_Load(object sender, EventArgs e)
         {
-            cmbTipo.SelectedIndex = 0;
-            chAlergiaMedicamentoNao.Checked = true;
-            chCarteiraSim.Checked = true;
-            chDeficienciaNao.Checked = true;
-            chDietaEspecificaNao.Checked = true;
-            chIntoleranciaAlimentoNao.Checked = true;
-            chProblemaSaudeNao.Checked = true;
-            chMaeUm.Checked = true;
-            chPaiDois.Checked = true;
+           
         }
         private void btnSalvarCadastro_Click(object sender, EventArgs e)
         {
@@ -76,10 +69,22 @@ namespace ECED_FORMS
         }
         private void btnDeletar_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("O cadastro do aluno " + txtPesquisarAluno.Text + " foi deletado do sistema.");
-            deletarCadastro("Name");
-            txtPesquisarAluno.Clear();
-            ritMostra.Clear();
+            DialogResult resultado = MessageBox.Show("Gostaria de excluir o cadastro do(a) " + txtPesquisarAluno.Text + "?", "Excluir cadastro", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (resultado == DialogResult.Yes)
+            {
+                deletarCadastro("Name");
+                txtPesquisarAluno.Clear();
+                ritMostra.Clear();
+                MessageBox.Show("Cadastro Excluido com sucesso!");
+            }
+            else
+            {
+                MessageBox.Show("Exclusão cancelada!");
+            }
+
+            //MessageBox.Show("O cadastro do aluno " + txtPesquisarAluno.Text + " foi deletado do sistema.");
+
+
 
         }
         void AdicionaDadosAlunos()
@@ -323,6 +328,7 @@ namespace ECED_FORMS
             List<string> vetor = new List<string>();
             await ControllerBoletim.MostrarBoletim(al, vetor);
             string[] elementos = vetor.ToArray();
+            dtgBoletim.Rows.Add(elementos);
 
         }
         async void mostrardocumento(string name)
@@ -615,5 +621,65 @@ namespace ECED_FORMS
         //{
         //    SetBackColorDegrade(sender,e);
         //}
+        async void login(string name)
+        {
+            //bool co=false;
+            //Login lo= new Login ()
+            //{
+            //    UserName = txtlogin.Text,
+            //    Senha=txtSenha.Text
+
+            //};
+
+            //await ControllerLogin.confLogin(lo,co);
+            //if (co==true)
+            //{
+            //    MessageBox.Show("ok");
+            //}
+            DocumentReference docref = DBConection.Getdatabase().Collection(txtlogin.Text).Document(txtSenha.Text);
+
+            bool con = false;
+            DocumentSnapshot snap = await docref.GetSnapshotAsync();
+            if (snap.Exists)
+            {
+                con = true;
+                if (con)
+                {
+
+                    MessageBox.Show("Login efetuado");
+                    TelaLogin Telapr = new TelaLogin();
+                    this.Visible = false;
+                    Telapr.Show();
+                }
+
+            }
+
+
+
+        }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            login("Login");
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            DialogResult resultado = MessageBox.Show("Trocar usuario? " , "Troca de usuario", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (resultado == DialogResult.Yes)
+            {
+                TelaLogin Telapr = new TelaLogin();
+            this.Visible = false;
+            Telapr.Show();
+            }
+            else
+            {
+                //MessageBox.Show("Exclusão cancelada!");
+            }
+
+
+
+           
+        }
     }
 }
