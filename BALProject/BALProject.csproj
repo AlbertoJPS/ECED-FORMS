@@ -45,6 +45,7 @@
     <Compile Include="ControllerBoletim.cs" />
     <Compile Include="ControllerInsert.cs" />
     <Compile Include="ControllerDeletarAluno.cs" />
+    <Compile Include="ControllerLogin.cs" />
     <Compile Include="ControllerSelect.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

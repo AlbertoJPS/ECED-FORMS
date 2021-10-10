@@ -51,18 +51,11 @@ namespace ECED_FORMS
             this.label104 = new System.Windows.Forms.Label();
             this.tabPage7 = new System.Windows.Forms.TabPage();
             this.ritMostra = new System.Windows.Forms.RichTextBox();
-            this.cmbTipo = new System.Windows.Forms.ComboBox();
             this.btnDeletar = new System.Windows.Forms.Button();
             this.btnBuscarAluno = new System.Windows.Forms.Button();
             this.txtPesquisarAluno = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.tabPage6 = new System.Windows.Forms.TabPage();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.btnSalvarCadastro = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tbCadastrarAlunos = new System.Windows.Forms.TabPage();
             this.txtCertidaoNascimento = new System.Windows.Forms.MaskedTextBox();
@@ -223,7 +216,6 @@ namespace ECED_FORMS
             this.txtEscolaridadeRespDois = new System.Windows.Forms.ComboBox();
             this.txtHorarioTrabalhoRespUm = new System.Windows.Forms.MaskedTextBox();
             this.txtHorarioTrabalhoRespDois = new System.Windows.Forms.MaskedTextBox();
-            this.panel7 = new System.Windows.Forms.Panel();
             this.label85 = new System.Windows.Forms.Label();
             this.txtRamalRespDois = new System.Windows.Forms.TextBox();
             this.label86 = new System.Windows.Forms.Label();
@@ -275,9 +267,23 @@ namespace ECED_FORMS
             this.txtNomeRespUm = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
+            this.btnSalvarCadastro = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.tabControl2 = new System.Windows.Forms.TabControl();
             this.tabPage5 = new System.Windows.Forms.TabPage();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.btnLogin = new System.Windows.Forms.Button();
+            this.txtSenha = new System.Windows.Forms.TextBox();
+            this.txtlogin = new System.Windows.Forms.TextBox();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
+            this.button10 = new System.Windows.Forms.Button();
+            this.panel7 = new System.Windows.Forms.Panel();
             this.tabPage8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgBoletim)).BeginInit();
             this.tabPage7.SuspendLayout();
@@ -318,7 +324,7 @@ namespace ECED_FORMS
             this.tabPage8.Location = new System.Drawing.Point(4, 22);
             this.tabPage8.Name = "tabPage8";
             this.tabPage8.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage8.Size = new System.Drawing.Size(1227, 603);
+            this.tabPage8.Size = new System.Drawing.Size(1227, 579);
             this.tabPage8.TabIndex = 3;
             this.tabPage8.Text = "Boletim                      ";
             this.tabPage8.UseVisualStyleBackColor = true;
@@ -523,7 +529,6 @@ namespace ECED_FORMS
             // tabPage7
             // 
             this.tabPage7.Controls.Add(this.ritMostra);
-            this.tabPage7.Controls.Add(this.cmbTipo);
             this.tabPage7.Controls.Add(this.btnDeletar);
             this.tabPage7.Controls.Add(this.btnBuscarAluno);
             this.tabPage7.Controls.Add(this.txtPesquisarAluno);
@@ -531,43 +536,27 @@ namespace ECED_FORMS
             this.tabPage7.Location = new System.Drawing.Point(4, 22);
             this.tabPage7.Name = "tabPage7";
             this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage7.Size = new System.Drawing.Size(1227, 603);
+            this.tabPage7.Size = new System.Drawing.Size(1227, 579);
             this.tabPage7.TabIndex = 2;
             this.tabPage7.Text = "Pesquisar aluno";
             this.tabPage7.UseVisualStyleBackColor = true;
             // 
             // ritMostra
             // 
-            this.ritMostra.BackColor = System.Drawing.Color.CadetBlue;
-            this.ritMostra.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ritMostra.Location = new System.Drawing.Point(150, 81);
+            this.ritMostra.BackColor = System.Drawing.Color.PowderBlue;
+            this.ritMostra.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.ritMostra.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ritMostra.Location = new System.Drawing.Point(112, 62);
             this.ritMostra.Name = "ritMostra";
-            this.ritMostra.Size = new System.Drawing.Size(700, 469);
+            this.ritMostra.Size = new System.Drawing.Size(766, 469);
             this.ritMostra.TabIndex = 17;
             this.ritMostra.Text = "";
-            // 
-            // cmbTipo
-            // 
-            this.cmbTipo.FormattingEnabled = true;
-            this.cmbTipo.Items.AddRange(new object[] {
-            "Dados Pessoais",
-            "Documento",
-            "Dados dos pais",
-            "Endereço",
-            "Identificação escolar",
-            "Saude Aluno",
-            "Boletim"});
-            this.cmbTipo.Location = new System.Drawing.Point(811, 35);
-            this.cmbTipo.Name = "cmbTipo";
-            this.cmbTipo.Size = new System.Drawing.Size(121, 21);
-            this.cmbTipo.TabIndex = 13;
-            this.cmbTipo.SelectedIndexChanged += new System.EventHandler(this.cmbTipo_SelectedIndexChanged);
             // 
             // btnDeletar
             // 
             this.btnDeletar.BackColor = System.Drawing.Color.Red;
             this.btnDeletar.ForeColor = System.Drawing.Color.White;
-            this.btnDeletar.Location = new System.Drawing.Point(1095, 558);
+            this.btnDeletar.Location = new System.Drawing.Point(901, 504);
             this.btnDeletar.Name = "btnDeletar";
             this.btnDeletar.Size = new System.Drawing.Size(103, 27);
             this.btnDeletar.TabIndex = 11;
@@ -579,7 +568,7 @@ namespace ECED_FORMS
             // 
             this.btnBuscarAluno.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.btnBuscarAluno.ForeColor = System.Drawing.Color.White;
-            this.btnBuscarAluno.Location = new System.Drawing.Point(959, 31);
+            this.btnBuscarAluno.Location = new System.Drawing.Point(901, 31);
             this.btnBuscarAluno.Name = "btnBuscarAluno";
             this.btnBuscarAluno.Size = new System.Drawing.Size(91, 32);
             this.btnBuscarAluno.TabIndex = 7;
@@ -593,7 +582,7 @@ namespace ECED_FORMS
             this.txtPesquisarAluno.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPesquisarAluno.Location = new System.Drawing.Point(112, 31);
             this.txtPesquisarAluno.Name = "txtPesquisarAluno";
-            this.txtPesquisarAluno.Size = new System.Drawing.Size(684, 25);
+            this.txtPesquisarAluno.Size = new System.Drawing.Size(766, 25);
             this.txtPesquisarAluno.TabIndex = 5;
             // 
             // label10
@@ -608,76 +597,15 @@ namespace ECED_FORMS
             // 
             // tabPage6
             // 
-            this.tabPage6.Controls.Add(this.button7);
-            this.tabPage6.Controls.Add(this.button6);
-            this.tabPage6.Controls.Add(this.button5);
-            this.tabPage6.Controls.Add(this.button4);
-            this.tabPage6.Controls.Add(this.button3);
-            this.tabPage6.Controls.Add(this.btnSalvarCadastro);
             this.tabPage6.Controls.Add(this.tabControl1);
+            this.tabPage6.Controls.Add(this.btnSalvarCadastro);
             this.tabPage6.Location = new System.Drawing.Point(4, 22);
             this.tabPage6.Name = "tabPage6";
             this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage6.Size = new System.Drawing.Size(1227, 603);
+            this.tabPage6.Size = new System.Drawing.Size(1227, 579);
             this.tabPage6.TabIndex = 1;
             this.tabPage6.Text = "Cadastro de aluno ";
             this.tabPage6.UseVisualStyleBackColor = true;
-            // 
-            // button7
-            // 
-            this.button7.Location = new System.Drawing.Point(956, 16);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(80, 62);
-            this.button7.TabIndex = 7;
-            this.button7.Text = "button7";
-            this.button7.UseVisualStyleBackColor = true;
-            // 
-            // button6
-            // 
-            this.button6.Location = new System.Drawing.Point(1045, 16);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(80, 62);
-            this.button6.TabIndex = 6;
-            this.button6.Text = "Troca de usuario";
-            this.button6.UseVisualStyleBackColor = true;
-            // 
-            // button5
-            // 
-            this.button5.Location = new System.Drawing.Point(1141, 16);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(80, 62);
-            this.button5.TabIndex = 5;
-            this.button5.Text = "Sair";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
-            // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(854, 16);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(80, 62);
-            this.button4.TabIndex = 4;
-            this.button4.Text = "button4";
-            this.button4.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(744, 16);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(80, 62);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "Atualizar";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // btnSalvarCadastro
-            // 
-            this.btnSalvarCadastro.Location = new System.Drawing.Point(630, 16);
-            this.btnSalvarCadastro.Name = "btnSalvarCadastro";
-            this.btnSalvarCadastro.Size = new System.Drawing.Size(80, 62);
-            this.btnSalvarCadastro.TabIndex = 2;
-            this.btnSalvarCadastro.Text = "Gravar";
-            this.btnSalvarCadastro.UseVisualStyleBackColor = true;
-            this.btnSalvarCadastro.Click += new System.EventHandler(this.btnSalvarCadastro_Click);
             // 
             // tabControl1
             // 
@@ -687,19 +615,21 @@ namespace ECED_FORMS
             this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Controls.Add(this.tabPage4);
             this.tabControl1.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabControl1.Location = new System.Drawing.Point(24, 81);
+            this.tabControl1.Location = new System.Drawing.Point(59, 47);
             this.tabControl1.Margin = new System.Windows.Forms.Padding(10, 30, 20, 33);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1142, 479);
+            this.tabControl1.Size = new System.Drawing.Size(1142, 505);
             this.tabControl1.TabIndex = 1;
             // 
             // tbCadastrarAlunos
             // 
+            this.tbCadastrarAlunos.Controls.Add(this.button1);
             this.tbCadastrarAlunos.Controls.Add(this.txtCertidaoNascimento);
             this.tbCadastrarAlunos.Controls.Add(this.txtUf);
             this.tbCadastrarAlunos.Controls.Add(this.txtFolha);
             this.tbCadastrarAlunos.Controls.Add(this.txtLivro);
+            this.tbCadastrarAlunos.Controls.Add(this.button3);
             this.tbCadastrarAlunos.Controls.Add(this.txtUfRg);
             this.tbCadastrarAlunos.Controls.Add(this.txtUfCartorio);
             this.tbCadastrarAlunos.Controls.Add(this.txtRgAluno);
@@ -746,7 +676,7 @@ namespace ECED_FORMS
             this.tbCadastrarAlunos.Location = new System.Drawing.Point(4, 25);
             this.tbCadastrarAlunos.Name = "tbCadastrarAlunos";
             this.tbCadastrarAlunos.Padding = new System.Windows.Forms.Padding(3);
-            this.tbCadastrarAlunos.Size = new System.Drawing.Size(1134, 450);
+            this.tbCadastrarAlunos.Size = new System.Drawing.Size(1134, 476);
             this.tbCadastrarAlunos.TabIndex = 1;
             this.tbCadastrarAlunos.Text = "Dados pessoais            ";
             this.tbCadastrarAlunos.UseVisualStyleBackColor = true;
@@ -1273,6 +1203,7 @@ namespace ECED_FORMS
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.button2);
             this.tabPage1.Controls.Add(this.txtNumero);
             this.tabPage1.Controls.Add(this.txtCep);
             this.tabPage1.Controls.Add(this.txtPontoReferencia);
@@ -1297,7 +1228,7 @@ namespace ECED_FORMS
             this.tabPage1.Location = new System.Drawing.Point(4, 25);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1134, 450);
+            this.tabPage1.Size = new System.Drawing.Size(1134, 476);
             this.tabPage1.TabIndex = 2;
             this.tabPage1.Text = "Endereço                   ";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -1409,9 +1340,9 @@ namespace ECED_FORMS
             // 
             // btnLimpaCep
             // 
-            this.btnLimpaCep.Location = new System.Drawing.Point(914, 345);
+            this.btnLimpaCep.Location = new System.Drawing.Point(275, 77);
             this.btnLimpaCep.Name = "btnLimpaCep";
-            this.btnLimpaCep.Size = new System.Drawing.Size(75, 34);
+            this.btnLimpaCep.Size = new System.Drawing.Size(65, 22);
             this.btnLimpaCep.TabIndex = 93;
             this.btnLimpaCep.Text = "Limpar";
             this.btnLimpaCep.UseVisualStyleBackColor = true;
@@ -1419,7 +1350,7 @@ namespace ECED_FORMS
             // 
             // btnBuscarCep
             // 
-            this.btnBuscarCep.Location = new System.Drawing.Point(185, 77);
+            this.btnBuscarCep.Location = new System.Drawing.Point(194, 77);
             this.btnBuscarCep.Name = "btnBuscarCep";
             this.btnBuscarCep.Size = new System.Drawing.Size(75, 23);
             this.btnBuscarCep.TabIndex = 92;
@@ -1498,6 +1429,7 @@ namespace ECED_FORMS
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.button8);
             this.tabPage2.Controls.Add(this.txtIdadeParentesco);
             this.tabPage2.Controls.Add(this.txtInep);
             this.tabPage2.Controls.Add(this.txtTelefonePessAutorizada);
@@ -1530,7 +1462,7 @@ namespace ECED_FORMS
             this.tabPage2.Location = new System.Drawing.Point(4, 25);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1134, 450);
+            this.tabPage2.Size = new System.Drawing.Size(1134, 476);
             this.tabPage2.TabIndex = 3;
             this.tabPage2.Text = "Identificação escolar          ";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -1898,6 +1830,7 @@ namespace ECED_FORMS
             // 
             // tabPage3
             // 
+            this.tabPage3.Controls.Add(this.button9);
             this.tabPage3.Controls.Add(this.txtTelefoneEmergDois);
             this.tabPage3.Controls.Add(this.txtTelefoneEmergUm);
             this.tabPage3.Controls.Add(this.txtTelefoneContato);
@@ -1940,7 +1873,7 @@ namespace ECED_FORMS
             this.tabPage3.Location = new System.Drawing.Point(4, 25);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(1134, 450);
+            this.tabPage3.Size = new System.Drawing.Size(1134, 476);
             this.tabPage3.TabIndex = 4;
             this.tabPage3.Text = "Identificação saúde";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -2356,6 +2289,7 @@ namespace ECED_FORMS
             // tabPage4
             // 
             this.tabPage4.BackColor = System.Drawing.Color.Transparent;
+            this.tabPage4.Controls.Add(this.button10);
             this.tabPage4.Controls.Add(this.chResponsavelDois);
             this.tabPage4.Controls.Add(this.chPaiDois);
             this.tabPage4.Controls.Add(this.chMaeDois);
@@ -2422,7 +2356,7 @@ namespace ECED_FORMS
             this.tabPage4.Location = new System.Drawing.Point(4, 25);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(1134, 450);
+            this.tabPage4.Size = new System.Drawing.Size(1134, 476);
             this.tabPage4.TabIndex = 5;
             this.tabPage4.Text = "Dados dos Responsaveís       ";
             // 
@@ -2598,14 +2532,6 @@ namespace ECED_FORMS
             this.txtHorarioTrabalhoRespDois.Size = new System.Drawing.Size(67, 22);
             this.txtHorarioTrabalhoRespDois.TabIndex = 179;
             this.txtHorarioTrabalhoRespDois.ValidatingType = typeof(System.DateTime);
-            // 
-            // panel7
-            // 
-            this.panel7.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.panel7.Location = new System.Drawing.Point(0, 207);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(1236, 29);
-            this.panel7.TabIndex = 178;
             // 
             // label85
             // 
@@ -3088,42 +3014,181 @@ namespace ECED_FORMS
             this.label13.TabIndex = 69;
             this.label13.Text = "Nome:";
             // 
+            // btnSalvarCadastro
+            // 
+            this.btnSalvarCadastro.BackColor = System.Drawing.Color.Teal;
+            this.btnSalvarCadastro.ForeColor = System.Drawing.Color.White;
+            this.btnSalvarCadastro.Location = new System.Drawing.Point(1094, 6);
+            this.btnSalvarCadastro.Name = "btnSalvarCadastro";
+            this.btnSalvarCadastro.Size = new System.Drawing.Size(107, 40);
+            this.btnSalvarCadastro.TabIndex = 2;
+            this.btnSalvarCadastro.Text = "Cadastrar";
+            this.btnSalvarCadastro.UseVisualStyleBackColor = false;
+            this.btnSalvarCadastro.Click += new System.EventHandler(this.btnSalvarCadastro_Click);
+            // 
+            // button7
+            // 
+            this.button7.Location = new System.Drawing.Point(950, 16);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(80, 40);
+            this.button7.TabIndex = 7;
+            this.button7.Text = "button7";
+            this.button7.UseVisualStyleBackColor = true;
+            // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.Color.Red;
+            this.button5.ForeColor = System.Drawing.Color.White;
+            this.button5.Location = new System.Drawing.Point(1221, 5);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(80, 62);
+            this.button5.TabIndex = 5;
+            this.button5.Text = "Sair";
+            this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(864, 16);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(80, 40);
+            this.button4.TabIndex = 4;
+            this.button4.Text = "button4";
+            this.button4.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(1057, 157);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(71, 23);
+            this.button3.TabIndex = 3;
+            this.button3.Text = "Atualizar";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
             // tabControl2
             // 
             this.tabControl2.Controls.Add(this.tabPage6);
             this.tabControl2.Controls.Add(this.tabPage7);
             this.tabControl2.Controls.Add(this.tabPage8);
             this.tabControl2.Controls.Add(this.tabPage5);
-            this.tabControl2.Location = new System.Drawing.Point(96, 12);
+            this.tabControl2.Location = new System.Drawing.Point(96, 80);
             this.tabControl2.Name = "tabControl2";
             this.tabControl2.SelectedIndex = 0;
-            this.tabControl2.Size = new System.Drawing.Size(1235, 629);
+            this.tabControl2.Size = new System.Drawing.Size(1235, 605);
             this.tabControl2.TabIndex = 2;
             // 
             // tabPage5
             // 
-            this.tabPage5.Controls.Add(this.textBox1);
+            this.tabPage5.Controls.Add(this.btnLogin);
+            this.tabPage5.Controls.Add(this.txtSenha);
+            this.tabPage5.Controls.Add(this.txtlogin);
             this.tabPage5.Location = new System.Drawing.Point(4, 22);
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage5.Size = new System.Drawing.Size(1227, 603);
+            this.tabPage5.Size = new System.Drawing.Size(1227, 579);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "Deletar um cadastro";
             this.tabPage5.UseVisualStyleBackColor = true;
             // 
-            // textBox1
+            // btnLogin
             // 
-            this.textBox1.Location = new System.Drawing.Point(87, 53);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(459, 20);
-            this.textBox1.TabIndex = 0;
+            this.btnLogin.Location = new System.Drawing.Point(140, 199);
+            this.btnLogin.Name = "btnLogin";
+            this.btnLogin.Size = new System.Drawing.Size(75, 23);
+            this.btnLogin.TabIndex = 2;
+            this.btnLogin.Text = "button1";
+            this.btnLogin.UseVisualStyleBackColor = true;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
+            // 
+            // txtSenha
+            // 
+            this.txtSenha.Location = new System.Drawing.Point(87, 115);
+            this.txtSenha.Name = "txtSenha";
+            this.txtSenha.Size = new System.Drawing.Size(181, 20);
+            this.txtSenha.TabIndex = 1;
+            // 
+            // txtlogin
+            // 
+            this.txtlogin.Location = new System.Drawing.Point(87, 53);
+            this.txtlogin.Name = "txtlogin";
+            this.txtlogin.Size = new System.Drawing.Size(181, 20);
+            this.txtlogin.TabIndex = 0;
+            // 
+            // button6
+            // 
+            this.button6.BackColor = System.Drawing.Color.Transparent;
+            this.button6.BackgroundImage = global::ECED_FORMS.Properties.Resources.trocaUsuario;
+            this.button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button6.Location = new System.Drawing.Point(1139, 5);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(76, 62);
+            this.button6.TabIndex = 6;
+            this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(1057, 447);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(71, 23);
+            this.button1.TabIndex = 193;
+            this.button1.Text = "Atualizar";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(1031, 417);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(71, 23);
+            this.button2.TabIndex = 106;
+            this.button2.Text = "Atualizar";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // button8
+            // 
+            this.button8.Location = new System.Drawing.Point(1031, 433);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(79, 23);
+            this.button8.TabIndex = 194;
+            this.button8.Text = "Atualizar";
+            this.button8.UseVisualStyleBackColor = true;
+            // 
+            // button9
+            // 
+            this.button9.Location = new System.Drawing.Point(1048, 417);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(71, 23);
+            this.button9.TabIndex = 194;
+            this.button9.Text = "Atualizar";
+            this.button9.UseVisualStyleBackColor = true;
+            // 
+            // button10
+            // 
+            this.button10.Location = new System.Drawing.Point(1044, 423);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(71, 23);
+            this.button10.TabIndex = 194;
+            this.button10.Text = "Atualizar";
+            this.button10.UseVisualStyleBackColor = true;
+            // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel7.Location = new System.Drawing.Point(0, 207);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(1236, 29);
+            this.panel7.TabIndex = 178;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1363, 669);
+            this.ClientSize = new System.Drawing.Size(1390, 709);
+            this.Controls.Add(this.button7);
             this.Controls.Add(this.tabControl2);
+            this.Controls.Add(this.button4);
+            this.Controls.Add(this.button6);
+            this.Controls.Add(this.button5);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -3379,7 +3444,6 @@ namespace ECED_FORMS
         private System.Windows.Forms.MaskedTextBox txtTelefonePessAutorizada;
         private System.Windows.Forms.MaskedTextBox txtTelUrgencia;
         private System.Windows.Forms.MaskedTextBox txtTelefoneContato;
-        private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.MaskedTextBox txtRgAluno;
         private System.Windows.Forms.MaskedTextBox txtCep;
         private System.Windows.Forms.MaskedTextBox txtNumero;
@@ -3410,10 +3474,17 @@ namespace ECED_FORMS
         private System.Windows.Forms.Label label73;
         private System.Windows.Forms.TabPage tabPage5;
         private System.Windows.Forms.Button btnDeletar;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.ComboBox cmbTipo;
+        private System.Windows.Forms.TextBox txtlogin;
         private System.Windows.Forms.Button btnMostrarBoletim;
         private System.Windows.Forms.RichTextBox ritMostra;
+        private System.Windows.Forms.TextBox txtSenha;
+        private System.Windows.Forms.Button btnLogin;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Panel panel7;
     }
 }
 

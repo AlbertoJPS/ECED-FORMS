@@ -19,14 +19,10 @@ namespace DALProject
                 if (snap.Exists)
                 {
                     Dictionary<string, object> dados = snap.ToDictionary();
-                    
-
-                    //i/*nt acumulador = 0;*/
                     foreach (var item in dados)
                     {
                         vetor.Add(item.Value.ToString());
-                        //vetor[acumulador] = item.Value.ToString();
-                        //acumulador++;
+                       
                     }
                 }
                 vetor.Sort();

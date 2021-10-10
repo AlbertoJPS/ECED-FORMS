@@ -7,29 +7,22 @@ using System.Threading.Tasks;
 
 namespace DALProject
 {
-    public class SelectBoletim
+    public class SelectLogin
     {
-        public static async Task<Response> MostrarBoletim(Aluno name, List<string> vetor)
+        public static async Task<Response> ConfereLogin(Login log, bool con )
         {
             try
             {
-                DocumentReference docref = DBConection.Getdatabase().Collection(name.NomeAluno).Document("Boletim");
+                DocumentReference docref = DBConection.Getdatabase().Collection(log.UserName).Document(log.Senha);
 
+                con = false;
                 DocumentSnapshot snap = await docref.GetSnapshotAsync();
                 if (snap.Exists)
                 {
-                    Dictionary<string, object> dados = snap.ToDictionary();
-
-
-                    //i/*nt acumulador = 0;*/
-                    foreach (var item in dados)
-                    {
-                        vetor.Add(item.Value.ToString());
-                        //vetor[acumulador] = item.Value.ToString();
-                        //acumulador++;
-                    }
+                    con = true;
+                    
                 }
-                vetor.Sort();
+                
 
 
                 return new Response()
