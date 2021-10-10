@@ -101,6 +101,7 @@ namespace ECED_FORMS
                 CorERaca = cmbCor.Text,
                 EstadoCivil = cmbEstadoCivil.Text
             };
+
             DocumentosAluno docAluno = new DocumentosAluno()
             {
                 Cpf = txtCpf.Text,
