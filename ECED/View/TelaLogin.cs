@@ -24,7 +24,7 @@ namespace ECED_FORMS.View
         {
             login("login");
         }
-       
+
 
         private void DegradeTela(object sender, PaintEventArgs e)
         {
@@ -36,10 +36,10 @@ namespace ECED_FORMS.View
 
         private void TelaLogin_Paint(object sender, PaintEventArgs e)
         {
-            DegradeTela(sender ,e);
+            DegradeTela(sender, e);
         }
 
-     
+
 
         async void login(string name)
         {
@@ -56,25 +56,38 @@ namespace ECED_FORMS.View
             //{
             //    MessageBox.Show("ok");
             //}
-            DocumentReference docref = DBConection.Getdatabase().Collection(txtlogin.Text).Document(txtSenha.Text);
-
-            bool con = false;
-            DocumentSnapshot snap = await docref.GetSnapshotAsync();
-            if (snap.Exists)
+            try
             {
-                con = true;
-                if (con)
+                DocumentReference docref = DBConection.Getdatabase().Collection(txtlogin.Text).Document(txtSenha.Text);
+
+                bool con = false;
+                DocumentSnapshot snap = await docref.GetSnapshotAsync();
+                if (snap.Exists)
                 {
+                    con = true;
+                    if (con)
+                    {
 
-                    MessageBox.Show("Login efetuado");
-                    Form1 Telapr = new Form1();
-                    this.Visible = false;
-                    Telapr.Show();
+                        MessageBox.Show("Login efetuado");
+                        Form1 Telapr = new Form1();
+                        this.Visible = false;
+                        Telapr.Show();
+                    }
+
                 }
-
+                else
+                {
+                    MessageBox.Show("Informe uma Credencial correta!");
+                }
             }
+            catch (Exception )
+            {
+
+                MessageBox.Show("Falha na conexão");
+            }
+
         }
 
-       
+
     }
 }
