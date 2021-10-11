@@ -23,9 +23,12 @@ namespace DALProject
                     {"Turma", identEscola.Turma},
                     {"Data da Matrícula", identEscola.DataMatricula},
                     {"Autorizado Buscar Criança", identEscola.AuthBuscarCrianca},
-                    {"Telefone Autorizado", identEscola.Telefone},
-                    {"Grau Parentesco", identEscola.GrauParent},
+                    {"Telefone Autorizado", identEscola.TelefoneAutorizado},
+                    {"Grau Parentesco", identEscola.GrauParentAuto},
                     {"Idade", identEscola.Idade},
+                    {"Telefone Urgência", identEscola.TelefoneAviso},
+                    {"Grau Parentesco Urgência", identEscola.GrauParentAviso},
+                    {"Pessoa Urgência", identEscola.PessoaAviso},
                 };         
                 Task<WriteResult> t = doc.SetAsync(identeficacao);
                 t.Wait();

@@ -24,7 +24,14 @@ namespace ECED_FORMS
         }
         private void Form1_Load(object sender, EventArgs e)
         {
-           
+            chAlergiaMedicamentoNao.Checked = true;
+            chCarteiraSim.Checked = true;
+            chDeficienciaNao.Checked = true;
+            chDietaEspecificaNao.Checked = true;
+            chIntoleranciaAlimentoNao.Checked = true;
+            chProblemaSaudeNao.Checked = true;
+            chMaeUm.Checked = true;
+            chPaiDois.Checked = true;
         }
         private void btnSalvarCadastro_Click(object sender, EventArgs e)
         {
@@ -83,13 +90,9 @@ namespace ECED_FORMS
             }
 
             //MessageBox.Show("O cadastro do aluno " + txtPesquisarAluno.Text + " foi deletado do sistema.");
-
-
-
         }
         void AdicionaDadosAlunos()
         {
-            //Cria objetos para serem adicionados no banco de dados
             Aluno al = new Aluno()
             {
                 NomeAluno = txtNomeAluno.Text,
@@ -101,7 +104,6 @@ namespace ECED_FORMS
                 CorERaca = cmbCor.Text,
                 EstadoCivil = cmbEstadoCivil.Text
             };
-
             DocumentosAluno docAluno = new DocumentosAluno()
             {
                 Cpf = txtCpf.Text,
@@ -109,12 +111,15 @@ namespace ECED_FORMS
                 DataExpedicaoRg = dtDataExpedicaoRG.Text,
                 OrgaoEmissor = txtOrgaoEmissor.Text,
                 UfRg = txtUfRg.Text,
+                UfCartorio = txtUfCartorio.Text,
+                NomeCartorio = txtNomeCartorio.Text,
                 NumCertidaoNascimento = txtCertidaoNascimento.Text,
-                DataEmissaoCertNascimento = dtDataEmissao.Text,
+                DataEmissaoCertNascimento = dtDataEmissaoCertNasc.Text,
                 Folha = txtFolha.Text,
                 Livro = txtLivro.Text,
-                RegistroCivil = dtDataEmissaoCertNasc.Text,
-                DataEmissaoRegCivil = dtDataEmissao.Text
+                RegistroCivil = txtRegCivil.Text,
+                DataEmissaoRegCivil = dtDataEmissao.Text,
+                Email = txtEmailAluno.Text
             };
             EnderecoAluno enderecoAluno = new EnderecoAluno()
             {
@@ -134,11 +139,17 @@ namespace ECED_FORMS
                 AuthBuscarCrianca = txtPessoaAutorizada.Text,
                 DataMatricula = dtMatricula.Text,
                 Idade = txtIdadeParentesco.Text,
-                GrauParent = cmbParentesco.Text,
-                Telefone = txtTelefonePessAutorizada.Text,
+                GrauParentAuto = cmbParentesco.Text,
+                TelefoneAutorizado = txtTelefonePessAutorizada.Text,
                 Turma = cmbTurma.Text,
                 Turno = cmbPeriodo.Text,
                 UnidadeEscolar = txtUnidadeEscolar.Text,
+                TelefoneAviso = txtTelUrgencia.Text,
+                PessoaAviso = txtAvisoUrgencia.Text,
+                GrauParentAviso = cmbGrauUrgencia.Text,
+                IrmaoEstuda = txtNomeIrmaoEstuda.Text,
+                TurmaIrmao = cmbTurmaIrmao.Text,
+                TurnoIrmao = cmbPeriodoIrmao.Text
             };
             SaudeAluno saudeAluno = new SaudeAluno()
             {
@@ -192,24 +203,24 @@ namespace ECED_FORMS
             };
             dadosPais.ResponsavelUm = FuncaoPropCheckBox(chMaeUm, chPaiUm, chResponsavelUm);
             dadosPais.ResponsavelDois = FuncaoPropCheckBox(chMaeDois, chPaiDois, chResponsavelDois);
-            Response res = ControllerInsert.AlunoInsert(al, txtNomeAluno.Text, dtNascimentoAluno.Text, cmbSexo.Text, cmbCor.Text, cmbEstadoCivil.Text, txtNaturalidade.Text, txtNacionalidade.Text, txtUf.Text);
+            Response res = AddAluno(al);
             if (res.Executed)
             {
-                res = ControllerInsert.DocumentoInsert(docAluno, al, txtRegCivil.Text, txtCertidaoNascimento.Text, txtCpf.Text, txtRgAluno.Text, txtEmailAluno.Text, txtFolha.Text, txtLivro.Text, txtOrgaoEmissor.Text, dtDataEmissaoCertNasc.Text, dtDataEmissaoCertNasc.Text, dtDataExpedicaoRG.Text, txtUfRg.Text, txtUfCartorio.Text, txtNomeCartorio.Text);
+                res = AddDocumentos(docAluno, al);
                 if (res.Executed)
                 {
-                    res = ControllerInsert.EnderecoInsert(enderecoAluno, al, txtCep.Text, txtRua.Text, txtBairro.Text, txtCidade.Text, txtNumero.Text, txtEstado.Text);
+                    res = AddEndereco(enderecoAluno, al);
                     if (res.Executed)
                     {
                         if (res.Executed)
                         {
-                            res = ControllerInsert.IdentificacaoEscolaInsert(identEscola, al, txtUnidadeEscolar.Text, txtInep.Text, dtMatricula.Text, cmbPeriodo.Text, cmbTurma.Text, txtPessoaAutorizada.Text, txtTelefonePessAutorizada.Text, cmbParentesco.Text, txtIdadeParentesco.Text, txtAvisoUrgencia.Text, cmbGrauUrgencia.Text, txtTelUrgencia.Text, txtNomeIrmaoEstuda.Text, cmbTurmaIrmao.Text, cmbPeriodoIrmao.Text);
+                            res = AddIdentificacaoEscola(al, identEscola);
                             if (res.Executed)
                             {
-                                res = ControllerInsert.SaudeAlunoInsert(saudeAluno, al, txtContatoEmergUm.Text, txtTelefoneEmergUm.Text, txtContatoEmergDois.Text, txtTelefoneEmergDois.Text, txtTelefoneContato.Text);
+                                res = AddSaude(al, saudeAluno);
                                 if (res.Executed)
                                 {
-                                    res = ControllerInsert.DadosPaisInsert(dadosPais, al, txtNomeRespUm.Text, dtDataNascRespUm.Text, txtTelefoneRespUm.Text, txtCpfRespUm.Text, txtRgRespUm.Text, dtDataExpedicaoRespUm.Text, txtUfRespUm.Text, txtOrgaoEmissorRespUm.Text, cbEstadoCivilRespUm.Text, txtEscolaridadeRespUm.Text, txtProfissaoRespUm.Text, txtLocalTrabalhoRespUm.Text, txtHorarioTrabalhoRespUm.Text, txtRamalRespUm.Text, txtNomeRespDois.Text, dtDataNascRespDois.Text, txtTelefoneRespDois.Text, txtCpfRespDois.Text, txtRgRespDois.Text, dtDataExpedicaoRespDois.Text, txtUfRespDois.Text, txtOrgaoEmissorRespDois.Text, cbEstadoCivilRespDois.Text, txtEscolaridadeRespDois.Text, txtProfissaoRespDois.Text, txtLocalTrabalhoRespDois.Text, txtHorarioTrabalhoRespDois.Text, txtRamalRespDois.Text);
+                                    res = AddDadosPais(al, dadosPais);
                                     if (res.Executed)
                                     {
                                         MessageBox.Show(res.Message);
@@ -238,6 +249,11 @@ namespace ECED_FORMS
                             Deletar();
                         }
                     }
+                    else
+                    {
+                        MessageBox.Show(res.Message);
+                        Deletar();
+                    }
                 }
                 else
                 {
@@ -250,6 +266,31 @@ namespace ECED_FORMS
                 MessageBox.Show(res.Message);
                 Deletar();
             }
+        }
+        //Funções de Insert
+        private static Response AddAluno(Aluno al)
+        {
+            return ControllerInsert.AlunoInsert(al);
+        }
+        private static Response AddDocumentos(DocumentosAluno doc, Aluno al)
+        {
+            return ControllerInsert.DocumentoInsert(doc, al);
+        }
+        private static Response AddEndereco(EnderecoAluno endereco, Aluno al)
+        {
+            return ControllerInsert.EnderecoInsert(endereco, al);
+        }
+        private static Response AddIdentificacaoEscola(Aluno al, IdentificacaoEscolar ident)
+        {
+            return ControllerInsert.IdentificacaoEscolaInsert(ident, al);
+        }
+        private static Response AddSaude(Aluno al, SaudeAluno saude)
+        {
+            return ControllerInsert.SaudeAlunoInsert(saude, al);
+        }
+        private static Response AddDadosPais(Aluno al, DadosPais dadosPais)
+        {
+            return ControllerInsert.DadosPaisInsert(dadosPais, al);
         }
         void AdicionaNota()
         {
@@ -319,18 +360,15 @@ namespace ECED_FORMS
         }
         async void mostrarBolet(string name)
         {
-
             Boletim al = new Boletim()
             {
                 NomeAluno = cbNomeAlunoNota.Text
-
             };
             //string[] vetor = new string[1];
             List<string> vetor = new List<string>();
             await ControllerBoletim.MostrarBoletim(al, vetor);
             string[] elementos = vetor.ToArray();
             dtgBoletim.Rows.Add(elementos);
-
         }
         async void mostrardocumento(string name)
         {
@@ -380,7 +418,6 @@ namespace ECED_FORMS
                 }
             }
         }
-
         async void mostrarEndereco(string name)
         {
             DocumentReference docref = DBConection.Getdatabase().Collection(txtPesquisarAluno.Text).Document("Endereço");
@@ -473,6 +510,7 @@ namespace ECED_FORMS
         {
             if (cb.Checked)
             {
+                txt.Text = "";
                 txt.Enabled = false;
             }
         }
@@ -602,10 +640,6 @@ namespace ECED_FORMS
         {
             Environment.Exit(1);
         }
-        private void cmbTipo_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
         private void btnMostrarBoletim_Click(object sender, EventArgs e)
         {
             mostrarBolet("boletim");
@@ -638,7 +672,6 @@ namespace ECED_FORMS
             //    MessageBox.Show("ok");
             //}
             DocumentReference docref = DBConection.Getdatabase().Collection(txtlogin.Text).Document(txtSenha.Text);
-
             bool con = false;
             DocumentSnapshot snap = await docref.GetSnapshotAsync();
             if (snap.Exists)
@@ -646,19 +679,13 @@ namespace ECED_FORMS
                 con = true;
                 if (con)
                 {
-
                     MessageBox.Show("Login efetuado");
                     TelaLogin Telapr = new TelaLogin();
                     this.Visible = false;
                     Telapr.Show();
                 }
-
             }
-
-
-
         }
-
         private void btnLogin_Click(object sender, EventArgs e)
         {
             login("Login");
@@ -666,21 +693,21 @@ namespace ECED_FORMS
 
         private void button6_Click(object sender, EventArgs e)
         {
-            DialogResult resultado = MessageBox.Show("Trocar usuario? " , "Troca de usuario", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            DialogResult resultado = MessageBox.Show("Trocar usuario? ", "Troca de usuario", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
             if (resultado == DialogResult.Yes)
             {
                 TelaLogin Telapr = new TelaLogin();
-            this.Visible = false;
-            Telapr.Show();
+                this.Visible = false;
+                Telapr.Show();
             }
             else
             {
                 //MessageBox.Show("Exclusão cancelada!");
             }
-
-
-
-           
+        }
+        private void Form1_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

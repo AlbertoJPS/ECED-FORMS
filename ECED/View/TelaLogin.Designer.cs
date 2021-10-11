@@ -44,7 +44,7 @@ namespace ECED_FORMS.View
             this.txtSenha.Name = "txtSenha";
             this.txtSenha.Size = new System.Drawing.Size(181, 20);
             this.txtSenha.TabIndex = 4;
-        
+            this.txtSenha.UseSystemPasswordChar = true;
             // 
             // txtlogin
             // 
@@ -85,7 +85,6 @@ namespace ECED_FORMS.View
             this.btnLogin.Text = "Login";
             this.btnLogin.UseVisualStyleBackColor = false;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
-       
             // 
             // pictureBox1
             // 
@@ -110,6 +109,7 @@ namespace ECED_FORMS.View
             this.Controls.Add(this.txtSenha);
             this.Controls.Add(this.txtlogin);
             this.Name = "TelaLogin";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TelaLogin";
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.TelaLogin_Paint);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

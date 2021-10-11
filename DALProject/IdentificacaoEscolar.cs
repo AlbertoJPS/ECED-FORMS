@@ -25,8 +25,21 @@ namespace DALProject
         [FirestoreProperty]
         public string AuthBuscarCrianca { get; set; }
         [FirestoreProperty]
-        public string Telefone { get; set; }
+        public string TelefoneAutorizado { get; set; }
         [FirestoreProperty]
-        public string GrauParent { get; set; }
+        public string GrauParentAuto { get; set; }
+        [FirestoreProperty]
+        public string PessoaAviso { get; set; }
+        [FirestoreProperty]
+        public string TelefoneAviso { get; set; }
+        [FirestoreProperty]
+        public string GrauParentAviso { get; set; }
+        [FirestoreProperty]
+        public string IrmaoEstuda { get; set; }
+        [FirestoreProperty]
+        public string TurmaIrmao { get; set; }
+        [FirestoreProperty]
+        public string TurnoIrmao { get; set; }
+
     }
 }
