@@ -32,5 +32,11 @@ namespace DALProject
         public string Folha { get; set; }
         [FirestoreProperty]
         public string Livro { get; set; }
+        [FirestoreProperty]
+        public string Email { get; set; }
+        [FirestoreProperty]
+        public string UfCartorio { get; set; }
+        [FirestoreProperty]
+        public string NomeCartorio { get; set; }
     }
 }
