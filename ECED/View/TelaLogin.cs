@@ -69,7 +69,7 @@ namespace ECED_FORMS.View
                     {
 
                         MessageBox.Show("Login efetuado");
-                        Form1 Telapr = new Form1();
+                        telaCadastro Telapr = new telaCadastro();
                         this.Visible = false;
                         Telapr.Show();
                     }

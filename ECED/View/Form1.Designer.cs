@@ -1,7 +1,7 @@
 ﻿
 namespace ECED_FORMS
 {
-    partial class Form1
+    partial class telaCadastro
     {
         /// <summary>
         /// Variável de designer necessária.
@@ -58,12 +58,12 @@ namespace ECED_FORMS
             this.tabPage6 = new System.Windows.Forms.TabPage();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tbCadastrarAlunos = new System.Windows.Forms.TabPage();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnAtualizarDocumentos = new System.Windows.Forms.Button();
             this.txtCertidaoNascimento = new System.Windows.Forms.MaskedTextBox();
             this.txtUf = new System.Windows.Forms.ComboBox();
             this.txtFolha = new System.Windows.Forms.MaskedTextBox();
             this.txtLivro = new System.Windows.Forms.MaskedTextBox();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnAtualizarDados = new System.Windows.Forms.Button();
             this.txtUfRg = new System.Windows.Forms.ComboBox();
             this.txtUfCartorio = new System.Windows.Forms.ComboBox();
             this.txtRgAluno = new System.Windows.Forms.MaskedTextBox();
@@ -109,7 +109,7 @@ namespace ECED_FORMS
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnAtualizarEndereco = new System.Windows.Forms.Button();
             this.txtNumero = new System.Windows.Forms.MaskedTextBox();
             this.txtCep = new System.Windows.Forms.MaskedTextBox();
             this.txtPontoReferencia = new System.Windows.Forms.TextBox();
@@ -133,7 +133,7 @@ namespace ECED_FORMS
             this.label30 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.button8 = new System.Windows.Forms.Button();
+            this.btnAtualizarIdentEscola = new System.Windows.Forms.Button();
             this.txtIdadeParentesco = new System.Windows.Forms.MaskedTextBox();
             this.txtInep = new System.Windows.Forms.MaskedTextBox();
             this.txtTelefonePessAutorizada = new System.Windows.Forms.MaskedTextBox();
@@ -168,7 +168,7 @@ namespace ECED_FORMS
             this.label8 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.button9 = new System.Windows.Forms.Button();
+            this.btnAtualizarSaude = new System.Windows.Forms.Button();
             this.txtTelefoneEmergDois = new System.Windows.Forms.MaskedTextBox();
             this.txtTelefoneEmergUm = new System.Windows.Forms.MaskedTextBox();
             this.txtTelefoneContato = new System.Windows.Forms.MaskedTextBox();
@@ -210,7 +210,7 @@ namespace ECED_FORMS
             this.panel6 = new System.Windows.Forms.Panel();
             this.label38 = new System.Windows.Forms.Label();
             this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.button10 = new System.Windows.Forms.Button();
+            this.btnAtualizarDadosPais = new System.Windows.Forms.Button();
             this.chResponsavelDois = new System.Windows.Forms.CheckBox();
             this.chPaiDois = new System.Windows.Forms.CheckBox();
             this.chMaeDois = new System.Windows.Forms.CheckBox();
@@ -624,12 +624,12 @@ namespace ECED_FORMS
             // 
             // tbCadastrarAlunos
             // 
-            this.tbCadastrarAlunos.Controls.Add(this.button1);
+            this.tbCadastrarAlunos.Controls.Add(this.btnAtualizarDocumentos);
             this.tbCadastrarAlunos.Controls.Add(this.txtCertidaoNascimento);
             this.tbCadastrarAlunos.Controls.Add(this.txtUf);
             this.tbCadastrarAlunos.Controls.Add(this.txtFolha);
             this.tbCadastrarAlunos.Controls.Add(this.txtLivro);
-            this.tbCadastrarAlunos.Controls.Add(this.button3);
+            this.tbCadastrarAlunos.Controls.Add(this.btnAtualizarDados);
             this.tbCadastrarAlunos.Controls.Add(this.txtUfRg);
             this.tbCadastrarAlunos.Controls.Add(this.txtUfCartorio);
             this.tbCadastrarAlunos.Controls.Add(this.txtRgAluno);
@@ -681,14 +681,15 @@ namespace ECED_FORMS
             this.tbCadastrarAlunos.Text = "Dados pessoais            ";
             this.tbCadastrarAlunos.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // btnAtualizarDocumentos
             // 
-            this.button1.Location = new System.Drawing.Point(1057, 447);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(71, 23);
-            this.button1.TabIndex = 193;
-            this.button1.Text = "Atualizar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnAtualizarDocumentos.Location = new System.Drawing.Point(1057, 447);
+            this.btnAtualizarDocumentos.Name = "btnAtualizarDocumentos";
+            this.btnAtualizarDocumentos.Size = new System.Drawing.Size(71, 23);
+            this.btnAtualizarDocumentos.TabIndex = 193;
+            this.btnAtualizarDocumentos.Text = "Atualizar";
+            this.btnAtualizarDocumentos.UseVisualStyleBackColor = true;
+            this.btnAtualizarDocumentos.Click += new System.EventHandler(this.btnAtualizarDocumentos_Click);
             // 
             // txtCertidaoNascimento
             // 
@@ -751,14 +752,15 @@ namespace ECED_FORMS
             this.txtLivro.Size = new System.Drawing.Size(61, 23);
             this.txtLivro.TabIndex = 189;
             // 
-            // button3
+            // btnAtualizarDados
             // 
-            this.button3.Location = new System.Drawing.Point(1057, 157);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(71, 23);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "Atualizar";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnAtualizarDados.Location = new System.Drawing.Point(1057, 157);
+            this.btnAtualizarDados.Name = "btnAtualizarDados";
+            this.btnAtualizarDados.Size = new System.Drawing.Size(71, 23);
+            this.btnAtualizarDados.TabIndex = 3;
+            this.btnAtualizarDados.Text = "Atualizar";
+            this.btnAtualizarDados.UseVisualStyleBackColor = true;
+            this.btnAtualizarDados.Click += new System.EventHandler(this.btnAtualizarDados_Click);
             // 
             // txtUfRg
             // 
@@ -1221,7 +1223,7 @@ namespace ECED_FORMS
             // 
             // tabPage1
             // 
-            this.tabPage1.Controls.Add(this.button2);
+            this.tabPage1.Controls.Add(this.btnAtualizarEndereco);
             this.tabPage1.Controls.Add(this.txtNumero);
             this.tabPage1.Controls.Add(this.txtCep);
             this.tabPage1.Controls.Add(this.txtPontoReferencia);
@@ -1251,14 +1253,15 @@ namespace ECED_FORMS
             this.tabPage1.Text = "Endereço                   ";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btnAtualizarEndereco
             // 
-            this.button2.Location = new System.Drawing.Point(1031, 417);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(71, 23);
-            this.button2.TabIndex = 106;
-            this.button2.Text = "Atualizar";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnAtualizarEndereco.Location = new System.Drawing.Point(1031, 417);
+            this.btnAtualizarEndereco.Name = "btnAtualizarEndereco";
+            this.btnAtualizarEndereco.Size = new System.Drawing.Size(71, 23);
+            this.btnAtualizarEndereco.TabIndex = 106;
+            this.btnAtualizarEndereco.Text = "Atualizar";
+            this.btnAtualizarEndereco.UseVisualStyleBackColor = true;
+            this.btnAtualizarEndereco.Click += new System.EventHandler(this.btnAtualizarEndereco_Click);
             // 
             // txtNumero
             // 
@@ -1456,7 +1459,7 @@ namespace ECED_FORMS
             // 
             // tabPage2
             // 
-            this.tabPage2.Controls.Add(this.button8);
+            this.tabPage2.Controls.Add(this.btnAtualizarIdentEscola);
             this.tabPage2.Controls.Add(this.txtIdadeParentesco);
             this.tabPage2.Controls.Add(this.txtInep);
             this.tabPage2.Controls.Add(this.txtTelefonePessAutorizada);
@@ -1494,14 +1497,15 @@ namespace ECED_FORMS
             this.tabPage2.Text = "Identificação escolar          ";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // button8
+            // btnAtualizarIdentEscola
             // 
-            this.button8.Location = new System.Drawing.Point(1031, 433);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(79, 23);
-            this.button8.TabIndex = 194;
-            this.button8.Text = "Atualizar";
-            this.button8.UseVisualStyleBackColor = true;
+            this.btnAtualizarIdentEscola.Location = new System.Drawing.Point(1031, 433);
+            this.btnAtualizarIdentEscola.Name = "btnAtualizarIdentEscola";
+            this.btnAtualizarIdentEscola.Size = new System.Drawing.Size(79, 23);
+            this.btnAtualizarIdentEscola.TabIndex = 194;
+            this.btnAtualizarIdentEscola.Text = "Atualizar";
+            this.btnAtualizarIdentEscola.UseVisualStyleBackColor = true;
+            this.btnAtualizarIdentEscola.Click += new System.EventHandler(this.btnAtualizarIdentEscola_Click);
             // 
             // txtIdadeParentesco
             // 
@@ -1866,7 +1870,7 @@ namespace ECED_FORMS
             // 
             // tabPage3
             // 
-            this.tabPage3.Controls.Add(this.button9);
+            this.tabPage3.Controls.Add(this.btnAtualizarSaude);
             this.tabPage3.Controls.Add(this.txtTelefoneEmergDois);
             this.tabPage3.Controls.Add(this.txtTelefoneEmergUm);
             this.tabPage3.Controls.Add(this.txtTelefoneContato);
@@ -1914,14 +1918,15 @@ namespace ECED_FORMS
             this.tabPage3.Text = "Identificação saúde";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
-            // button9
+            // btnAtualizarSaude
             // 
-            this.button9.Location = new System.Drawing.Point(1048, 417);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(71, 23);
-            this.button9.TabIndex = 194;
-            this.button9.Text = "Atualizar";
-            this.button9.UseVisualStyleBackColor = true;
+            this.btnAtualizarSaude.Location = new System.Drawing.Point(1048, 417);
+            this.btnAtualizarSaude.Name = "btnAtualizarSaude";
+            this.btnAtualizarSaude.Size = new System.Drawing.Size(71, 23);
+            this.btnAtualizarSaude.TabIndex = 194;
+            this.btnAtualizarSaude.Text = "Atualizar";
+            this.btnAtualizarSaude.UseVisualStyleBackColor = true;
+            this.btnAtualizarSaude.Click += new System.EventHandler(this.btnAtualizarSaude_Click);
             // 
             // txtTelefoneEmergDois
             // 
@@ -2334,7 +2339,7 @@ namespace ECED_FORMS
             // tabPage4
             // 
             this.tabPage4.BackColor = System.Drawing.Color.Transparent;
-            this.tabPage4.Controls.Add(this.button10);
+            this.tabPage4.Controls.Add(this.btnAtualizarDadosPais);
             this.tabPage4.Controls.Add(this.chResponsavelDois);
             this.tabPage4.Controls.Add(this.chPaiDois);
             this.tabPage4.Controls.Add(this.chMaeDois);
@@ -2405,14 +2410,15 @@ namespace ECED_FORMS
             this.tabPage4.TabIndex = 5;
             this.tabPage4.Text = "Dados dos Responsaveís       ";
             // 
-            // button10
+            // btnAtualizarDadosPais
             // 
-            this.button10.Location = new System.Drawing.Point(1044, 423);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(71, 23);
-            this.button10.TabIndex = 194;
-            this.button10.Text = "Atualizar";
-            this.button10.UseVisualStyleBackColor = true;
+            this.btnAtualizarDadosPais.Location = new System.Drawing.Point(1044, 423);
+            this.btnAtualizarDadosPais.Name = "btnAtualizarDadosPais";
+            this.btnAtualizarDadosPais.Size = new System.Drawing.Size(71, 23);
+            this.btnAtualizarDadosPais.TabIndex = 194;
+            this.btnAtualizarDadosPais.Text = "Atualizar";
+            this.btnAtualizarDadosPais.UseVisualStyleBackColor = true;
+            this.btnAtualizarDadosPais.Click += new System.EventHandler(this.btnAtualizarDadosPais_Click);
             // 
             // chResponsavelDois
             // 
@@ -3179,7 +3185,7 @@ namespace ECED_FORMS
             this.button6.UseVisualStyleBackColor = false;
             this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
-            // Form1
+            // telaCadastro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -3189,7 +3195,7 @@ namespace ECED_FORMS
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
-            this.Name = "Form1";
+            this.Name = "telaCadastro";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form1_FormClosed);
@@ -3255,7 +3261,7 @@ namespace ECED_FORMS
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnAtualizarDados;
         private System.Windows.Forms.Button btnSalvarCadastro;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tbCadastrarAlunos;
@@ -3481,11 +3487,11 @@ namespace ECED_FORMS
         private System.Windows.Forms.RichTextBox ritMostra;
         private System.Windows.Forms.TextBox txtSenha;
         private System.Windows.Forms.Button btnLogin;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Button btnAtualizarDocumentos;
+        private System.Windows.Forms.Button btnAtualizarEndereco;
+        private System.Windows.Forms.Button btnAtualizarIdentEscola;
+        private System.Windows.Forms.Button btnAtualizarSaude;
+        private System.Windows.Forms.Button btnAtualizarDadosPais;
         private System.Windows.Forms.Panel panel7;
     }
 }
