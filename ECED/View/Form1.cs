@@ -16,9 +16,9 @@ using ECED_FORMS.View;
 
 namespace ECED_FORMS
 {
-    public partial class Form1 : Form
+    public partial class telaCadastro : Form
     {
-        public Form1()
+        public telaCadastro()
         {
             InitializeComponent();
         }
@@ -93,134 +93,24 @@ namespace ECED_FORMS
         }
         void AdicionaDadosAlunos()
         {
-            Aluno al = new Aluno()
-            {
-                NomeAluno = txtNomeAluno.Text,
-                DataNascimento = dtNascimentoAluno.Text,
-                naturalidade = txtNaturalidade.Text,
-                nacionalidade = txtNacionalidade.Text,
-                Sexo = cmbSexo.Text,
-                UF = txtUf.Text,
-                CorERaca = cmbCor.Text,
-                EstadoCivil = cmbEstadoCivil.Text
-            };
-            DocumentosAluno docAluno = new DocumentosAluno()
-            {
-                Cpf = txtCpf.Text,
-                Rg = txtRgAluno.Text,
-                DataExpedicaoRg = dtDataExpedicaoRG.Text,
-                OrgaoEmissor = txtOrgaoEmissor.Text,
-                UfRg = txtUfRg.Text,
-                UfCartorio = txtUfCartorio.Text,
-                NomeCartorio = txtNomeCartorio.Text,
-                NumCertidaoNascimento = txtCertidaoNascimento.Text,
-                DataEmissaoCertNascimento = dtDataEmissaoCertNasc.Text,
-                Folha = txtFolha.Text,
-                Livro = txtLivro.Text,
-                RegistroCivil = txtRegCivil.Text,
-                DataEmissaoRegCivil = dtDataEmissao.Text,
-                Email = txtEmailAluno.Text
-            };
-            EnderecoAluno enderecoAluno = new EnderecoAluno()
-            {
-                Cep = txtCep.Text,
-                Rua = txtRua.Text,
-                Numero = txtNumero.Text,
-                Bairro = txtBairro.Text,
-                Cidade = txtCidade.Text,
-                Estado = txtEstado.Text,
-                Avenida = txtAvenida.Text,
-                Complemento = txtComplemento.Text,
-                PontoReferencia = txtPontoReferencia.Text,
-            };
-            IdentificacaoEscolar identEscola = new IdentificacaoEscolar()
-            {
-                CodigoDoInep = txtInep.Text,
-                AuthBuscarCrianca = txtPessoaAutorizada.Text,
-                DataMatricula = dtMatricula.Text,
-                Idade = txtIdadeParentesco.Text,
-                GrauParentAuto = cmbParentesco.Text,
-                TelefoneAutorizado = txtTelefonePessAutorizada.Text,
-                Turma = cmbTurma.Text,
-                Turno = cmbPeriodo.Text,
-                UnidadeEscolar = txtUnidadeEscolar.Text,
-                TelefoneAviso = txtTelUrgencia.Text,
-                PessoaAviso = txtAvisoUrgencia.Text,
-                GrauParentAviso = cmbGrauUrgencia.Text,
-                IrmaoEstuda = txtNomeIrmaoEstuda.Text,
-                TurmaIrmao = cmbTurmaIrmao.Text,
-                TurnoIrmao = cmbPeriodoIrmao.Text
-            };
-            SaudeAluno saudeAluno = new SaudeAluno()
-            {
-                ProblemaSaudeDetalhe = txtProblemaSaude.Text,
-                AlergiaMedicamentoDetalhe = txtAlergiaMedicamento.Text,
-                IntoleranciaAlimentoDetalhe = txtIntoleranciaAlimento.Text,
-                DietaEspecificaDetalhe = txtDietaEspecifica.Text,
-                DeficienciaDetalhe = cbDeficiencia.Text,
-                ContatoEmergUm = txtContatoEmergUm.Text,
-                TelefoneEmergUm = txtTelefoneEmergUm.Text,
-                ContatoEmergDois = txtContatoEmergDois.Text,
-                TelefoneEmergDois = txtTelefoneEmergDois.Text,
-                TelefoneContato = txtTelefoneContato.Text
-            };
-            //Define os valores das propriedades vindas de CheckBox
-            saudeAluno.ProblemaSaude = FuncaoPropCheckBox(chProblemaSaudeSim);
-            saudeAluno.AlergiaMedicamento = FuncaoPropCheckBox(chAlergiaMedicamentoSim);
-            saudeAluno.IntoleranciaAlimento = FuncaoPropCheckBox(chIntoleranciaAlimentoSim);
-            saudeAluno.DietaEspecifica = FuncaoPropCheckBox(chDietaEspecificaSim);
-            saudeAluno.Deficiencia = FuncaoPropCheckBox(chDeficienciaSim);
-            DadosPais dadosPais = new DadosPais()
-            {
-                NomeResponsavelUm = txtNomeRespUm.Text,
-                DataNascimentoRespUm = dtDataNascRespUm.Text,
-                TelefoneRespUm = txtTelefoneRespUm.Text,
-                CpfRespUm = txtCpfRespUm.Text,
-                RgRespUm = txtRgRespUm.Text,
-                DataExpedicaoRgRespUm = dtDataExpedicaoRespUm.Text,
-                UfRgRespUm = txtRgRespUm.Text,
-                orgaoEmissorRgRespUm = txtOrgaoEmissorRespUm.Text,
-                EstadoCivilRespUm = cbEstadoCivilRespUm.Text,
-                EscolaridadeRespUm = txtEscolaridadeRespUm.Text,
-                ProfissaoRespUm = txtProfissaoRespUm.Text,
-                LocalTrabalhoRespUm = txtLocalTrabalhoRespUm.Text,
-                HorarioTrabalhoRespUm = txtHorarioTrabalhoRespUm.Text,
-                RamalRespUm = txtHorarioTrabalhoRespUm.Text,
-                NomeResponsavelDois = txtNomeRespDois.Text,
-                DataNascimentoRespDois = dtDataNascRespDois.Text,
-                TelefoneRespDois = txtTelefoneRespDois.Text,
-                CpfRespDois = txtCpfRespDois.Text,
-                RgRespDois = txtRgRespDois.Text,
-                DataExpedicaoRgRespDois = dtDataExpedicaoRespDois.Text,
-                UfRgRespDois = txtRgRespDois.Text,
-                orgaoEmissorRgRespDois = txtOrgaoEmissorRespDois.Text,
-                EstadoCivilRespDois = cbEstadoCivilRespDois.Text,
-                EscolaridadeRespDois = txtEscolaridadeRespDois.Text,
-                ProfissaoRespDois = txtProfissaoRespDois.Text,
-                LocalTrabalhoRespDois = txtLocalTrabalhoRespDois.Text,
-                HorarioTrabalhoRespDois = txtHorarioTrabalhoRespDois.Text,
-                RamalRespDois = txtHorarioTrabalhoRespDois.Text
-            };
-            dadosPais.ResponsavelUm = FuncaoPropCheckBox(chMaeUm, chPaiUm, chResponsavelUm);
-            dadosPais.ResponsavelDois = FuncaoPropCheckBox(chMaeDois, chPaiDois, chResponsavelDois);
-            Response res = AddAluno(al);
+            Response res = AddAluno();
             if (res.Executed)
             {
-                res = AddDocumentos(docAluno, al);
+                res = AddDocumentos();
                 if (res.Executed)
                 {
-                    res = AddEndereco(enderecoAluno, al);
+                    res = AddEndereco();
                     if (res.Executed)
                     {
                         if (res.Executed)
                         {
-                            res = AddIdentificacaoEscola(al, identEscola);
+                            res = AddIdentificacaoEscola();
                             if (res.Executed)
                             {
-                                res = AddSaude(al, saudeAluno);
+                                res = AddSaude();
                                 if (res.Executed)
                                 {
-                                    res = AddDadosPais(al, dadosPais);
+                                    res = AddDadosPais();
                                     if (res.Executed)
                                     {
                                         MessageBox.Show(res.Message);
@@ -268,28 +158,158 @@ namespace ECED_FORMS
             }
         }
         //Funções de Insert
-        private static Response AddAluno(Aluno al)
+        private Response AddAluno()
         {
+            Aluno al = new Aluno()
+            {
+                NomeAluno = txtNomeAluno.Text,
+                DataNascimento = dtNascimentoAluno.Text,
+                naturalidade = txtNaturalidade.Text,
+                nacionalidade = txtNacionalidade.Text,
+                Sexo = cmbSexo.Text,
+                UF = txtUf.Text,
+                CorERaca = cmbCor.Text,
+                EstadoCivil = cmbEstadoCivil.Text
+            };
             return ControllerInsert.AlunoInsert(al);
         }
-        private static Response AddDocumentos(DocumentosAluno doc, Aluno al)
+        private Response AddDocumentos()
         {
+            Aluno al = new Aluno()
+            {
+                NomeAluno = txtNomeAluno.Text                
+            };
+            DocumentosAluno doc = new DocumentosAluno()
+            {
+                Cpf = txtCpf.Text,
+                Rg = txtRgAluno.Text,
+                DataExpedicaoRg = dtDataExpedicaoRG.Text,
+                OrgaoEmissor = txtOrgaoEmissor.Text,
+                UfRg = txtUfRg.Text,
+                UfCartorio = txtUfCartorio.Text,
+                NomeCartorio = txtNomeCartorio.Text,
+                NumCertidaoNascimento = txtCertidaoNascimento.Text,
+                DataEmissaoCertNascimento = dtDataEmissaoCertNasc.Text,
+                Folha = txtFolha.Text,
+                Livro = txtLivro.Text,
+                RegistroCivil = txtRegCivil.Text,
+                DataEmissaoRegCivil = dtDataEmissao.Text,
+                Email = txtEmailAluno.Text
+            };
             return ControllerInsert.DocumentoInsert(doc, al);
         }
-        private static Response AddEndereco(EnderecoAluno endereco, Aluno al)
+        private Response AddEndereco()
         {
+            Aluno al = new Aluno()
+            {
+                NomeAluno = txtNomeAluno.Text
+            };
+            EnderecoAluno endereco = new EnderecoAluno()
+            {
+                Cep = txtCep.Text,
+                Rua = txtRua.Text,
+                Numero = txtNumero.Text,
+                Bairro = txtBairro.Text,
+                Cidade = txtCidade.Text,
+                Estado = txtEstado.Text,
+                Avenida = txtAvenida.Text,
+                Complemento = txtComplemento.Text,
+                PontoReferencia = txtPontoReferencia.Text,
+            };
             return ControllerInsert.EnderecoInsert(endereco, al);
         }
-        private static Response AddIdentificacaoEscola(Aluno al, IdentificacaoEscolar ident)
+        private Response AddIdentificacaoEscola()
         {
+            Aluno al = new Aluno()
+            {
+                NomeAluno = txtNomeAluno.Text
+            };
+            IdentificacaoEscolar ident = new IdentificacaoEscolar()
+            {
+                CodigoDoInep = txtInep.Text,
+                AuthBuscarCrianca = txtPessoaAutorizada.Text,
+                DataMatricula = dtMatricula.Text,
+                Idade = txtIdadeParentesco.Text,
+                GrauParentAuto = cmbParentesco.Text,
+                TelefoneAutorizado = txtTelefonePessAutorizada.Text,
+                Turma = cmbTurma.Text,
+                Turno = cmbPeriodo.Text,
+                UnidadeEscolar = txtUnidadeEscolar.Text,
+                TelefoneAviso = txtTelUrgencia.Text,
+                PessoaAviso = txtAvisoUrgencia.Text,
+                GrauParentAviso = cmbGrauUrgencia.Text,
+                IrmaoEstuda = txtNomeIrmaoEstuda.Text,
+                TurmaIrmao = cmbTurmaIrmao.Text,
+                TurnoIrmao = cmbPeriodoIrmao.Text
+            };
             return ControllerInsert.IdentificacaoEscolaInsert(ident, al);
         }
-        private static Response AddSaude(Aluno al, SaudeAluno saude)
+        private Response AddSaude()
         {
+            Aluno al = new Aluno()
+            {
+                NomeAluno = txtNomeAluno.Text
+            };
+            SaudeAluno saude = new SaudeAluno()
+            {
+                ProblemaSaudeDetalhe = txtProblemaSaude.Text,
+                AlergiaMedicamentoDetalhe = txtAlergiaMedicamento.Text,
+                IntoleranciaAlimentoDetalhe = txtIntoleranciaAlimento.Text,
+                DietaEspecificaDetalhe = txtDietaEspecifica.Text,
+                DeficienciaDetalhe = cbDeficiencia.Text,
+                ContatoEmergUm = txtContatoEmergUm.Text,
+                TelefoneEmergUm = txtTelefoneEmergUm.Text,
+                ContatoEmergDois = txtContatoEmergDois.Text,
+                TelefoneEmergDois = txtTelefoneEmergDois.Text,
+                TelefoneContato = txtTelefoneContato.Text
+            };
+            //Define os valores das propriedades vindas de CheckBox
+            saude.ProblemaSaude = FuncaoPropCheckBox(chProblemaSaudeSim);
+            saude.AlergiaMedicamento = FuncaoPropCheckBox(chAlergiaMedicamentoSim);
+            saude.IntoleranciaAlimento = FuncaoPropCheckBox(chIntoleranciaAlimentoSim);
+            saude.DietaEspecifica = FuncaoPropCheckBox(chDietaEspecificaSim);
+            saude.Deficiencia = FuncaoPropCheckBox(chDeficienciaSim);
             return ControllerInsert.SaudeAlunoInsert(saude, al);
         }
-        private static Response AddDadosPais(Aluno al, DadosPais dadosPais)
+        private Response AddDadosPais()
         {
+            Aluno al = new Aluno()
+            {
+                NomeAluno = txtNomeAluno.Text
+            };
+            DadosPais dadosPais = new DadosPais()
+            {
+                NomeResponsavelUm = txtNomeRespUm.Text,
+                DataNascimentoRespUm = dtDataNascRespUm.Text,
+                TelefoneRespUm = txtTelefoneRespUm.Text,
+                CpfRespUm = txtCpfRespUm.Text,
+                RgRespUm = txtRgRespUm.Text,
+                DataExpedicaoRgRespUm = dtDataExpedicaoRespUm.Text,
+                UfRgRespUm = txtRgRespUm.Text,
+                orgaoEmissorRgRespUm = txtOrgaoEmissorRespUm.Text,
+                EstadoCivilRespUm = cbEstadoCivilRespUm.Text,
+                EscolaridadeRespUm = txtEscolaridadeRespUm.Text,
+                ProfissaoRespUm = txtProfissaoRespUm.Text,
+                LocalTrabalhoRespUm = txtLocalTrabalhoRespUm.Text,
+                HorarioTrabalhoRespUm = txtHorarioTrabalhoRespUm.Text,
+                RamalRespUm = txtHorarioTrabalhoRespUm.Text,
+                NomeResponsavelDois = txtNomeRespDois.Text,
+                DataNascimentoRespDois = dtDataNascRespDois.Text,
+                TelefoneRespDois = txtTelefoneRespDois.Text,
+                CpfRespDois = txtCpfRespDois.Text,
+                RgRespDois = txtRgRespDois.Text,
+                DataExpedicaoRgRespDois = dtDataExpedicaoRespDois.Text,
+                UfRgRespDois = txtRgRespDois.Text,
+                orgaoEmissorRgRespDois = txtOrgaoEmissorRespDois.Text,
+                EstadoCivilRespDois = cbEstadoCivilRespDois.Text,
+                EscolaridadeRespDois = txtEscolaridadeRespDois.Text,
+                ProfissaoRespDois = txtProfissaoRespDois.Text,
+                LocalTrabalhoRespDois = txtLocalTrabalhoRespDois.Text,
+                HorarioTrabalhoRespDois = txtHorarioTrabalhoRespDois.Text,
+                RamalRespDois = txtHorarioTrabalhoRespDois.Text
+            };
+            dadosPais.ResponsavelUm = FuncaoPropCheckBox(chMaeUm, chPaiUm, chResponsavelUm);
+            dadosPais.ResponsavelDois = FuncaoPropCheckBox(chMaeDois, chPaiDois, chResponsavelDois);
             return ControllerInsert.DadosPaisInsert(dadosPais, al);
         }
         void AdicionaNota()
@@ -325,27 +345,6 @@ namespace ECED_FORMS
         }
         async void mostrarDdosPessoais(string name)
         {
-            //Aluno al = new Aluno()
-            //{
-            //    NomeAluno = txtPesquisarAluno.Text,
-            //    Tipo=cmbTipo.Text
-            //};
-            ////string[] vetor = new string[1];
-            //List<string> vetor=new List<string>();
-            //await ControllerSelect.MostrarDados(al, vetor);
-            //string[]elementos = vetor.ToArray();
-            //dtgDadosPessoais.Rows.Add(elementos);
-            //dtgDocumento.Rows.Add(elementos);
-            //dtgDadosPais.Rows.Add(elementos);
-            //dtgEndereco.Rows.Add(elementos);
-            //string acumulado = " ";
-            //foreach (var item in elementos)
-            //{
-            //    acumulado += "Dados Pessoais";
-            //    acumulado += item +  "\n";
-
-            //}
-            //ritmostrar.Text = acumulado;
             DocumentReference docref = DBConection.Getdatabase().Collection(txtPesquisarAluno.Text).Document("Dados Pessoais");
             DocumentSnapshot snap = await docref.GetSnapshotAsync();
             if (snap.Exists)
@@ -658,19 +657,7 @@ namespace ECED_FORMS
         //}
         async void login(string name)
         {
-            //bool co=false;
-            //Login lo= new Login ()
-            //{
-            //    UserName = txtlogin.Text,
-            //    Senha=txtSenha.Text
-
-            //};
-
-            //await ControllerLogin.confLogin(lo,co);
-            //if (co==true)
-            //{
-            //    MessageBox.Show("ok");
-            //}
+            
             DocumentReference docref = DBConection.Getdatabase().Collection(txtlogin.Text).Document(txtSenha.Text);
             bool con = false;
             DocumentSnapshot snap = await docref.GetSnapshotAsync();
@@ -702,12 +689,47 @@ namespace ECED_FORMS
             }
             else
             {
-                //MessageBox.Show("Exclusão cancelada!");
+                
             }
         }
         private void Form1_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
+        }
+        private void btnAtualizarDados_Click(object sender, EventArgs e)
+        {
+            MensagemAtualizacao(AddAluno(), "Dados atualizados!", "Insira os dados corretamente!");
+        }
+        private void btnAtualizarDocumentos_Click(object sender, EventArgs e)
+        {
+            MensagemAtualizacao(AddDocumentos(), "Documentos atualizados!", "Insira os dados corretamente!");
+        }
+        private void btnAtualizarEndereco_Click(object sender, EventArgs e)
+        {
+            MensagemAtualizacao(AddEndereco(), "Endereço atualizado!", "Insira o endereço corretamente!");
+        }
+        private void btnAtualizarIdentEscola_Click(object sender, EventArgs e)
+        {
+            MensagemAtualizacao(AddIdentificacaoEscola(), "Informações da escola atualizadas!", "Insira os dados corretamente!");
+        }
+        private void btnAtualizarSaude_Click(object sender, EventArgs e)
+        {
+            MensagemAtualizacao(AddSaude(), "Informações atualizadas!", "Insira as informações corretamente!");
+        }
+        private void btnAtualizarDadosPais_Click(object sender, EventArgs e)
+        {
+            MensagemAtualizacao(AddDadosPais(), "Dados atualizados!", "Insira os dados corretamente!");
+        }
+        void MensagemAtualizacao(Response r, string mensagemCerto, string mensagemErro)
+        {
+            if (r.Executed)
+            {
+                MessageBox.Show(mensagemCerto);
+            }
+            else
+            {
+                MessageBox.Show(mensagemErro);
+            }
         }
     }
 }
