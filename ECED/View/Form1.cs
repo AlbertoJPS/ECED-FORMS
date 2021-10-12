@@ -345,27 +345,6 @@ namespace ECED_FORMS
         }
         async void mostrarDdosPessoais(string name)
         {
-            //Aluno al = new Aluno()
-            //{
-            //    NomeAluno = txtPesquisarAluno.Text,
-            //    Tipo=cmbTipo.Text
-            //};
-            ////string[] vetor = new string[1];
-            //List<string> vetor=new List<string>();
-            //await ControllerSelect.MostrarDados(al, vetor);
-            //string[]elementos = vetor.ToArray();
-            //dtgDadosPessoais.Rows.Add(elementos);
-            //dtgDocumento.Rows.Add(elementos);
-            //dtgDadosPais.Rows.Add(elementos);
-            //dtgEndereco.Rows.Add(elementos);
-            //string acumulado = " ";
-            //foreach (var item in elementos)
-            //{
-            //    acumulado += "Dados Pessoais";
-            //    acumulado += item +  "\n";
-
-            //}
-            //ritmostrar.Text = acumulado;
             DocumentReference docref = DBConection.Getdatabase().Collection(txtPesquisarAluno.Text).Document("Dados Pessoais");
             DocumentSnapshot snap = await docref.GetSnapshotAsync();
             if (snap.Exists)
@@ -678,19 +657,7 @@ namespace ECED_FORMS
         //}
         async void login(string name)
         {
-            //bool co=false;
-            //Login lo= new Login ()
-            //{
-            //    UserName = txtlogin.Text,
-            //    Senha=txtSenha.Text
-
-            //};
-
-            //await ControllerLogin.confLogin(lo,co);
-            //if (co==true)
-            //{
-            //    MessageBox.Show("ok");
-            //}
+            
             DocumentReference docref = DBConection.Getdatabase().Collection(txtlogin.Text).Document(txtSenha.Text);
             bool con = false;
             DocumentSnapshot snap = await docref.GetSnapshotAsync();
@@ -722,7 +689,7 @@ namespace ECED_FORMS
             }
             else
             {
-                //MessageBox.Show("Exclusão cancelada!");
+                
             }
         }
         private void Form1_FormClosed(object sender, FormClosedEventArgs e)
