@@ -354,10 +354,10 @@ namespace ECED_FORMS
             if (snap.Exists)
             {
                 Dictionary<string, object> city = snap.ToDictionary();
-                ritMostra.Text += string.Format("\n \n                                                       Dados Pessoais     \n  ");
+                ritMostra.Text += string.Format("\n \n                                                 Dados Pessoais     \n  ");
                 foreach (var item in city)
                 {
-                    ritMostra.Text += string.Format("\n                                          {0}: {1}\n", item.Key, item.Value);
+                    ritMostra.Text += string.Format("\n                                    {0}: {1}\n", item.Key, item.Value);
                 }
             }
         }
@@ -382,10 +382,10 @@ namespace ECED_FORMS
             {
                 Dictionary<string, object> city = snap.ToDictionary();
 
-                ritMostra.Text += string.Format("\n \n                                                    Documentos do Aluno     \n  ");
+                ritMostra.Text += string.Format("\n \n                                              Documentos do Aluno     \n  ");
                 foreach (var item in city)
                 {
-                    ritMostra.Text += string.Format("\n                                          {0}: {1}\n", item.Key, item.Value);
+                    ritMostra.Text += string.Format("\n                                    {0}: {1}\n", item.Key, item.Value);
                 }
             }
             else
@@ -402,10 +402,10 @@ namespace ECED_FORMS
             {
                 Dictionary<string, object> city = snap.ToDictionary();
 
-                ritMostra.Text += string.Format("\n \n                                                       Identificação Escolar     \n  ");
+                ritMostra.Text += string.Format("\n \n                                                 Identificação Escolar     \n  ");
                 foreach (var item in city)
                 {
-                    ritMostra.Text += string.Format("\n                                          {0}: {1}\n", item.Key, item.Value);
+                    ritMostra.Text += string.Format("\n                                    {0}: {1}\n", item.Key, item.Value);
                 }
             }
         }
@@ -418,10 +418,10 @@ namespace ECED_FORMS
             {
                 Dictionary<string, object> city = snap.ToDictionary();
 
-                ritMostra.Text += string.Format("\n \n                                                         Dados dos Pais     \n  ");
+                ritMostra.Text += string.Format("\n \n                                                   Dados dos Pais     \n  ");
                 foreach (var item in city)
                 {
-                    ritMostra.Text += string.Format("\n                                          {0}: {1}\n", item.Key, item.Value);
+                    ritMostra.Text += string.Format("\n                                    {0}: {1}\n", item.Key, item.Value);
                 }
             }
         }
@@ -450,10 +450,10 @@ namespace ECED_FORMS
             {
                 Dictionary<string, object> city = snap.ToDictionary();
 
-                ritMostra.Text += string.Format("\n \n                                                          Saúde Aluno    \n  ");
+                ritMostra.Text += string.Format("\n \n                                                    Saúde Aluno    \n  ");
                 foreach (var item in city)
                 {
-                    ritMostra.Text += string.Format("\n                                          {0}: {1}\n", item.Key, item.Value);
+                    ritMostra.Text += string.Format("\n                                    {0}: {1}\n", item.Key, item.Value);
                 }
             }
         }

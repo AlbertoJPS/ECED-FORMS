@@ -341,7 +341,7 @@ namespace ECED_FORMS
             this.tabPage8.Location = new System.Drawing.Point(4, 22);
             this.tabPage8.Name = "tabPage8";
             this.tabPage8.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage8.Size = new System.Drawing.Size(1237, 585);
+            this.tabPage8.Size = new System.Drawing.Size(1264, 593);
             this.tabPage8.TabIndex = 3;
             this.tabPage8.Text = "Boletim                      ";
             this.tabPage8.UseVisualStyleBackColor = true;
@@ -349,10 +349,10 @@ namespace ECED_FORMS
             // label104
             // 
             this.label104.AutoSize = true;
-            this.label104.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label104.Location = new System.Drawing.Point(34, 39);
+            this.label104.Font = new System.Drawing.Font("Microsoft YaHei", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label104.Location = new System.Drawing.Point(17, 59);
             this.label104.Name = "label104";
-            this.label104.Size = new System.Drawing.Size(115, 13);
+            this.label104.Size = new System.Drawing.Size(170, 24);
             this.label104.TabIndex = 1;
             this.label104.Text = "NOME DO ALUNO:";
             // 
@@ -367,10 +367,10 @@ namespace ECED_FORMS
             this.NOTACOL1,
             this.NOTA2TCOL,
             this.ULTIMOTRIMESTRE});
-            this.dtgBoletim.Location = new System.Drawing.Point(609, 28);
+            this.dtgBoletim.Location = new System.Drawing.Point(609, 46);
             this.dtgBoletim.Name = "dtgBoletim";
             this.dtgBoletim.ReadOnly = true;
-            this.dtgBoletim.Size = new System.Drawing.Size(556, 419);
+            this.dtgBoletim.Size = new System.Drawing.Size(617, 419);
             this.dtgBoletim.TabIndex = 11;
             // 
             // ULTIMOTRIMESTRE
@@ -400,18 +400,19 @@ namespace ECED_FORMS
             // label103
             // 
             this.label103.AutoSize = true;
-            this.label103.Location = new System.Drawing.Point(40, 154);
+            this.label103.Font = new System.Drawing.Font("Microsoft YaHei", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label103.Location = new System.Drawing.Point(106, 196);
             this.label103.Name = "label103";
-            this.label103.Size = new System.Drawing.Size(49, 13);
+            this.label103.Size = new System.Drawing.Size(82, 24);
             this.label103.TabIndex = 12;
             this.label103.Text = "NOTA 1:";
             // 
             // cbNomeAlunoNota
             // 
             this.cbNomeAlunoNota.FormattingEnabled = true;
-            this.cbNomeAlunoNota.Location = new System.Drawing.Point(155, 31);
+            this.cbNomeAlunoNota.Location = new System.Drawing.Point(193, 62);
             this.cbNomeAlunoNota.Name = "cbNomeAlunoNota";
-            this.cbNomeAlunoNota.Size = new System.Drawing.Size(154, 21);
+            this.cbNomeAlunoNota.Size = new System.Drawing.Size(239, 21);
             this.cbNomeAlunoNota.TabIndex = 13;
             // 
             // cbMateriaNota
@@ -428,25 +429,26 @@ namespace ECED_FORMS
             "INGLÊS",
             "MATEMÁTICA",
             "PORTUGUÊS"});
-            this.cbMateriaNota.Location = new System.Drawing.Point(95, 116);
+            this.cbMateriaNota.Location = new System.Drawing.Point(193, 158);
             this.cbMateriaNota.Name = "cbMateriaNota";
-            this.cbMateriaNota.Size = new System.Drawing.Size(121, 21);
+            this.cbMateriaNota.Size = new System.Drawing.Size(239, 21);
             this.cbMateriaNota.TabIndex = 14;
             // 
             // label105
             // 
             this.label105.AutoSize = true;
-            this.label105.Location = new System.Drawing.Point(34, 124);
+            this.label105.Font = new System.Drawing.Font("Microsoft YaHei", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label105.Location = new System.Drawing.Point(95, 155);
             this.label105.Name = "label105";
-            this.label105.Size = new System.Drawing.Size(55, 13);
+            this.label105.Size = new System.Drawing.Size(97, 24);
             this.label105.TabIndex = 15;
-            this.label105.Text = "MATÉRIA";
+            this.label105.Text = "MATÉRIA:";
             // 
             // btnAddNota
             // 
-            this.btnAddNota.Location = new System.Drawing.Point(37, 226);
+            this.btnAddNota.Location = new System.Drawing.Point(124, 350);
             this.btnAddNota.Name = "btnAddNota";
-            this.btnAddNota.Size = new System.Drawing.Size(75, 34);
+            this.btnAddNota.Size = new System.Drawing.Size(90, 48);
             this.btnAddNota.TabIndex = 17;
             this.btnAddNota.Text = "ADICIONAR";
             this.btnAddNota.UseVisualStyleBackColor = true;
@@ -455,9 +457,10 @@ namespace ECED_FORMS
             // label106
             // 
             this.label106.AutoSize = true;
-            this.label106.Location = new System.Drawing.Point(34, 77);
+            this.label106.Font = new System.Drawing.Font("Microsoft YaHei", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label106.Location = new System.Drawing.Point(106, 108);
             this.label106.Name = "label106";
-            this.label106.Size = new System.Drawing.Size(49, 13);
+            this.label106.Size = new System.Drawing.Size(81, 24);
             this.label106.TabIndex = 18;
             this.label106.Text = "TURMA:";
             // 
@@ -486,14 +489,14 @@ namespace ECED_FORMS
             "8° Ano B",
             "9° Ano A",
             "9° Ano B"});
-            this.cbTurmaNota.Location = new System.Drawing.Point(89, 74);
+            this.cbTurmaNota.Location = new System.Drawing.Point(193, 111);
             this.cbTurmaNota.Name = "cbTurmaNota";
-            this.cbTurmaNota.Size = new System.Drawing.Size(88, 21);
+            this.cbTurmaNota.Size = new System.Drawing.Size(239, 21);
             this.cbTurmaNota.TabIndex = 19;
             // 
             // txtNota1
             // 
-            this.txtNota1.Location = new System.Drawing.Point(90, 147);
+            this.txtNota1.Location = new System.Drawing.Point(194, 200);
             this.txtNota1.Mask = "00.0";
             this.txtNota1.Name = "txtNota1";
             this.txtNota1.Size = new System.Drawing.Size(32, 20);
@@ -502,15 +505,16 @@ namespace ECED_FORMS
             // label73
             // 
             this.label73.AutoSize = true;
-            this.label73.Location = new System.Drawing.Point(40, 179);
+            this.label73.Font = new System.Drawing.Font("Microsoft YaHei", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label73.Location = new System.Drawing.Point(106, 235);
             this.label73.Name = "label73";
-            this.label73.Size = new System.Drawing.Size(49, 13);
+            this.label73.Size = new System.Drawing.Size(82, 24);
             this.label73.TabIndex = 87;
             this.label73.Text = "NOTA 2:";
             // 
             // txtNota2
             // 
-            this.txtNota2.Location = new System.Drawing.Point(90, 172);
+            this.txtNota2.Location = new System.Drawing.Point(194, 239);
             this.txtNota2.Mask = "00.0";
             this.txtNota2.Name = "txtNota2";
             this.txtNota2.Size = new System.Drawing.Size(32, 20);
@@ -519,15 +523,16 @@ namespace ECED_FORMS
             // label74
             // 
             this.label74.AutoSize = true;
-            this.label74.Location = new System.Drawing.Point(40, 207);
+            this.label74.Font = new System.Drawing.Font("Microsoft YaHei", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label74.Location = new System.Drawing.Point(106, 274);
             this.label74.Name = "label74";
-            this.label74.Size = new System.Drawing.Size(49, 13);
+            this.label74.Size = new System.Drawing.Size(82, 24);
             this.label74.TabIndex = 89;
             this.label74.Text = "NOTA 3:";
             // 
             // txtNota3
             // 
-            this.txtNota3.Location = new System.Drawing.Point(90, 200);
+            this.txtNota3.Location = new System.Drawing.Point(193, 278);
             this.txtNota3.Mask = "00.0";
             this.txtNota3.Name = "txtNota3";
             this.txtNota3.Size = new System.Drawing.Size(32, 20);
@@ -535,7 +540,7 @@ namespace ECED_FORMS
             // 
             // btnMostrarBoletim
             // 
-            this.btnMostrarBoletim.Location = new System.Drawing.Point(509, 28);
+            this.btnMostrarBoletim.Location = new System.Drawing.Point(516, 55);
             this.btnMostrarBoletim.Name = "btnMostrarBoletim";
             this.btnMostrarBoletim.Size = new System.Drawing.Size(75, 34);
             this.btnMostrarBoletim.TabIndex = 91;
@@ -553,7 +558,7 @@ namespace ECED_FORMS
             this.tabPage7.Location = new System.Drawing.Point(4, 22);
             this.tabPage7.Name = "tabPage7";
             this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage7.Size = new System.Drawing.Size(1264, 585);
+            this.tabPage7.Size = new System.Drawing.Size(1264, 593);
             this.tabPage7.TabIndex = 2;
             this.tabPage7.Text = "Pesquisar aluno";
             this.tabPage7.UseVisualStyleBackColor = true;
@@ -561,18 +566,18 @@ namespace ECED_FORMS
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(25, 31);
+            this.label10.Font = new System.Drawing.Font("Microsoft YaHei", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(52, 31);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(81, 22);
+            this.label10.Size = new System.Drawing.Size(143, 24);
             this.label10.TabIndex = 4;
-            this.label10.Text = "Localizar";
+            this.label10.Text = "Localizar aluno:";
             // 
             // txtPesquisarAluno
             // 
             this.txtPesquisarAluno.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtPesquisarAluno.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPesquisarAluno.Location = new System.Drawing.Point(112, 31);
+            this.txtPesquisarAluno.Location = new System.Drawing.Point(194, 31);
             this.txtPesquisarAluno.Name = "txtPesquisarAluno";
             this.txtPesquisarAluno.Size = new System.Drawing.Size(766, 25);
             this.txtPesquisarAluno.TabIndex = 5;
@@ -582,7 +587,7 @@ namespace ECED_FORMS
             // 
             this.btnBuscarAluno.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.btnBuscarAluno.ForeColor = System.Drawing.Color.White;
-            this.btnBuscarAluno.Location = new System.Drawing.Point(901, 31);
+            this.btnBuscarAluno.Location = new System.Drawing.Point(983, 31);
             this.btnBuscarAluno.Name = "btnBuscarAluno";
             this.btnBuscarAluno.Size = new System.Drawing.Size(91, 32);
             this.btnBuscarAluno.TabIndex = 7;
@@ -594,7 +599,7 @@ namespace ECED_FORMS
             // 
             this.btnDeletar.BackColor = System.Drawing.Color.Red;
             this.btnDeletar.ForeColor = System.Drawing.Color.White;
-            this.btnDeletar.Location = new System.Drawing.Point(901, 504);
+            this.btnDeletar.Location = new System.Drawing.Point(983, 504);
             this.btnDeletar.Name = "btnDeletar";
             this.btnDeletar.Size = new System.Drawing.Size(103, 27);
             this.btnDeletar.TabIndex = 11;
@@ -604,12 +609,12 @@ namespace ECED_FORMS
             // 
             // ritMostra
             // 
-            this.ritMostra.BackColor = System.Drawing.Color.PowderBlue;
+            this.ritMostra.BackColor = System.Drawing.Color.LightGray;
             this.ritMostra.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.ritMostra.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ritMostra.Location = new System.Drawing.Point(112, 62);
+            this.ritMostra.Location = new System.Drawing.Point(194, 62);
             this.ritMostra.Name = "ritMostra";
-            this.ritMostra.Size = new System.Drawing.Size(766, 469);
+            this.ritMostra.Size = new System.Drawing.Size(766, 517);
             this.ritMostra.TabIndex = 17;
             this.ritMostra.Text = "";
             // 
@@ -620,7 +625,7 @@ namespace ECED_FORMS
             this.tabPage6.Location = new System.Drawing.Point(4, 22);
             this.tabPage6.Name = "tabPage6";
             this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage6.Size = new System.Drawing.Size(1264, 585);
+            this.tabPage6.Size = new System.Drawing.Size(1264, 593);
             this.tabPage6.TabIndex = 1;
             this.tabPage6.Text = "Cadastro de aluno ";
             this.tabPage6.UseVisualStyleBackColor = true;
@@ -630,7 +635,7 @@ namespace ECED_FORMS
             // 
             this.btnSalvarCadastro.BackColor = System.Drawing.Color.Teal;
             this.btnSalvarCadastro.ForeColor = System.Drawing.Color.White;
-            this.btnSalvarCadastro.Location = new System.Drawing.Point(1140, 6);
+            this.btnSalvarCadastro.Location = new System.Drawing.Point(1139, 17);
             this.btnSalvarCadastro.Name = "btnSalvarCadastro";
             this.btnSalvarCadastro.Size = new System.Drawing.Size(107, 40);
             this.btnSalvarCadastro.TabIndex = 2;
@@ -723,7 +728,7 @@ namespace ECED_FORMS
             this.tabPage4.Location = new System.Drawing.Point(4, 25);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(1230, 493);
+            this.tabPage4.Size = new System.Drawing.Size(1230, 490);
             this.tabPage4.TabIndex = 5;
             this.tabPage4.Text = "Dados dos Responsaveís       ";
             // 
@@ -731,7 +736,7 @@ namespace ECED_FORMS
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(37, 48);
+            this.label13.Location = new System.Drawing.Point(84, 50);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(48, 17);
             this.label13.TabIndex = 69;
@@ -741,7 +746,7 @@ namespace ECED_FORMS
             // 
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(546, 46);
+            this.label17.Location = new System.Drawing.Point(722, 49);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(33, 17);
             this.label17.TabIndex = 73;
@@ -749,7 +754,7 @@ namespace ECED_FORMS
             // 
             // txtNomeRespUm
             // 
-            this.txtNomeRespUm.Location = new System.Drawing.Point(91, 46);
+            this.txtNomeRespUm.Location = new System.Drawing.Point(137, 49);
             this.txtNomeRespUm.Name = "txtNomeRespUm";
             this.txtNomeRespUm.Size = new System.Drawing.Size(176, 22);
             this.txtNomeRespUm.TabIndex = 71;
@@ -757,7 +762,7 @@ namespace ECED_FORMS
             // chMaeUm
             // 
             this.chMaeUm.AutoSize = true;
-            this.chMaeUm.Location = new System.Drawing.Point(362, 8);
+            this.chMaeUm.Location = new System.Drawing.Point(362, 11);
             this.chMaeUm.Name = "chMaeUm";
             this.chMaeUm.Size = new System.Drawing.Size(50, 20);
             this.chMaeUm.TabIndex = 77;
@@ -768,7 +773,7 @@ namespace ECED_FORMS
             // chPaiUm
             // 
             this.chPaiUm.AutoSize = true;
-            this.chPaiUm.Location = new System.Drawing.Point(431, 8);
+            this.chPaiUm.Location = new System.Drawing.Point(431, 11);
             this.chPaiUm.Name = "chPaiUm";
             this.chPaiUm.Size = new System.Drawing.Size(43, 20);
             this.chPaiUm.TabIndex = 78;
@@ -779,7 +784,7 @@ namespace ECED_FORMS
             // chResponsavelUm
             // 
             this.chResponsavelUm.AutoSize = true;
-            this.chResponsavelUm.Location = new System.Drawing.Point(498, 8);
+            this.chResponsavelUm.Location = new System.Drawing.Point(498, 11);
             this.chResponsavelUm.Name = "chResponsavelUm";
             this.chResponsavelUm.Size = new System.Drawing.Size(92, 20);
             this.chResponsavelUm.TabIndex = 79;
@@ -791,7 +796,7 @@ namespace ECED_FORMS
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(273, 48);
+            this.label14.Location = new System.Drawing.Point(388, 55);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(141, 16);
             this.label14.TabIndex = 83;
@@ -800,7 +805,7 @@ namespace ECED_FORMS
             // dtDataNascRespUm
             // 
             this.dtDataNascRespUm.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtDataNascRespUm.Location = new System.Drawing.Point(420, 43);
+            this.dtDataNascRespUm.Location = new System.Drawing.Point(535, 50);
             this.dtDataNascRespUm.Name = "dtDataNascRespUm";
             this.dtDataNascRespUm.Size = new System.Drawing.Size(109, 22);
             this.dtDataNascRespUm.TabIndex = 84;
@@ -808,7 +813,7 @@ namespace ECED_FORMS
             // 
             // txtTelefoneRespUm
             // 
-            this.txtTelefoneRespUm.Location = new System.Drawing.Point(585, 41);
+            this.txtTelefoneRespUm.Location = new System.Drawing.Point(761, 44);
             this.txtTelefoneRespUm.Mask = "(99) 00000-0000";
             this.txtTelefoneRespUm.Name = "txtTelefoneRespUm";
             this.txtTelefoneRespUm.Size = new System.Drawing.Size(107, 22);
@@ -816,7 +821,7 @@ namespace ECED_FORMS
             // 
             // txtCpfRespUm
             // 
-            this.txtCpfRespUm.Location = new System.Drawing.Point(757, 45);
+            this.txtCpfRespUm.Location = new System.Drawing.Point(1021, 44);
             this.txtCpfRespUm.Mask = "000\\.000\\.000\\-00";
             this.txtCpfRespUm.Name = "txtCpfRespUm";
             this.txtCpfRespUm.Size = new System.Drawing.Size(107, 22);
@@ -826,7 +831,7 @@ namespace ECED_FORMS
             // 
             this.label47.AutoSize = true;
             this.label47.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label47.Location = new System.Drawing.Point(37, 88);
+            this.label47.Location = new System.Drawing.Point(6, 92);
             this.label47.Name = "label47";
             this.label47.Size = new System.Drawing.Size(131, 16);
             this.label47.TabIndex = 88;
@@ -836,7 +841,7 @@ namespace ECED_FORMS
             // 
             this.label76.AutoSize = true;
             this.label76.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label76.Location = new System.Drawing.Point(286, 88);
+            this.label76.Location = new System.Drawing.Point(401, 95);
             this.label76.Name = "label76";
             this.label76.Size = new System.Drawing.Size(128, 16);
             this.label76.TabIndex = 90;
@@ -846,7 +851,7 @@ namespace ECED_FORMS
             // 
             this.label77.AutoSize = true;
             this.label77.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label77.Location = new System.Drawing.Point(546, 88);
+            this.label77.Location = new System.Drawing.Point(729, 91);
             this.label77.Name = "label77";
             this.label77.Size = new System.Drawing.Size(26, 16);
             this.label77.TabIndex = 91;
@@ -856,7 +861,7 @@ namespace ECED_FORMS
             // 
             this.label78.AutoSize = true;
             this.label78.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label78.Location = new System.Drawing.Point(675, 90);
+            this.label78.Location = new System.Drawing.Point(907, 91);
             this.label78.Name = "label78";
             this.label78.Size = new System.Drawing.Size(108, 16);
             this.label78.TabIndex = 92;
@@ -865,7 +870,7 @@ namespace ECED_FORMS
             // dtDataExpedicaoRespUm
             // 
             this.dtDataExpedicaoRespUm.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtDataExpedicaoRespUm.Location = new System.Drawing.Point(420, 85);
+            this.dtDataExpedicaoRespUm.Location = new System.Drawing.Point(535, 92);
             this.dtDataExpedicaoRespUm.Name = "dtDataExpedicaoRespUm";
             this.dtDataExpedicaoRespUm.Size = new System.Drawing.Size(109, 22);
             this.dtDataExpedicaoRespUm.TabIndex = 95;
@@ -873,7 +878,7 @@ namespace ECED_FORMS
             // 
             // txtOrgaoEmissorRespUm
             // 
-            this.txtOrgaoEmissorRespUm.Location = new System.Drawing.Point(789, 84);
+            this.txtOrgaoEmissorRespUm.Location = new System.Drawing.Point(1022, 88);
             this.txtOrgaoEmissorRespUm.Name = "txtOrgaoEmissorRespUm";
             this.txtOrgaoEmissorRespUm.Size = new System.Drawing.Size(108, 22);
             this.txtOrgaoEmissorRespUm.TabIndex = 96;
@@ -882,7 +887,7 @@ namespace ECED_FORMS
             // 
             this.label79.AutoSize = true;
             this.label79.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label79.Location = new System.Drawing.Point(37, 131);
+            this.label79.Location = new System.Drawing.Point(45, 134);
             this.label79.Name = "label79";
             this.label79.Size = new System.Drawing.Size(89, 16);
             this.label79.TabIndex = 97;
@@ -898,7 +903,7 @@ namespace ECED_FORMS
             "SEPARADO(A)",
             "SOLTEIRO(A)",
             "VIÚVO(A)"});
-            this.cbEstadoCivilRespUm.Location = new System.Drawing.Point(132, 123);
+            this.cbEstadoCivilRespUm.Location = new System.Drawing.Point(140, 126);
             this.cbEstadoCivilRespUm.Name = "cbEstadoCivilRespUm";
             this.cbEstadoCivilRespUm.Size = new System.Drawing.Size(121, 24);
             this.cbEstadoCivilRespUm.TabIndex = 98;
@@ -907,7 +912,7 @@ namespace ECED_FORMS
             // 
             this.label80.AutoSize = true;
             this.label80.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label80.Location = new System.Drawing.Point(286, 131);
+            this.label80.Location = new System.Drawing.Point(428, 137);
             this.label80.Name = "label80";
             this.label80.Size = new System.Drawing.Size(98, 16);
             this.label80.TabIndex = 99;
@@ -917,7 +922,7 @@ namespace ECED_FORMS
             // 
             this.label81.AutoSize = true;
             this.label81.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label81.Location = new System.Drawing.Point(551, 129);
+            this.label81.Location = new System.Drawing.Point(679, 129);
             this.label81.Name = "label81";
             this.label81.Size = new System.Drawing.Size(76, 16);
             this.label81.TabIndex = 101;
@@ -925,7 +930,7 @@ namespace ECED_FORMS
             // 
             // txtProfissaoRespUm
             // 
-            this.txtProfissaoRespUm.Location = new System.Drawing.Point(633, 123);
+            this.txtProfissaoRespUm.Location = new System.Drawing.Point(761, 123);
             this.txtProfissaoRespUm.Name = "txtProfissaoRespUm";
             this.txtProfissaoRespUm.Size = new System.Drawing.Size(136, 22);
             this.txtProfissaoRespUm.TabIndex = 102;
@@ -934,7 +939,7 @@ namespace ECED_FORMS
             // 
             this.label82.AutoSize = true;
             this.label82.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label82.Location = new System.Drawing.Point(37, 175);
+            this.label82.Location = new System.Drawing.Point(3, 178);
             this.label82.Name = "label82";
             this.label82.Size = new System.Drawing.Size(131, 16);
             this.label82.TabIndex = 103;
@@ -942,7 +947,7 @@ namespace ECED_FORMS
             // 
             // txtLocalTrabalhoRespUm
             // 
-            this.txtLocalTrabalhoRespUm.Location = new System.Drawing.Point(174, 169);
+            this.txtLocalTrabalhoRespUm.Location = new System.Drawing.Point(140, 176);
             this.txtLocalTrabalhoRespUm.Name = "txtLocalTrabalhoRespUm";
             this.txtLocalTrabalhoRespUm.Size = new System.Drawing.Size(176, 22);
             this.txtLocalTrabalhoRespUm.TabIndex = 104;
@@ -951,7 +956,7 @@ namespace ECED_FORMS
             // 
             this.label83.AutoSize = true;
             this.label83.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label83.Location = new System.Drawing.Point(359, 172);
+            this.label83.Location = new System.Drawing.Point(460, 176);
             this.label83.Name = "label83";
             this.label83.Size = new System.Drawing.Size(66, 16);
             this.label83.TabIndex = 105;
@@ -961,7 +966,7 @@ namespace ECED_FORMS
             // 
             this.label84.AutoSize = true;
             this.label84.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label84.Location = new System.Drawing.Point(575, 172);
+            this.label84.Location = new System.Drawing.Point(703, 175);
             this.label84.Name = "label84";
             this.label84.Size = new System.Drawing.Size(52, 16);
             this.label84.TabIndex = 107;
@@ -969,7 +974,7 @@ namespace ECED_FORMS
             // 
             // txtRamalRespUm
             // 
-            this.txtRamalRespUm.Location = new System.Drawing.Point(633, 166);
+            this.txtRamalRespUm.Location = new System.Drawing.Point(761, 169);
             this.txtRamalRespUm.Name = "txtRamalRespUm";
             this.txtRamalRespUm.Size = new System.Drawing.Size(136, 22);
             this.txtRamalRespUm.TabIndex = 108;
@@ -978,7 +983,7 @@ namespace ECED_FORMS
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(717, 47);
+            this.label16.Location = new System.Drawing.Point(981, 46);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(34, 17);
             this.label16.TabIndex = 109;
@@ -988,7 +993,7 @@ namespace ECED_FORMS
             // 
             this.label101.AutoSize = true;
             this.label101.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label101.Location = new System.Drawing.Point(37, 285);
+            this.label101.Location = new System.Drawing.Point(88, 296);
             this.label101.Name = "label101";
             this.label101.Size = new System.Drawing.Size(48, 17);
             this.label101.TabIndex = 144;
@@ -998,7 +1003,7 @@ namespace ECED_FORMS
             // 
             this.label100.AutoSize = true;
             this.label100.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label100.Location = new System.Drawing.Point(546, 283);
+            this.label100.Location = new System.Drawing.Point(717, 298);
             this.label100.Name = "label100";
             this.label100.Size = new System.Drawing.Size(33, 17);
             this.label100.TabIndex = 146;
@@ -1006,7 +1011,7 @@ namespace ECED_FORMS
             // 
             // txtNomeRespDois
             // 
-            this.txtNomeRespDois.Location = new System.Drawing.Point(91, 283);
+            this.txtNomeRespDois.Location = new System.Drawing.Point(140, 297);
             this.txtNomeRespDois.Name = "txtNomeRespDois";
             this.txtNomeRespDois.Size = new System.Drawing.Size(176, 22);
             this.txtNomeRespDois.TabIndex = 145;
@@ -1015,7 +1020,7 @@ namespace ECED_FORMS
             // 
             this.label96.AutoSize = true;
             this.label96.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label96.Location = new System.Drawing.Point(273, 285);
+            this.label96.Location = new System.Drawing.Point(388, 297);
             this.label96.Name = "label96";
             this.label96.Size = new System.Drawing.Size(141, 16);
             this.label96.TabIndex = 153;
@@ -1024,15 +1029,15 @@ namespace ECED_FORMS
             // dtDataNascRespDois
             // 
             this.dtDataNascRespDois.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtDataNascRespDois.Location = new System.Drawing.Point(420, 280);
+            this.dtDataNascRespDois.Location = new System.Drawing.Point(535, 292);
             this.dtDataNascRespDois.Name = "dtDataNascRespDois";
-            this.dtDataNascRespDois.Size = new System.Drawing.Size(109, 22);
+            this.dtDataNascRespDois.Size = new System.Drawing.Size(118, 22);
             this.dtDataNascRespDois.TabIndex = 154;
             this.dtDataNascRespDois.Value = new System.DateTime(2021, 10, 1, 0, 0, 0, 0);
             // 
             // txtTelefoneRespDois
             // 
-            this.txtTelefoneRespDois.Location = new System.Drawing.Point(585, 278);
+            this.txtTelefoneRespDois.Location = new System.Drawing.Point(761, 297);
             this.txtTelefoneRespDois.Mask = "(99) 00000-0000";
             this.txtTelefoneRespDois.Name = "txtTelefoneRespDois";
             this.txtTelefoneRespDois.Size = new System.Drawing.Size(107, 22);
@@ -1040,7 +1045,7 @@ namespace ECED_FORMS
             // 
             // txtCpfRespDois
             // 
-            this.txtCpfRespDois.Location = new System.Drawing.Point(757, 282);
+            this.txtCpfRespDois.Location = new System.Drawing.Point(1022, 298);
             this.txtCpfRespDois.Mask = "000\\.000\\.000\\-00";
             this.txtCpfRespDois.Name = "txtCpfRespDois";
             this.txtCpfRespDois.Size = new System.Drawing.Size(107, 22);
@@ -1050,7 +1055,7 @@ namespace ECED_FORMS
             // 
             this.label95.AutoSize = true;
             this.label95.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label95.Location = new System.Drawing.Point(37, 325);
+            this.label95.Location = new System.Drawing.Point(6, 335);
             this.label95.Name = "label95";
             this.label95.Size = new System.Drawing.Size(131, 16);
             this.label95.TabIndex = 157;
@@ -1060,7 +1065,7 @@ namespace ECED_FORMS
             // 
             this.label94.AutoSize = true;
             this.label94.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label94.Location = new System.Drawing.Point(286, 325);
+            this.label94.Location = new System.Drawing.Point(401, 337);
             this.label94.Name = "label94";
             this.label94.Size = new System.Drawing.Size(128, 16);
             this.label94.TabIndex = 159;
@@ -1070,7 +1075,7 @@ namespace ECED_FORMS
             // 
             this.label93.AutoSize = true;
             this.label93.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label93.Location = new System.Drawing.Point(546, 325);
+            this.label93.Location = new System.Drawing.Point(724, 337);
             this.label93.Name = "label93";
             this.label93.Size = new System.Drawing.Size(26, 16);
             this.label93.TabIndex = 160;
@@ -1080,7 +1085,7 @@ namespace ECED_FORMS
             // 
             this.label92.AutoSize = true;
             this.label92.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label92.Location = new System.Drawing.Point(675, 327);
+            this.label92.Location = new System.Drawing.Point(907, 343);
             this.label92.Name = "label92";
             this.label92.Size = new System.Drawing.Size(108, 16);
             this.label92.TabIndex = 161;
@@ -1089,15 +1094,15 @@ namespace ECED_FORMS
             // dtDataExpedicaoRespDois
             // 
             this.dtDataExpedicaoRespDois.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtDataExpedicaoRespDois.Location = new System.Drawing.Point(420, 322);
+            this.dtDataExpedicaoRespDois.Location = new System.Drawing.Point(535, 336);
             this.dtDataExpedicaoRespDois.Name = "dtDataExpedicaoRespDois";
-            this.dtDataExpedicaoRespDois.Size = new System.Drawing.Size(109, 22);
+            this.dtDataExpedicaoRespDois.Size = new System.Drawing.Size(118, 22);
             this.dtDataExpedicaoRespDois.TabIndex = 163;
             this.dtDataExpedicaoRespDois.Value = new System.DateTime(2021, 10, 1, 0, 0, 0, 0);
             // 
             // txtOrgaoEmissorRespDois
             // 
-            this.txtOrgaoEmissorRespDois.Location = new System.Drawing.Point(789, 321);
+            this.txtOrgaoEmissorRespDois.Location = new System.Drawing.Point(1021, 337);
             this.txtOrgaoEmissorRespDois.Name = "txtOrgaoEmissorRespDois";
             this.txtOrgaoEmissorRespDois.Size = new System.Drawing.Size(108, 22);
             this.txtOrgaoEmissorRespDois.TabIndex = 164;
@@ -1106,7 +1111,7 @@ namespace ECED_FORMS
             // 
             this.label91.AutoSize = true;
             this.label91.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label91.Location = new System.Drawing.Point(37, 368);
+            this.label91.Location = new System.Drawing.Point(47, 381);
             this.label91.Name = "label91";
             this.label91.Size = new System.Drawing.Size(89, 16);
             this.label91.TabIndex = 165;
@@ -1122,16 +1127,16 @@ namespace ECED_FORMS
             "SEPARADO(A)",
             "SOLTEIRO(A)",
             "VIÚVO(A)"});
-            this.cbEstadoCivilRespDois.Location = new System.Drawing.Point(132, 360);
+            this.cbEstadoCivilRespDois.Location = new System.Drawing.Point(140, 376);
             this.cbEstadoCivilRespDois.Name = "cbEstadoCivilRespDois";
-            this.cbEstadoCivilRespDois.Size = new System.Drawing.Size(121, 24);
+            this.cbEstadoCivilRespDois.Size = new System.Drawing.Size(176, 24);
             this.cbEstadoCivilRespDois.TabIndex = 166;
             // 
             // label90
             // 
             this.label90.AutoSize = true;
             this.label90.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label90.Location = new System.Drawing.Point(286, 368);
+            this.label90.Location = new System.Drawing.Point(431, 382);
             this.label90.Name = "label90";
             this.label90.Size = new System.Drawing.Size(98, 16);
             this.label90.TabIndex = 167;
@@ -1141,7 +1146,7 @@ namespace ECED_FORMS
             // 
             this.label89.AutoSize = true;
             this.label89.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label89.Location = new System.Drawing.Point(551, 366);
+            this.label89.Location = new System.Drawing.Point(674, 382);
             this.label89.Name = "label89";
             this.label89.Size = new System.Drawing.Size(76, 16);
             this.label89.TabIndex = 169;
@@ -1149,7 +1154,7 @@ namespace ECED_FORMS
             // 
             // txtProfissaoRespDois
             // 
-            this.txtProfissaoRespDois.Location = new System.Drawing.Point(633, 360);
+            this.txtProfissaoRespDois.Location = new System.Drawing.Point(761, 378);
             this.txtProfissaoRespDois.Name = "txtProfissaoRespDois";
             this.txtProfissaoRespDois.Size = new System.Drawing.Size(136, 22);
             this.txtProfissaoRespDois.TabIndex = 170;
@@ -1158,7 +1163,7 @@ namespace ECED_FORMS
             // 
             this.label88.AutoSize = true;
             this.label88.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label88.Location = new System.Drawing.Point(37, 412);
+            this.label88.Location = new System.Drawing.Point(3, 425);
             this.label88.Name = "label88";
             this.label88.Size = new System.Drawing.Size(131, 16);
             this.label88.TabIndex = 171;
@@ -1166,7 +1171,7 @@ namespace ECED_FORMS
             // 
             // txtLocalTrabalhoRespDois
             // 
-            this.txtLocalTrabalhoRespDois.Location = new System.Drawing.Point(174, 406);
+            this.txtLocalTrabalhoRespDois.Location = new System.Drawing.Point(140, 422);
             this.txtLocalTrabalhoRespDois.Name = "txtLocalTrabalhoRespDois";
             this.txtLocalTrabalhoRespDois.Size = new System.Drawing.Size(176, 22);
             this.txtLocalTrabalhoRespDois.TabIndex = 172;
@@ -1175,7 +1180,7 @@ namespace ECED_FORMS
             // 
             this.label87.AutoSize = true;
             this.label87.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label87.Location = new System.Drawing.Point(359, 409);
+            this.label87.Location = new System.Drawing.Point(463, 425);
             this.label87.Name = "label87";
             this.label87.Size = new System.Drawing.Size(66, 16);
             this.label87.TabIndex = 173;
@@ -1185,7 +1190,7 @@ namespace ECED_FORMS
             // 
             this.label86.AutoSize = true;
             this.label86.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label86.Location = new System.Drawing.Point(575, 409);
+            this.label86.Location = new System.Drawing.Point(698, 425);
             this.label86.Name = "label86";
             this.label86.Size = new System.Drawing.Size(52, 16);
             this.label86.TabIndex = 175;
@@ -1193,7 +1198,7 @@ namespace ECED_FORMS
             // 
             // txtRamalRespDois
             // 
-            this.txtRamalRespDois.Location = new System.Drawing.Point(633, 403);
+            this.txtRamalRespDois.Location = new System.Drawing.Point(761, 422);
             this.txtRamalRespDois.Name = "txtRamalRespDois";
             this.txtRamalRespDois.Size = new System.Drawing.Size(136, 22);
             this.txtRamalRespDois.TabIndex = 176;
@@ -1202,7 +1207,7 @@ namespace ECED_FORMS
             // 
             this.label85.AutoSize = true;
             this.label85.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label85.Location = new System.Drawing.Point(717, 284);
+            this.label85.Location = new System.Drawing.Point(981, 299);
             this.label85.Name = "label85";
             this.label85.Size = new System.Drawing.Size(34, 17);
             this.label85.TabIndex = 177;
@@ -1210,15 +1215,15 @@ namespace ECED_FORMS
             // 
             // panel7
             // 
-            this.panel7.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.panel7.Location = new System.Drawing.Point(0, 207);
+            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(247)))), ((int)(((byte)(199)))));
+            this.panel7.Location = new System.Drawing.Point(0, 213);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(1236, 29);
+            this.panel7.Size = new System.Drawing.Size(1230, 24);
             this.panel7.TabIndex = 178;
             // 
             // txtHorarioTrabalhoRespDois
             // 
-            this.txtHorarioTrabalhoRespDois.Location = new System.Drawing.Point(431, 403);
+            this.txtHorarioTrabalhoRespDois.Location = new System.Drawing.Point(535, 419);
             this.txtHorarioTrabalhoRespDois.Mask = "90:00";
             this.txtHorarioTrabalhoRespDois.Name = "txtHorarioTrabalhoRespDois";
             this.txtHorarioTrabalhoRespDois.Size = new System.Drawing.Size(67, 22);
@@ -1227,7 +1232,7 @@ namespace ECED_FORMS
             // 
             // txtHorarioTrabalhoRespUm
             // 
-            this.txtHorarioTrabalhoRespUm.Location = new System.Drawing.Point(431, 169);
+            this.txtHorarioTrabalhoRespUm.Location = new System.Drawing.Point(535, 175);
             this.txtHorarioTrabalhoRespUm.Mask = "90:00";
             this.txtHorarioTrabalhoRespUm.Name = "txtHorarioTrabalhoRespUm";
             this.txtHorarioTrabalhoRespUm.Size = new System.Drawing.Size(67, 22);
@@ -1245,7 +1250,7 @@ namespace ECED_FORMS
             "PÓS-GRADUAÇÃO",
             "MESTRADO",
             "DOUTORADO"});
-            this.txtEscolaridadeRespDois.Location = new System.Drawing.Point(408, 363);
+            this.txtEscolaridadeRespDois.Location = new System.Drawing.Point(535, 378);
             this.txtEscolaridadeRespDois.Name = "txtEscolaridadeRespDois";
             this.txtEscolaridadeRespDois.Size = new System.Drawing.Size(121, 24);
             this.txtEscolaridadeRespDois.TabIndex = 181;
@@ -1261,14 +1266,14 @@ namespace ECED_FORMS
             "PÓS-GRADUAÇÃO",
             "MESTRADO",
             "DOUTORADO"});
-            this.txtEscolaridadeRespUm.Location = new System.Drawing.Point(408, 126);
+            this.txtEscolaridadeRespUm.Location = new System.Drawing.Point(535, 129);
             this.txtEscolaridadeRespUm.Name = "txtEscolaridadeRespUm";
             this.txtEscolaridadeRespUm.Size = new System.Drawing.Size(121, 24);
             this.txtEscolaridadeRespUm.TabIndex = 182;
             // 
             // txtRgRespUm
             // 
-            this.txtRgRespUm.Location = new System.Drawing.Point(174, 84);
+            this.txtRgRespUm.Location = new System.Drawing.Point(138, 88);
             this.txtRgRespUm.Mask = "0\\.000\\.000";
             this.txtRgRespUm.Name = "txtRgRespUm";
             this.txtRgRespUm.Size = new System.Drawing.Size(106, 22);
@@ -1276,7 +1281,7 @@ namespace ECED_FORMS
             // 
             // txtRgRespDois
             // 
-            this.txtRgRespDois.Location = new System.Drawing.Point(174, 321);
+            this.txtRgRespDois.Location = new System.Drawing.Point(140, 335);
             this.txtRgRespDois.Mask = "0\\.000\\.000";
             this.txtRgRespDois.Name = "txtRgRespDois";
             this.txtRgRespDois.Size = new System.Drawing.Size(106, 22);
@@ -1314,7 +1319,7 @@ namespace ECED_FORMS
             "MT",
             "GO",
             "DF"});
-            this.txtUfRespDois.Location = new System.Drawing.Point(578, 322);
+            this.txtUfRespDois.Location = new System.Drawing.Point(761, 333);
             this.txtUfRespDois.Name = "txtUfRespDois";
             this.txtUfRespDois.Size = new System.Drawing.Size(91, 24);
             this.txtUfRespDois.TabIndex = 185;
@@ -1351,7 +1356,7 @@ namespace ECED_FORMS
             "MT",
             "GO",
             "DF"});
-            this.txtUfRespUm.Location = new System.Drawing.Point(576, 82);
+            this.txtUfRespUm.Location = new System.Drawing.Point(761, 86);
             this.txtUfRespUm.Name = "txtUfRespUm";
             this.txtUfRespUm.Size = new System.Drawing.Size(91, 24);
             this.txtUfRespUm.TabIndex = 186;
@@ -1359,7 +1364,7 @@ namespace ECED_FORMS
             // chMaeDois
             // 
             this.chMaeDois.AutoSize = true;
-            this.chMaeDois.Location = new System.Drawing.Point(364, 242);
+            this.chMaeDois.Location = new System.Drawing.Point(364, 255);
             this.chMaeDois.Name = "chMaeDois";
             this.chMaeDois.Size = new System.Drawing.Size(50, 20);
             this.chMaeDois.TabIndex = 187;
@@ -1370,7 +1375,7 @@ namespace ECED_FORMS
             // chPaiDois
             // 
             this.chPaiDois.AutoSize = true;
-            this.chPaiDois.Location = new System.Drawing.Point(433, 242);
+            this.chPaiDois.Location = new System.Drawing.Point(433, 255);
             this.chPaiDois.Name = "chPaiDois";
             this.chPaiDois.Size = new System.Drawing.Size(43, 20);
             this.chPaiDois.TabIndex = 188;
@@ -1381,7 +1386,7 @@ namespace ECED_FORMS
             // chResponsavelDois
             // 
             this.chResponsavelDois.AutoSize = true;
-            this.chResponsavelDois.Location = new System.Drawing.Point(489, 242);
+            this.chResponsavelDois.Location = new System.Drawing.Point(489, 255);
             this.chResponsavelDois.Name = "chResponsavelDois";
             this.chResponsavelDois.Size = new System.Drawing.Size(92, 20);
             this.chResponsavelDois.TabIndex = 189;
@@ -1391,9 +1396,9 @@ namespace ECED_FORMS
             // 
             // btnAtualizarDadosPais
             // 
-            this.btnAtualizarDadosPais.Location = new System.Drawing.Point(1044, 423);
+            this.btnAtualizarDadosPais.Location = new System.Drawing.Point(1123, 440);
             this.btnAtualizarDadosPais.Name = "btnAtualizarDadosPais";
-            this.btnAtualizarDadosPais.Size = new System.Drawing.Size(71, 23);
+            this.btnAtualizarDadosPais.Size = new System.Drawing.Size(91, 34);
             this.btnAtualizarDadosPais.TabIndex = 194;
             this.btnAtualizarDadosPais.Text = "Atualizar";
             this.btnAtualizarDadosPais.UseVisualStyleBackColor = true;
@@ -1444,27 +1449,27 @@ namespace ECED_FORMS
             this.tabPage3.Location = new System.Drawing.Point(4, 25);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(1230, 493);
+            this.tabPage3.Size = new System.Drawing.Size(1230, 490);
             this.tabPage3.TabIndex = 4;
             this.tabPage3.Text = "Identificação saúde";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
             // panel6
             // 
-            this.panel6.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(247)))), ((int)(((byte)(199)))));
             this.panel6.Controls.Add(this.label38);
-            this.panel6.Location = new System.Drawing.Point(6, 22);
+            this.panel6.Location = new System.Drawing.Point(-4, 6);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(1304, 20);
+            this.panel6.Size = new System.Drawing.Size(1234, 36);
             this.panel6.TabIndex = 95;
             // 
             // label38
             // 
             this.label38.AutoSize = true;
-            this.label38.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label38.Location = new System.Drawing.Point(5, 4);
+            this.label38.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label38.Location = new System.Drawing.Point(413, 7);
             this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(138, 16);
+            this.label38.Size = new System.Drawing.Size(200, 22);
             this.label38.TabIndex = 33;
             this.label38.Text = "IDENTIFICAÇÃO SAÚDE";
             // 
@@ -1472,7 +1477,7 @@ namespace ECED_FORMS
             // 
             this.label31.AutoSize = true;
             this.label31.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label31.Location = new System.Drawing.Point(9, 128);
+            this.label31.Location = new System.Drawing.Point(204, 175);
             this.label31.Name = "label31";
             this.label31.Size = new System.Drawing.Size(277, 17);
             this.label31.TabIndex = 105;
@@ -1482,7 +1487,7 @@ namespace ECED_FORMS
             // 
             this.chProblemaSaudeSim.AutoSize = true;
             this.chProblemaSaudeSim.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chProblemaSaudeSim.Location = new System.Drawing.Point(296, 128);
+            this.chProblemaSaudeSim.Location = new System.Drawing.Point(491, 176);
             this.chProblemaSaudeSim.Name = "chProblemaSaudeSim";
             this.chProblemaSaudeSim.Size = new System.Drawing.Size(48, 17);
             this.chProblemaSaudeSim.TabIndex = 106;
@@ -1494,7 +1499,7 @@ namespace ECED_FORMS
             // 
             this.chProblemaSaudeNao.AutoSize = true;
             this.chProblemaSaudeNao.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chProblemaSaudeNao.Location = new System.Drawing.Point(350, 128);
+            this.chProblemaSaudeNao.Location = new System.Drawing.Point(544, 176);
             this.chProblemaSaudeNao.Name = "chProblemaSaudeNao";
             this.chProblemaSaudeNao.Size = new System.Drawing.Size(52, 17);
             this.chProblemaSaudeNao.TabIndex = 107;
@@ -1506,7 +1511,7 @@ namespace ECED_FORMS
             // 
             this.label51.AutoSize = true;
             this.label51.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label51.Location = new System.Drawing.Point(372, 168);
+            this.label51.Location = new System.Drawing.Point(604, 215);
             this.label51.Name = "label51";
             this.label51.Size = new System.Drawing.Size(44, 13);
             this.label51.TabIndex = 108;
@@ -1516,7 +1521,7 @@ namespace ECED_FORMS
             // 
             this.label52.AutoSize = true;
             this.label52.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label52.Location = new System.Drawing.Point(11, 168);
+            this.label52.Location = new System.Drawing.Point(231, 213);
             this.label52.Name = "label52";
             this.label52.Size = new System.Drawing.Size(251, 17);
             this.label52.TabIndex = 110;
@@ -1526,7 +1531,7 @@ namespace ECED_FORMS
             // 
             this.chAlergiaMedicamentoSim.AutoSize = true;
             this.chAlergiaMedicamentoSim.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chAlergiaMedicamentoSim.Location = new System.Drawing.Point(268, 168);
+            this.chAlergiaMedicamentoSim.Location = new System.Drawing.Point(488, 213);
             this.chAlergiaMedicamentoSim.Name = "chAlergiaMedicamentoSim";
             this.chAlergiaMedicamentoSim.Size = new System.Drawing.Size(48, 17);
             this.chAlergiaMedicamentoSim.TabIndex = 111;
@@ -1538,7 +1543,7 @@ namespace ECED_FORMS
             // 
             this.chAlergiaMedicamentoNao.AutoSize = true;
             this.chAlergiaMedicamentoNao.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chAlergiaMedicamentoNao.Location = new System.Drawing.Point(317, 168);
+            this.chAlergiaMedicamentoNao.Location = new System.Drawing.Point(545, 212);
             this.chAlergiaMedicamentoNao.Name = "chAlergiaMedicamentoNao";
             this.chAlergiaMedicamentoNao.Size = new System.Drawing.Size(52, 17);
             this.chAlergiaMedicamentoNao.TabIndex = 112;
@@ -1550,7 +1555,7 @@ namespace ECED_FORMS
             // 
             this.label53.AutoSize = true;
             this.label53.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label53.Location = new System.Drawing.Point(409, 208);
+            this.label53.Location = new System.Drawing.Point(603, 252);
             this.label53.Name = "label53";
             this.label53.Size = new System.Drawing.Size(44, 13);
             this.label53.TabIndex = 114;
@@ -1560,7 +1565,7 @@ namespace ECED_FORMS
             // 
             this.label54.AutoSize = true;
             this.label54.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label54.Location = new System.Drawing.Point(11, 208);
+            this.label54.Location = new System.Drawing.Point(197, 255);
             this.label54.Name = "label54";
             this.label54.Size = new System.Drawing.Size(281, 13);
             this.label54.TabIndex = 115;
@@ -1570,7 +1575,7 @@ namespace ECED_FORMS
             // 
             this.chIntoleranciaAlimentoSim.AutoSize = true;
             this.chIntoleranciaAlimentoSim.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chIntoleranciaAlimentoSim.Location = new System.Drawing.Point(298, 206);
+            this.chIntoleranciaAlimentoSim.Location = new System.Drawing.Point(488, 251);
             this.chIntoleranciaAlimentoSim.Name = "chIntoleranciaAlimentoSim";
             this.chIntoleranciaAlimentoSim.Size = new System.Drawing.Size(48, 17);
             this.chIntoleranciaAlimentoSim.TabIndex = 116;
@@ -1582,7 +1587,7 @@ namespace ECED_FORMS
             // 
             this.chIntoleranciaAlimentoNao.AutoSize = true;
             this.chIntoleranciaAlimentoNao.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chIntoleranciaAlimentoNao.Location = new System.Drawing.Point(350, 208);
+            this.chIntoleranciaAlimentoNao.Location = new System.Drawing.Point(545, 251);
             this.chIntoleranciaAlimentoNao.Name = "chIntoleranciaAlimentoNao";
             this.chIntoleranciaAlimentoNao.Size = new System.Drawing.Size(52, 17);
             this.chIntoleranciaAlimentoNao.TabIndex = 117;
@@ -1594,7 +1599,7 @@ namespace ECED_FORMS
             // 
             this.label55.AutoSize = true;
             this.label55.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label55.Location = new System.Drawing.Point(409, 244);
+            this.label55.Location = new System.Drawing.Point(605, 288);
             this.label55.Name = "label55";
             this.label55.Size = new System.Drawing.Size(44, 13);
             this.label55.TabIndex = 118;
@@ -1604,7 +1609,7 @@ namespace ECED_FORMS
             // 
             this.label56.AutoSize = true;
             this.label56.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label56.Location = new System.Drawing.Point(11, 244);
+            this.label56.Location = new System.Drawing.Point(206, 290);
             this.label56.Name = "label56";
             this.label56.Size = new System.Drawing.Size(275, 13);
             this.label56.TabIndex = 120;
@@ -1614,7 +1619,7 @@ namespace ECED_FORMS
             // 
             this.chDietaEspecificaSim.AutoSize = true;
             this.chDietaEspecificaSim.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chDietaEspecificaSim.Location = new System.Drawing.Point(292, 243);
+            this.chDietaEspecificaSim.Location = new System.Drawing.Point(488, 287);
             this.chDietaEspecificaSim.Name = "chDietaEspecificaSim";
             this.chDietaEspecificaSim.Size = new System.Drawing.Size(48, 17);
             this.chDietaEspecificaSim.TabIndex = 121;
@@ -1626,7 +1631,7 @@ namespace ECED_FORMS
             // 
             this.chDietaEspecificaNao.AutoSize = true;
             this.chDietaEspecificaNao.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chDietaEspecificaNao.Location = new System.Drawing.Point(350, 244);
+            this.chDietaEspecificaNao.Location = new System.Drawing.Point(546, 288);
             this.chDietaEspecificaNao.Name = "chDietaEspecificaNao";
             this.chDietaEspecificaNao.Size = new System.Drawing.Size(52, 17);
             this.chDietaEspecificaNao.TabIndex = 122;
@@ -1638,7 +1643,7 @@ namespace ECED_FORMS
             // 
             this.label58.AutoSize = true;
             this.label58.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label58.Location = new System.Drawing.Point(11, 280);
+            this.label58.Location = new System.Drawing.Point(126, 328);
             this.label58.Name = "label58";
             this.label58.Size = new System.Drawing.Size(355, 17);
             this.label58.TabIndex = 125;
@@ -1648,7 +1653,7 @@ namespace ECED_FORMS
             // 
             this.label59.AutoSize = true;
             this.label59.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label59.Location = new System.Drawing.Point(482, 280);
+            this.label59.Location = new System.Drawing.Point(616, 328);
             this.label59.Name = "label59";
             this.label59.Size = new System.Drawing.Size(33, 17);
             this.label59.TabIndex = 127;
@@ -1658,7 +1663,7 @@ namespace ECED_FORMS
             // 
             this.label57.AutoSize = true;
             this.label57.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label57.Location = new System.Drawing.Point(9, 326);
+            this.label57.Location = new System.Drawing.Point(21, 376);
             this.label57.Name = "label57";
             this.label57.Size = new System.Drawing.Size(461, 17);
             this.label57.TabIndex = 129;
@@ -1668,7 +1673,7 @@ namespace ECED_FORMS
             // 
             this.label60.AutoSize = true;
             this.label60.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label60.Location = new System.Drawing.Point(589, 323);
+            this.label60.Location = new System.Drawing.Point(616, 376);
             this.label60.Name = "label60";
             this.label60.Size = new System.Drawing.Size(33, 17);
             this.label60.TabIndex = 131;
@@ -1678,7 +1683,7 @@ namespace ECED_FORMS
             // 
             this.label61.AutoSize = true;
             this.label61.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label61.Location = new System.Drawing.Point(11, 372);
+            this.label61.Location = new System.Drawing.Point(302, 417);
             this.label61.Name = "label61";
             this.label61.Size = new System.Drawing.Size(179, 17);
             this.label61.TabIndex = 133;
@@ -1688,7 +1693,7 @@ namespace ECED_FORMS
             // 
             this.label40.AutoSize = true;
             this.label40.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label40.Location = new System.Drawing.Point(11, 54);
+            this.label40.Location = new System.Drawing.Point(308, 108);
             this.label40.Name = "label40";
             this.label40.Size = new System.Drawing.Size(173, 17);
             this.label40.TabIndex = 135;
@@ -1698,7 +1703,7 @@ namespace ECED_FORMS
             // 
             this.chCarteiraSim.AutoSize = true;
             this.chCarteiraSim.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chCarteiraSim.Location = new System.Drawing.Point(190, 54);
+            this.chCarteiraSim.Location = new System.Drawing.Point(491, 108);
             this.chCarteiraSim.Name = "chCarteiraSim";
             this.chCarteiraSim.Size = new System.Drawing.Size(49, 20);
             this.chCarteiraSim.TabIndex = 136;
@@ -1710,7 +1715,7 @@ namespace ECED_FORMS
             // 
             this.chCarteiraNao.AutoSize = true;
             this.chCarteiraNao.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chCarteiraNao.Location = new System.Drawing.Point(249, 54);
+            this.chCarteiraNao.Location = new System.Drawing.Point(544, 109);
             this.chCarteiraNao.Name = "chCarteiraNao";
             this.chCarteiraNao.Size = new System.Drawing.Size(53, 20);
             this.chCarteiraNao.TabIndex = 137;
@@ -1722,7 +1727,7 @@ namespace ECED_FORMS
             // 
             this.label41.AutoSize = true;
             this.label41.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label41.Location = new System.Drawing.Point(409, 128);
+            this.label41.Location = new System.Drawing.Point(604, 180);
             this.label41.Name = "label41";
             this.label41.Size = new System.Drawing.Size(44, 13);
             this.label41.TabIndex = 138;
@@ -1730,51 +1735,51 @@ namespace ECED_FORMS
             // 
             // txtProblemaSaude
             // 
-            this.txtProblemaSaude.Location = new System.Drawing.Point(459, 123);
+            this.txtProblemaSaude.Location = new System.Drawing.Point(651, 174);
             this.txtProblemaSaude.Name = "txtProblemaSaude";
             this.txtProblemaSaude.Size = new System.Drawing.Size(161, 22);
             this.txtProblemaSaude.TabIndex = 109;
             // 
             // txtIntoleranciaAlimento
             // 
-            this.txtIntoleranciaAlimento.Location = new System.Drawing.Point(459, 206);
+            this.txtIntoleranciaAlimento.Location = new System.Drawing.Point(652, 249);
             this.txtIntoleranciaAlimento.Name = "txtIntoleranciaAlimento";
-            this.txtIntoleranciaAlimento.Size = new System.Drawing.Size(161, 22);
+            this.txtIntoleranciaAlimento.Size = new System.Drawing.Size(164, 22);
             this.txtIntoleranciaAlimento.TabIndex = 113;
             // 
             // txtDietaEspecifica
             // 
-            this.txtDietaEspecifica.Location = new System.Drawing.Point(459, 238);
+            this.txtDietaEspecifica.Location = new System.Drawing.Point(655, 282);
             this.txtDietaEspecifica.Name = "txtDietaEspecifica";
             this.txtDietaEspecifica.Size = new System.Drawing.Size(161, 22);
             this.txtDietaEspecifica.TabIndex = 119;
             // 
             // txtContatoEmergUm
             // 
-            this.txtContatoEmergUm.Location = new System.Drawing.Point(369, 278);
+            this.txtContatoEmergUm.Location = new System.Drawing.Point(487, 323);
             this.txtContatoEmergUm.Name = "txtContatoEmergUm";
             this.txtContatoEmergUm.Size = new System.Drawing.Size(113, 22);
             this.txtContatoEmergUm.TabIndex = 126;
             // 
             // txtContatoEmergDois
             // 
-            this.txtContatoEmergDois.Location = new System.Drawing.Point(470, 321);
+            this.txtContatoEmergDois.Location = new System.Drawing.Point(487, 371);
             this.txtContatoEmergDois.Name = "txtContatoEmergDois";
             this.txtContatoEmergDois.Size = new System.Drawing.Size(113, 22);
             this.txtContatoEmergDois.TabIndex = 130;
             // 
             // txtAlergiaMedicamento
             // 
-            this.txtAlergiaMedicamento.Location = new System.Drawing.Point(422, 163);
+            this.txtAlergiaMedicamento.Location = new System.Drawing.Point(651, 212);
             this.txtAlergiaMedicamento.Name = "txtAlergiaMedicamento";
-            this.txtAlergiaMedicamento.Size = new System.Drawing.Size(161, 22);
+            this.txtAlergiaMedicamento.Size = new System.Drawing.Size(165, 22);
             this.txtAlergiaMedicamento.TabIndex = 139;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(9, 92);
+            this.label3.Location = new System.Drawing.Point(395, 141);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(86, 17);
             this.label3.TabIndex = 140;
@@ -1784,7 +1789,7 @@ namespace ECED_FORMS
             // 
             this.chDeficienciaSim.AutoSize = true;
             this.chDeficienciaSim.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chDeficienciaSim.Location = new System.Drawing.Point(101, 93);
+            this.chDeficienciaSim.Location = new System.Drawing.Point(490, 140);
             this.chDeficienciaSim.Name = "chDeficienciaSim";
             this.chDeficienciaSim.Size = new System.Drawing.Size(48, 17);
             this.chDeficienciaSim.TabIndex = 141;
@@ -1796,7 +1801,7 @@ namespace ECED_FORMS
             // 
             this.chDeficienciaNao.AutoSize = true;
             this.chDeficienciaNao.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chDeficienciaNao.Location = new System.Drawing.Point(148, 93);
+            this.chDeficienciaNao.Location = new System.Drawing.Point(545, 140);
             this.chDeficienciaNao.Name = "chDeficienciaNao";
             this.chDeficienciaNao.Size = new System.Drawing.Size(52, 17);
             this.chDeficienciaNao.TabIndex = 142;
@@ -1808,7 +1813,7 @@ namespace ECED_FORMS
             // 
             this.label39.AutoSize = true;
             this.label39.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label39.Location = new System.Drawing.Point(206, 94);
+            this.label39.Location = new System.Drawing.Point(601, 140);
             this.label39.Name = "label39";
             this.label39.Size = new System.Drawing.Size(44, 13);
             this.label39.TabIndex = 143;
@@ -1828,14 +1833,14 @@ namespace ECED_FORMS
             "SURDO CEGUEIRA",
             "SURDO",
             " "});
-            this.cbDeficiencia.Location = new System.Drawing.Point(256, 86);
+            this.cbDeficiencia.Location = new System.Drawing.Point(651, 134);
             this.cbDeficiencia.Name = "cbDeficiencia";
-            this.cbDeficiencia.Size = new System.Drawing.Size(147, 24);
+            this.cbDeficiencia.Size = new System.Drawing.Size(161, 24);
             this.cbDeficiencia.TabIndex = 144;
             // 
             // txtTelefoneContato
             // 
-            this.txtTelefoneContato.Location = new System.Drawing.Point(190, 367);
+            this.txtTelefoneContato.Location = new System.Drawing.Point(487, 417);
             this.txtTelefoneContato.Mask = "(99) 00000-0000";
             this.txtTelefoneContato.Name = "txtTelefoneContato";
             this.txtTelefoneContato.Size = new System.Drawing.Size(107, 22);
@@ -1843,7 +1848,7 @@ namespace ECED_FORMS
             // 
             // txtTelefoneEmergUm
             // 
-            this.txtTelefoneEmergUm.Location = new System.Drawing.Point(521, 275);
+            this.txtTelefoneEmergUm.Location = new System.Drawing.Point(655, 323);
             this.txtTelefoneEmergUm.Mask = "(99) 00000-0000";
             this.txtTelefoneEmergUm.Name = "txtTelefoneEmergUm";
             this.txtTelefoneEmergUm.Size = new System.Drawing.Size(107, 22);
@@ -1851,7 +1856,7 @@ namespace ECED_FORMS
             // 
             // txtTelefoneEmergDois
             // 
-            this.txtTelefoneEmergDois.Location = new System.Drawing.Point(628, 318);
+            this.txtTelefoneEmergDois.Location = new System.Drawing.Point(655, 371);
             this.txtTelefoneEmergDois.Mask = "(99) 00000-0000";
             this.txtTelefoneEmergDois.Name = "txtTelefoneEmergDois";
             this.txtTelefoneEmergDois.Size = new System.Drawing.Size(107, 22);
@@ -1859,9 +1864,9 @@ namespace ECED_FORMS
             // 
             // btnAtualizarSaude
             // 
-            this.btnAtualizarSaude.Location = new System.Drawing.Point(1048, 417);
+            this.btnAtualizarSaude.Location = new System.Drawing.Point(1111, 428);
             this.btnAtualizarSaude.Name = "btnAtualizarSaude";
-            this.btnAtualizarSaude.Size = new System.Drawing.Size(71, 23);
+            this.btnAtualizarSaude.Size = new System.Drawing.Size(84, 32);
             this.btnAtualizarSaude.TabIndex = 194;
             this.btnAtualizarSaude.Text = "Atualizar";
             this.btnAtualizarSaude.UseVisualStyleBackColor = true;
@@ -1902,7 +1907,7 @@ namespace ECED_FORMS
             this.tabPage2.Location = new System.Drawing.Point(4, 25);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1230, 493);
+            this.tabPage2.Size = new System.Drawing.Size(1230, 490);
             this.tabPage2.TabIndex = 3;
             this.tabPage2.Text = "Identificação escolar          ";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -1911,7 +1916,7 @@ namespace ECED_FORMS
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(473, 55);
+            this.label1.Location = new System.Drawing.Point(471, 83);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(86, 16);
             this.label1.TabIndex = 86;
@@ -1924,7 +1929,7 @@ namespace ECED_FORMS
             this.panel1.Controls.Add(this.cmbTurma);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label8);
-            this.panel1.Location = new System.Drawing.Point(328, 125);
+            this.panel1.Location = new System.Drawing.Point(326, 145);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(385, 50);
             this.panel1.TabIndex = 90;
@@ -1994,7 +1999,7 @@ namespace ECED_FORMS
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(689, 54);
+            this.label9.Location = new System.Drawing.Point(687, 82);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(125, 17);
             this.label9.TabIndex = 91;
@@ -2004,7 +2009,7 @@ namespace ECED_FORMS
             // 
             this.dtMatricula.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtMatricula.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.dtMatricula.Location = new System.Drawing.Point(820, 54);
+            this.dtMatricula.Location = new System.Drawing.Point(818, 82);
             this.dtMatricula.Name = "dtMatricula";
             this.dtMatricula.Size = new System.Drawing.Size(111, 22);
             this.dtMatricula.TabIndex = 92;
@@ -2012,20 +2017,21 @@ namespace ECED_FORMS
             // 
             // panel4
             // 
-            this.panel4.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(247)))), ((int)(((byte)(199)))));
             this.panel4.Controls.Add(this.label28);
-            this.panel4.Location = new System.Drawing.Point(6, 15);
+            this.panel4.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel4.Location = new System.Drawing.Point(0, 15);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1304, 20);
+            this.panel4.Size = new System.Drawing.Size(1230, 29);
             this.panel4.TabIndex = 93;
             // 
             // label28
             // 
             this.label28.AutoSize = true;
-            this.label28.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.Location = new System.Drawing.Point(3, 0);
+            this.label28.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label28.Location = new System.Drawing.Point(414, 4);
             this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(150, 16);
+            this.label28.Size = new System.Drawing.Size(219, 22);
             this.label28.TabIndex = 33;
             this.label28.Text = "IDENTIFICAÇÃO ESCOLAR";
             // 
@@ -2033,7 +2039,7 @@ namespace ECED_FORMS
             // 
             this.label36.AutoSize = true;
             this.label36.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label36.Location = new System.Drawing.Point(11, 56);
+            this.label36.Location = new System.Drawing.Point(9, 84);
             this.label36.Name = "label36";
             this.label36.Size = new System.Drawing.Size(119, 16);
             this.label36.TabIndex = 94;
@@ -2043,7 +2049,7 @@ namespace ECED_FORMS
             // 
             this.label42.AutoSize = true;
             this.label42.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label42.Location = new System.Drawing.Point(6, 259);
+            this.label42.Location = new System.Drawing.Point(0, 259);
             this.label42.Name = "label42";
             this.label42.Size = new System.Drawing.Size(329, 17);
             this.label42.TabIndex = 100;
@@ -2052,7 +2058,7 @@ namespace ECED_FORMS
             // label62
             // 
             this.label62.AutoSize = true;
-            this.label62.Location = new System.Drawing.Point(534, 262);
+            this.label62.Location = new System.Drawing.Point(863, 256);
             this.label62.Name = "label62";
             this.label62.Size = new System.Drawing.Size(30, 16);
             this.label62.TabIndex = 102;
@@ -2061,23 +2067,23 @@ namespace ECED_FORMS
             // txtUnidadeEscolar
             // 
             this.txtUnidadeEscolar.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUnidadeEscolar.Location = new System.Drawing.Point(142, 53);
+            this.txtUnidadeEscolar.Location = new System.Drawing.Point(140, 81);
             this.txtUnidadeEscolar.Name = "txtUnidadeEscolar";
             this.txtUnidadeEscolar.Size = new System.Drawing.Size(305, 22);
             this.txtUnidadeEscolar.TabIndex = 95;
             // 
             // txtPessoaAutorizada
             // 
-            this.txtPessoaAutorizada.Location = new System.Drawing.Point(341, 257);
+            this.txtPessoaAutorizada.Location = new System.Drawing.Point(331, 257);
             this.txtPessoaAutorizada.Name = "txtPessoaAutorizada";
-            this.txtPessoaAutorizada.Size = new System.Drawing.Size(164, 22);
+            this.txtPessoaAutorizada.Size = new System.Drawing.Size(177, 22);
             this.txtPessoaAutorizada.TabIndex = 101;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(686, 256);
+            this.label7.Location = new System.Drawing.Point(522, 259);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(153, 17);
             this.label7.TabIndex = 106;
@@ -2094,7 +2100,7 @@ namespace ECED_FORMS
             "PAI",
             "TIOS",
             "TIAS"});
-            this.cmbParentesco.Location = new System.Drawing.Point(846, 252);
+            this.cmbParentesco.Location = new System.Drawing.Point(682, 255);
             this.cmbParentesco.Name = "cmbParentesco";
             this.cmbParentesco.Size = new System.Drawing.Size(121, 24);
             this.cmbParentesco.TabIndex = 107;
@@ -2103,7 +2109,7 @@ namespace ECED_FORMS
             // 
             this.label34.AutoSize = true;
             this.label34.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label34.Location = new System.Drawing.Point(998, 261);
+            this.label34.Location = new System.Drawing.Point(1050, 254);
             this.label34.Name = "label34";
             this.label34.Size = new System.Drawing.Size(51, 17);
             this.label34.TabIndex = 108;
@@ -2112,7 +2118,7 @@ namespace ECED_FORMS
             // label37
             // 
             this.label37.AutoSize = true;
-            this.label37.Location = new System.Drawing.Point(34, 313);
+            this.label37.Location = new System.Drawing.Point(36, 313);
             this.label37.Name = "label37";
             this.label37.Size = new System.Drawing.Size(288, 16);
             this.label37.TabIndex = 110;
@@ -2120,7 +2126,7 @@ namespace ECED_FORMS
             // 
             // txtAvisoUrgencia
             // 
-            this.txtAvisoUrgencia.Location = new System.Drawing.Point(328, 310);
+            this.txtAvisoUrgencia.Location = new System.Drawing.Point(331, 307);
             this.txtAvisoUrgencia.Name = "txtAvisoUrgencia";
             this.txtAvisoUrgencia.Size = new System.Drawing.Size(177, 22);
             this.txtAvisoUrgencia.TabIndex = 112;
@@ -2129,7 +2135,7 @@ namespace ECED_FORMS
             // 
             this.label69.AutoSize = true;
             this.label69.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label69.Location = new System.Drawing.Point(514, 315);
+            this.label69.Location = new System.Drawing.Point(522, 309);
             this.label69.Name = "label69";
             this.label69.Size = new System.Drawing.Size(153, 17);
             this.label69.TabIndex = 113;
@@ -2146,7 +2152,7 @@ namespace ECED_FORMS
             "PAI",
             "TIOS",
             "TIAS"});
-            this.cmbGrauUrgencia.Location = new System.Drawing.Point(675, 311);
+            this.cmbGrauUrgencia.Location = new System.Drawing.Point(682, 302);
             this.cmbGrauUrgencia.Name = "cmbGrauUrgencia";
             this.cmbGrauUrgencia.Size = new System.Drawing.Size(121, 24);
             this.cmbGrauUrgencia.TabIndex = 115;
@@ -2154,7 +2160,7 @@ namespace ECED_FORMS
             // label70
             // 
             this.label70.AutoSize = true;
-            this.label70.Location = new System.Drawing.Point(823, 319);
+            this.label70.Location = new System.Drawing.Point(863, 307);
             this.label70.Name = "label70";
             this.label70.Size = new System.Drawing.Size(30, 16);
             this.label70.TabIndex = 116;
@@ -2163,7 +2169,7 @@ namespace ECED_FORMS
             // label71
             // 
             this.label71.AutoSize = true;
-            this.label71.Location = new System.Drawing.Point(45, 376);
+            this.label71.Location = new System.Drawing.Point(47, 368);
             this.label71.Name = "label71";
             this.label71.Size = new System.Drawing.Size(277, 16);
             this.label71.TabIndex = 117;
@@ -2171,15 +2177,15 @@ namespace ECED_FORMS
             // 
             // txtNomeIrmaoEstuda
             // 
-            this.txtNomeIrmaoEstuda.Location = new System.Drawing.Point(328, 376);
+            this.txtNomeIrmaoEstuda.Location = new System.Drawing.Point(330, 362);
             this.txtNomeIrmaoEstuda.Name = "txtNomeIrmaoEstuda";
-            this.txtNomeIrmaoEstuda.Size = new System.Drawing.Size(177, 22);
+            this.txtNomeIrmaoEstuda.Size = new System.Drawing.Size(178, 22);
             this.txtNomeIrmaoEstuda.TabIndex = 118;
             // 
             // label72
             // 
             this.label72.AutoSize = true;
-            this.label72.Location = new System.Drawing.Point(565, 387);
+            this.label72.Location = new System.Drawing.Point(621, 365);
             this.label72.Name = "label72";
             this.label72.Size = new System.Drawing.Size(54, 16);
             this.label72.TabIndex = 120;
@@ -2210,7 +2216,7 @@ namespace ECED_FORMS
             "8° Ano B",
             "9° Ano A",
             "9° Ano B"});
-            this.cmbTurmaIrmao.Location = new System.Drawing.Point(625, 379);
+            this.cmbTurmaIrmao.Location = new System.Drawing.Point(682, 357);
             this.cmbTurmaIrmao.Name = "cmbTurmaIrmao";
             this.cmbTurmaIrmao.Size = new System.Drawing.Size(88, 24);
             this.cmbTurmaIrmao.TabIndex = 121;
@@ -2218,7 +2224,7 @@ namespace ECED_FORMS
             // label102
             // 
             this.label102.AutoSize = true;
-            this.label102.Location = new System.Drawing.Point(731, 385);
+            this.label102.Location = new System.Drawing.Point(830, 365);
             this.label102.Name = "label102";
             this.label102.Size = new System.Drawing.Size(63, 16);
             this.label102.TabIndex = 122;
@@ -2231,14 +2237,14 @@ namespace ECED_FORMS
             this.cmbPeriodoIrmao.Items.AddRange(new object[] {
             "MATUTINO",
             "VERPERTINO"});
-            this.cmbPeriodoIrmao.Location = new System.Drawing.Point(802, 379);
+            this.cmbPeriodoIrmao.Location = new System.Drawing.Point(901, 359);
             this.cmbPeriodoIrmao.Name = "cmbPeriodoIrmao";
             this.cmbPeriodoIrmao.Size = new System.Drawing.Size(95, 24);
             this.cmbPeriodoIrmao.TabIndex = 16;
             // 
             // txtTelUrgencia
             // 
-            this.txtTelUrgencia.Location = new System.Drawing.Point(856, 315);
+            this.txtTelUrgencia.Location = new System.Drawing.Point(896, 303);
             this.txtTelUrgencia.Mask = "(99) 00000-0000";
             this.txtTelUrgencia.Name = "txtTelUrgencia";
             this.txtTelUrgencia.Size = new System.Drawing.Size(107, 22);
@@ -2246,7 +2252,7 @@ namespace ECED_FORMS
             // 
             // txtTelefonePessAutorizada
             // 
-            this.txtTelefonePessAutorizada.Location = new System.Drawing.Point(565, 254);
+            this.txtTelefonePessAutorizada.Location = new System.Drawing.Point(894, 252);
             this.txtTelefonePessAutorizada.Mask = "(99) 00000-0000";
             this.txtTelefonePessAutorizada.Name = "txtTelefonePessAutorizada";
             this.txtTelefonePessAutorizada.Size = new System.Drawing.Size(107, 22);
@@ -2254,7 +2260,7 @@ namespace ECED_FORMS
             // 
             // txtInep
             // 
-            this.txtInep.Location = new System.Drawing.Point(565, 49);
+            this.txtInep.Location = new System.Drawing.Point(563, 77);
             this.txtInep.Mask = "00000000";
             this.txtInep.Name = "txtInep";
             this.txtInep.Size = new System.Drawing.Size(76, 22);
@@ -2262,17 +2268,17 @@ namespace ECED_FORMS
             // 
             // txtIdadeParentesco
             // 
-            this.txtIdadeParentesco.Location = new System.Drawing.Point(1055, 254);
+            this.txtIdadeParentesco.Location = new System.Drawing.Point(1107, 251);
             this.txtIdadeParentesco.Mask = "000";
             this.txtIdadeParentesco.Name = "txtIdadeParentesco";
-            this.txtIdadeParentesco.Size = new System.Drawing.Size(55, 22);
+            this.txtIdadeParentesco.Size = new System.Drawing.Size(26, 22);
             this.txtIdadeParentesco.TabIndex = 126;
             // 
             // btnAtualizarIdentEscola
             // 
-            this.btnAtualizarIdentEscola.Location = new System.Drawing.Point(1031, 433);
+            this.btnAtualizarIdentEscola.Location = new System.Drawing.Point(1122, 439);
             this.btnAtualizarIdentEscola.Name = "btnAtualizarIdentEscola";
-            this.btnAtualizarIdentEscola.Size = new System.Drawing.Size(79, 23);
+            this.btnAtualizarIdentEscola.Size = new System.Drawing.Size(86, 33);
             this.btnAtualizarIdentEscola.TabIndex = 194;
             this.btnAtualizarIdentEscola.Text = "Atualizar";
             this.btnAtualizarIdentEscola.UseVisualStyleBackColor = true;
@@ -2314,7 +2320,7 @@ namespace ECED_FORMS
             // 
             this.label29.AutoSize = true;
             this.label29.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label29.Location = new System.Drawing.Point(30, 142);
+            this.label29.Location = new System.Drawing.Point(113, 126);
             this.label29.Name = "label29";
             this.label29.Size = new System.Drawing.Size(42, 19);
             this.label29.TabIndex = 77;
@@ -2324,7 +2330,7 @@ namespace ECED_FORMS
             // 
             this.label30.AutoSize = true;
             this.label30.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label30.Location = new System.Drawing.Point(30, 218);
+            this.label30.Location = new System.Drawing.Point(107, 194);
             this.label30.Name = "label30";
             this.label30.Size = new System.Drawing.Size(42, 19);
             this.label30.TabIndex = 79;
@@ -2334,7 +2340,7 @@ namespace ECED_FORMS
             // 
             this.label32.AutoSize = true;
             this.label32.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label32.Location = new System.Drawing.Point(385, 275);
+            this.label32.Location = new System.Drawing.Point(456, 254);
             this.label32.Name = "label32";
             this.label32.Size = new System.Drawing.Size(67, 19);
             this.label32.TabIndex = 81;
@@ -2344,7 +2350,7 @@ namespace ECED_FORMS
             // 
             this.label33.AutoSize = true;
             this.label33.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label33.Location = new System.Drawing.Point(15, 275);
+            this.label33.Location = new System.Drawing.Point(86, 259);
             this.label33.Name = "label33";
             this.label33.Size = new System.Drawing.Size(69, 19);
             this.label33.TabIndex = 82;
@@ -2354,7 +2360,7 @@ namespace ECED_FORMS
             // 
             this.label35.AutoSize = true;
             this.label35.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label35.Location = new System.Drawing.Point(15, 335);
+            this.label35.Location = new System.Drawing.Point(86, 319);
             this.label35.Name = "label35";
             this.label35.Size = new System.Drawing.Size(63, 19);
             this.label35.TabIndex = 84;
@@ -2362,26 +2368,26 @@ namespace ECED_FORMS
             // 
             // panel5
             // 
-            this.panel5.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(247)))), ((int)(((byte)(199)))));
             this.panel5.Controls.Add(this.label23);
             this.panel5.Location = new System.Drawing.Point(0, 17);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1328, 33);
+            this.panel5.Size = new System.Drawing.Size(1230, 33);
             this.panel5.TabIndex = 91;
             // 
             // label23
             // 
             this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.Location = new System.Drawing.Point(468, 17);
+            this.label23.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.Location = new System.Drawing.Point(468, 5);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(68, 16);
+            this.label23.Size = new System.Drawing.Size(99, 22);
             this.label23.TabIndex = 33;
             this.label23.Text = "ENDEREÇO";
             // 
             // btnBuscarCep
             // 
-            this.btnBuscarCep.Location = new System.Drawing.Point(218, 142);
+            this.btnBuscarCep.Location = new System.Drawing.Point(322, 126);
             this.btnBuscarCep.Name = "btnBuscarCep";
             this.btnBuscarCep.Size = new System.Drawing.Size(75, 23);
             this.btnBuscarCep.TabIndex = 92;
@@ -2391,7 +2397,7 @@ namespace ECED_FORMS
             // 
             // btnLimpaCep
             // 
-            this.btnLimpaCep.Location = new System.Drawing.Point(299, 142);
+            this.btnLimpaCep.Location = new System.Drawing.Point(403, 126);
             this.btnLimpaCep.Name = "btnLimpaCep";
             this.btnLimpaCep.Size = new System.Drawing.Size(65, 22);
             this.btnLimpaCep.TabIndex = 93;
@@ -2403,7 +2409,7 @@ namespace ECED_FORMS
             // 
             this.label48.AutoSize = true;
             this.label48.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label48.Location = new System.Drawing.Point(378, 215);
+            this.label48.Location = new System.Drawing.Point(449, 194);
             this.label48.Name = "label48";
             this.label48.Size = new System.Drawing.Size(74, 19);
             this.label48.TabIndex = 96;
@@ -2413,7 +2419,7 @@ namespace ECED_FORMS
             // 
             this.label49.AutoSize = true;
             this.label49.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label49.Location = new System.Drawing.Point(806, 218);
+            this.label49.Location = new System.Drawing.Point(874, 197);
             this.label49.Name = "label49";
             this.label49.Size = new System.Drawing.Size(68, 19);
             this.label49.TabIndex = 98;
@@ -2423,7 +2429,7 @@ namespace ECED_FORMS
             // 
             this.label50.AutoSize = true;
             this.label50.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label50.Location = new System.Drawing.Point(344, 338);
+            this.label50.Location = new System.Drawing.Point(415, 317);
             this.label50.Name = "label50";
             this.label50.Size = new System.Drawing.Size(108, 19);
             this.label50.TabIndex = 100;
@@ -2433,7 +2439,7 @@ namespace ECED_FORMS
             // 
             this.label63.AutoSize = true;
             this.label63.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label63.Location = new System.Drawing.Point(706, 278);
+            this.label63.Location = new System.Drawing.Point(774, 257);
             this.label63.Name = "label63";
             this.label63.Size = new System.Drawing.Size(168, 19);
             this.label63.TabIndex = 102;
@@ -2441,56 +2447,56 @@ namespace ECED_FORMS
             // 
             // txtRua
             // 
-            this.txtRua.Location = new System.Drawing.Point(88, 215);
+            this.txtRua.Location = new System.Drawing.Point(161, 191);
             this.txtRua.Name = "txtRua";
             this.txtRua.Size = new System.Drawing.Size(211, 22);
             this.txtRua.TabIndex = 85;
             // 
             // txtEstado
             // 
-            this.txtEstado.Location = new System.Drawing.Point(458, 275);
+            this.txtEstado.Location = new System.Drawing.Point(529, 254);
             this.txtEstado.Name = "txtEstado";
             this.txtEstado.Size = new System.Drawing.Size(211, 22);
             this.txtEstado.TabIndex = 87;
             // 
             // txtBairro
             // 
-            this.txtBairro.Location = new System.Drawing.Point(90, 272);
+            this.txtBairro.Location = new System.Drawing.Point(161, 256);
             this.txtBairro.Name = "txtBairro";
             this.txtBairro.Size = new System.Drawing.Size(211, 22);
             this.txtBairro.TabIndex = 88;
             // 
             // txtCidade
             // 
-            this.txtCidade.Location = new System.Drawing.Point(84, 335);
+            this.txtCidade.Location = new System.Drawing.Point(161, 319);
             this.txtCidade.Name = "txtCidade";
             this.txtCidade.Size = new System.Drawing.Size(211, 22);
             this.txtCidade.TabIndex = 90;
             // 
             // txtAvenida
             // 
-            this.txtAvenida.Location = new System.Drawing.Point(458, 215);
+            this.txtAvenida.Location = new System.Drawing.Point(529, 194);
             this.txtAvenida.Name = "txtAvenida";
             this.txtAvenida.Size = new System.Drawing.Size(211, 22);
             this.txtAvenida.TabIndex = 97;
             // 
             // txtComplemento
             // 
-            this.txtComplemento.Location = new System.Drawing.Point(458, 335);
+            this.txtComplemento.Location = new System.Drawing.Point(529, 314);
             this.txtComplemento.Name = "txtComplemento";
             this.txtComplemento.Size = new System.Drawing.Size(211, 22);
             this.txtComplemento.TabIndex = 101;
             // 
             // txtPontoReferencia
             // 
-            this.txtPontoReferencia.Location = new System.Drawing.Point(880, 275);
+            this.txtPontoReferencia.Location = new System.Drawing.Point(948, 254);
             this.txtPontoReferencia.Name = "txtPontoReferencia";
             this.txtPontoReferencia.Size = new System.Drawing.Size(156, 22);
             this.txtPontoReferencia.TabIndex = 103;
             // 
             // txtCep
             // 
-            this.txtCep.Location = new System.Drawing.Point(69, 142);
+            this.txtCep.Location = new System.Drawing.Point(161, 126);
             this.txtCep.Mask = "00000\\-000";
             this.txtCep.Name = "txtCep";
             this.txtCep.Size = new System.Drawing.Size(136, 22);
@@ -2498,7 +2504,7 @@ namespace ECED_FORMS
             // 
             // txtNumero
             // 
-            this.txtNumero.Location = new System.Drawing.Point(880, 215);
+            this.txtNumero.Location = new System.Drawing.Point(948, 194);
             this.txtNumero.Mask = "00000";
             this.txtNumero.Name = "txtNumero";
             this.txtNumero.Size = new System.Drawing.Size(40, 22);
@@ -2577,7 +2583,7 @@ namespace ECED_FORMS
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(16, 49);
+            this.label2.Location = new System.Drawing.Point(6, 65);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(107, 17);
             this.label2.TabIndex = 20;
@@ -2587,17 +2593,17 @@ namespace ECED_FORMS
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(23, 111);
+            this.label4.Location = new System.Drawing.Point(67, 137);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(37, 17);
+            this.label4.Size = new System.Drawing.Size(40, 17);
             this.label4.TabIndex = 25;
-            this.label4.Text = "Sexo";
+            this.label4.Text = "Sexo:";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(440, 49);
+            this.label6.Location = new System.Drawing.Point(543, 67);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(136, 17);
             this.label6.TabIndex = 26;
@@ -2612,7 +2618,7 @@ namespace ECED_FORMS
             "MASCULINO",
             "PREFIRO NÃO DIZER",
             "OUTROS(A)"});
-            this.cmbSexo.Location = new System.Drawing.Point(19, 131);
+            this.cmbSexo.Location = new System.Drawing.Point(119, 134);
             this.cmbSexo.Name = "cmbSexo";
             this.cmbSexo.Size = new System.Drawing.Size(117, 25);
             this.cmbSexo.TabIndex = 27;
@@ -2620,7 +2626,7 @@ namespace ECED_FORMS
             // dtNascimentoAluno
             // 
             this.dtNascimentoAluno.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtNascimentoAluno.Location = new System.Drawing.Point(443, 67);
+            this.dtNascimentoAluno.Location = new System.Drawing.Point(685, 65);
             this.dtNascimentoAluno.Name = "dtNascimentoAluno";
             this.dtNascimentoAluno.Size = new System.Drawing.Size(127, 23);
             this.dtNascimentoAluno.TabIndex = 28;
@@ -2637,10 +2643,10 @@ namespace ECED_FORMS
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.Location = new System.Drawing.Point(473, 5);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(107, 19);
+            this.label12.Size = new System.Drawing.Size(113, 22);
             this.label12.TabIndex = 33;
             this.label12.Text = "Identificação";
             // 
@@ -2648,11 +2654,11 @@ namespace ECED_FORMS
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(170, 111);
+            this.label15.Location = new System.Drawing.Point(259, 139);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(81, 17);
+            this.label15.Size = new System.Drawing.Size(84, 17);
             this.label15.TabIndex = 37;
-            this.label15.Text = "Cor ou Raça";
+            this.label15.Text = "Cor ou Raça:";
             // 
             // cmbCor
             // 
@@ -2664,7 +2670,7 @@ namespace ECED_FORMS
             "INDÍGENA",
             "NEGRO",
             "PARDO"});
-            this.cmbCor.Location = new System.Drawing.Point(173, 131);
+            this.cmbCor.Location = new System.Drawing.Point(349, 135);
             this.cmbCor.Name = "cmbCor";
             this.cmbCor.Size = new System.Drawing.Size(121, 25);
             this.cmbCor.TabIndex = 38;
@@ -2673,7 +2679,7 @@ namespace ECED_FORMS
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(247)))), ((int)(((byte)(199)))));
             this.panel3.Controls.Add(this.label18);
-            this.panel3.Location = new System.Drawing.Point(0, 186);
+            this.panel3.Location = new System.Drawing.Point(0, 226);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1230, 30);
             this.panel3.TabIndex = 34;
@@ -2681,17 +2687,17 @@ namespace ECED_FORMS
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(461, 5);
+            this.label18.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Location = new System.Drawing.Point(461, 4);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(106, 19);
+            this.label18.Size = new System.Drawing.Size(113, 22);
             this.label18.TabIndex = 33;
             this.label18.Text = "Documentos";
             // 
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(20, 346);
+            this.label19.Location = new System.Drawing.Point(92, 402);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(147, 17);
             this.label19.TabIndex = 44;
@@ -2700,7 +2706,7 @@ namespace ECED_FORMS
             // label20
             // 
             this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(16, 299);
+            this.label20.Location = new System.Drawing.Point(210, 356);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(34, 17);
             this.label20.TabIndex = 46;
@@ -2709,7 +2715,7 @@ namespace ECED_FORMS
             // label21
             // 
             this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(327, 349);
+            this.label21.Location = new System.Drawing.Point(502, 402);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(116, 17);
             this.label21.TabIndex = 48;
@@ -2718,7 +2724,7 @@ namespace ECED_FORMS
             // label22
             // 
             this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(696, 232);
+            this.label22.Location = new System.Drawing.Point(754, 283);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(132, 17);
             this.label22.TabIndex = 49;
@@ -2727,7 +2733,7 @@ namespace ECED_FORMS
             // label24
             // 
             this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(430, 262);
+            this.label24.Location = new System.Drawing.Point(453, 319);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(54, 17);
             this.label24.TabIndex = 51;
@@ -2736,7 +2742,7 @@ namespace ECED_FORMS
             // label25
             // 
             this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(566, 262);
+            this.label25.Location = new System.Drawing.Point(589, 319);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(49, 17);
             this.label25.TabIndex = 56;
@@ -2745,7 +2751,7 @@ namespace ECED_FORMS
             // label26
             // 
             this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(16, 232);
+            this.label26.Location = new System.Drawing.Point(16, 287);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(228, 17);
             this.label26.TabIndex = 58;
@@ -2754,7 +2760,7 @@ namespace ECED_FORMS
             // label27
             // 
             this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(239, 299);
+            this.label27.Location = new System.Drawing.Point(400, 357);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(218, 17);
             this.label27.TabIndex = 59;
@@ -2764,11 +2770,11 @@ namespace ECED_FORMS
             // 
             this.label46.AutoSize = true;
             this.label46.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label46.Location = new System.Drawing.Point(327, 111);
+            this.label46.Location = new System.Drawing.Point(493, 138);
             this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(78, 17);
+            this.label46.Size = new System.Drawing.Size(81, 17);
             this.label46.TabIndex = 63;
-            this.label46.Text = "Estado civil";
+            this.label46.Text = "Estado civil:";
             // 
             // cmbEstadoCivil
             // 
@@ -2780,28 +2786,28 @@ namespace ECED_FORMS
             "SEPARADO(A)",
             "SOLTEIRO(A)",
             "VIÚVO(A)"});
-            this.cmbEstadoCivil.Location = new System.Drawing.Point(330, 131);
+            this.cmbEstadoCivil.Location = new System.Drawing.Point(577, 135);
             this.cmbEstadoCivil.Name = "cmbEstadoCivil";
             this.cmbEstadoCivil.Size = new System.Drawing.Size(127, 25);
             this.cmbEstadoCivil.TabIndex = 64;
             // 
             // txtOrgaoEmissor
             // 
-            this.txtOrgaoEmissor.Location = new System.Drawing.Point(449, 343);
+            this.txtOrgaoEmissor.Location = new System.Drawing.Point(627, 398);
             this.txtOrgaoEmissor.Name = "txtOrgaoEmissor";
             this.txtOrgaoEmissor.Size = new System.Drawing.Size(125, 23);
             this.txtOrgaoEmissor.TabIndex = 52;
             // 
             // txtRegCivil
             // 
-            this.txtRegCivil.Location = new System.Drawing.Point(247, 226);
+            this.txtRegCivil.Location = new System.Drawing.Point(247, 281);
             this.txtRegCivil.Name = "txtRegCivil";
             this.txtRegCivil.Size = new System.Drawing.Size(421, 23);
             this.txtRegCivil.TabIndex = 60;
             // 
             // txtNomeCartorio
             // 
-            this.txtNomeCartorio.Location = new System.Drawing.Point(465, 296);
+            this.txtNomeCartorio.Location = new System.Drawing.Point(626, 353);
             this.txtNomeCartorio.Name = "txtNomeCartorio";
             this.txtNomeCartorio.Size = new System.Drawing.Size(428, 23);
             this.txtNomeCartorio.TabIndex = 61;
@@ -2809,7 +2815,7 @@ namespace ECED_FORMS
             // txtNomeAluno
             // 
             this.txtNomeAluno.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.txtNomeAluno.Location = new System.Drawing.Point(19, 69);
+            this.txtNomeAluno.Location = new System.Drawing.Point(119, 63);
             this.txtNomeAluno.Name = "txtNomeAluno";
             this.txtNomeAluno.Size = new System.Drawing.Size(397, 23);
             this.txtNomeAluno.TabIndex = 62;
@@ -2817,7 +2823,7 @@ namespace ECED_FORMS
             // dtDataEmissao
             // 
             this.dtDataEmissao.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtDataEmissao.Location = new System.Drawing.Point(831, 226);
+            this.dtDataEmissao.Location = new System.Drawing.Point(889, 277);
             this.dtDataEmissao.Name = "dtDataEmissao";
             this.dtDataEmissao.Size = new System.Drawing.Size(127, 23);
             this.dtDataEmissao.TabIndex = 67;
@@ -2826,7 +2832,7 @@ namespace ECED_FORMS
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(623, 47);
+            this.label11.Location = new System.Drawing.Point(882, 70);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(91, 17);
             this.label11.TabIndex = 68;
@@ -2834,7 +2840,7 @@ namespace ECED_FORMS
             // 
             // txtNaturalidade
             // 
-            this.txtNaturalidade.Location = new System.Drawing.Point(626, 67);
+            this.txtNaturalidade.Location = new System.Drawing.Point(985, 66);
             this.txtNaturalidade.Name = "txtNaturalidade";
             this.txtNaturalidade.Size = new System.Drawing.Size(202, 23);
             this.txtNaturalidade.TabIndex = 69;
@@ -2842,7 +2848,7 @@ namespace ECED_FORMS
             // label43
             // 
             this.label43.AutoSize = true;
-            this.label43.Location = new System.Drawing.Point(834, 69);
+            this.label43.Location = new System.Drawing.Point(725, 138);
             this.label43.Name = "label43";
             this.label43.Size = new System.Drawing.Size(27, 17);
             this.label43.TabIndex = 70;
@@ -2851,7 +2857,7 @@ namespace ECED_FORMS
             // label44
             // 
             this.label44.AutoSize = true;
-            this.label44.Location = new System.Drawing.Point(16, 262);
+            this.label44.Location = new System.Drawing.Point(31, 319);
             this.label44.Name = "label44";
             this.label44.Size = new System.Drawing.Size(211, 17);
             this.label44.TabIndex = 72;
@@ -2860,7 +2866,7 @@ namespace ECED_FORMS
             // label45
             // 
             this.label45.AutoSize = true;
-            this.label45.Location = new System.Drawing.Point(696, 262);
+            this.label45.Location = new System.Drawing.Point(754, 316);
             this.label45.Name = "label45";
             this.label45.Size = new System.Drawing.Size(132, 17);
             this.label45.TabIndex = 74;
@@ -2869,7 +2875,7 @@ namespace ECED_FORMS
             // dtDataEmissaoCertNasc
             // 
             this.dtDataEmissaoCertNasc.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtDataEmissaoCertNasc.Location = new System.Drawing.Point(831, 257);
+            this.dtDataEmissaoCertNasc.Location = new System.Drawing.Point(889, 311);
             this.dtDataEmissaoCertNasc.Name = "dtDataEmissaoCertNasc";
             this.dtDataEmissaoCertNasc.Size = new System.Drawing.Size(127, 23);
             this.dtDataEmissaoCertNasc.TabIndex = 75;
@@ -2877,7 +2883,7 @@ namespace ECED_FORMS
             // label65
             // 
             this.label65.AutoSize = true;
-            this.label65.Location = new System.Drawing.Point(899, 295);
+            this.label65.Location = new System.Drawing.Point(1089, 351);
             this.label65.Name = "label65";
             this.label65.Size = new System.Drawing.Size(27, 17);
             this.label65.TabIndex = 76;
@@ -2886,7 +2892,7 @@ namespace ECED_FORMS
             // label66
             // 
             this.label66.AutoSize = true;
-            this.label66.Location = new System.Drawing.Point(580, 346);
+            this.label66.Location = new System.Drawing.Point(773, 401);
             this.label66.Name = "label66";
             this.label66.Size = new System.Drawing.Size(147, 17);
             this.label66.TabIndex = 78;
@@ -2895,7 +2901,7 @@ namespace ECED_FORMS
             // dtDataExpedicaoRG
             // 
             this.dtDataExpedicaoRG.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtDataExpedicaoRG.Location = new System.Drawing.Point(733, 341);
+            this.dtDataExpedicaoRG.Location = new System.Drawing.Point(926, 396);
             this.dtDataExpedicaoRG.Name = "dtDataExpedicaoRG";
             this.dtDataExpedicaoRG.Size = new System.Drawing.Size(127, 23);
             this.dtDataExpedicaoRG.TabIndex = 79;
@@ -2903,7 +2909,7 @@ namespace ECED_FORMS
             // label67
             // 
             this.label67.AutoSize = true;
-            this.label67.Location = new System.Drawing.Point(871, 346);
+            this.label67.Location = new System.Drawing.Point(1090, 401);
             this.label67.Name = "label67";
             this.label67.Size = new System.Drawing.Size(27, 17);
             this.label67.TabIndex = 80;
@@ -2912,7 +2918,7 @@ namespace ECED_FORMS
             // label68
             // 
             this.label68.AutoSize = true;
-            this.label68.Location = new System.Drawing.Point(20, 392);
+            this.label68.Location = new System.Drawing.Point(113, 445);
             this.label68.Name = "label68";
             this.label68.Size = new System.Drawing.Size(123, 17);
             this.label68.TabIndex = 82;
@@ -2920,7 +2926,7 @@ namespace ECED_FORMS
             // 
             // txtEmailAluno
             // 
-            this.txtEmailAluno.Location = new System.Drawing.Point(150, 386);
+            this.txtEmailAluno.Location = new System.Drawing.Point(244, 442);
             this.txtEmailAluno.Name = "txtEmailAluno";
             this.txtEmailAluno.Size = new System.Drawing.Size(320, 23);
             this.txtEmailAluno.TabIndex = 83;
@@ -2929,7 +2935,7 @@ namespace ECED_FORMS
             // 
             this.label64.AutoSize = true;
             this.label64.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label64.Location = new System.Drawing.Point(623, 111);
+            this.label64.Location = new System.Drawing.Point(871, 139);
             this.label64.Name = "label64";
             this.label64.Size = new System.Drawing.Size(99, 17);
             this.label64.TabIndex = 84;
@@ -2937,14 +2943,14 @@ namespace ECED_FORMS
             // 
             // txtNacionalidade
             // 
-            this.txtNacionalidade.Location = new System.Drawing.Point(626, 131);
+            this.txtNacionalidade.Location = new System.Drawing.Point(982, 134);
             this.txtNacionalidade.Name = "txtNacionalidade";
             this.txtNacionalidade.Size = new System.Drawing.Size(202, 23);
             this.txtNacionalidade.TabIndex = 85;
             // 
             // txtCpf
             // 
-            this.txtCpf.Location = new System.Drawing.Point(56, 296);
+            this.txtCpf.Location = new System.Drawing.Point(247, 353);
             this.txtCpf.Mask = "000\\.000\\.000\\-00";
             this.txtCpf.Name = "txtCpf";
             this.txtCpf.Size = new System.Drawing.Size(136, 23);
@@ -2952,7 +2958,7 @@ namespace ECED_FORMS
             // 
             // txtRgAluno
             // 
-            this.txtRgAluno.Location = new System.Drawing.Point(173, 343);
+            this.txtRgAluno.Location = new System.Drawing.Point(247, 398);
             this.txtRgAluno.Mask = "0\\.000\\.000";
             this.txtRgAluno.Name = "txtRgAluno";
             this.txtRgAluno.Size = new System.Drawing.Size(136, 23);
@@ -2990,9 +2996,9 @@ namespace ECED_FORMS
             "MT",
             "GO",
             "DF"});
-            this.txtUfCartorio.Location = new System.Drawing.Point(942, 292);
+            this.txtUfCartorio.Location = new System.Drawing.Point(1122, 351);
             this.txtUfCartorio.Name = "txtUfCartorio";
-            this.txtUfCartorio.Size = new System.Drawing.Size(91, 25);
+            this.txtUfCartorio.Size = new System.Drawing.Size(76, 25);
             this.txtUfCartorio.TabIndex = 187;
             // 
             // txtUfRg
@@ -3027,14 +3033,14 @@ namespace ECED_FORMS
             "MT",
             "GO",
             "DF"});
-            this.txtUfRg.Location = new System.Drawing.Point(904, 341);
+            this.txtUfRg.Location = new System.Drawing.Point(1123, 396);
             this.txtUfRg.Name = "txtUfRg";
-            this.txtUfRg.Size = new System.Drawing.Size(91, 25);
+            this.txtUfRg.Size = new System.Drawing.Size(75, 25);
             this.txtUfRg.TabIndex = 188;
             // 
             // btnAtualizarDados
             // 
-            this.btnAtualizarDados.Location = new System.Drawing.Point(1142, 157);
+            this.btnAtualizarDados.Location = new System.Drawing.Point(1153, 186);
             this.btnAtualizarDados.Name = "btnAtualizarDados";
             this.btnAtualizarDados.Size = new System.Drawing.Size(71, 23);
             this.btnAtualizarDados.TabIndex = 3;
@@ -3044,7 +3050,7 @@ namespace ECED_FORMS
             // 
             // txtLivro
             // 
-            this.txtLivro.Location = new System.Drawing.Point(621, 259);
+            this.txtLivro.Location = new System.Drawing.Point(644, 316);
             this.txtLivro.Mask = "00000";
             this.txtLivro.Name = "txtLivro";
             this.txtLivro.Size = new System.Drawing.Size(61, 23);
@@ -3052,7 +3058,7 @@ namespace ECED_FORMS
             // 
             // txtFolha
             // 
-            this.txtFolha.Location = new System.Drawing.Point(490, 259);
+            this.txtFolha.Location = new System.Drawing.Point(513, 316);
             this.txtFolha.Mask = "000";
             this.txtFolha.Name = "txtFolha";
             this.txtFolha.Size = new System.Drawing.Size(61, 23);
@@ -3090,14 +3096,14 @@ namespace ECED_FORMS
             "MT",
             "GO",
             "DF"});
-            this.txtUf.Location = new System.Drawing.Point(867, 65);
+            this.txtUf.Location = new System.Drawing.Point(758, 134);
             this.txtUf.Name = "txtUf";
             this.txtUf.Size = new System.Drawing.Size(91, 25);
             this.txtUf.TabIndex = 191;
             // 
             // txtCertidaoNascimento
             // 
-            this.txtCertidaoNascimento.Location = new System.Drawing.Point(244, 259);
+            this.txtCertidaoNascimento.Location = new System.Drawing.Point(247, 315);
             this.txtCertidaoNascimento.Mask = "00000000000000000000000000000000";
             this.txtCertidaoNascimento.Name = "txtCertidaoNascimento";
             this.txtCertidaoNascimento.Size = new System.Drawing.Size(180, 23);
@@ -3105,7 +3111,7 @@ namespace ECED_FORMS
             // 
             // btnAtualizarDocumentos
             // 
-            this.btnAtualizarDocumentos.Location = new System.Drawing.Point(1142, 461);
+            this.btnAtualizarDocumentos.Location = new System.Drawing.Point(1153, 450);
             this.btnAtualizarDocumentos.Name = "btnAtualizarDocumentos";
             this.btnAtualizarDocumentos.Size = new System.Drawing.Size(71, 23);
             this.btnAtualizarDocumentos.TabIndex = 193;
@@ -3121,7 +3127,7 @@ namespace ECED_FORMS
             this.tabControl2.Location = new System.Drawing.Point(29, 73);
             this.tabControl2.Name = "tabControl2";
             this.tabControl2.SelectedIndex = 0;
-            this.tabControl2.Size = new System.Drawing.Size(1272, 611);
+            this.tabControl2.Size = new System.Drawing.Size(1272, 619);
             this.tabControl2.TabIndex = 2;
             // 
             // telaCadastro
