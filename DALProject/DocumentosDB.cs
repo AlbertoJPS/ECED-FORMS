@@ -21,12 +21,12 @@ namespace DALProject
                     {"Data de Expedição(RG)",docAluno.DataExpedicaoRg},
                     {"Orgão Emissor",docAluno.OrgaoEmissor},
                     {"UF(RG)",docAluno.UfRg},
-                    {"Número Certidão de Nascimento",docAluno.NumCertidaoNascimento},
-                    {"Data de Emissão Certidão de Nascimento",docAluno.DataEmissaoCertNascimento},
+                    {"Num Certidão de Nascimento",docAluno.NumCertidaoNascimento},
+                    {"Data Emissão",docAluno.DataEmissaoCertNascimento},
                     {"Folha",docAluno.Folha},
                     {"Livro",docAluno.Livro},
                     {"Registro Civil",docAluno.RegistroCivil},
-                    {"Data de Emissão Registro Civil",docAluno.DataEmissaoRegCivil},
+                    {"Data de Emissão",docAluno.DataEmissaoRegCivil},
                 };
                 doc.SetAsync(documen);
 
