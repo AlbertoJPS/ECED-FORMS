@@ -177,7 +177,7 @@ namespace ECED_FORMS
         {
             Aluno al = new Aluno()
             {
-                NomeAluno = txtNomeAluno.Text                
+                NomeAluno = txtNomeAluno.Text
             };
             DocumentosAluno doc = new DocumentosAluno()
             {
@@ -328,6 +328,10 @@ namespace ECED_FORMS
         }
         private void btnBuscarAluno_Click(object sender, EventArgs e)
         {
+            PesquisaAluno();
+        }
+        void PesquisaAluno() 
+        {
             if (!String.IsNullOrWhiteSpace(txtPesquisarAluno.Text))
             {
                 mostrardocumento("Documento");
@@ -383,6 +387,10 @@ namespace ECED_FORMS
                 {
                     ritMostra.Text += string.Format("\n                                          {0}: {1}\n", item.Key, item.Value);
                 }
+            }
+            else
+            {
+                MessageBox.Show("Insira um aluno correto.");
             }
         }
         async void mostrarIdentificacaoEscolar(string name)
@@ -643,40 +651,6 @@ namespace ECED_FORMS
         {
             mostrarBolet("boletim");
         }
-        //private void SetBackColorDegrade(object sender, PaintEventArgs e)
-        //{
-        //    Graphics graphics = e.Graphics; Rectangle gradient_rect = new Rectangle(0, 0, Width, Height);
-        //    //RGB vermelho verde azul
-        //    Brush br = new LinearGradientBrush(gradient_rect, Color.FromArgb(108, 226, 252), Color.FromArgb(221, 247, 220), 15f);
-        //    graphics.FillRectangle(br, gradient_rect);
-        //}
-
-        //private void Form1_Paint(object sender, PaintEventArgs e)
-        //{
-        //    SetBackColorDegrade(sender,e);
-        //}
-        async void login(string name)
-        {
-            
-            DocumentReference docref = DBConection.Getdatabase().Collection(txtlogin.Text).Document(txtSenha.Text);
-            bool con = false;
-            DocumentSnapshot snap = await docref.GetSnapshotAsync();
-            if (snap.Exists)
-            {
-                con = true;
-                if (con)
-                {
-                    MessageBox.Show("Login efetuado");
-                    TelaLogin Telapr = new TelaLogin();
-                    this.Visible = false;
-                    Telapr.Show();
-                }
-            }
-        }
-        private void btnLogin_Click(object sender, EventArgs e)
-        {
-            login("Login");
-        }
 
         private void button6_Click(object sender, EventArgs e)
         {
@@ -689,7 +663,7 @@ namespace ECED_FORMS
             }
             else
             {
-                
+
             }
         }
         private void Form1_FormClosed(object sender, FormClosedEventArgs e)
@@ -729,6 +703,32 @@ namespace ECED_FORMS
             else
             {
                 MessageBox.Show(mensagemErro);
+            }
+        }
+
+        private void telaCadastro_Paint(object sender, PaintEventArgs e)
+        {
+            Degrade(sender, e);
+        }
+
+        private void Degrade(object sender, PaintEventArgs e)
+        {
+            Graphics graphics = e.Graphics; Rectangle gradient_rect = new Rectangle(0, 0, Width, Height);
+            //RGB vermelho verde azul
+            Brush br = new LinearGradientBrush(gradient_rect, Color.FromArgb(178, 247, 199), Color.FromArgb(250, 252, 251), 15f);
+            graphics.FillRectangle(br, gradient_rect);
+        }
+
+        private void tabPage6_Paint(object sender, PaintEventArgs e)
+        {
+            //Degrade(sender,e);
+        }
+
+        private void txtPesquisarAluno_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == 13)
+            {
+                PesquisaAluno();
             }
         }
     }

@@ -40,15 +40,17 @@ namespace ECED_FORMS.View
             // 
             // txtSenha
             // 
-            this.txtSenha.Location = new System.Drawing.Point(157, 246);
+            this.txtSenha.Location = new System.Drawing.Point(152, 262);
             this.txtSenha.Name = "txtSenha";
             this.txtSenha.Size = new System.Drawing.Size(181, 20);
             this.txtSenha.TabIndex = 4;
             this.txtSenha.UseSystemPasswordChar = true;
+            this.txtSenha.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSenha_KeyPress);
+            this.txtSenha.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtSenha_KeyUp);
             // 
             // txtlogin
             // 
-            this.txtlogin.Location = new System.Drawing.Point(157, 164);
+            this.txtlogin.Location = new System.Drawing.Point(152, 191);
             this.txtlogin.Name = "txtlogin";
             this.txtlogin.Size = new System.Drawing.Size(181, 20);
             this.txtlogin.TabIndex = 3;
@@ -58,7 +60,7 @@ namespace ECED_FORMS.View
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(154, 145);
+            this.label1.Location = new System.Drawing.Point(149, 172);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(46, 16);
             this.label1.TabIndex = 6;
@@ -69,7 +71,7 @@ namespace ECED_FORMS.View
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(154, 227);
+            this.label2.Location = new System.Drawing.Point(149, 243);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(52, 16);
             this.label2.TabIndex = 7;
@@ -78,7 +80,7 @@ namespace ECED_FORMS.View
             // btnLogin
             // 
             this.btnLogin.BackColor = System.Drawing.Color.Transparent;
-            this.btnLogin.Location = new System.Drawing.Point(205, 296);
+            this.btnLogin.Location = new System.Drawing.Point(191, 303);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(104, 40);
             this.btnLogin.TabIndex = 5;
@@ -90,7 +92,7 @@ namespace ECED_FORMS.View
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = global::ECED_FORMS.Properties.Resources.login;
-            this.pictureBox1.Location = new System.Drawing.Point(209, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(204, 22);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(100, 101);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -108,9 +110,10 @@ namespace ECED_FORMS.View
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.txtSenha);
             this.Controls.Add(this.txtlogin);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "TelaLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "TelaLogin";
+            this.Text = "Login";
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.TelaLogin_Paint);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
