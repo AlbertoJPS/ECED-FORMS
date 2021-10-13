@@ -43,19 +43,6 @@ namespace ECED_FORMS.View
 
         async void login(string name)
         {
-            //bool co=false;
-            //Login lo= new Login ()
-            //{
-            //    UserName = txtlogin.Text,
-            //    Senha=txtSenha.Text
-
-            //};
-
-            //await ControllerLogin.confLogin(lo,co);
-            //if (co==true)
-            //{
-            //    MessageBox.Show("ok");
-            //}
             try
             {
                 DocumentReference docref = DBConection.Getdatabase().Collection(txtlogin.Text).Document(txtSenha.Text);
@@ -73,7 +60,6 @@ namespace ECED_FORMS.View
                         this.Visible = false;
                         Telapr.Show();
                     }
-
                 }
                 else
                 {
@@ -82,12 +68,21 @@ namespace ECED_FORMS.View
             }
             catch (Exception )
             {
-
                 MessageBox.Show("Falha na conexão");
             }
-
         }
 
+        private void txtSenha_KeyUp(object sender, KeyEventArgs e)
+        {
+            
+        }
 
+        private void txtSenha_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == 13)
+            {
+                login("ld");
+            }
+        }
     }
 }
