@@ -16,9 +16,10 @@ namespace ECED_FORMS
         [STAThread]
         static void Main()
         {
-            Application.EnableVisualStyles();
+            //Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new TelaLogin());
+           // Application.Run(new TelaLogin());
+            Application.Run(new SplashScren());
         }
     }
 }

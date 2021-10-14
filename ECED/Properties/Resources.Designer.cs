@@ -99,5 +99,15 @@ namespace ECED_FORMS.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap WhatsApp_Image_2021_10_05_at_09_05_23 {
+            get {
+                object obj = ResourceManager.GetObject("WhatsApp Image 2021-10-05 at 09.05.23", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }
