@@ -53,7 +53,7 @@ namespace DALProject
                 return new Response()
                 {
                     Executed = true,
-                    Message = "Cadastro com Sucesso."
+                    Message = "Aluno cadastrtado com Sucesso!"
                 };
             }
             catch (Exception)

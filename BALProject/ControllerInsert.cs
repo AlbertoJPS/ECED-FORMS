@@ -144,7 +144,21 @@ namespace BALProject
         }
         public static Response NotasInsert(Boletim notas)
         {
-            return BoletimDB.InsertBoletim(notas);
+            if (!String.IsNullOrWhiteSpace(notas.NomeAluno) && !String.IsNullOrWhiteSpace(notas.Materia) && !String.IsNullOrWhiteSpace(notas.Turma) && !String.IsNullOrWhiteSpace(notas.Nota1.ToString()) && !String.IsNullOrWhiteSpace(notas.Nota2.ToString()) && !String.IsNullOrWhiteSpace(notas.Nota3.ToString()))
+            {
+                if (notas.Nota1 <= 10 && notas.Nota1 >= 0 && notas.Nota2 <= 10 && notas.Nota2 >= 0 && notas.Nota3 <= 10 && notas.Nota3 >= 0)
+                {
+                    return BoletimDB.InsertBoletim(notas);
+                }
+                else
+                {
+                    return new Response { Message = "Insira a nota corretamente!", Executed = false };
+                }
+            }
+            else
+            {
+                return new Response { Message = "Preencha todos os campos!", Executed = false };
+            }
         }
         private static bool VerificaCb(bool cb, string txt)
         {
