@@ -14,7 +14,7 @@ namespace DALProject
             try
             {
                 DocumentReference doc = DBConection.Getdatabase().Collection(notas.NomeAluno).Document("Boletim");
-                Dictionary<string, object> city = new Dictionary<string, object>
+                Dictionary<string, object> infoBoletim = new Dictionary<string, object>
             {
                     {"Nome Aluno", notas.NomeAluno},
                     {"Materia", notas.Materia},
@@ -23,14 +23,14 @@ namespace DALProject
                     {"Nota 2", notas.Nota2},
                     {"Nota 3", notas.Nota3},
             };
-                Task<WriteResult> t = doc.SetAsync(city);
+                Task<WriteResult> t = doc.SetAsync(infoBoletim);
                 t.Wait();
                 
 
                 return new Response()
                 {
                     Executed = true,
-                    Message = "Cadastro com Sucesso."
+                    Message = "Notas adicionadas!"
                 };
 
             }
@@ -39,7 +39,7 @@ namespace DALProject
                 return new Response()
                 {
                     Executed = false,
-                    Message = "Cadastro não efetuado. \n Por favor verifique suas informações."
+                    Message = "Erro ao adicionar as notas. \n Por favor verifique as informações."
                 };
             }
         }

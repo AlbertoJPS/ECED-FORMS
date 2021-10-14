@@ -170,6 +170,9 @@
     <Compile Include="View\TelaLogin.Designer.cs">
       <DependentUpon>TelaLogin.cs</DependentUpon>
     </Compile>
+    <Content Include="View\Imagens\btsair %282%29.png" />
+    <Content Include="View\Imagens\iconelogo.ico" />
+    <Content Include="View\Imagens\trocausu.png" />
     <Content Include="View\Imagens\WhatsApp Image 2021-10-05 at 09.05.23.jpeg" />
     <EmbeddedResource Include="View\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

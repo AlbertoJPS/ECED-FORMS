@@ -50,6 +50,10 @@ namespace ECED_FORMS
                         txtCidade.Text = endereco.cidade;
                         txtBairro.Text = endereco.bairro;
                         txtRua.Text = endereco.end;
+                        txtEstado.Enabled = false;
+                        txtCidade.Enabled = false;
+                        txtBairro.Enabled = false;
+                        txtRua.Enabled = false;
                     }
                     catch (Exception ex)
                     {
@@ -315,22 +319,37 @@ namespace ECED_FORMS
         void AdicionaNota()
         {
             //Boletim bole = new Boletim();
-            Boletim boletim = new Boletim()
+            try
             {
-                NomeAluno = cbNomeAlunoNota.Text,
-                Materia = cbMateriaNota.Text,
-                Turma = cbTurmaNota.Text,
-                Nota1 = Convert.ToDouble(txtNota1.Text),
-                Nota2 = Convert.ToDouble(txtNota2.Text),
-                Nota3 = Convert.ToDouble(txtNota3.Text),
-            };
-            Response res = ControllerInsert.NotasInsert(boletim);
+                Boletim boletim = new Boletim()
+                {
+                    NomeAluno = cbNomeAlunoNota.Text.ToUpper(),
+                    Materia = cbMateriaNota.Text,
+                    Turma = cbTurmaNota.Text,
+                    Nota1 = Convert.ToDouble(txtNota1.Text),
+                    Nota2 = Convert.ToDouble(txtNota2.Text),
+                    Nota3 = Convert.ToDouble(txtNota3.Text),
+                };
+                Response res = ControllerInsert.NotasInsert(boletim);
+                if (res.Executed)
+                {
+                    MessageBox.Show(res.Message);
+                }
+                else
+                {
+                    MessageBox.Show(res.Message);
+                }
+            }
+            catch (FormatException)
+            {
+                MessageBox.Show("Insira a nota corretamente!");
+            }
         }
         private void btnBuscarAluno_Click(object sender, EventArgs e)
         {
             PesquisaAluno();
         }
-        void PesquisaAluno() 
+        void PesquisaAluno()
         {
             if (!String.IsNullOrWhiteSpace(txtPesquisarAluno.Text))
             {
@@ -349,112 +368,158 @@ namespace ECED_FORMS
         }
         async void mostrarDdosPessoais(string name)
         {
-            DocumentReference docref = DBConection.Getdatabase().Collection(txtPesquisarAluno.Text).Document("Dados Pessoais");
-            DocumentSnapshot snap = await docref.GetSnapshotAsync();
-            if (snap.Exists)
+            try
             {
-                Dictionary<string, object> city = snap.ToDictionary();
-                ritMostra.Text += string.Format("\n \n                                                 Dados Pessoais     \n  ");
-                foreach (var item in city)
+                DocumentReference docref = DBConection.Getdatabase().Collection(txtPesquisarAluno.Text).Document("Dados Pessoais");
+                DocumentSnapshot snap = await docref.GetSnapshotAsync();
+                if (snap.Exists)
                 {
-                    ritMostra.Text += string.Format("\n                                    {0}: {1}\n", item.Key, item.Value);
+                    Dictionary<string, object> city = snap.ToDictionary();
+                    ritMostra.Text += string.Format("\n \n                                                 Dados Pessoais     \n  ");
+                    foreach (var item in city)
+                    {
+                        ritMostra.Text += string.Format("\n                                    {0}: {1}\n", item.Key, item.Value);
+                    }
                 }
+            }
+            catch (Grpc.Core.RpcException)
+            {
             }
         }
         async void mostrarBolet(string name)
         {
-            Boletim al = new Boletim()
+            if (!String.IsNullOrWhiteSpace(cbNomeAlunoNota.Text))
             {
-                NomeAluno = cbNomeAlunoNota.Text
-            };
-            //string[] vetor = new string[1];
-            List<string> vetor = new List<string>();
-            await ControllerBoletim.MostrarBoletim(al, vetor);
-            string[] elementos = vetor.ToArray();
-            dtgBoletim.Rows.Add(elementos);
-        }
-        async void mostrardocumento(string name)
-        {
-            DocumentReference docref = DBConection.Getdatabase().Collection(txtPesquisarAluno.Text).Document("Documento");
-
-            DocumentSnapshot snap = await docref.GetSnapshotAsync();
-            if (snap.Exists)
-            {
-                Dictionary<string, object> city = snap.ToDictionary();
-
-                ritMostra.Text += string.Format("\n \n                                              Documentos do Aluno     \n  ");
-                foreach (var item in city)
+                Boletim al = new Boletim()
                 {
-                    ritMostra.Text += string.Format("\n                                    {0}: {1}\n", item.Key, item.Value);
+                    NomeAluno = cbNomeAlunoNota.Text.ToUpper()
+                };
+                //string[] vetor = new string[1];
+                List<string> vetor = new List<string>();
+                Response res = await ControllerBoletim.MostrarBoletim(al, vetor);
+                if (res.Executed)
+                {
+                    string[] elementos = vetor.ToArray();
+                    dtgBoletim.Rows.Add(elementos);
+                }
+                else
+                {
+                    MessageBox.Show(res.Message);
                 }
             }
             else
             {
-                MessageBox.Show("Insira um aluno correto.");
+                MessageBox.Show("Insira um nome!");
+            }
+        }
+        async void mostrardocumento(string name)
+        {
+            try
+            {
+                DocumentReference docref = DBConection.Getdatabase().Collection(txtPesquisarAluno.Text).Document("Documento");
+                DocumentSnapshot snap = await docref.GetSnapshotAsync();
+                if (snap.Exists)
+                {
+                    Dictionary<string, object> city = snap.ToDictionary();
+
+                    ritMostra.Text += string.Format("\n \n                                              Documentos do Aluno     \n  ");
+                    foreach (var item in city)
+                    {
+                        ritMostra.Text += string.Format("\n                                    {0}: {1}\n", item.Key, item.Value);
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Insira um aluno correto.");
+                }
+            }
+            catch (Grpc.Core.RpcException)
+            {
+                MessageBox.Show("Verifique sua conexão!");
             }
         }
         async void mostrarIdentificacaoEscolar(string name)
         {
-            DocumentReference docref = DBConection.Getdatabase().Collection(txtPesquisarAluno.Text).Document("Identificação escolar");
-
-            DocumentSnapshot snap = await docref.GetSnapshotAsync();
-            if (snap.Exists)
+            try
             {
-                Dictionary<string, object> city = snap.ToDictionary();
-
-                ritMostra.Text += string.Format("\n \n                                                 Identificação Escolar     \n  ");
-                foreach (var item in city)
+                DocumentReference docref = DBConection.Getdatabase().Collection(txtPesquisarAluno.Text).Document("Identificação escolar");
+                DocumentSnapshot snap = await docref.GetSnapshotAsync();
+                if (snap.Exists)
                 {
-                    ritMostra.Text += string.Format("\n                                    {0}: {1}\n", item.Key, item.Value);
+                    Dictionary<string, object> city = snap.ToDictionary();
+
+                    ritMostra.Text += string.Format("\n \n                                                 Identificação Escolar     \n  ");
+                    foreach (var item in city)
+                    {
+                        ritMostra.Text += string.Format("\n                                    {0}: {1}\n", item.Key, item.Value);
+                    }
                 }
+            }
+            catch (Grpc.Core.RpcException)
+            {
             }
         }
         async void mostrarDadosPais(string name)
         {
-            DocumentReference docref = DBConection.Getdatabase().Collection(txtPesquisarAluno.Text).Document("Dados dos pais");
-
-            DocumentSnapshot snap = await docref.GetSnapshotAsync();
-            if (snap.Exists)
+            try
             {
-                Dictionary<string, object> city = snap.ToDictionary();
-
-                ritMostra.Text += string.Format("\n \n                                                   Dados dos Pais     \n  ");
-                foreach (var item in city)
+                DocumentReference docref = DBConection.Getdatabase().Collection(txtPesquisarAluno.Text).Document("Dados dos pais");
+                DocumentSnapshot snap = await docref.GetSnapshotAsync();
+                if (snap.Exists)
                 {
-                    ritMostra.Text += string.Format("\n                                    {0}: {1}\n", item.Key, item.Value);
+                    Dictionary<string, object> city = snap.ToDictionary();
+
+                    ritMostra.Text += string.Format("\n \n                                                   Dados dos Pais     \n  ");
+                    foreach (var item in city)
+                    {
+                        ritMostra.Text += string.Format("\n                                    {0}: {1}\n", item.Key, item.Value);
+                    }
                 }
+            }
+            catch (Grpc.Core.RpcException)
+            {
             }
         }
         async void mostrarEndereco(string name)
         {
-            DocumentReference docref = DBConection.Getdatabase().Collection(txtPesquisarAluno.Text).Document("Endereço");
-
-            DocumentSnapshot snap = await docref.GetSnapshotAsync();
-            if (snap.Exists)
+            try
             {
-                Dictionary<string, object> city = snap.ToDictionary();
-
-                ritMostra.Text += string.Format("\n \n                                                          ENDEREÇO      \n  ");
-                foreach (var item in city)
+                DocumentReference docref = DBConection.Getdatabase().Collection(txtPesquisarAluno.Text).Document("Endereço");
+                DocumentSnapshot snap = await docref.GetSnapshotAsync();
+                if (snap.Exists)
                 {
-                    ritMostra.Text += string.Format("\n                                          {0}: {1}\n", item.Key, item.Value);
+                    Dictionary<string, object> city = snap.ToDictionary();
+
+                    ritMostra.Text += string.Format("\n \n                                                          ENDEREÇO      \n  ");
+                    foreach (var item in city)
+                    {
+                        ritMostra.Text += string.Format("\n                                          {0}: {1}\n", item.Key, item.Value);
+                    }
                 }
+            }
+            catch (Grpc.Core.RpcException)
+            {
             }
         }
         async void mostrarSaudeAluno(string name)
         {
-            DocumentReference docref = DBConection.Getdatabase().Collection(txtPesquisarAluno.Text).Document("Saude Aluno");
-
-            DocumentSnapshot snap = await docref.GetSnapshotAsync();
-            if (snap.Exists)
+            try
             {
-                Dictionary<string, object> city = snap.ToDictionary();
-
-                ritMostra.Text += string.Format("\n \n                                                    Saúde Aluno    \n  ");
-                foreach (var item in city)
+                DocumentReference docref = DBConection.Getdatabase().Collection(txtPesquisarAluno.Text).Document("Saude Aluno");
+                DocumentSnapshot snap = await docref.GetSnapshotAsync();
+                if (snap.Exists)
                 {
-                    ritMostra.Text += string.Format("\n                                    {0}: {1}\n", item.Key, item.Value);
+                    Dictionary<string, object> city = snap.ToDictionary();
+
+                    ritMostra.Text += string.Format("\n \n                                                    Saúde Aluno    \n  ");
+                    foreach (var item in city)
+                    {
+                        ritMostra.Text += string.Format("\n                                    {0}: {1}\n", item.Key, item.Value);
+                    }
                 }
+            }
+            catch (Grpc.Core.RpcException)
+            {
             }
         }
         /// <summary>
@@ -463,21 +528,33 @@ namespace ECED_FORMS
         /// <param name="name"></param>
         void deletarCadastro(string name)
         {
-            DeletarAluno delete = new DeletarAluno()
+            try
             {
-                Nome = txtPesquisarAluno.Text,
-
-            };
-            _ = ControllerDeletarAluno.DeletarAluno(delete);
+                DeletarAluno delete = new DeletarAluno()
+                {
+                    Nome = txtPesquisarAluno.Text,
+                };
+                _ = ControllerDeletarAluno.DeletarAluno(delete);
+            }
+            catch (Grpc.Core.RpcException)
+            {
+                MessageBox.Show("Verifique sua conexão!");
+            }
         }
         void Deletar()
         {
-            DeletarAluno delete = new DeletarAluno()
+            try
             {
-                Nome = txtNomeAluno.Text,
-
-            };
-            _ = ControllerDeletarAluno.DeletarAluno(delete);
+                DeletarAluno delete = new DeletarAluno()
+                {
+                    Nome = txtNomeAluno.Text,
+                };
+                _ = ControllerDeletarAluno.DeletarAluno(delete);
+            }
+            catch (Grpc.Core.RpcException)
+            {
+                MessageBox.Show("Verifique sua conexão!");
+            }
         }
         //Funções para a View
         void FuncaoCheckBox(CheckBox cb, CheckBox cb2)
@@ -729,6 +806,24 @@ namespace ECED_FORMS
             if (e.KeyChar == 13)
             {
                 PesquisaAluno();
+            }
+        }
+
+        private void txtCep_TextChanged(object sender, EventArgs e)
+        {
+            if (txtCep.Text.Length < 9)
+            {
+                txtEstado.Enabled = true;
+                txtCidade.Enabled = true;
+                txtBairro.Enabled = true;
+                txtRua.Enabled = true;
+            }
+            else
+            {
+                txtEstado.Enabled = false;
+                txtCidade.Enabled = false;
+                txtBairro.Enabled = false;
+                txtRua.Enabled = false;
             }
         }
     }

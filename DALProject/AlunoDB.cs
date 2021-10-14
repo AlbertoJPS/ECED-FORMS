@@ -28,19 +28,15 @@ namespace DALProject
                 Task<WriteResult> t = doc.SetAsync(aluno);
                 t.Wait();
 
-                return new Response()
-                {
-                    Executed = true,
-                    Message = "Cadastro com Sucesso."
-                };
+                return new Response() { Executed = true, Message = "Cadastro com Sucesso." };
+            }
+            catch (Grpc.Core.RpcException)
+            {
+                return new Response { Executed = false, Message = "Verifique sua conexão!" };
             }
             catch (Exception)
             {
-                return new Response()
-                {
-                    Executed = false,
-                    Message = "Cadastro não efetuado. \n Por favor verifique suas informações."
-                };
+                return new Response { Executed = false, Message = "Cadastro não efetuado. \n Por favor verifique suas informações." };
             }
         }
     }

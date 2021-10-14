@@ -25,24 +25,20 @@ namespace DALProject
                        
                     }
                 }
+                else
+                {
+                    return new Response { Executed = false, Message = "Aluno não encontrado. \n Por favor verifique suas informações." };
+                }
                 vetor.Sort();
-
-
-                return new Response()
+                return new Response
                 {
                     Executed = true,
-                    Message = "Cadastro com Sucesso."
+                    Message = "Aluno encontrado com Sucesso."
                 };
-
-
             }
-            catch (Exception e)
+            catch (Exception)
             {
-                return new Response()
-                {
-                    Executed = false,
-                    Message = "Cadastro não efetuado. \n Por favor verifique suas informações."
-                };
+                return new Response{Executed = false, Message = "Erro ao buscar aluno. \n Por favor verifique suas informações."};
             }
 
         }
