@@ -33,7 +33,7 @@ namespace DALProject
 
 
             }
-            catch (Exception e)
+            catch (Exception )
             {
                 return new Response()
                 {
