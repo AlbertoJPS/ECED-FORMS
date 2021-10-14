@@ -29,8 +29,7 @@ namespace ECED_FORMS
         /// </summary>
         private void InitializeComponent()
         {
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(telaCadastro));
             this.tabPage8 = new System.Windows.Forms.TabPage();
             this.btnMostrarBoletim = new System.Windows.Forms.Button();
             this.txtNota3 = new System.Windows.Forms.MaskedTextBox();
@@ -46,12 +45,6 @@ namespace ECED_FORMS
             this.cbNomeAlunoNota = new System.Windows.Forms.ComboBox();
             this.label103 = new System.Windows.Forms.Label();
             this.dtgBoletim = new System.Windows.Forms.DataGridView();
-            this.nomeCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.turmaCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.materiaCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NOTACOL1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NOTA2TCOL = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ULTIMOTRIMESTRE = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label104 = new System.Windows.Forms.Label();
             this.tabPage7 = new System.Windows.Forms.TabPage();
             this.ritMostra = new System.Windows.Forms.RichTextBox();
@@ -280,6 +273,14 @@ namespace ECED_FORMS
             this.label13 = new System.Windows.Forms.Label();
             this.btnSalvarCadastro = new System.Windows.Forms.Button();
             this.tabControl2 = new System.Windows.Forms.TabControl();
+            this.NOTACOL1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NOTA2TCOL = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ULTIMOTRIMESTRE = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.turmaCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.materiaCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nomeCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
             this.tabPage8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgBoletim)).BeginInit();
             this.tabPage7.SuspendLayout();
@@ -298,30 +299,6 @@ namespace ECED_FORMS
             this.tabPage4.SuspendLayout();
             this.tabControl2.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // button5
-            // 
-            this.button5.BackColor = System.Drawing.Color.Red;
-            this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Location = new System.Drawing.Point(1221, 5);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(80, 62);
-            this.button5.TabIndex = 5;
-            this.button5.Text = "Sair";
-            this.button5.UseVisualStyleBackColor = false;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
-            // 
-            // button6
-            // 
-            this.button6.BackColor = System.Drawing.Color.Transparent;
-            this.button6.BackgroundImage = global::ECED_FORMS.Properties.Resources.trocaUsuario;
-            this.button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button6.Location = new System.Drawing.Point(1139, 5);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(76, 62);
-            this.button6.TabIndex = 6;
-            this.button6.UseVisualStyleBackColor = false;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // tabPage8
             // 
@@ -484,6 +461,13 @@ namespace ECED_FORMS
             // cbNomeAlunoNota
             // 
             this.cbNomeAlunoNota.FormattingEnabled = true;
+            this.cbNomeAlunoNota.Items.AddRange(new object[] {
+            "JESUS",
+            "JOAO",
+            "JIPO",
+            "LEONARDO",
+            "LEONARDO DA VINCI",
+            "MATHEUS GILEADE DOS SANTOS"});
             this.cbNomeAlunoNota.Location = new System.Drawing.Point(193, 62);
             this.cbNomeAlunoNota.Name = "cbNomeAlunoNota";
             this.cbNomeAlunoNota.Size = new System.Drawing.Size(239, 21);
@@ -506,58 +490,17 @@ namespace ECED_FORMS
             this.dtgBoletim.AllowUserToOrderColumns = true;
             this.dtgBoletim.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgBoletim.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.nomeCol,
-            this.turmaCol,
-            this.materiaCol,
             this.NOTACOL1,
             this.NOTA2TCOL,
-            this.ULTIMOTRIMESTRE});
+            this.ULTIMOTRIMESTRE,
+            this.turmaCol,
+            this.materiaCol,
+            this.nomeCol});
             this.dtgBoletim.Location = new System.Drawing.Point(609, 46);
             this.dtgBoletim.Name = "dtgBoletim";
             this.dtgBoletim.ReadOnly = true;
             this.dtgBoletim.Size = new System.Drawing.Size(617, 419);
             this.dtgBoletim.TabIndex = 11;
-            // 
-            // nomeCol
-            // 
-            this.nomeCol.HeaderText = "Nome";
-            this.nomeCol.Name = "nomeCol";
-            this.nomeCol.ReadOnly = true;
-            this.nomeCol.Width = 150;
-            // 
-            // turmaCol
-            // 
-            this.turmaCol.HeaderText = "Turma";
-            this.turmaCol.Name = "turmaCol";
-            this.turmaCol.ReadOnly = true;
-            // 
-            // materiaCol
-            // 
-            this.materiaCol.HeaderText = "Matéria";
-            this.materiaCol.Name = "materiaCol";
-            this.materiaCol.ReadOnly = true;
-            this.materiaCol.Width = 173;
-            // 
-            // NOTACOL1
-            // 
-            this.NOTACOL1.HeaderText = "1° TRIMESTRE";
-            this.NOTACOL1.Name = "NOTACOL1";
-            this.NOTACOL1.ReadOnly = true;
-            this.NOTACOL1.Width = 50;
-            // 
-            // NOTA2TCOL
-            // 
-            this.NOTA2TCOL.HeaderText = "2° TRIMESTRE";
-            this.NOTA2TCOL.Name = "NOTA2TCOL";
-            this.NOTA2TCOL.ReadOnly = true;
-            this.NOTA2TCOL.Width = 50;
-            // 
-            // ULTIMOTRIMESTRE
-            // 
-            this.ULTIMOTRIMESTRE.HeaderText = "3° TRIMESTRE";
-            this.ULTIMOTRIMESTRE.Name = "ULTIMOTRIMESTRE";
-            this.ULTIMOTRIMESTRE.ReadOnly = true;
-            this.ULTIMOTRIMESTRE.Width = 50;
             // 
             // label104
             // 
@@ -3152,6 +3095,76 @@ namespace ECED_FORMS
             this.tabControl2.Size = new System.Drawing.Size(1272, 619);
             this.tabControl2.TabIndex = 2;
             // 
+            // NOTACOL1
+            // 
+            this.NOTACOL1.HeaderText = "1° TRIMESTRE";
+            this.NOTACOL1.Name = "NOTACOL1";
+            this.NOTACOL1.ReadOnly = true;
+            this.NOTACOL1.Width = 50;
+            // 
+            // NOTA2TCOL
+            // 
+            this.NOTA2TCOL.HeaderText = "2° TRIMESTRE";
+            this.NOTA2TCOL.Name = "NOTA2TCOL";
+            this.NOTA2TCOL.ReadOnly = true;
+            this.NOTA2TCOL.Width = 50;
+            // 
+            // ULTIMOTRIMESTRE
+            // 
+            this.ULTIMOTRIMESTRE.HeaderText = "3° TRIMESTRE";
+            this.ULTIMOTRIMESTRE.Name = "ULTIMOTRIMESTRE";
+            this.ULTIMOTRIMESTRE.ReadOnly = true;
+            this.ULTIMOTRIMESTRE.Width = 50;
+            // 
+            // turmaCol
+            // 
+            this.turmaCol.HeaderText = "Turma";
+            this.turmaCol.Name = "turmaCol";
+            this.turmaCol.ReadOnly = true;
+            // 
+            // materiaCol
+            // 
+            this.materiaCol.HeaderText = "Matéria";
+            this.materiaCol.Name = "materiaCol";
+            this.materiaCol.ReadOnly = true;
+            this.materiaCol.Width = 173;
+            // 
+            // nomeCol
+            // 
+            this.nomeCol.HeaderText = "Nome";
+            this.nomeCol.Name = "nomeCol";
+            this.nomeCol.ReadOnly = true;
+            this.nomeCol.Width = 150;
+            // 
+            // button6
+            // 
+            this.button6.BackColor = System.Drawing.Color.Transparent;
+            this.button6.BackgroundImage = global::ECED_FORMS.Properties.Resources.trocausu;
+            this.button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button6.FlatAppearance.BorderSize = 0;
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.Location = new System.Drawing.Point(1158, 5);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(76, 62);
+            this.button6.TabIndex = 6;
+            this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.Color.Transparent;
+            this.button5.BackgroundImage = global::ECED_FORMS.Properties.Resources.btsair__2_;
+            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button5.FlatAppearance.BorderSize = 0;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.ForeColor = System.Drawing.Color.White;
+            this.button5.Location = new System.Drawing.Point(1249, 5);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(64, 62);
+            this.button5.TabIndex = 5;
+            this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
             // telaCadastro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -3161,6 +3174,7 @@ namespace ECED_FORMS
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "telaCadastro";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ECED";
@@ -3447,12 +3461,12 @@ namespace ECED_FORMS
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Button btnSalvarCadastro;
         private System.Windows.Forms.TabControl tabControl2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nomeCol;
-        private System.Windows.Forms.DataGridViewTextBoxColumn turmaCol;
-        private System.Windows.Forms.DataGridViewTextBoxColumn materiaCol;
         private System.Windows.Forms.DataGridViewTextBoxColumn NOTACOL1;
         private System.Windows.Forms.DataGridViewTextBoxColumn NOTA2TCOL;
         private System.Windows.Forms.DataGridViewTextBoxColumn ULTIMOTRIMESTRE;
+        private System.Windows.Forms.DataGridViewTextBoxColumn turmaCol;
+        private System.Windows.Forms.DataGridViewTextBoxColumn materiaCol;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nomeCol;
     }
 }
 
