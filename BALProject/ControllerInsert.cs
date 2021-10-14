@@ -23,17 +23,43 @@ namespace BALProject
         }
         public static Response DocumentoInsert(DocumentosAluno docAluno, Aluno aluno)
         {
-            if (!String.IsNullOrWhiteSpace(docAluno.RegistroCivil) && !String.IsNullOrWhiteSpace(docAluno.NumCertidaoNascimento) && !String.IsNullOrWhiteSpace(docAluno.Cpf) && !String.IsNullOrWhiteSpace(docAluno.Rg) && !String.IsNullOrWhiteSpace(docAluno.Email) && !String.IsNullOrWhiteSpace(docAluno.Folha) && !String.IsNullOrWhiteSpace(docAluno.Livro) && !String.IsNullOrWhiteSpace(docAluno.OrgaoEmissor) && !String.IsNullOrWhiteSpace(docAluno.DataEmissaoRegCivil) && !String.IsNullOrWhiteSpace(docAluno.DataEmissaoCertNascimento) && !String.IsNullOrWhiteSpace(docAluno.DataExpedicaoRg) && !String.IsNullOrWhiteSpace(docAluno.UfRg) && !String.IsNullOrWhiteSpace(docAluno.UfCartorio) && !String.IsNullOrWhiteSpace(docAluno.NomeCartorio) && !String.IsNullOrWhiteSpace(aluno.NomeAluno))
+            if (!String.IsNullOrWhiteSpace(docAluno.Cpf) && !String.IsNullOrWhiteSpace(docAluno.Rg) && !String.IsNullOrWhiteSpace(docAluno.OrgaoEmissor) && !String.IsNullOrWhiteSpace(docAluno.DataEmissaoRegCivil) && !String.IsNullOrWhiteSpace(docAluno.DataEmissaoCertNascimento) && !String.IsNullOrWhiteSpace(docAluno.DataExpedicaoRg) && !String.IsNullOrWhiteSpace(docAluno.UfRg) && !String.IsNullOrWhiteSpace(docAluno.UfCartorio) && !String.IsNullOrWhiteSpace(docAluno.NomeCartorio) && !String.IsNullOrWhiteSpace(aluno.NomeAluno))
             {
-                if (docAluno.Cpf.Length == 14 && docAluno.Rg.Length == 9 && docAluno.Folha.Length == 3 && docAluno.Livro.Length == 5)
+                if (!String.IsNullOrWhiteSpace(docAluno.RegistroCivil))
                 {
-                    return DocumentosDB.InsertDocumentos(docAluno, aluno);
+                    if (docAluno.Cpf.Length == 14 && docAluno.Rg.Length == 9)
+                    {
+                        return DocumentosDB.InsertDocumentos(docAluno, aluno);
+                    }
+                    else
+                    {
+                        return new Response
+                        {
+                            Message = "Insira o CPF/RG/Folha/Livro corretamente!",
+                            Executed = false
+                        };
+                    }
+                }
+                else if (!String.IsNullOrWhiteSpace(docAluno.NumCertidaoNascimento) && !String.IsNullOrWhiteSpace(docAluno.Folha) && !String.IsNullOrWhiteSpace(docAluno.Livro))
+                {
+                    if (docAluno.Cpf.Length == 14 && docAluno.Rg.Length == 9 && docAluno.Folha.Length == 3 && docAluno.Livro.Length == 5)
+                    {
+                        return DocumentosDB.InsertDocumentos(docAluno, aluno);
+                    }
+                    else
+                    {
+                        return new Response
+                        {
+                            Message = "Insira o CPF/RG/Folha/Livro corretamente!",
+                            Executed = false
+                        };
+                    }
                 }
                 else
                 {
                     return new Response
                     {
-                        Message = "Insira o CPF/RG/Folha/Livro corretamente!",
+                        Message = "Insira a certidão de nascimento ou registro civil!",
                         Executed = false
                     };
                 }
