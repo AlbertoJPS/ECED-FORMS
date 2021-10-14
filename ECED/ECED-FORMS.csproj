@@ -60,7 +60,7 @@
     <GenerateManifests>true</GenerateManifests>
   </PropertyGroup>
   <PropertyGroup>
-    <SignManifests>true</SignManifests>
+    <SignManifests>false</SignManifests>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Google.Api.CommonProtos, Version=2.4.0.0, Culture=neutral, PublicKeyToken=3ec5ea7f18953e47, processorArchitecture=MSIL">
@@ -373,10 +373,9 @@
     <None Include="Connected Services\correio\ECED_FORMS.correio.VerificaSeTodosObjetosCanceladosResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <Content Include="eced-e3031-firebase-adminsdk-fxr0o-786505f761.json">
+    <Content Include="eced-e3031-firebase-adminsdk-fxr0o-5022b5f23a.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <None Include="ECED-FORMS_TemporaryKey.pfx" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
