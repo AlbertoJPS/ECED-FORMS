@@ -20,7 +20,7 @@ namespace ECED_FORMS.View
         private void timer1_Tick(object sender, EventArgs e)
         {
             timer1.Enabled = true;
-            ProgresseBar22.Increment(1);
+            ProgresseBar22.Increment(3);
             if (ProgresseBar22.Value == 100)
             {
                 timer1.Enabled = false;

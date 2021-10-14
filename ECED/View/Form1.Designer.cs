@@ -45,6 +45,12 @@ namespace ECED_FORMS
             this.cbNomeAlunoNota = new System.Windows.Forms.ComboBox();
             this.label103 = new System.Windows.Forms.Label();
             this.dtgBoletim = new System.Windows.Forms.DataGridView();
+            this.NOTACOL1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NOTA2TCOL = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ULTIMOTRIMESTRE = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.turmaCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.materiaCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nomeCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label104 = new System.Windows.Forms.Label();
             this.tabPage7 = new System.Windows.Forms.TabPage();
             this.ritMostra = new System.Windows.Forms.RichTextBox();
@@ -273,14 +279,10 @@ namespace ECED_FORMS
             this.label13 = new System.Windows.Forms.Label();
             this.btnSalvarCadastro = new System.Windows.Forms.Button();
             this.tabControl2 = new System.Windows.Forms.TabControl();
-            this.NOTACOL1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NOTA2TCOL = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ULTIMOTRIMESTRE = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.turmaCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.materiaCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nomeCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.button6 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label75 = new System.Windows.Forms.Label();
             this.tabPage8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgBoletim)).BeginInit();
             this.tabPage7.SuspendLayout();
@@ -501,6 +503,47 @@ namespace ECED_FORMS
             this.dtgBoletim.ReadOnly = true;
             this.dtgBoletim.Size = new System.Drawing.Size(617, 419);
             this.dtgBoletim.TabIndex = 11;
+            // 
+            // NOTACOL1
+            // 
+            this.NOTACOL1.HeaderText = "1° TRIMESTRE";
+            this.NOTACOL1.Name = "NOTACOL1";
+            this.NOTACOL1.ReadOnly = true;
+            this.NOTACOL1.Width = 50;
+            // 
+            // NOTA2TCOL
+            // 
+            this.NOTA2TCOL.HeaderText = "2° TRIMESTRE";
+            this.NOTA2TCOL.Name = "NOTA2TCOL";
+            this.NOTA2TCOL.ReadOnly = true;
+            this.NOTA2TCOL.Width = 50;
+            // 
+            // ULTIMOTRIMESTRE
+            // 
+            this.ULTIMOTRIMESTRE.HeaderText = "3° TRIMESTRE";
+            this.ULTIMOTRIMESTRE.Name = "ULTIMOTRIMESTRE";
+            this.ULTIMOTRIMESTRE.ReadOnly = true;
+            this.ULTIMOTRIMESTRE.Width = 50;
+            // 
+            // turmaCol
+            // 
+            this.turmaCol.HeaderText = "Turma";
+            this.turmaCol.Name = "turmaCol";
+            this.turmaCol.ReadOnly = true;
+            // 
+            // materiaCol
+            // 
+            this.materiaCol.HeaderText = "Matéria";
+            this.materiaCol.Name = "materiaCol";
+            this.materiaCol.ReadOnly = true;
+            this.materiaCol.Width = 173;
+            // 
+            // nomeCol
+            // 
+            this.nomeCol.HeaderText = "Nome";
+            this.nomeCol.Name = "nomeCol";
+            this.nomeCol.ReadOnly = true;
+            this.nomeCol.Width = 150;
             // 
             // label104
             // 
@@ -1211,6 +1254,8 @@ namespace ECED_FORMS
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.label75);
+            this.tabPage1.Controls.Add(this.comboBox1);
             this.tabPage1.Controls.Add(this.btnAtualizarEndereco);
             this.tabPage1.Controls.Add(this.txtNumero);
             this.tabPage1.Controls.Add(this.txtCep);
@@ -3095,47 +3140,6 @@ namespace ECED_FORMS
             this.tabControl2.Size = new System.Drawing.Size(1272, 619);
             this.tabControl2.TabIndex = 2;
             // 
-            // NOTACOL1
-            // 
-            this.NOTACOL1.HeaderText = "1° TRIMESTRE";
-            this.NOTACOL1.Name = "NOTACOL1";
-            this.NOTACOL1.ReadOnly = true;
-            this.NOTACOL1.Width = 50;
-            // 
-            // NOTA2TCOL
-            // 
-            this.NOTA2TCOL.HeaderText = "2° TRIMESTRE";
-            this.NOTA2TCOL.Name = "NOTA2TCOL";
-            this.NOTA2TCOL.ReadOnly = true;
-            this.NOTA2TCOL.Width = 50;
-            // 
-            // ULTIMOTRIMESTRE
-            // 
-            this.ULTIMOTRIMESTRE.HeaderText = "3° TRIMESTRE";
-            this.ULTIMOTRIMESTRE.Name = "ULTIMOTRIMESTRE";
-            this.ULTIMOTRIMESTRE.ReadOnly = true;
-            this.ULTIMOTRIMESTRE.Width = 50;
-            // 
-            // turmaCol
-            // 
-            this.turmaCol.HeaderText = "Turma";
-            this.turmaCol.Name = "turmaCol";
-            this.turmaCol.ReadOnly = true;
-            // 
-            // materiaCol
-            // 
-            this.materiaCol.HeaderText = "Matéria";
-            this.materiaCol.Name = "materiaCol";
-            this.materiaCol.ReadOnly = true;
-            this.materiaCol.Width = 173;
-            // 
-            // nomeCol
-            // 
-            this.nomeCol.HeaderText = "Nome";
-            this.nomeCol.Name = "nomeCol";
-            this.nomeCol.ReadOnly = true;
-            this.nomeCol.Width = 150;
-            // 
             // button6
             // 
             this.button6.BackColor = System.Drawing.Color.Transparent;
@@ -3164,6 +3168,113 @@ namespace ECED_FORMS
             this.button5.TabIndex = 5;
             this.button5.UseVisualStyleBackColor = false;
             this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "RUA 1651",
+            "RUA 1656",
+            "RUA 2017 - TRANSVERSAL RUA CORONEL FEDERSON",
+            "RUA 2018",
+            "RUA 2021",
+            "RUA ADOLFO JOSÉ DOS SANTOS ",
+            "RUA ADOLFO REIF",
+            "RUA ALAGOAS",
+            "RUA ALFREDO HERING ",
+            "RUA ALMIRANTE BARROSO - ATÉ N° 972",
+            "RUA ARAÇATUBA",
+            "RUA ATHUR BONA - TRANSVERSAL RUA CORONEL FEDERSON",
+            "RUA AUGUSTO DANIEL PERDUHN",
+            "RUA BAHIA - ATÉ N° 1251",
+            "RUA BUHRGARDT",
+            "RUA CAMPINAS",
+            "RUA CARAMURU",
+            "RUA CARLOS JENSEN",
+            "RUA CARLOS ORTHAMANN - TRANSVERSAL RUA CORONEL FEDERSON",
+            "RUA CLARA PERSUHN",
+            "RUA COM. ARNO ZADROSNY - TRANSVERSAL RUA CORONEL FEDERSON",
+            "RUA CORONEL FEDERSON",
+            "RUA DA MODELAÇÃO QUINZE",
+            "RUA DANIEL PFAFFENDORF",
+            "RUA DESEMBARGADOR GUILHERME ABRY",
+            "RUA ERNST SIEGERT",
+            "RUA FELIPE CAMARÃO",
+            "RUA FIDES DEECKE",
+            "RUA FREI GABRIEL ZIMMER",
+            "RUA FREI JOSÉ",
+            "RUA GERDA MEYER",
+            "RUA GUSTAVO PERSUHN",
+            "RUA GUSTAVO SALINGER",
+            "RUA HANZ LORENZ - TRANSVERSAL RUA CORONEL FEDERSON",
+            "RUA HELOY DALSSASSO",
+            "RUA HENRIQUE CLASEN ",
+            "RUA HERCILIO DAVID COUTINHO",
+            "RUA HERMANNN ECKELBERG",
+            "RUA IÇARA ",
+            "RUA IGUAPE",
+            "RUA IGUAÇU",
+            "RUA IRINEU PROVENZZI",
+            "RUA IAIÓPOLIS ",
+            "RUA ITAPETINGA",
+            "RUA JEQUIÉ ",
+            "RUA JOÃO GERALDO KUHLMANN - TRANSVERSAL RUA CORONEL FEDERSON",
+            "RUA JOÃO GOMES DA NÓBREGA",
+            "RUA JOÃO PASQUALINI - TRANSVERSAL RUA CORONEL FEDERSON",
+            "RUA JOAQUIM DE SALES",
+            "RUA JOSÉ DE ALENCAR",
+            "RUA LEOPOLDO FEIF",
+            "RUA LONTRAS",
+            "RUA MARTHIN LUTHER",
+            "RUA MARTIN AFONSO",
+            "RUA NAÍME TOMELIM - TRANSVERSAL RUA CORONEL FEDERSON",
+            "RUA NOVA VENEZA",
+            "RUA OSCAR EWALD",
+            "RUA OSCAR GROSS",
+            "RUA OTTILIA THOMSEN",
+            "RUA OTTO HENNINGS",
+            "RUA PAPANDUVA",
+            "RUA PARÁ",
+            "RUA PEDRO JPÃO LUZ",
+            "RUA PERCY DE BORBA",
+            "RUA PERNAMBUCI",
+            "RUA PONTES DE MIRANDA",
+            "RUA PRESIDENTE A. BERNARDES",
+            "RUA PRESIDENTE ANDRADE PINTO",
+            "RUA PRESIDENTE BARROS CAVALCANTE ",
+            "RUA PRESIDENTE BENTO ARAUJO",
+            "RUA PRESIDENTE FERREIRA BRITO",
+            "RUA PRESIDENTE GASPAR DUTRA",
+            "RUA PRESIDENTE RODRIGUES",
+            "RUA PROFESSOR JOÃO BOSS",
+            "RUA PROFESSOR JOAQUIM DE SALES - TRANSVERSAL RUA CORONEL FEDERSON",
+            "RUA PROFESSORA NEMÉSIA MARGARIDA",
+            "RUA RICHARD FRANZ PERUCKER - TRANSVERSAL RUA CORONEL FEDERSON",
+            "RUA RIO DE JANEIRO",
+            "RUA ROBERTO BAIER - TRANSVERSAL RUA CORONEL FEDERSON",
+            "RUA SANTA CATARINA",
+            "RUA SÃO PAULO - ATÉ N° 1515",
+            "RUA SENIOR FRANCISCO WUERGER",
+            "RUA TEÓFILO ZADROSNY",
+            "RUA TERESÓPOLIS",
+            "RUA VIRGÍLIO MOSER",
+            "RUA VISCONDE DE MAUÁ ",
+            "RUA VITORINO DE PAULA RAMOS - TRANSVERSAL RUA CORONEL FEDERSEN"});
+            this.comboBox1.Location = new System.Drawing.Point(739, 129);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(164, 24);
+            this.comboBox1.TabIndex = 107;
+            // 
+            // label75
+            // 
+            this.label75.AutoSize = true;
+            this.label75.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label75.Location = new System.Drawing.Point(557, 129);
+            this.label75.Name = "label75";
+            this.label75.Size = new System.Drawing.Size(171, 19);
+            this.label75.TabIndex = 108;
+            this.label75.Text = "ARÉA DE ZONEAMENTO:";
             // 
             // telaCadastro
             // 
@@ -3467,6 +3578,8 @@ namespace ECED_FORMS
         private System.Windows.Forms.DataGridViewTextBoxColumn turmaCol;
         private System.Windows.Forms.DataGridViewTextBoxColumn materiaCol;
         private System.Windows.Forms.DataGridViewTextBoxColumn nomeCol;
+        private System.Windows.Forms.Label label75;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }
 
