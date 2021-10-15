@@ -1388,9 +1388,9 @@ namespace ECED_FORMS
             "RUA VIRGÍLIO MOSER",
             "RUA VISCONDE DE MAUÁ ",
             "RUA VITORINO DE PAULA RAMOS - TRANSVERSAL RUA CORONEL FEDERSEN"});
-            this.comboBox1.Location = new System.Drawing.Point(739, 129);
+            this.comboBox1.Location = new System.Drawing.Point(739, 127);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(249, 24);
+            this.comboBox1.Size = new System.Drawing.Size(416, 24);
             this.comboBox1.TabIndex = 107;
             // 
             // btnAtualizarEndereco
@@ -1405,7 +1405,7 @@ namespace ECED_FORMS
             // 
             // txtNumero
             // 
-            this.txtNumero.Location = new System.Drawing.Point(948, 194);
+            this.txtNumero.Location = new System.Drawing.Point(948, 202);
             this.txtNumero.Mask = "00000";
             this.txtNumero.Name = "txtNumero";
             this.txtNumero.Size = new System.Drawing.Size(40, 22);
@@ -1422,49 +1422,49 @@ namespace ECED_FORMS
             // 
             // txtPontoReferencia
             // 
-            this.txtPontoReferencia.Location = new System.Drawing.Point(948, 254);
+            this.txtPontoReferencia.Location = new System.Drawing.Point(948, 262);
             this.txtPontoReferencia.Name = "txtPontoReferencia";
             this.txtPontoReferencia.Size = new System.Drawing.Size(156, 22);
             this.txtPontoReferencia.TabIndex = 103;
             // 
             // txtComplemento
             // 
-            this.txtComplemento.Location = new System.Drawing.Point(529, 314);
+            this.txtComplemento.Location = new System.Drawing.Point(529, 322);
             this.txtComplemento.Name = "txtComplemento";
             this.txtComplemento.Size = new System.Drawing.Size(211, 22);
             this.txtComplemento.TabIndex = 101;
             // 
             // txtAvenida
             // 
-            this.txtAvenida.Location = new System.Drawing.Point(529, 194);
+            this.txtAvenida.Location = new System.Drawing.Point(529, 202);
             this.txtAvenida.Name = "txtAvenida";
             this.txtAvenida.Size = new System.Drawing.Size(211, 22);
             this.txtAvenida.TabIndex = 97;
             // 
             // txtCidade
             // 
-            this.txtCidade.Location = new System.Drawing.Point(161, 319);
+            this.txtCidade.Location = new System.Drawing.Point(161, 327);
             this.txtCidade.Name = "txtCidade";
             this.txtCidade.Size = new System.Drawing.Size(211, 22);
             this.txtCidade.TabIndex = 90;
             // 
             // txtBairro
             // 
-            this.txtBairro.Location = new System.Drawing.Point(161, 256);
+            this.txtBairro.Location = new System.Drawing.Point(161, 264);
             this.txtBairro.Name = "txtBairro";
             this.txtBairro.Size = new System.Drawing.Size(211, 22);
             this.txtBairro.TabIndex = 88;
             // 
             // txtEstado
             // 
-            this.txtEstado.Location = new System.Drawing.Point(529, 254);
+            this.txtEstado.Location = new System.Drawing.Point(529, 262);
             this.txtEstado.Name = "txtEstado";
             this.txtEstado.Size = new System.Drawing.Size(211, 22);
             this.txtEstado.TabIndex = 87;
             // 
             // txtRua
             // 
-            this.txtRua.Location = new System.Drawing.Point(161, 191);
+            this.txtRua.Location = new System.Drawing.Point(161, 199);
             this.txtRua.Name = "txtRua";
             this.txtRua.Size = new System.Drawing.Size(211, 22);
             this.txtRua.TabIndex = 85;
@@ -1473,7 +1473,7 @@ namespace ECED_FORMS
             // 
             this.label63.AutoSize = true;
             this.label63.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label63.Location = new System.Drawing.Point(774, 257);
+            this.label63.Location = new System.Drawing.Point(774, 265);
             this.label63.Name = "label63";
             this.label63.Size = new System.Drawing.Size(168, 19);
             this.label63.TabIndex = 102;
@@ -1483,7 +1483,7 @@ namespace ECED_FORMS
             // 
             this.label50.AutoSize = true;
             this.label50.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label50.Location = new System.Drawing.Point(415, 317);
+            this.label50.Location = new System.Drawing.Point(415, 325);
             this.label50.Name = "label50";
             this.label50.Size = new System.Drawing.Size(108, 19);
             this.label50.TabIndex = 100;
@@ -1493,7 +1493,7 @@ namespace ECED_FORMS
             // 
             this.label49.AutoSize = true;
             this.label49.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label49.Location = new System.Drawing.Point(874, 197);
+            this.label49.Location = new System.Drawing.Point(874, 205);
             this.label49.Name = "label49";
             this.label49.Size = new System.Drawing.Size(68, 19);
             this.label49.TabIndex = 98;
@@ -1503,7 +1503,7 @@ namespace ECED_FORMS
             // 
             this.label48.AutoSize = true;
             this.label48.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label48.Location = new System.Drawing.Point(449, 194);
+            this.label48.Location = new System.Drawing.Point(449, 202);
             this.label48.Name = "label48";
             this.label48.Size = new System.Drawing.Size(74, 19);
             this.label48.TabIndex = 96;
@@ -1552,7 +1552,7 @@ namespace ECED_FORMS
             // 
             this.label35.AutoSize = true;
             this.label35.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label35.Location = new System.Drawing.Point(86, 319);
+            this.label35.Location = new System.Drawing.Point(86, 327);
             this.label35.Name = "label35";
             this.label35.Size = new System.Drawing.Size(63, 19);
             this.label35.TabIndex = 84;
@@ -1562,7 +1562,7 @@ namespace ECED_FORMS
             // 
             this.label33.AutoSize = true;
             this.label33.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label33.Location = new System.Drawing.Point(86, 259);
+            this.label33.Location = new System.Drawing.Point(86, 267);
             this.label33.Name = "label33";
             this.label33.Size = new System.Drawing.Size(69, 19);
             this.label33.TabIndex = 82;
@@ -1572,7 +1572,7 @@ namespace ECED_FORMS
             // 
             this.label32.AutoSize = true;
             this.label32.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label32.Location = new System.Drawing.Point(456, 254);
+            this.label32.Location = new System.Drawing.Point(456, 262);
             this.label32.Name = "label32";
             this.label32.Size = new System.Drawing.Size(67, 19);
             this.label32.TabIndex = 81;
@@ -1582,7 +1582,7 @@ namespace ECED_FORMS
             // 
             this.label30.AutoSize = true;
             this.label30.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label30.Location = new System.Drawing.Point(107, 194);
+            this.label30.Location = new System.Drawing.Point(107, 202);
             this.label30.Name = "label30";
             this.label30.Size = new System.Drawing.Size(42, 19);
             this.label30.TabIndex = 79;
