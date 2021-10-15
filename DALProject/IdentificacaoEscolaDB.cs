@@ -32,13 +32,11 @@ namespace DALProject
                 };         
                 Task<WriteResult> t = doc.SetAsync(identeficacao);
                 t.Wait();
-
                 return new Response()
                 {
                     Executed = true,
                     Message = "Cadastro com Sucesso."
                 };
-
             }
             catch (Exception)
             {

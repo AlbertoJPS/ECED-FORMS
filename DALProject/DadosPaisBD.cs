@@ -46,8 +46,7 @@ namespace DALProject
                     {"Local Trabalho Resp Dois", dadosPais.LocalTrabalhoRespDois},
                     {"Horario Trabalho Resp Dois", dadosPais.HorarioTrabalhoRespDois},
                     {"Ramal Resp Dois", dadosPais.RamalRespDois},
-                };
-                
+                };                
                 Task<WriteResult> t = doc.SetAsync(pais);
                 t.Wait();
                 return new Response()

@@ -15,16 +15,14 @@ namespace DALProject
             {
                 CollectionReference coRef = DBConection.Getdatabase().Collection(delete.Nome);            
                 QuerySnapshot snap = await coRef.GetSnapshotAsync();
-
                 foreach (DocumentSnapshot doc in snap.Documents)
                 {
                     await doc.Reference.DeleteAsync();
-                }  
-                
+                }                  
                 return new Response()
                 {
                     Executed = true,
-                    Message = "Cadastro com Sucesso."
+                    Message = "Aluno deletado com Sucesso."
                 };
             }
             catch (Exception)
@@ -32,11 +30,10 @@ namespace DALProject
                 return new Response()
                 {
                     Executed = false,
-                    Message = "Cadastro não efetuado. \n Por favor verifique suas informações."
+                    Message = "Cadastro não de deletado. \n Por favor verifique suas informações."
                 };
             }
         }
     }
-
 }
 

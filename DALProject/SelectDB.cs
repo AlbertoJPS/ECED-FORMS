@@ -9,12 +9,11 @@ namespace DALProject
 {
     public class SelectDB
     {
-        public static async Task<Response> MostrarDados(Boletim name,List<string> vetor)
+        public static async Task<Response> MostrarDados(Boletim name, List<string> vetor)
         {
             try
             {
                 DocumentReference docref = DBConection.Getdatabase().Collection(name.NomeAluno).Document("Boletim");
-
                 DocumentSnapshot snap = await docref.GetSnapshotAsync();
                 if (snap.Exists)
                 {
@@ -22,7 +21,7 @@ namespace DALProject
                     foreach (var item in dados)
                     {
                         vetor.Add(item.Value.ToString());
-                       
+
                     }
                 }
                 else
@@ -30,19 +29,13 @@ namespace DALProject
                     return new Response { Executed = false, Message = "Aluno não encontrado. \n Por favor verifique suas informações." };
                 }
                 vetor.Sort();
-                return new Response
-                {
-                    Executed = true,
-                    Message = "Aluno encontrado com Sucesso."
-                };
+                return new Response { Executed = true, Message = "Aluno encontrado com Sucesso." };
             }
             catch (Exception)
             {
-                return new Response{Executed = false, Message = "Erro ao buscar aluno. \n Por favor verifique suas informações."};
+                return new Response { Executed = false, Message = "Erro ao buscar aluno. \n Por favor verifique suas informações." };
             }
-
         }
-
         public static Task<Response> MostrarDados(Aluno name, List<string> vetor)
         {
             throw new NotImplementedException();

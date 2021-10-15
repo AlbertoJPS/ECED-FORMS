@@ -16,7 +16,6 @@ namespace DALProject
         /// <returns></returns>
         public static FirestoreDb Getdatabase()
         {
-
             Environment.SetEnvironmentVariable("GOOGLE_APPLICATION_CREDENTIALS", AppDomain.CurrentDomain.BaseDirectory + @"eced-e3031-firebase-adminsdk-fxr0o-5022b5f23a.json");
 
             database = FirestoreDb.Create("eced-e3031");

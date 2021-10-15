@@ -7,7 +7,6 @@ using System.Threading.Tasks;
 
 namespace BALProject
 {
-
    public class ControllerDeletarAluno
     {
         public static async Task<Response> DeletarAluno(DeletarAluno delete)

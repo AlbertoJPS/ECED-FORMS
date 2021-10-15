@@ -14,7 +14,5 @@ namespace DALProject
         public string UserName { get; set; }
         [FirestoreProperty]
         public string Senha { get; set; }
-
-
     }
 }

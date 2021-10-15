@@ -24,15 +24,12 @@ namespace DALProject
                     {"Nota 3", notas.Nota3},
             };
                 Task<WriteResult> t = doc.SetAsync(infoBoletim);
-                t.Wait();
-                
-
+                t.Wait();                
                 return new Response()
                 {
                     Executed = true,
                     Message = "Notas adicionadas!"
                 };
-
             }
             catch (Exception)
             {

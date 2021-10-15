@@ -34,7 +34,6 @@ namespace DALProject
                 };
                 Task<WriteResult> t = doc.SetAsync(saudealuno);
                 t.Wait();
-
                 return new Response()
                 {
                     Executed = true,

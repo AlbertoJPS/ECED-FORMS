@@ -8,13 +8,12 @@ using DALProject;
 
 namespace DALProject
 {
-  public  class Mostrar
+    public class Mostrar
     {
         public static async Task<Response> mostrarAL(Aluno al)
         {
             try
             {
-
                 Query alunodt = DBConection.Getdatabase().Collection(al.ToString());
                 QuerySnapshot snap = await alunodt.GetSnapshotAsync();
 
@@ -23,16 +22,15 @@ namespace DALProject
                 Dictionary<string, object> data1 = new Dictionary<string, object>()
                 {
                     {"NOME",al.NomeAluno},
-                  
+
                 };
-                DadosPessoais.Add("Dados Pessoais", data1);    
+                DadosPessoais.Add("Dados Pessoais", data1);
 
                 return new Response()
                 {
                     Executed = true,
                     Message = "Cadastro com Sucesso."
                 };
-
             }
             catch (Exception)
             {
@@ -43,6 +41,5 @@ namespace DALProject
                 };
             }
         }
-
     }
 }

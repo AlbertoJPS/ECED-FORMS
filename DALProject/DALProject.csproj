@@ -123,7 +123,6 @@
     <Compile Include="AlunoDB.cs" />
     <Compile Include="Boletim.cs" />
     <Compile Include="BoletimDB.cs" />
-    <Compile Include="Checker.cs" />
     <Compile Include="DadosPaisBD.cs" />
     <Compile Include="DBConection.cs" />
     <Compile Include="DeletarAluno.cs" />
@@ -141,7 +140,6 @@
     <Compile Include="Response.cs" />
     <Compile Include="SaudeAluno.cs" />
     <Compile Include="SaudeAlunoDB.cs" />
-    <Compile Include="SelectLogin.cs" />
     <Compile Include="SelectDB.cs" />
   </ItemGroup>
   <ItemGroup>

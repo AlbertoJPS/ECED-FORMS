@@ -11,7 +11,5 @@ namespace DALProject
         public bool Executed { get; set; }
         public string Message { get; set; }
         public string Erro { get; set; }
-
-
     }
 }
