@@ -34,11 +34,12 @@ namespace ECED_FORMS.View
             this.label1 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // ProgresseBar22
             // 
-            this.ProgresseBar22.Location = new System.Drawing.Point(95, 369);
+            this.ProgresseBar22.Location = new System.Drawing.Point(95, 408);
             this.ProgresseBar22.Name = "ProgresseBar22";
             this.ProgresseBar22.Size = new System.Drawing.Size(485, 13);
             this.ProgresseBar22.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
@@ -49,7 +50,7 @@ namespace ECED_FORMS.View
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(272, 342);
+            this.label1.Location = new System.Drawing.Point(272, 381);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(128, 24);
             this.label1.TabIndex = 1;
@@ -69,6 +70,17 @@ namespace ECED_FORMS.View
             this.panel1.Size = new System.Drawing.Size(485, 327);
             this.panel1.TabIndex = 2;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(242, 320);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(205, 16);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Solução ecológica e tecnológica";
+            // 
             // SplashScren
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -76,6 +88,7 @@ namespace ECED_FORMS.View
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(667, 460);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.ProgresseBar22);
@@ -94,5 +107,6 @@ namespace ECED_FORMS.View
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label2;
     }
 }
