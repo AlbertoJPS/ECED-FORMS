@@ -12,7 +12,6 @@ namespace BALProject
         public static async Task<Response> MostrarBoletim(Boletim name, List<string> vetor)
         {
             return await SelectDB.MostrarDados(name, vetor);
-
         }
     }
 }

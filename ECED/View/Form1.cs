@@ -37,6 +37,8 @@ namespace ECED_FORMS
         {
             AdicionaDadosAlunos();
         }
+
+        //Busca de CEP com API
         private void btnBuscarCep_Click(object sender, EventArgs e)
         {
             if (!string.IsNullOrWhiteSpace(txtCep.Text))
@@ -63,7 +65,7 @@ namespace ECED_FORMS
             }
             else
             {
-                MessageBox.Show("Informe um cep valido..", this.Text, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Insira um cep válido!", this.Text, MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
         private void btnLimpaCep_Click(object sender, EventArgs e)
@@ -83,7 +85,7 @@ namespace ECED_FORMS
             DialogResult resultado = MessageBox.Show("Gostaria de excluir o cadastro do(a) " + txtPesquisarAluno.Text + "?", "Excluir cadastro", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
             if (resultado == DialogResult.Yes)
             {
-                deletarCadastro("Name");
+                deletarCadastro();
                 txtPesquisarAluno.Clear();
                 ritMostra.Clear();
                 MessageBox.Show("Cadastro Excluido com sucesso!");
@@ -92,8 +94,6 @@ namespace ECED_FORMS
             {
                 MessageBox.Show("Exclusão cancelada!");
             }
-
-            //MessageBox.Show("O cadastro do aluno " + txtPesquisarAluno.Text + " foi deletado do sistema.");
         }
         void AdicionaDadosAlunos()
         {
@@ -161,6 +161,7 @@ namespace ECED_FORMS
                 Deletar();
             }
         }
+
         //Funções de Insert
         private Response AddAluno()
         {
@@ -318,7 +319,6 @@ namespace ECED_FORMS
         }
         void AdicionaNota()
         {
-            //Boletim bole = new Boletim();
             try
             {
                 Boletim boletim = new Boletim()
@@ -353,12 +353,12 @@ namespace ECED_FORMS
         {
             if (!String.IsNullOrWhiteSpace(txtPesquisarAluno.Text))
             {
-                mostrardocumento("Documento");
-                mostrarDdosPessoais("Nome");
-                mostrarEndereco("Endereco");
-                mostrarDadosPais("DadosPais");
-                mostrarIdentificacaoEscolar("Identificação");
-                mostrarSaudeAluno("Saude");
+                mostrardocumento();
+                mostrarDdosPessoais();
+                mostrarEndereco();
+                mostrarDadosPais();
+                mostrarIdentificacaoEscolar();
+                mostrarSaudeAluno();
                 ritMostra.Clear();
             }
             else
@@ -366,7 +366,7 @@ namespace ECED_FORMS
                 MessageBox.Show("Insira um nome!");
             }
         }
-        async void mostrarDdosPessoais(string name)
+        async void mostrarDdosPessoais()
         {
             try
             {
@@ -386,7 +386,7 @@ namespace ECED_FORMS
             {
             }
         }
-        async void mostrarBolet(string name)
+        async void mostrarBolet()
         {
             if (!String.IsNullOrWhiteSpace(cbNomeAlunoNota.Text))
             {
@@ -394,7 +394,6 @@ namespace ECED_FORMS
                 {
                     NomeAluno = cbNomeAlunoNota.Text.ToUpper()
                 };
-                //string[] vetor = new string[1];
                 List<string> vetor = new List<string>();
                 Response res = await ControllerBoletim.MostrarBoletim(al, vetor);
                 if (res.Executed)
@@ -412,7 +411,7 @@ namespace ECED_FORMS
                 MessageBox.Show("Insira um nome!");
             }
         }
-        async void mostrardocumento(string name)
+        async void mostrardocumento()
         {
             try
             {
@@ -421,7 +420,6 @@ namespace ECED_FORMS
                 if (snap.Exists)
                 {
                     Dictionary<string, object> city = snap.ToDictionary();
-
                     ritMostra.Text += string.Format("\n \n                                              Documentos do Aluno     \n  ");
                     foreach (var item in city)
                     {
@@ -438,7 +436,7 @@ namespace ECED_FORMS
                 MessageBox.Show("Verifique sua conexão!");
             }
         }
-        async void mostrarIdentificacaoEscolar(string name)
+        async void mostrarIdentificacaoEscolar()
         {
             try
             {
@@ -447,7 +445,6 @@ namespace ECED_FORMS
                 if (snap.Exists)
                 {
                     Dictionary<string, object> city = snap.ToDictionary();
-
                     ritMostra.Text += string.Format("\n \n                                                 Identificação Escolar     \n  ");
                     foreach (var item in city)
                     {
@@ -459,7 +456,7 @@ namespace ECED_FORMS
             {
             }
         }
-        async void mostrarDadosPais(string name)
+        async void mostrarDadosPais()
         {
             try
             {
@@ -480,7 +477,7 @@ namespace ECED_FORMS
             {
             }
         }
-        async void mostrarEndereco(string name)
+        async void mostrarEndereco()
         {
             try
             {
@@ -501,7 +498,7 @@ namespace ECED_FORMS
             {
             }
         }
-        async void mostrarSaudeAluno(string name)
+        async void mostrarSaudeAluno()
         {
             try
             {
@@ -510,7 +507,6 @@ namespace ECED_FORMS
                 if (snap.Exists)
                 {
                     Dictionary<string, object> city = snap.ToDictionary();
-
                     ritMostra.Text += string.Format("\n \n                                                    Saúde Aluno    \n  ");
                     foreach (var item in city)
                     {
@@ -526,7 +522,7 @@ namespace ECED_FORMS
         /// Função para deletar o aluno do banco de dados
         /// </summary>
         /// <param name="name"></param>
-        void deletarCadastro(string name)
+        void deletarCadastro()
         {
             try
             {
@@ -556,6 +552,7 @@ namespace ECED_FORMS
                 MessageBox.Show("Verifique sua conexão!");
             }
         }
+
         //Funções para a View
         void FuncaoCheckBox(CheckBox cb, CheckBox cb2)
         {
@@ -629,6 +626,23 @@ namespace ECED_FORMS
             else
             {
                 return cb3.Text;
+            }
+        }
+        private void txtCep_TextChanged(object sender, EventArgs e)
+        {
+            if (txtCep.Text.Length < 9)
+            {
+                txtEstado.Enabled = true;
+                txtCidade.Enabled = true;
+                txtBairro.Enabled = true;
+                txtRua.Enabled = true;
+            }
+            else
+            {
+                txtEstado.Enabled = false;
+                txtCidade.Enabled = false;
+                txtBairro.Enabled = false;
+                txtRua.Enabled = false;
             }
         }
         private void chCarteiraSim_CheckedChanged(object sender, EventArgs e)
@@ -726,9 +740,8 @@ namespace ECED_FORMS
         }
         private void btnMostrarBoletim_Click(object sender, EventArgs e)
         {
-            mostrarBolet("boletim");
+            mostrarBolet();
         }
-
         private void button6_Click(object sender, EventArgs e)
         {
             DialogResult resultado = MessageBox.Show("Trocar usuario? ", "Troca de usuario", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
@@ -738,15 +751,13 @@ namespace ECED_FORMS
                 this.Visible = false;
                 Telapr.Show();
             }
-            else
-            {
-
-            }
         }
         private void Form1_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
         }
+
+        //Funções para atualizar cadastro
         private void btnAtualizarDados_Click(object sender, EventArgs e)
         {
             MensagemAtualizacao(AddAluno(), "Dados atualizados!", "Insira os dados corretamente!");
@@ -783,11 +794,11 @@ namespace ECED_FORMS
             }
         }
 
+        //Função para a cor do fundo
         private void telaCadastro_Paint(object sender, PaintEventArgs e)
         {
             Degrade(sender, e);
         }
-
         private void Degrade(object sender, PaintEventArgs e)
         {
             Graphics graphics = e.Graphics; Rectangle gradient_rect = new Rectangle(0, 0, Width, Height);
@@ -795,36 +806,12 @@ namespace ECED_FORMS
             Brush br = new LinearGradientBrush(gradient_rect, Color.FromArgb(178, 247, 199), Color.FromArgb(250, 252, 251), 15f);
             graphics.FillRectangle(br, gradient_rect);
         }
-
-        private void tabPage6_Paint(object sender, PaintEventArgs e)
-        {
-            //Degrade(sender,e);
-        }
-
         private void txtPesquisarAluno_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (e.KeyChar == 13)
             {
                 PesquisaAluno();
             }
-        }
-
-        private void txtCep_TextChanged(object sender, EventArgs e)
-        {
-            if (txtCep.Text.Length < 9)
-            {
-                txtEstado.Enabled = true;
-                txtCidade.Enabled = true;
-                txtBairro.Enabled = true;
-                txtRua.Enabled = true;
-            }
-            else
-            {
-                txtEstado.Enabled = false;
-                txtCidade.Enabled = false;
-                txtBairro.Enabled = false;
-                txtRua.Enabled = false;
-            }
-        }
+        }        
     }
 }

@@ -29,7 +29,6 @@ namespace DALProject
                     {"Data de Emissão",docAluno.DataEmissaoRegCivil},
                 };
                 doc.SetAsync(documen);
-
                 return new Response()
                 {
                     Executed = true,

@@ -636,7 +636,6 @@ namespace ECED_FORMS
             this.tabPage6.TabIndex = 1;
             this.tabPage6.Text = "Cadastro de aluno ";
             this.tabPage6.UseVisualStyleBackColor = true;
-            this.tabPage6.Paint += new System.Windows.Forms.PaintEventHandler(this.tabPage6_Paint);
             // 
             // tabControl1
             // 
