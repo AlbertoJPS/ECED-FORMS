@@ -14,7 +14,6 @@ namespace BALProject
         {
             return await SelectDB.MostrarDados(name,vetor);
         }
-
         public static Task MostrarDados(Boletim al, List<string> vetor)
         {
             throw new NotImplementedException();

@@ -38,6 +38,5 @@ namespace DALProject
         public string UF{ get; set; }
         [FirestoreProperty]
         public string Tipo{ get; set; }
-
     }
 }

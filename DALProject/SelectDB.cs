@@ -40,9 +40,7 @@ namespace DALProject
             {
                 return new Response{Executed = false, Message = "Erro ao buscar aluno. \n Por favor verifique suas informações."};
             }
-
         }
-
         public static Task<Response> MostrarDados(Aluno name, List<string> vetor)
         {
             throw new NotImplementedException();

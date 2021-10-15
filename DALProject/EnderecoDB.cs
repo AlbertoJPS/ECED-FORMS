@@ -28,7 +28,6 @@ namespace DALProject
                 };
                 Task<WriteResult> t = doc.SetAsync(city);
                 t.Wait();
-
                 return new Response()
                 {
                     Executed = true,

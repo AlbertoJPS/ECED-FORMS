@@ -26,13 +26,11 @@ namespace DALProject
                 Task<WriteResult> t = doc.SetAsync(infoBoletim);
                 t.Wait();
                 
-
                 return new Response()
                 {
                     Executed = true,
                     Message = "Notas adicionadas!"
                 };
-
             }
             catch (Exception)
             {

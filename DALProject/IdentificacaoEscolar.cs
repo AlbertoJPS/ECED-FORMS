@@ -40,6 +40,5 @@ namespace DALProject
         public string TurmaIrmao { get; set; }
         [FirestoreProperty]
         public string TurnoIrmao { get; set; }
-
     }
 }

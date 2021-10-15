@@ -38,7 +38,6 @@ namespace DALProject
                     Executed = true,
                     Message = "Cadastro com Sucesso."
                 };
-
             }
             catch (Exception)
             {
